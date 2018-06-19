@@ -33,10 +33,10 @@ Partial Class options_ShippingTerms
         Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
         Me.Tbl_term_SizeBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
         Me.Tbl_term_SizeDataGridView = New System.Windows.Forms.DataGridView()
-        Me.TbltermShipMethodBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Tbl_term_ShipMethodTableAdapter = New Neeco_Work_Order.db_WOlogDataSetTableAdapters.tbl_term_ShipMethodTableAdapter()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.fld_ShipmentMethod = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TbltermShipMethodBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Tbl_term_ShipMethodTableAdapter = New Neeco_Work_Order.db_WOlogDataSetTableAdapters.tbl_term_ShipMethodTableAdapter()
         CType(Me.Db_WOlogDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Tbl_term_SizeBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Tbl_term_SizeBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -131,15 +131,6 @@ Partial Class options_ShippingTerms
         Me.Tbl_term_SizeDataGridView.Size = New System.Drawing.Size(284, 386)
         Me.Tbl_term_SizeDataGridView.TabIndex = 1
         '
-        'TbltermShipMethodBindingSource
-        '
-        Me.TbltermShipMethodBindingSource.DataMember = "tbl_term_ShipMethod"
-        Me.TbltermShipMethodBindingSource.DataSource = Me.Db_WOlogDataSet
-        '
-        'Tbl_term_ShipMethodTableAdapter
-        '
-        Me.Tbl_term_ShipMethodTableAdapter.ClearBeforeFill = True
-        '
         'DataGridViewTextBoxColumn1
         '
         Me.DataGridViewTextBoxColumn1.DataPropertyName = "ID"
@@ -155,6 +146,15 @@ Partial Class options_ShippingTerms
         Me.fld_ShipmentMethod.Name = "fld_ShipmentMethod"
         Me.fld_ShipmentMethod.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         '
+        'TbltermShipMethodBindingSource
+        '
+        Me.TbltermShipMethodBindingSource.DataMember = "tbl_term_ShipMethod"
+        Me.TbltermShipMethodBindingSource.DataSource = Me.Db_WOlogDataSet
+        '
+        'Tbl_term_ShipMethodTableAdapter
+        '
+        Me.Tbl_term_ShipMethodTableAdapter.ClearBeforeFill = True
+        '
         'options_ShippingTerms
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -162,6 +162,7 @@ Partial Class options_ShippingTerms
         Me.ClientSize = New System.Drawing.Size(284, 411)
         Me.Controls.Add(Me.Tbl_term_SizeDataGridView)
         Me.Controls.Add(Me.Tbl_term_SizeBindingNavigator)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "options_ShippingTerms"

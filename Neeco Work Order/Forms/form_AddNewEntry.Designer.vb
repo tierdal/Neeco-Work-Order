@@ -983,7 +983,9 @@ Partial Class form_AddNewEntry
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.button_Exit)
         Me.Controls.Add(Me.Tbl_WOnumBindingNavigator)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
         Me.Name = "form_AddNewEntry"
         Me.Text = "Neeco Work Order App - Add New Work Order"
         CType(Me.Tbl_WOnumBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()

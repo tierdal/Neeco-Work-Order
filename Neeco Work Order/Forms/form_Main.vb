@@ -10,7 +10,7 @@
     End Sub
 
     Private Sub button_ViewWO_Click(sender As Object, e As EventArgs) Handles button_ViewWO.Click
-        'BUTTON TO OPEN EXCEL WITH WORK ORDERS LOADED VIA A QUERY TO THE DB
+        '
         Dim wo_File As String = "\\neecosvr1\1.  Quality\WORK ORDER\WO App\Work Order Log.xlsx"
 
         If System.IO.File.Exists(wo_File) = True Then

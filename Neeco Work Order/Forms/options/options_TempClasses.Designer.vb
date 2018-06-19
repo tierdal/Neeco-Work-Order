@@ -150,6 +150,7 @@ Partial Class options_TempClasses
         Me.ClientSize = New System.Drawing.Size(284, 411)
         Me.Controls.Add(Me.Tbl_term_TempClassDataGridView)
         Me.Controls.Add(Me.Tbl_term_TempClassBindingNavigator)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "options_TempClasses"

@@ -813,7 +813,9 @@ Partial Class form_EditEntry
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.button_Exit)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
         Me.Name = "form_EditEntry"
         Me.Text = "Neeco Work Order App - Edit Work Order"
         Me.GroupBox3.ResumeLayout(False)

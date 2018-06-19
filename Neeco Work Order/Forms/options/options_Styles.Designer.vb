@@ -150,6 +150,7 @@ Partial Class options_Styles
         Me.ClientSize = New System.Drawing.Size(325, 411)
         Me.Controls.Add(Me.Tbl_term_StyleDataGridView)
         Me.Controls.Add(Me.Tbl_term_StyleBindingNavigator)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "options_Styles"

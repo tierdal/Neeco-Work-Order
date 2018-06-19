@@ -1,0 +1,11 @@
+Version 0.9.4 - June 19th, 2018
+	- Changed the properties of all forms to prevent resizing / maximizing by user.
+	- Changed the location of the changelog file to Resources folder.
+	- Added changelog form so that users can easily see latest changes.
+	- Added changelog button to options screen so that usercess the changelog.
+
+Version 0.9.3 - June 19th, 2018
+	- Changed the way the "Edit Data" screen pulls values from DB. It will now check for null values and do nothing if found.
+
+Version 0.9.2 - June 18th, 2018
+	- Added changelog.txt

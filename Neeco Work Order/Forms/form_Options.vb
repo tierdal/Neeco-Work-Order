@@ -51,4 +51,8 @@
     Private Sub button_Operators_Click(sender As Object, e As EventArgs) Handles button_Operators.Click
         options_OperatorStyles.Show()
     End Sub
+
+    Private Sub button_Changelog_Click(sender As Object, e As EventArgs) Handles button_Changelog.Click
+        form_changelog.Show()
+    End Sub
 End Class

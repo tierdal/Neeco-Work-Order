@@ -88,7 +88,6 @@
         Dim sql_conn As New OleDb.OleDbConnection
         Dim sql_queryPulldata_ID, sql_queryPulldata_PARTNUM, sql_queryPulldata_QBBANUM, sql_queryPulldata_APIAUDIT, sql_queryPulldata_SHIPMETHOD, sql_queryPulldata_WODATE, sql_queryPulldata_INVDATE, sql_queryPulldata_INVNUM, sql_queryPulldata_DELIVERYNUM, sql_queryPulldata_SHIPDATE, sql_queryPulldata_PODUE, sql_queryPulldata_PONUM, sql_queryPulldata_NOTES, sql_queryPulldata_CUSTOMER, sql_queryPulldata_QTY, sql_queryPulldata_PR, sql_queryPulldata_STYLE, sql_queryPulldata_PSL, sql_queryPulldata_TRIM, sql_queryPulldata_TEMPCLASS, sql_queryPulldata_HHPP, sql_queryPulldata_PRODUCT, sql_queryPulldata_SIZE, sql_queryPulldata_PRESSURE As New OleDb.OleDbCommand
         Dim conn_string As String
-        Dim date_WO, date_INV, date_SHIP, date_DUE As String
 
         'define SQL connection
         conn_string = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=\\neecosvr1\1.  Quality\WORK ORDER\WO App\db\db_WOlog.accdb"

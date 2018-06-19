@@ -36,6 +36,7 @@ Partial Class form_Options
         Me.button_Operators = New System.Windows.Forms.Button()
         Me.button_About = New System.Windows.Forms.Button()
         Me.button_Exit = New System.Windows.Forms.Button()
+        Me.button_Changelog = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'button_Customers
@@ -139,9 +140,9 @@ Partial Class form_Options
         '
         'button_About
         '
-        Me.button_About.Location = New System.Drawing.Point(247, 13)
+        Me.button_About.Location = New System.Drawing.Point(232, 13)
         Me.button_About.Name = "button_About"
-        Me.button_About.Size = New System.Drawing.Size(75, 23)
+        Me.button_About.Size = New System.Drawing.Size(90, 23)
         Me.button_About.TabIndex = 11
         Me.button_About.Text = "ABOUT"
         Me.button_About.UseVisualStyleBackColor = True
@@ -149,12 +150,22 @@ Partial Class form_Options
         'button_Exit
         '
         Me.button_Exit.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.button_Exit.Location = New System.Drawing.Point(247, 43)
+        Me.button_Exit.Location = New System.Drawing.Point(232, 73)
         Me.button_Exit.Name = "button_Exit"
-        Me.button_Exit.Size = New System.Drawing.Size(75, 23)
+        Me.button_Exit.Size = New System.Drawing.Size(90, 23)
         Me.button_Exit.TabIndex = 12
         Me.button_Exit.Text = "CLOSE"
         Me.button_Exit.UseVisualStyleBackColor = True
+        '
+        'button_Changelog
+        '
+        Me.button_Changelog.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.button_Changelog.Location = New System.Drawing.Point(232, 43)
+        Me.button_Changelog.Name = "button_Changelog"
+        Me.button_Changelog.Size = New System.Drawing.Size(90, 23)
+        Me.button_Changelog.TabIndex = 13
+        Me.button_Changelog.Text = "CHANGELOG"
+        Me.button_Changelog.UseVisualStyleBackColor = True
         '
         'form_Options
         '
@@ -162,6 +173,7 @@ Partial Class form_Options
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.button_Exit
         Me.ClientSize = New System.Drawing.Size(334, 347)
+        Me.Controls.Add(Me.button_Changelog)
         Me.Controls.Add(Me.button_Exit)
         Me.Controls.Add(Me.button_About)
         Me.Controls.Add(Me.button_Operators)
@@ -176,6 +188,7 @@ Partial Class form_Options
         Me.Controls.Add(Me.button_ProductTypes)
         Me.Controls.Add(Me.button_Customers)
         Me.Cursor = System.Windows.Forms.Cursors.Default
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "form_Options"
@@ -197,4 +210,5 @@ Partial Class form_Options
     Friend WithEvents button_Operators As Button
     Friend WithEvents button_About As Button
     Friend WithEvents button_Exit As Button
+    Friend WithEvents button_Changelog As Button
 End Class
