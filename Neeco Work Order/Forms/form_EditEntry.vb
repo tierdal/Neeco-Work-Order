@@ -88,6 +88,7 @@
         Dim sql_conn As New OleDb.OleDbConnection
         Dim sql_queryPulldata_ID, sql_queryPulldata_PARTNUM, sql_queryPulldata_QBBANUM, sql_queryPulldata_APIAUDIT, sql_queryPulldata_SHIPMETHOD, sql_queryPulldata_WODATE, sql_queryPulldata_INVDATE, sql_queryPulldata_INVNUM, sql_queryPulldata_DELIVERYNUM, sql_queryPulldata_SHIPDATE, sql_queryPulldata_PODUE, sql_queryPulldata_PONUM, sql_queryPulldata_NOTES, sql_queryPulldata_CUSTOMER, sql_queryPulldata_QTY, sql_queryPulldata_PR, sql_queryPulldata_STYLE, sql_queryPulldata_PSL, sql_queryPulldata_TRIM, sql_queryPulldata_TEMPCLASS, sql_queryPulldata_HHPP, sql_queryPulldata_PRODUCT, sql_queryPulldata_SIZE, sql_queryPulldata_PRESSURE As New OleDb.OleDbCommand
         Dim conn_string As String
+        Dim date_WO, date_INV, date_SHIP, date_DUE As String
 
         'define SQL connection
         conn_string = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=\\neecosvr1\1.  Quality\WORK ORDER\WO App\db\db_WOlog.accdb"
@@ -172,28 +173,31 @@
         Try
             text_WOnum.Text = wo_num_search
             sql_conn.Open()
-            date_WOdate.Value = Convert.ToString(sql_queryPulldata_WODATE.ExecuteScalar())
-            text_PartNum.Text = Convert.ToString(sql_queryPulldata_PARTNUM.ExecuteScalar())
-            combo_ProductType.Text = Convert.ToString(sql_queryPulldata_PRODUCT.ExecuteScalar())
-            combo_Size.Text = Convert.ToString(sql_queryPulldata_SIZE.ExecuteScalar())
-            combo_Pressure.Text = Convert.ToString(sql_queryPulldata_PRESSURE.ExecuteScalar())
-            combo_Operator.Text = Convert.ToString(sql_queryPulldata_HHPP.ExecuteScalar())
-            combo_TempClass.Text = Convert.ToString(sql_queryPulldata_TEMPCLASS.ExecuteScalar())
-            combo_Trim.Text = Convert.ToString(sql_queryPulldata_TRIM.ExecuteScalar())
-            combo_Style.Text = Convert.ToString(sql_queryPulldata_STYLE.ExecuteScalar())
-            combo_PSL.Text = Convert.ToString(sql_queryPulldata_PSL.ExecuteScalar())
-            combo_PR.Text = Convert.ToString(sql_queryPulldata_PR.ExecuteScalar())
-            text_Qty.Text = Convert.ToString(sql_queryPulldata_QTY.ExecuteScalar())
-            combo_Customer.Text = Convert.ToString(sql_queryPulldata_CUSTOMER.ExecuteScalar())
-            text_Notes.Text = Convert.ToString(sql_queryPulldata_NOTES.ExecuteScalar())
-            text_POnum.Text = Convert.ToString(sql_queryPulldata_PONUM.ExecuteScalar())
-            date_DueDate.Value = Convert.ToString(sql_queryPulldata_PODUE.ExecuteScalar())
-            date_ShipDate.Value = Convert.ToString(sql_queryPulldata_SHIPDATE.ExecuteScalar())
-            text_DeliveryTicketNum.Text = Convert.ToString(sql_queryPulldata_DELIVERYNUM.ExecuteScalar())
-            date_InvDate.Value = Convert.ToString(sql_queryPulldata_INVDATE.ExecuteScalar())
-            text_InvNum.Text = Convert.ToString(sql_queryPulldata_INVNUM.ExecuteScalar())
-            combo_ShipTerms.Text = Convert.ToString(sql_queryPulldata_SHIPMETHOD.ExecuteScalar())
-            text_QBBAnum.Text = Convert.ToString(sql_queryPulldata_QBBANUM.ExecuteScalar())
+
+            'make sure we don't try to pull DBNull data because it will throw an error
+            If Not IsDBNull(sql_queryPulldata_PARTNUM.ExecuteScalar()) Then text_PartNum.Text = sql_queryPulldata_PARTNUM.ExecuteScalar()
+            If Not IsDBNull(sql_queryPulldata_PRODUCT.ExecuteScalar()) Then combo_ProductType.Text = sql_queryPulldata_PRODUCT.ExecuteScalar()
+            If Not IsDBNull(sql_queryPulldata_SIZE.ExecuteScalar()) Then combo_Size.Text = sql_queryPulldata_SIZE.ExecuteScalar()
+            If Not IsDBNull(sql_queryPulldata_PRESSURE.ExecuteScalar()) Then combo_Pressure.Text = sql_queryPulldata_PRESSURE.ExecuteScalar()
+            If Not IsDBNull(sql_queryPulldata_HHPP.ExecuteScalar()) Then combo_Operator.Text = sql_queryPulldata_HHPP.ExecuteScalar()
+            If Not IsDBNull(sql_queryPulldata_TEMPCLASS.ExecuteScalar()) Then combo_TempClass.Text = sql_queryPulldata_TEMPCLASS.ExecuteScalar()
+            If Not IsDBNull(sql_queryPulldata_TRIM.ExecuteScalar()) Then combo_Trim.Text = sql_queryPulldata_TRIM.ExecuteScalar()
+            If Not IsDBNull(sql_queryPulldata_STYLE.ExecuteScalar()) Then combo_Style.Text = sql_queryPulldata_STYLE.ExecuteScalar()
+            If Not IsDBNull(sql_queryPulldata_PSL.ExecuteScalar()) Then combo_PSL.Text = sql_queryPulldata_PSL.ExecuteScalar()
+            If Not IsDBNull(sql_queryPulldata_PR.ExecuteScalar()) Then combo_PR.Text = sql_queryPulldata_PR.ExecuteScalar()
+            If Not IsDBNull(sql_queryPulldata_QTY.ExecuteScalar()) Then text_Qty.Text = sql_queryPulldata_QTY.ExecuteScalar()
+            If Not IsDBNull(sql_queryPulldata_CUSTOMER.ExecuteScalar()) Then combo_Customer.Text = sql_queryPulldata_CUSTOMER.ExecuteScalar()
+            If Not IsDBNull(sql_queryPulldata_NOTES.ExecuteScalar()) Then text_Notes.Text = sql_queryPulldata_NOTES.ExecuteScalar()
+            If Not IsDBNull(sql_queryPulldata_PONUM.ExecuteScalar()) Then text_POnum.Text = sql_queryPulldata_PONUM.ExecuteScalar()
+            If Not IsDBNull(sql_queryPulldata_DELIVERYNUM.ExecuteScalar()) Then text_DeliveryTicketNum.Text = sql_queryPulldata_DELIVERYNUM.ExecuteScalar()
+            If Not IsDBNull(sql_queryPulldata_INVNUM.ExecuteScalar()) Then text_InvNum.Text = sql_queryPulldata_INVNUM.ExecuteScalar()
+            If Not IsDBNull(sql_queryPulldata_SHIPMETHOD.ExecuteScalar()) Then combo_ShipTerms.Text = sql_queryPulldata_SHIPMETHOD.ExecuteScalar()
+            If Not IsDBNull(sql_queryPulldata_QBBANUM.ExecuteScalar()) Then text_QBBAnum.Text = sql_queryPulldata_QBBANUM.ExecuteScalar()
+            If Not IsDBNull(sql_queryPulldata_WODATE.ExecuteScalar()) Then date_WOdate.Value = sql_queryPulldata_WODATE.ExecuteScalar()
+            If Not IsDBNull(sql_queryPulldata_PODUE.ExecuteScalar()) Then date_DueDate.Value = sql_queryPulldata_PODUE.ExecuteScalar()
+            If Not IsDBNull(sql_queryPulldata_SHIPDATE.ExecuteScalar()) Then date_ShipDate.Value = sql_queryPulldata_SHIPDATE.ExecuteScalar()
+            If Not IsDBNull(sql_queryPulldata_INVDATE.ExecuteScalar()) Then date_InvDate.Value = sql_queryPulldata_INVDATE.ExecuteScalar()
+
             sql_conn.Close()
             record_status = True
         Catch ex As Exception

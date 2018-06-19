@@ -1,2 +1,5 @@
-﻿Version 0.9.2 - June 18th, 2018
+﻿Version 0.9.3 - June 19th, 2018
+	- Changed the way the "Edit Data" screen pulls values from DB. It will not check for null values and do nothing if found.
+
+Version 0.9.2 - June 18th, 2018
 	- Added changelog.txt
