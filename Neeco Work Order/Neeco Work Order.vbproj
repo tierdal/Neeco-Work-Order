@@ -26,7 +26,7 @@
     <MapFileExtensions>true</MapFileExtensions>
     <PublisherName>Egor Shumeyko</PublisherName>
     <ApplicationRevision>1</ApplicationRevision>
-    <ApplicationVersion>0.9.4.%2a</ApplicationVersion>
+    <ApplicationVersion>0.9.5.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>

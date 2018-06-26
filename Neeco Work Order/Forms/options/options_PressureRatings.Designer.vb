@@ -145,8 +145,8 @@ Partial Class options_PressureRatings
         '
         'options_PressureRatings
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.ClientSize = New System.Drawing.Size(284, 411)
         Me.Controls.Add(Me.Tbl_term_PressureDataGridView)
         Me.Controls.Add(Me.Tbl_term_PressureBindingNavigator)

@@ -1,3 +1,6 @@
+Version 0.9.5 - June 26th, 2018
+	- Changed the AutoScaleMode property of each form to dpi for high-rez displays.
+
 Version 0.9.4 - June 19th, 2018
 	- Changed the properties of all forms to prevent resizing / maximizing by user.
 	- Changed the location of the changelog file to Resources folder.
