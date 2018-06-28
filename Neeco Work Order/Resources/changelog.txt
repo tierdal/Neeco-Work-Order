@@ -1,3 +1,7 @@
+Version 0.9.6.3 - June 28th, 2016
+	- THIS IS A NON-PRODUCTION VERSION. THINGS ARE BROKEN.
+	- Code commited strictly for backup purposes. Full changelog to follow with a production release.
+
 Version 0.9.6.2 - June 28th, 2018
 	- THIS IS A NON-PRODUCTION VERSION. THINGS ARE BROKEN.
 	- Code commited strictly for backup purposes. Full changelog to follow with a production release.

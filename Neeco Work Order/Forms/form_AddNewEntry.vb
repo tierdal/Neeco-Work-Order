@@ -1,11 +1,4 @@
 ﻿Public Class form_AddNewEntry
-    Private Sub Tbl_WOnumBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs)
-        Me.Validate()
-        Me.Tbl_WOnumBindingSource.EndEdit()
-        Me.TableAdapterManager.UpdateAll(Me.Db_WOlogDataSet)
-
-    End Sub
-
     Private Sub form_AddNewEntry_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'Db_WOlogDataSet.tbl_term_Customers10' table. You can move, or remove it, as needed.
         Me.Tbl_term_Customers10TableAdapter.Fill(Me.Db_WOlogDataSet.tbl_term_Customers10)
@@ -73,9 +66,9 @@
 
         'WO FIELDS
         date_WOdate.Value = Date.Today
+        combo_Status.SelectedItem = ""
         text_QBBAnum.Text = ""
         text_Qty.Text = ""
-        combo_Status.SelectedItem = ""
 
         'PRODUCT FIELDS
         text_PartNum.Text = ""
@@ -84,11 +77,11 @@
         combo_Pressure.SelectedIndex = -1
         combo_ProductType.SelectedIndex = -1
         combo_PSL.SelectedIndex = -1
-        'combo_ShipTerms.SelectedIndex = -1
         combo_Size.SelectedIndex = -1
         combo_Style.SelectedIndex = -1
         combo_TempClass.SelectedIndex = -1
         combo_Trim.SelectedIndex = -1
+        check_BO.Checked = False
 
         'SHIP FIELDS
         text_POnum1.Text = ""
@@ -101,13 +94,49 @@
         text_POnum8.Text = ""
         text_POnum9.Text = ""
         text_POnum10.Text = ""
-        'combo_Customer1.SelectedIndex = 0
-        'combo_Customer2.SelectedIndex = -1
+        combo_Customer1.SelectedIndex = 0
+        combo_Customer2.SelectedIndex = 0
+        combo_Customer3.SelectedIndex = 0
+        combo_Customer4.SelectedIndex = 0
+        combo_Customer5.SelectedIndex = 0
+        combo_Customer6.SelectedIndex = 0
+        combo_Customer7.SelectedIndex = 0
+        combo_Customer8.SelectedIndex = 0
+        combo_Customer9.SelectedIndex = 0
+        combo_Customer10.SelectedIndex = 0
         text_QtyShip1.Text = ""
+        text_QtyShip2.Text = ""
+        text_QtyShip3.Text = ""
+        text_QtyShip4.Text = ""
+        text_QtyShip5.Text = ""
+        text_QtyShip6.Text = ""
+        text_QtyShip7.Text = ""
+        text_QtyShip8.Text = ""
+        text_QtyShip9.Text = ""
+        text_QtyShip10.Text = ""
         date_ShipDate1.Value = Date.Today
+        date_ShipDate2.Value = Date.Today
+        date_ShipDate3.Value = Date.Today
+        date_ShipDate4.Value = Date.Today
+        date_ShipDate5.Value = Date.Today
+        date_ShipDate6.Value = Date.Today
+        date_ShipDate7.Value = Date.Today
+        date_ShipDate8.Value = Date.Today
+        date_ShipDate9.Value = Date.Today
+        date_ShipDate10.Value = Date.Today
         text_Ticket1.Text = ""
+        text_Ticket2.Text = ""
+        text_Ticket3.Text = ""
+        text_Ticket4.Text = ""
+        text_Ticket5.Text = ""
+        text_Ticket6.Text = ""
+        text_Ticket7.Text = ""
+        text_Ticket8.Text = ""
+        text_Ticket9.Text = ""
+        text_Ticket10.Text = ""
 
     End Sub
+
     Sub PullWOnum()
         'define vars
         Dim sql_conn As New OleDb.OleDbConnection
@@ -133,6 +162,7 @@
         End Try
 
     End Sub
+
     Sub PushWOnum()
         'define vars
         Dim sql_conn As New OleDb.OleDbConnection
@@ -174,16 +204,21 @@
         sql_conn.ConnectionString = conn_string
         sql_queryInsertData.Connection = sql_conn
 
-
+        'gets username for auditing purposes
         current_user = Environ("Username")
 
+
         'validate data
-        If combo_Customer1.Text = "" Then
-            MsgBox("Please select Customer")
-            Exit Sub
-        End If
-        If text_PartNum.Text = "" Then
-            MsgBox("Please type a Part Number")
+        'If combo_Customer1.Text = "" Then
+        '    MsgBox("Please select Customer")
+        '    Exit Sub
+        'End If
+        'If text_PartNum.Text = "" Then
+        '    MsgBox("Please type a Part Number")
+        '    Exit Sub
+        'End If
+        If combo_Status.Text = "" Then
+            MsgBox("Please select a Status")
             Exit Sub
         End If
         If text_Qty.Text = "" Then
@@ -195,36 +230,84 @@
         PullWOnum()
 
         'generate Query
-        sql_queryInsertData.CommandText = "INSERT INTO tbl_data_WOlog([fld_wo_num],[fld_wo_date],[fld_part_num],[fld_product],[fld_size],[fld_pressure],[fld_hhpp],[fld_tempclass],[fld_trim],[fld_style],[fld_psl],[fld_pr],[fld_qty],[fld_customer],[fld_notes],[fld_po_num],[fld_ship_date],[fld_delivery_num],[fld_qb_ba_num],[fld_CreatedBy],[fld_CreatedByDate],[fld_LastModifiedBy],[fld_LastModifiedDate])VALUES(@WONUM,@WODATE,@PARTNUM,@PRODUCT,@SIZE,@PRESSURE,@HHPP,@TEMPCLASS,@TRIM,@STYLE,@PSL,@PR,@QTY,@CUSTOMER,@NOTES,@PONUM,@SHIPDATE,@DELIVERYNUM,@QBBANUM,@CREATEDBY,@CREATEDBYDATE,@MODIFIEDBY,@MODIFIEDBYDATE)"
+        sql_queryInsertData.CommandText = "INSERT INTO tbl_data_WOlog([fld_wo_num],[fld_wo_date],[fld_status],[fld_qb_ba_num],[fld_qty],[fld_part_num],[fld_product],[fld_style],[fld_size],[fld_pressure],[fld_tempclass],[fld_trim],[fld_psl],[fld_pr],[fld_hhpp],[fld_buyout],[fld_notes],[fld_s1_po],[fld_s1_customer],[fld_s1_qty],[fld_s1_date],[fld_s1_ticket],[fld_s2_po],[fld_s2_customer],[fld_s2_qty],[fld_s2_date],[fld_s2_ticket],[fld_s3_po],[fld_s3_customer],[fld_s3_qty],[fld_s3_date],[fld_s3_ticket],[fld_s4_po],[fld_s4_customer],[fld_s4_qty],[fld_s4_date],[fld_s4_ticket],[fld_s5_po],[fld_s5_customer],[fld_s5_qty],[fld_s5_date],[fld_s5_ticket],[fld_s6_po],[fld_s6_customer],[fld_s6_qty],[fld_s6_date],[fld_s6_ticket],[fld_s7_po],[fld_s7_customer],[fld_s7_qty],[fld_s7_date],[fld_s7_ticket],[fld_s8_po],[fld_s8_customer],[fld_s8_qty],[fld_s8_date],[fld_s8_ticket],[fld_s9_po],[fld_s9_customer],[fld_s9_qty],[fld_s9_date],[fld_s9_ticket],[fld_s10_po],[fld_s10_customer],[fld_s10_qty],[fld_s10_date],[fld_s10_ticket],[fld_CreatedBy],[fld_CreatedByDate],[fld_LastModifiedBy],[fld_LastModifiedDate])VALUES(@WONUM,@WODATE,@STATUS,@QBBANUM,@QTY,@PARTNUM,@PRODUCT,@STYLE,@SIZE,@PRESSURE,@TEMPCLASS,@TRIM,@PSL,@PR,@HHPP,@BUYOUT,@NOTES,@PONUM1,@CUSTOMER1,@SHIPQTY1,@SHIPDATE1,@TICKET1,@PONUM2,@CUSTOMER2,@SHIPQTY2,@SHIPDATE2,@TICKET2,@PONUM3,@CUSTOMER3,@SHIPQTY3,@SHIPDATE3,@TICKET3,@PONUM4,@CUSTOMER4,@SHIPQTY4,@SHIPDATE4,@TICKET4,@PONUM5,@CUSTOMER5,@SHIPQTY5,@SHIPDATE5,@TICKET5,@PONUM6,@CUSTOMER6,@SHIPQTY6,@SHIPDATE6,@TICKET6,@PONUM7,@CUSTOMER7,@SHIPQTY7,@SHIPDATE7,@TICKET7,@PONUM8,@CUSTOMER8,@SHIPQTY8,@SHIPDATE8,@TICKET8,@PONUM9,@CUSTOMER9,@SHIPQTY9,@SHIPDATE9,@TICKET9,@PONUM10,@CUSTOMER10,@SHIPQTY10,@SHIPDATE10,@TICKET10,@CREATEDBY,@CREATEDBYDATE,@MODIFIEDBY,@MODIFIEDBYDATE)"
         sql_queryInsertData.Parameters.AddWithValue("@WONUM", text_WOnum.Text)
         sql_queryInsertData.Parameters.AddWithValue("@WODATE", date_WOdate.Value.Date)
+        sql_queryInsertData.Parameters.AddWithValue("@STATUS", combo_Status.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@QBBANUM", text_QBBAnum.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@QTY", text_Qty.Text)
+
         sql_queryInsertData.Parameters.AddWithValue("@PARTNUM", text_PartNum.Text)
         sql_queryInsertData.Parameters.AddWithValue("@PRODUCT", combo_ProductType.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@STYLE", combo_Style.Text)
         sql_queryInsertData.Parameters.AddWithValue("@SIZE", combo_Size.Text)
         sql_queryInsertData.Parameters.AddWithValue("@PRESSURE", combo_Pressure.Text)
-        sql_queryInsertData.Parameters.AddWithValue("@HHPP", combo_Operator.Text)
         sql_queryInsertData.Parameters.AddWithValue("@TEMPCLASS", combo_TempClass.Text)
         sql_queryInsertData.Parameters.AddWithValue("@TRIM", combo_Trim.Text)
-        sql_queryInsertData.Parameters.AddWithValue("@STYLE", combo_Style.Text)
         sql_queryInsertData.Parameters.AddWithValue("@PSL", combo_PSL.Text)
         sql_queryInsertData.Parameters.AddWithValue("@PR", combo_PR.Text)
-        sql_queryInsertData.Parameters.AddWithValue("@QTY", text_Qty.Text)
-        sql_queryInsertData.Parameters.AddWithValue("@CUSTOMER", combo_Customer1.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@HHPP", combo_Operator.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@BUYOUT", check_BO.CheckState)
+
         sql_queryInsertData.Parameters.AddWithValue("@NOTES", text_Notes.Text)
-        sql_queryInsertData.Parameters.AddWithValue("@PONUM", text_POnum1.Text)
-        'sql_queryInsertData.Parameters.AddWithValue("@PODUE", date_DueDate.Value.Date)
-        sql_queryInsertData.Parameters.AddWithValue("@SHIPDATE", date_ShipDate1.Value.Date)
-        sql_queryInsertData.Parameters.AddWithValue("@DELIVERYNUM", text_Ticket1.Text)
-        'sql_queryInsertData.Parameters.AddWithValue("@INVDATE", date_InvDate.Value.Date)
-        'sql_queryInsertData.Parameters.AddWithValue("@INVNUM", text_InvNum.Text)
-        'sql_queryInsertData.Parameters.AddWithValue("@SHIPMETHOD", combo_ShipTerms.Text)
-        'sql_queryInsertData.Parameters.AddWithValue("@APIAUDIT", "")
-        sql_queryInsertData.Parameters.AddWithValue("@QBBANUM", text_QBBAnum.Text)
+
+        sql_queryInsertData.Parameters.AddWithValue("@PONUM1", text_POnum1.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@CUSTOMER1", combo_Customer1.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@SHIPQTY1", text_QtyShip1.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@SHIPDATE1", date_ShipDate1.Value.Date)
+        sql_queryInsertData.Parameters.AddWithValue("@TICKET1", text_Ticket1.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@PONUM2", text_POnum2.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@CUSTOMER2", combo_Customer2.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@SHIPQTY2", text_QtyShip2.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@SHIPDATE2", date_ShipDate2.Value.Date)
+        sql_queryInsertData.Parameters.AddWithValue("@TICKET2", text_Ticket2.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@PONUM3", text_POnum3.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@CUSTOMER3", combo_Customer3.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@SHIPQTY3", text_QtyShip3.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@SHIPDATE3", date_ShipDate3.Value.Date)
+        sql_queryInsertData.Parameters.AddWithValue("@TICKET3", text_Ticket3.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@PONUM4", text_POnum4.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@CUSTOMER4", combo_Customer4.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@SHIPQTY4", text_QtyShip4.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@SHIPDATE4", date_ShipDate4.Value.Date)
+        sql_queryInsertData.Parameters.AddWithValue("@TICKET4", text_Ticket4.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@PONUM5", text_POnum5.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@CUSTOMER5", combo_Customer5.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@SHIPQTY5", text_QtyShip5.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@SHIPDATE5", date_ShipDate5.Value.Date)
+        sql_queryInsertData.Parameters.AddWithValue("@TICKET5", text_Ticket5.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@PONUM6", text_POnum6.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@CUSTOMER6", combo_Customer6.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@SHIPQTY6", text_QtyShip6.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@SHIPDATE6", date_ShipDate6.Value.Date)
+        sql_queryInsertData.Parameters.AddWithValue("@TICKET6", text_Ticket6.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@PONUM7", text_POnum7.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@CUSTOMER7", combo_Customer7.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@SHIPQTY7", text_QtyShip7.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@SHIPDATE7", date_ShipDate7.Value.Date)
+        sql_queryInsertData.Parameters.AddWithValue("@TICKET7", text_Ticket7.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@PONUM8", text_POnum8.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@CUSTOMER8", combo_Customer8.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@SHIPQTY8", text_QtyShip8.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@SHIPDATE8", date_ShipDate8.Value.Date)
+        sql_queryInsertData.Parameters.AddWithValue("@TICKET8", text_Ticket8.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@PONUM9", text_POnum9.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@CUSTOMER9", combo_Customer9.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@SHIPQTY9", text_QtyShip9.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@SHIPDATE9", date_ShipDate9.Value.Date)
+        sql_queryInsertData.Parameters.AddWithValue("@TICKET9", text_Ticket9.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@PONUM10", text_POnum10.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@CUSTOMER10", combo_Customer10.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@SHIPQTY10", text_QtyShip10.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@SHIPDATE10", date_ShipDate10.Value.Date)
+        sql_queryInsertData.Parameters.AddWithValue("@TICKET10", text_Ticket10.Text)
+
         sql_queryInsertData.Parameters.AddWithValue("@CREATEDBY", current_user)
         sql_queryInsertData.Parameters.AddWithValue("@CREATEDBYDATE", Date.Today)
         sql_queryInsertData.Parameters.AddWithValue("@MODIFIEDBY", current_user)
         sql_queryInsertData.Parameters.AddWithValue("@MODIFIEDBYDATE", Date.Today)
 
+        'On Error Resume Next
         'execute Query - sql insert into access db
         Try
             sql_conn.Open()
@@ -240,7 +323,69 @@
 
     End Sub
 
+
+    'CAUSES VALIDATION TO MAKE SURE ONLY NUMBERS ARE ENTERED
     Private Sub text_Qty_KeyPress(sender As Object, e As KeyPressEventArgs) Handles text_Qty.KeyPress
+        If (e.KeyChar < "0" OrElse e.KeyChar > "9") _
+           AndAlso e.KeyChar <> ControlChars.Back AndAlso e.KeyChar <> "." AndAlso e.KeyChar <> "," Then
+            e.Handled = True
+        End If
+    End Sub
+    Private Sub text_QtyShip1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles text_QtyShip1.KeyPress
+        If (e.KeyChar < "0" OrElse e.KeyChar > "9") _
+           AndAlso e.KeyChar <> ControlChars.Back AndAlso e.KeyChar <> "." AndAlso e.KeyChar <> "," Then
+            e.Handled = True
+        End If
+    End Sub
+    Private Sub text_QtyShip2_KeyPress(sender As Object, e As KeyPressEventArgs) Handles text_QtyShip2.KeyPress
+        If (e.KeyChar < "0" OrElse e.KeyChar > "9") _
+           AndAlso e.KeyChar <> ControlChars.Back AndAlso e.KeyChar <> "." AndAlso e.KeyChar <> "," Then
+            e.Handled = True
+        End If
+    End Sub
+    Private Sub text_QtyShip3_KeyPress(sender As Object, e As KeyPressEventArgs) Handles text_QtyShip3.KeyPress
+        If (e.KeyChar < "0" OrElse e.KeyChar > "9") _
+           AndAlso e.KeyChar <> ControlChars.Back AndAlso e.KeyChar <> "." AndAlso e.KeyChar <> "," Then
+            e.Handled = True
+        End If
+    End Sub
+    Private Sub text_QtyShip4_KeyPress(sender As Object, e As KeyPressEventArgs) Handles text_QtyShip4.KeyPress
+        If (e.KeyChar < "0" OrElse e.KeyChar > "9") _
+           AndAlso e.KeyChar <> ControlChars.Back AndAlso e.KeyChar <> "." AndAlso e.KeyChar <> "," Then
+            e.Handled = True
+        End If
+    End Sub
+    Private Sub text_QtyShip5_KeyPress(sender As Object, e As KeyPressEventArgs) Handles text_QtyShip5.KeyPress
+        If (e.KeyChar < "0" OrElse e.KeyChar > "9") _
+           AndAlso e.KeyChar <> ControlChars.Back AndAlso e.KeyChar <> "." AndAlso e.KeyChar <> "," Then
+            e.Handled = True
+        End If
+    End Sub
+    Private Sub text_QtyShip6_KeyPress(sender As Object, e As KeyPressEventArgs) Handles text_QtyShip6.KeyPress
+        If (e.KeyChar < "0" OrElse e.KeyChar > "9") _
+           AndAlso e.KeyChar <> ControlChars.Back AndAlso e.KeyChar <> "." AndAlso e.KeyChar <> "," Then
+            e.Handled = True
+        End If
+    End Sub
+    Private Sub text_QtyShip7_KeyPress(sender As Object, e As KeyPressEventArgs) Handles text_QtyShip7.KeyPress
+        If (e.KeyChar < "0" OrElse e.KeyChar > "9") _
+           AndAlso e.KeyChar <> ControlChars.Back AndAlso e.KeyChar <> "." AndAlso e.KeyChar <> "," Then
+            e.Handled = True
+        End If
+    End Sub
+    Private Sub text_QtyShip8_KeyPress(sender As Object, e As KeyPressEventArgs) Handles text_QtyShip8.KeyPress
+        If (e.KeyChar < "0" OrElse e.KeyChar > "9") _
+           AndAlso e.KeyChar <> ControlChars.Back AndAlso e.KeyChar <> "." AndAlso e.KeyChar <> "," Then
+            e.Handled = True
+        End If
+    End Sub
+    Private Sub text_QtyShip9_KeyPress(sender As Object, e As KeyPressEventArgs) Handles text_QtyShip9.KeyPress
+        If (e.KeyChar < "0" OrElse e.KeyChar > "9") _
+           AndAlso e.KeyChar <> ControlChars.Back AndAlso e.KeyChar <> "." AndAlso e.KeyChar <> "," Then
+            e.Handled = True
+        End If
+    End Sub
+    Private Sub text_QtyShip10_KeyPress(sender As Object, e As KeyPressEventArgs) Handles text_QtyShip10.KeyPress
         If (e.KeyChar < "0" OrElse e.KeyChar > "9") _
            AndAlso e.KeyChar <> ControlChars.Back AndAlso e.KeyChar <> "." AndAlso e.KeyChar <> "," Then
             e.Handled = True

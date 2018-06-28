@@ -298,7 +298,7 @@
                                     "', fld_ship_method='" & combo_ShipTerms.Text &
                                     "', fld_qb_ba_num='" & text_QBBAnum.Text &
                                     "', fld_LastModifiedBy='" & current_user &
-                                    "', fld_LastModifiedDate='" & Date.Today & "' " &
+                                    "', fld_LastModifiedDate='" & Date.Today & "'" &
                                     "WHERE fld_wo_num = '" & text_WOnum.Text & "'"
 
         'execute Query - sql insert into access db

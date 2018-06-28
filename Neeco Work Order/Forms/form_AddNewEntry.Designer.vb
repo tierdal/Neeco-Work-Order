@@ -1829,6 +1829,9 @@ Partial Class form_AddNewEntry
         '
         'text_Notes
         '
+        Me.text_Notes.AcceptsReturn = True
+        Me.text_Notes.AcceptsTab = True
+        Me.text_Notes.AllowDrop = True
         Me.text_Notes.Dock = System.Windows.Forms.DockStyle.Fill
         Me.text_Notes.Location = New System.Drawing.Point(3, 3)
         Me.text_Notes.Multiline = True
