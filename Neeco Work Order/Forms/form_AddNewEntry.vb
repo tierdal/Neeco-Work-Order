@@ -1,5 +1,5 @@
 ﻿Public Class form_AddNewEntry
-    Private Sub Tbl_WOnumBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs) Handles Tbl_WOnumBindingNavigatorSaveItem.Click
+    Private Sub Tbl_WOnumBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs)
         Me.Validate()
         Me.Tbl_WOnumBindingSource.EndEdit()
         Me.TableAdapterManager.UpdateAll(Me.Db_WOlogDataSet)
@@ -7,6 +7,26 @@
     End Sub
 
     Private Sub form_AddNewEntry_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'Db_WOlogDataSet.tbl_term_Customers10' table. You can move, or remove it, as needed.
+        Me.Tbl_term_Customers10TableAdapter.Fill(Me.Db_WOlogDataSet.tbl_term_Customers10)
+        'TODO: This line of code loads data into the 'Db_WOlogDataSet.tbl_term_Customers9' table. You can move, or remove it, as needed.
+        Me.Tbl_term_Customers9TableAdapter.Fill(Me.Db_WOlogDataSet.tbl_term_Customers9)
+        'TODO: This line of code loads data into the 'Db_WOlogDataSet.tbl_term_Customers8' table. You can move, or remove it, as needed.
+        Me.Tbl_term_Customers8TableAdapter.Fill(Me.Db_WOlogDataSet.tbl_term_Customers8)
+        'TODO: This line of code loads data into the 'Db_WOlogDataSet.tbl_term_Customers7' table. You can move, or remove it, as needed.
+        Me.Tbl_term_Customers7TableAdapter.Fill(Me.Db_WOlogDataSet.tbl_term_Customers7)
+        'TODO: This line of code loads data into the 'Db_WOlogDataSet.tbl_term_Customers6' table. You can move, or remove it, as needed.
+        Me.Tbl_term_Customers6TableAdapter.Fill(Me.Db_WOlogDataSet.tbl_term_Customers6)
+        'TODO: This line of code loads data into the 'Db_WOlogDataSet.tbl_term_Customers5' table. You can move, or remove it, as needed.
+        Me.Tbl_term_Customers5TableAdapter.Fill(Me.Db_WOlogDataSet.tbl_term_Customers5)
+        'TODO: This line of code loads data into the 'Db_WOlogDataSet.tbl_term_Customers4' table. You can move, or remove it, as needed.
+        Me.Tbl_term_Customers4TableAdapter.Fill(Me.Db_WOlogDataSet.tbl_term_Customers4)
+        'TODO: This line of code loads data into the 'Db_WOlogDataSet1.tbl_term_Customers3' table. You can move, or remove it, as needed.
+        Me.Tbl_term_Customers3TableAdapter.Fill(Me.Db_WOlogDataSet.tbl_term_Customers3)
+        'TODO: This line of code loads data into the 'Db_WOlogDataSet1.tbl_term_Customers2' table. You can move, or remove it, as needed.
+        Me.Tbl_term_Customers2TableAdapter.Fill(Me.Db_WOlogDataSet.tbl_term_Customers2)
+        'TODO: This line of code loads data into the 'Db_WOlogDataSet.tbl_term_Customers1' table. You can move, or remove it, as needed.
+        Me.Tbl_term_Customers1TableAdapter.Fill(Me.Db_WOlogDataSet.tbl_term_Customers1)
         'TODO: This line of code loads data into the 'Db_WOlogDataSet.tbl_term_Trim' table. You can move, or remove it, as needed.
         Me.Tbl_term_TrimTableAdapter.Fill(Me.Db_WOlogDataSet.tbl_term_Trim)
         'TODO: This line of code loads data into the 'Db_WOlogDataSet.tbl_term_TempClass' table. You can move, or remove it, as needed.
@@ -27,12 +47,12 @@
         Me.Tbl_term_PRTableAdapter.Fill(Me.Db_WOlogDataSet.tbl_term_PR)
         'TODO: This line of code loads data into the 'Db_WOlogDataSet.tbl_term_HHPP' table. You can move, or remove it, as needed.
         Me.Tbl_term_HHPPTableAdapter.Fill(Me.Db_WOlogDataSet.tbl_term_HHPP)
-        'TODO: This line of code loads data into the 'Db_WOlogDataSet.tbl_term_Customers' table. You can move, or remove it, as needed.
-        Me.Tbl_term_CustomersTableAdapter.Fill(Me.Db_WOlogDataSet.tbl_term_Customers)
         'TODO: This line of code loads data into the 'Db_WOlogDataSet.tbl_WOnum' table. You can move, or remove it, as needed.
         Me.Tbl_WOnumTableAdapter.Fill(Me.Db_WOlogDataSet.tbl_WOnum)
 
         Clear_Form()
+
+        date_WOdate.Select()
 
     End Sub
 
@@ -47,20 +67,18 @@
 
     Sub Clear_Form()
         'Clears Form by resetting all values
-        'commented items are deprecated
-        date_WOdate.Value = Date.Today
-        'date_DueDate.Value = Date.Today
-        'date_InvDate.Value = Date.Today
-        date_ShipDate.Value = Date.Today
-        text_DeliveryTicketNum.Text = ""
-        'text_InvNum.Text = ""
+
+        'NOTES
         text_Notes.Text = ""
-        text_PartNum.Text = ""
-        text_POnum.Text = ""
+
+        'WO FIELDS
+        date_WOdate.Value = Date.Today
         text_QBBAnum.Text = ""
         text_Qty.Text = ""
-        'text_WOnum.Text = ""
-        combo_Customer.SelectedIndex = -1
+        combo_Status.SelectedItem = ""
+
+        'PRODUCT FIELDS
+        text_PartNum.Text = ""
         combo_Operator.SelectedIndex = -1
         combo_PR.SelectedIndex = -1
         combo_Pressure.SelectedIndex = -1
@@ -71,6 +89,24 @@
         combo_Style.SelectedIndex = -1
         combo_TempClass.SelectedIndex = -1
         combo_Trim.SelectedIndex = -1
+
+        'SHIP FIELDS
+        text_POnum1.Text = ""
+        text_POnum2.Text = ""
+        text_POnum3.Text = ""
+        text_POnum4.Text = ""
+        text_POnum5.Text = ""
+        text_POnum6.Text = ""
+        text_POnum7.Text = ""
+        text_POnum8.Text = ""
+        text_POnum9.Text = ""
+        text_POnum10.Text = ""
+        'combo_Customer1.SelectedIndex = 0
+        'combo_Customer2.SelectedIndex = -1
+        text_QtyShip1.Text = ""
+        date_ShipDate1.Value = Date.Today
+        text_Ticket1.Text = ""
+
     End Sub
     Sub PullWOnum()
         'define vars
@@ -142,7 +178,7 @@
         current_user = Environ("Username")
 
         'validate data
-        If combo_Customer.Text = "" Then
+        If combo_Customer1.Text = "" Then
             MsgBox("Please select Customer")
             Exit Sub
         End If
@@ -173,12 +209,12 @@
         sql_queryInsertData.Parameters.AddWithValue("@PSL", combo_PSL.Text)
         sql_queryInsertData.Parameters.AddWithValue("@PR", combo_PR.Text)
         sql_queryInsertData.Parameters.AddWithValue("@QTY", text_Qty.Text)
-        sql_queryInsertData.Parameters.AddWithValue("@CUSTOMER", combo_Customer.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@CUSTOMER", combo_Customer1.Text)
         sql_queryInsertData.Parameters.AddWithValue("@NOTES", text_Notes.Text)
-        sql_queryInsertData.Parameters.AddWithValue("@PONUM", text_POnum.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@PONUM", text_POnum1.Text)
         'sql_queryInsertData.Parameters.AddWithValue("@PODUE", date_DueDate.Value.Date)
-        sql_queryInsertData.Parameters.AddWithValue("@SHIPDATE", date_ShipDate.Value.Date)
-        sql_queryInsertData.Parameters.AddWithValue("@DELIVERYNUM", text_DeliveryTicketNum.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@SHIPDATE", date_ShipDate1.Value.Date)
+        sql_queryInsertData.Parameters.AddWithValue("@DELIVERYNUM", text_Ticket1.Text)
         'sql_queryInsertData.Parameters.AddWithValue("@INVDATE", date_InvDate.Value.Date)
         'sql_queryInsertData.Parameters.AddWithValue("@INVNUM", text_InvNum.Text)
         'sql_queryInsertData.Parameters.AddWithValue("@SHIPMETHOD", combo_ShipTerms.Text)
@@ -210,5 +246,4 @@
             e.Handled = True
         End If
     End Sub
-
 End Class

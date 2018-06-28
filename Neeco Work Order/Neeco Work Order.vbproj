@@ -191,12 +191,6 @@
     <Compile Include="Forms\options\options_PSL.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\options\options_ShippingTerms.Designer.vb">
-      <DependentUpon>options_ShippingTerms.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\options\options_ShippingTerms.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Forms\options\options_Sizes.Designer.vb">
       <DependentUpon>options_Sizes.vb</DependentUpon>
     </Compile>
@@ -273,9 +267,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\options\options_PSL.resx">
       <DependentUpon>options_PSL.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\options\options_ShippingTerms.resx">
-      <DependentUpon>options_ShippingTerms.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\options\options_Sizes.resx">
       <DependentUpon>options_Sizes.vb</DependentUpon>

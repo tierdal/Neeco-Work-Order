@@ -66,7 +66,6 @@ Partial Class options_PR
         Me.TableAdapterManager.tbl_term_ProductTypeTableAdapter = Nothing
         Me.TableAdapterManager.tbl_term_PRTableAdapter = Me.Tbl_term_PRTableAdapter
         Me.TableAdapterManager.tbl_term_PSLTableAdapter = Nothing
-        Me.TableAdapterManager.tbl_term_ShipMethodTableAdapter = Nothing
         Me.TableAdapterManager.tbl_term_SizeTableAdapter = Nothing
         Me.TableAdapterManager.tbl_term_StyleTableAdapter = Nothing
         Me.TableAdapterManager.tbl_term_TempClassTableAdapter = Nothing

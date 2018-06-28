@@ -20,10 +20,6 @@
         options_PSL.Show()
     End Sub
 
-    Private Sub button_ShipTerms_Click(sender As Object, e As EventArgs) Handles button_ShipTerms.Click
-        options_ShippingTerms.Show()
-    End Sub
-
     Private Sub button_Sizes_Click(sender As Object, e As EventArgs) Handles button_Sizes.Click
         options_Sizes.Show()
     End Sub

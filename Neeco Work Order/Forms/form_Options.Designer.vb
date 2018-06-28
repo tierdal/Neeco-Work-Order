@@ -26,7 +26,6 @@ Partial Class form_Options
         Me.button_Customers = New System.Windows.Forms.Button()
         Me.button_ProductTypes = New System.Windows.Forms.Button()
         Me.button_PSL = New System.Windows.Forms.Button()
-        Me.button_ShipTerms = New System.Windows.Forms.Button()
         Me.button_Sizes = New System.Windows.Forms.Button()
         Me.button_Styles = New System.Windows.Forms.Button()
         Me.button_TempClasses = New System.Windows.Forms.Button()
@@ -66,18 +65,9 @@ Partial Class form_Options
         Me.button_PSL.Text = "Edit PSL"
         Me.button_PSL.UseVisualStyleBackColor = True
         '
-        'button_ShipTerms
-        '
-        Me.button_ShipTerms.Location = New System.Drawing.Point(13, 103)
-        Me.button_ShipTerms.Name = "button_ShipTerms"
-        Me.button_ShipTerms.Size = New System.Drawing.Size(200, 23)
-        Me.button_ShipTerms.TabIndex = 3
-        Me.button_ShipTerms.Text = "Edit Ship Methods"
-        Me.button_ShipTerms.UseVisualStyleBackColor = True
-        '
         'button_Sizes
         '
-        Me.button_Sizes.Location = New System.Drawing.Point(13, 133)
+        Me.button_Sizes.Location = New System.Drawing.Point(13, 102)
         Me.button_Sizes.Name = "button_Sizes"
         Me.button_Sizes.Size = New System.Drawing.Size(200, 23)
         Me.button_Sizes.TabIndex = 4
@@ -86,7 +76,7 @@ Partial Class form_Options
         '
         'button_Styles
         '
-        Me.button_Styles.Location = New System.Drawing.Point(13, 163)
+        Me.button_Styles.Location = New System.Drawing.Point(13, 132)
         Me.button_Styles.Name = "button_Styles"
         Me.button_Styles.Size = New System.Drawing.Size(200, 23)
         Me.button_Styles.TabIndex = 5
@@ -95,7 +85,7 @@ Partial Class form_Options
         '
         'button_TempClasses
         '
-        Me.button_TempClasses.Location = New System.Drawing.Point(13, 193)
+        Me.button_TempClasses.Location = New System.Drawing.Point(13, 162)
         Me.button_TempClasses.Name = "button_TempClasses"
         Me.button_TempClasses.Size = New System.Drawing.Size(200, 23)
         Me.button_TempClasses.TabIndex = 6
@@ -104,7 +94,7 @@ Partial Class form_Options
         '
         'button_Trims
         '
-        Me.button_Trims.Location = New System.Drawing.Point(13, 223)
+        Me.button_Trims.Location = New System.Drawing.Point(13, 192)
         Me.button_Trims.Name = "button_Trims"
         Me.button_Trims.Size = New System.Drawing.Size(200, 23)
         Me.button_Trims.TabIndex = 7
@@ -113,7 +103,7 @@ Partial Class form_Options
         '
         'button_PressureRatings
         '
-        Me.button_PressureRatings.Location = New System.Drawing.Point(13, 253)
+        Me.button_PressureRatings.Location = New System.Drawing.Point(13, 222)
         Me.button_PressureRatings.Name = "button_PressureRatings"
         Me.button_PressureRatings.Size = New System.Drawing.Size(200, 23)
         Me.button_PressureRatings.TabIndex = 8
@@ -122,7 +112,7 @@ Partial Class form_Options
         '
         'button_PR
         '
-        Me.button_PR.Location = New System.Drawing.Point(13, 283)
+        Me.button_PR.Location = New System.Drawing.Point(13, 252)
         Me.button_PR.Name = "button_PR"
         Me.button_PR.Size = New System.Drawing.Size(200, 23)
         Me.button_PR.TabIndex = 9
@@ -131,7 +121,7 @@ Partial Class form_Options
         '
         'button_Operators
         '
-        Me.button_Operators.Location = New System.Drawing.Point(13, 313)
+        Me.button_Operators.Location = New System.Drawing.Point(13, 282)
         Me.button_Operators.Name = "button_Operators"
         Me.button_Operators.Size = New System.Drawing.Size(200, 23)
         Me.button_Operators.TabIndex = 10
@@ -172,7 +162,7 @@ Partial Class form_Options
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.CancelButton = Me.button_Exit
-        Me.ClientSize = New System.Drawing.Size(334, 347)
+        Me.ClientSize = New System.Drawing.Size(334, 316)
         Me.Controls.Add(Me.button_Changelog)
         Me.Controls.Add(Me.button_Exit)
         Me.Controls.Add(Me.button_About)
@@ -183,7 +173,6 @@ Partial Class form_Options
         Me.Controls.Add(Me.button_TempClasses)
         Me.Controls.Add(Me.button_Styles)
         Me.Controls.Add(Me.button_Sizes)
-        Me.Controls.Add(Me.button_ShipTerms)
         Me.Controls.Add(Me.button_PSL)
         Me.Controls.Add(Me.button_ProductTypes)
         Me.Controls.Add(Me.button_Customers)
@@ -200,7 +189,6 @@ Partial Class form_Options
     Friend WithEvents button_Customers As Button
     Friend WithEvents button_ProductTypes As Button
     Friend WithEvents button_PSL As Button
-    Friend WithEvents button_ShipTerms As Button
     Friend WithEvents button_Sizes As Button
     Friend WithEvents button_Styles As Button
     Friend WithEvents button_TempClasses As Button

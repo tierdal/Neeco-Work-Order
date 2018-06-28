@@ -46,8 +46,6 @@ Partial Class form_EditEntry
         Me.Label6 = New System.Windows.Forms.Label()
         Me.text_DeliveryTicketNum = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.combo_ShipTerms = New System.Windows.Forms.ComboBox()
-        Me.TbltermShipMethodBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Db_WOlogDataSet = New Neeco_Work_Order.db_WOlogDataSet()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -92,7 +90,6 @@ Partial Class form_EditEntry
         Me.Tbl_term_ProductTypeTableAdapter = New Neeco_Work_Order.db_WOlogDataSetTableAdapters.tbl_term_ProductTypeTableAdapter()
         Me.Tbl_term_HHPPTableAdapter = New Neeco_Work_Order.db_WOlogDataSetTableAdapters.tbl_term_HHPPTableAdapter()
         Me.Tbl_term_StyleTableAdapter = New Neeco_Work_Order.db_WOlogDataSetTableAdapters.tbl_term_StyleTableAdapter()
-        Me.Tbl_term_ShipMethodTableAdapter = New Neeco_Work_Order.db_WOlogDataSetTableAdapters.tbl_term_ShipMethodTableAdapter()
         Me.Tbl_term_PressureTableAdapter = New Neeco_Work_Order.db_WOlogDataSetTableAdapters.tbl_term_PressureTableAdapter()
         Me.Tbl_term_TrimTableAdapter = New Neeco_Work_Order.db_WOlogDataSetTableAdapters.tbl_term_TrimTableAdapter()
         Me.Tbl_term_PRTableAdapter = New Neeco_Work_Order.db_WOlogDataSetTableAdapters.tbl_term_PRTableAdapter()
@@ -111,7 +108,6 @@ Partial Class form_EditEntry
         Fld_StyleLabel = New System.Windows.Forms.Label()
         Fld_WOnumLabel = New System.Windows.Forms.Label()
         Me.GroupBox3.SuspendLayout()
-        CType(Me.TbltermShipMethodBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Db_WOlogDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
         CType(Me.TbltermProductTypeBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -333,26 +329,6 @@ Partial Class form_EditEntry
         Me.Label5.Size = New System.Drawing.Size(91, 13)
         Me.Label5.TabIndex = 34
         Me.Label5.Text = "Delivery Ticket #:"
-        '
-        'combo_ShipTerms
-        '
-        Me.combo_ShipTerms.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
-        Me.combo_ShipTerms.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
-        Me.combo_ShipTerms.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.TbltermShipMethodBindingSource, "fld_ShipmentMethod", True))
-        Me.combo_ShipTerms.DataSource = Me.TbltermShipMethodBindingSource
-        Me.combo_ShipTerms.DisplayMember = "fld_ShipmentMethod"
-        Me.combo_ShipTerms.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.combo_ShipTerms.FormattingEnabled = True
-        Me.combo_ShipTerms.Location = New System.Drawing.Point(540, 20)
-        Me.combo_ShipTerms.Name = "combo_ShipTerms"
-        Me.combo_ShipTerms.Size = New System.Drawing.Size(145, 21)
-        Me.combo_ShipTerms.TabIndex = 19
-        Me.combo_ShipTerms.ValueMember = "fld_ShipmentMethod"
-        '
-        'TbltermShipMethodBindingSource
-        '
-        Me.TbltermShipMethodBindingSource.DataMember = "tbl_term_ShipMethod"
-        Me.TbltermShipMethodBindingSource.DataSource = Me.Db_WOlogDataSet
         '
         'Db_WOlogDataSet
         '
@@ -774,10 +750,6 @@ Partial Class form_EditEntry
         '
         Me.Tbl_term_StyleTableAdapter.ClearBeforeFill = True
         '
-        'Tbl_term_ShipMethodTableAdapter
-        '
-        Me.Tbl_term_ShipMethodTableAdapter.ClearBeforeFill = True
-        '
         'Tbl_term_PressureTableAdapter
         '
         Me.Tbl_term_PressureTableAdapter.ClearBeforeFill = True
@@ -820,7 +792,6 @@ Partial Class form_EditEntry
         Me.Text = "Neeco Work Order App - Edit Work Order"
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
-        CType(Me.TbltermShipMethodBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Db_WOlogDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
@@ -890,8 +861,6 @@ Partial Class form_EditEntry
     Friend WithEvents Tbl_term_HHPPTableAdapter As db_WOlogDataSetTableAdapters.tbl_term_HHPPTableAdapter
     Friend WithEvents TbltermStyleBindingSource As BindingSource
     Friend WithEvents Tbl_term_StyleTableAdapter As db_WOlogDataSetTableAdapters.tbl_term_StyleTableAdapter
-    Friend WithEvents TbltermShipMethodBindingSource As BindingSource
-    Friend WithEvents Tbl_term_ShipMethodTableAdapter As db_WOlogDataSetTableAdapters.tbl_term_ShipMethodTableAdapter
     Friend WithEvents TbltermPressureBindingSource As BindingSource
     Friend WithEvents Tbl_term_PressureTableAdapter As db_WOlogDataSetTableAdapters.tbl_term_PressureTableAdapter
     Friend WithEvents TbltermTrimBindingSource As BindingSource

@@ -35,28 +35,13 @@ Partial Class form_AddNewEntry
         Dim Fld_WOnumLabel As System.Windows.Forms.Label
         Dim Label12 As System.Windows.Forms.Label
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(form_AddNewEntry))
-        Me.Tbl_WOnumBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
-        Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
         Me.Tbl_WOnumBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Db_WOlogDataSet = New Neeco_Work_Order.db_WOlogDataSet()
-        Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
-        Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorSeparator = New System.Windows.Forms.ToolStripSeparator()
-        Me.BindingNavigatorPositionItem = New System.Windows.Forms.ToolStripTextBox()
-        Me.BindingNavigatorSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.BindingNavigatorMoveNextItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.Tbl_WOnumBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
         Me.button_Exit = New System.Windows.Forms.Button()
-        Me.Tbl_term_CustomersBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Tbl_term_HHPPBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Tbl_term_PRBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Tbl_term_PressureBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Tbl_term_PSLBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Tbl_term_ShipMethodBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Tbl_term_SizeBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Tbl_term_StyleBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Tbl_term_TempClassBindingSource = New System.Windows.Forms.BindingSource(Me.components)
@@ -64,12 +49,10 @@ Partial Class form_AddNewEntry
         Me.Tbl_term_ProductTypeBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Tbl_WOnumTableAdapter = New Neeco_Work_Order.db_WOlogDataSetTableAdapters.tbl_WOnumTableAdapter()
         Me.TableAdapterManager = New Neeco_Work_Order.db_WOlogDataSetTableAdapters.TableAdapterManager()
-        Me.Tbl_term_CustomersTableAdapter = New Neeco_Work_Order.db_WOlogDataSetTableAdapters.tbl_term_CustomersTableAdapter()
         Me.Tbl_term_HHPPTableAdapter = New Neeco_Work_Order.db_WOlogDataSetTableAdapters.tbl_term_HHPPTableAdapter()
         Me.Tbl_term_PRTableAdapter = New Neeco_Work_Order.db_WOlogDataSetTableAdapters.tbl_term_PRTableAdapter()
         Me.Tbl_term_PressureTableAdapter = New Neeco_Work_Order.db_WOlogDataSetTableAdapters.tbl_term_PressureTableAdapter()
         Me.Tbl_term_PSLTableAdapter = New Neeco_Work_Order.db_WOlogDataSetTableAdapters.tbl_term_PSLTableAdapter()
-        Me.Tbl_term_ShipMethodTableAdapter = New Neeco_Work_Order.db_WOlogDataSetTableAdapters.tbl_term_ShipMethodTableAdapter()
         Me.Tbl_term_SizeTableAdapter = New Neeco_Work_Order.db_WOlogDataSetTableAdapters.tbl_term_SizeTableAdapter()
         Me.Tbl_term_StyleTableAdapter = New Neeco_Work_Order.db_WOlogDataSetTableAdapters.tbl_term_StyleTableAdapter()
         Me.Tbl_term_TempClassTableAdapter = New Neeco_Work_Order.db_WOlogDataSetTableAdapters.tbl_term_TempClassTableAdapter()
@@ -95,7 +78,7 @@ Partial Class form_AddNewEntry
         Me.text_WOnum = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.TableLayoutPanel8 = New System.Windows.Forms.TableLayoutPanel()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.check_BO = New System.Windows.Forms.CheckBox()
         Me.TableLayoutPanel7 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.text_PartNum = New System.Windows.Forms.TextBox()
@@ -111,74 +94,95 @@ Partial Class form_AddNewEntry
         Me.combo_TempClass = New System.Windows.Forms.ComboBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.text_Ticket2 = New System.Windows.Forms.TextBox()
+        Me.text_Ticket3 = New System.Windows.Forms.TextBox()
+        Me.text_Ticket4 = New System.Windows.Forms.TextBox()
+        Me.text_Ticket5 = New System.Windows.Forms.TextBox()
+        Me.text_Ticket6 = New System.Windows.Forms.TextBox()
+        Me.text_Ticket7 = New System.Windows.Forms.TextBox()
+        Me.text_Ticket8 = New System.Windows.Forms.TextBox()
+        Me.text_Ticket9 = New System.Windows.Forms.TextBox()
+        Me.text_Ticket10 = New System.Windows.Forms.TextBox()
+        Me.date_ShipDate2 = New System.Windows.Forms.DateTimePicker()
+        Me.combo_Customer1 = New System.Windows.Forms.ComboBox()
+        Me.TbltermCustomers1BindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.date_ShipDate4 = New System.Windows.Forms.DateTimePicker()
+        Me.date_ShipDate5 = New System.Windows.Forms.DateTimePicker()
+        Me.date_ShipDate6 = New System.Windows.Forms.DateTimePicker()
+        Me.date_ShipDate7 = New System.Windows.Forms.DateTimePicker()
+        Me.date_ShipDate8 = New System.Windows.Forms.DateTimePicker()
+        Me.date_ShipDate9 = New System.Windows.Forms.DateTimePicker()
+        Me.date_ShipDate10 = New System.Windows.Forms.DateTimePicker()
+        Me.text_QtyShip2 = New System.Windows.Forms.TextBox()
+        Me.text_QtyShip4 = New System.Windows.Forms.TextBox()
+        Me.text_QtyShip6 = New System.Windows.Forms.TextBox()
+        Me.text_QtyShip7 = New System.Windows.Forms.TextBox()
+        Me.text_QtyShip8 = New System.Windows.Forms.TextBox()
+        Me.text_QtyShip3 = New System.Windows.Forms.TextBox()
+        Me.text_QtyShip9 = New System.Windows.Forms.TextBox()
+        Me.text_QtyShip10 = New System.Windows.Forms.TextBox()
+        Me.combo_Customer10 = New System.Windows.Forms.ComboBox()
+        Me.TbltermCustomers10BindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.combo_Customer9 = New System.Windows.Forms.ComboBox()
+        Me.TbltermCustomers9BindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.combo_Customer8 = New System.Windows.Forms.ComboBox()
+        Me.TbltermCustomers8BindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.combo_Customer7 = New System.Windows.Forms.ComboBox()
+        Me.TbltermCustomers7BindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.combo_Customer6 = New System.Windows.Forms.ComboBox()
+        Me.TbltermCustomers6BindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.combo_Customer5 = New System.Windows.Forms.ComboBox()
+        Me.TbltermCustomers5BindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.combo_Customer4 = New System.Windows.Forms.ComboBox()
+        Me.TbltermCustomers4BindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.combo_Customer3 = New System.Windows.Forms.ComboBox()
+        Me.TbltermCustomers3BindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.combo_Customer2 = New System.Windows.Forms.ComboBox()
+        Me.TbltermCustomers2BindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.text_POnum7 = New System.Windows.Forms.TextBox()
+        Me.text_POnum6 = New System.Windows.Forms.TextBox()
+        Me.text_POnum5 = New System.Windows.Forms.TextBox()
+        Me.text_POnum4 = New System.Windows.Forms.TextBox()
+        Me.text_POnum3 = New System.Windows.Forms.TextBox()
+        Me.text_POnum2 = New System.Windows.Forms.TextBox()
+        Me.text_POnum8 = New System.Windows.Forms.TextBox()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.date_ShipDate = New System.Windows.Forms.DateTimePicker()
+        Me.date_ShipDate1 = New System.Windows.Forms.DateTimePicker()
         Me.Label13 = New System.Windows.Forms.Label()
-        Me.text_DeliveryTicketNum = New System.Windows.Forms.TextBox()
+        Me.text_Ticket1 = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.text_POnum = New System.Windows.Forms.TextBox()
+        Me.text_POnum1 = New System.Windows.Forms.TextBox()
         Me.Fld_CustomerLabel = New System.Windows.Forms.Label()
-        Me.combo_Customer = New System.Windows.Forms.ComboBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.text_QtyShip1 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
+        Me.text_POnum9 = New System.Windows.Forms.TextBox()
+        Me.text_POnum10 = New System.Windows.Forms.TextBox()
+        Me.text_QtyShip5 = New System.Windows.Forms.TextBox()
+        Me.date_ShipDate3 = New System.Windows.Forms.DateTimePicker()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.text_Notes = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox5 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox6 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox7 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox8 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox9 = New System.Windows.Forms.ComboBox()
-        Me.TextBox11 = New System.Windows.Forms.TextBox()
-        Me.TextBox12 = New System.Windows.Forms.TextBox()
-        Me.TextBox13 = New System.Windows.Forms.TextBox()
-        Me.TextBox14 = New System.Windows.Forms.TextBox()
-        Me.TextBox15 = New System.Windows.Forms.TextBox()
-        Me.TextBox16 = New System.Windows.Forms.TextBox()
-        Me.TextBox17 = New System.Windows.Forms.TextBox()
-        Me.TextBox18 = New System.Windows.Forms.TextBox()
-        Me.TextBox19 = New System.Windows.Forms.TextBox()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
-        Me.DateTimePicker3 = New System.Windows.Forms.DateTimePicker()
-        Me.DateTimePicker4 = New System.Windows.Forms.DateTimePicker()
-        Me.DateTimePicker5 = New System.Windows.Forms.DateTimePicker()
-        Me.DateTimePicker6 = New System.Windows.Forms.DateTimePicker()
-        Me.DateTimePicker7 = New System.Windows.Forms.DateTimePicker()
-        Me.DateTimePicker8 = New System.Windows.Forms.DateTimePicker()
-        Me.DateTimePicker9 = New System.Windows.Forms.DateTimePicker()
-        Me.TextBox20 = New System.Windows.Forms.TextBox()
-        Me.TextBox21 = New System.Windows.Forms.TextBox()
-        Me.TextBox22 = New System.Windows.Forms.TextBox()
-        Me.TextBox23 = New System.Windows.Forms.TextBox()
-        Me.TextBox24 = New System.Windows.Forms.TextBox()
-        Me.TextBox25 = New System.Windows.Forms.TextBox()
-        Me.TextBox26 = New System.Windows.Forms.TextBox()
-        Me.TextBox27 = New System.Windows.Forms.TextBox()
-        Me.TextBox28 = New System.Windows.Forms.TextBox()
+        Me.TbltermCustomersBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Tbl_term_Customers1TableAdapter = New Neeco_Work_Order.db_WOlogDataSetTableAdapters.tbl_term_Customers1TableAdapter()
+        Me.Tbl_term_Customers2TableAdapter = New Neeco_Work_Order.db_WOlogDataSetTableAdapters.tbl_term_Customers2TableAdapter()
+        Me.Tbl_term_Customers3TableAdapter = New Neeco_Work_Order.db_WOlogDataSetTableAdapters.tbl_term_Customers3TableAdapter()
+        Me.Tbl_term_Customers4TableAdapter = New Neeco_Work_Order.db_WOlogDataSetTableAdapters.tbl_term_Customers4TableAdapter()
+        Me.Tbl_term_Customers5TableAdapter = New Neeco_Work_Order.db_WOlogDataSetTableAdapters.tbl_term_Customers5TableAdapter()
+        Me.Tbl_term_Customers6TableAdapter = New Neeco_Work_Order.db_WOlogDataSetTableAdapters.tbl_term_Customers6TableAdapter()
+        Me.Tbl_term_Customers7TableAdapter = New Neeco_Work_Order.db_WOlogDataSetTableAdapters.tbl_term_Customers7TableAdapter()
+        Me.Tbl_term_Customers8TableAdapter = New Neeco_Work_Order.db_WOlogDataSetTableAdapters.tbl_term_Customers8TableAdapter()
+        Me.Tbl_term_Customers9TableAdapter = New Neeco_Work_Order.db_WOlogDataSetTableAdapters.tbl_term_Customers9TableAdapter()
+        Me.Tbl_term_Customers10TableAdapter = New Neeco_Work_Order.db_WOlogDataSetTableAdapters.tbl_term_Customers10TableAdapter()
         Fld_StyleLabel = New System.Windows.Forms.Label()
         Fld_PSLLabel = New System.Windows.Forms.Label()
         Fld_HHPPLabel = New System.Windows.Forms.Label()
@@ -190,16 +194,12 @@ Partial Class form_AddNewEntry
         Fld_SizeLabel = New System.Windows.Forms.Label()
         Fld_WOnumLabel = New System.Windows.Forms.Label()
         Label12 = New System.Windows.Forms.Label()
-        CType(Me.Tbl_WOnumBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Tbl_WOnumBindingNavigator.SuspendLayout()
         CType(Me.Tbl_WOnumBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Db_WOlogDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Tbl_term_CustomersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Tbl_term_HHPPBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Tbl_term_PRBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Tbl_term_PressureBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Tbl_term_PSLBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Tbl_term_ShipMethodBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Tbl_term_SizeBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Tbl_term_StyleBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Tbl_term_TempClassBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -219,7 +219,18 @@ Partial Class form_AddNewEntry
         Me.TableLayoutPanel6.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
+        CType(Me.TbltermCustomers1BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TbltermCustomers10BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TbltermCustomers9BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TbltermCustomers8BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TbltermCustomers7BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TbltermCustomers6BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TbltermCustomers5BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TbltermCustomers4BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TbltermCustomers3BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TbltermCustomers2BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage2.SuspendLayout()
+        CType(Me.TbltermCustomersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Fld_StyleLabel
@@ -229,7 +240,7 @@ Partial Class form_AddNewEntry
         Fld_StyleLabel.Location = New System.Drawing.Point(3, 0)
         Fld_StyleLabel.Name = "Fld_StyleLabel"
         Fld_StyleLabel.Size = New System.Drawing.Size(73, 26)
-        Fld_StyleLabel.TabIndex = 21
+        Fld_StyleLabel.TabIndex = 99
         Fld_StyleLabel.Text = "Style:"
         Fld_StyleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
@@ -240,7 +251,7 @@ Partial Class form_AddNewEntry
         Fld_PSLLabel.Location = New System.Drawing.Point(177, 52)
         Fld_PSLLabel.Name = "Fld_PSLLabel"
         Fld_PSLLabel.Size = New System.Drawing.Size(73, 28)
-        Fld_PSLLabel.TabIndex = 18
+        Fld_PSLLabel.TabIndex = 99
         Fld_PSLLabel.Text = "PSL:"
         Fld_PSLLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
@@ -251,7 +262,7 @@ Partial Class form_AddNewEntry
         Fld_HHPPLabel.Location = New System.Drawing.Point(351, 26)
         Fld_HHPPLabel.Name = "Fld_HHPPLabel"
         Fld_HHPPLabel.Size = New System.Drawing.Size(73, 26)
-        Fld_HHPPLabel.TabIndex = 14
+        Fld_HHPPLabel.TabIndex = 99
         Fld_HHPPLabel.Text = "Operator Type:"
         Fld_HHPPLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
@@ -262,7 +273,7 @@ Partial Class form_AddNewEntry
         Fld_TempClassLabel.Location = New System.Drawing.Point(177, 0)
         Fld_TempClassLabel.Name = "Fld_TempClassLabel"
         Fld_TempClassLabel.Size = New System.Drawing.Size(73, 26)
-        Fld_TempClassLabel.TabIndex = 22
+        Fld_TempClassLabel.TabIndex = 99
         Fld_TempClassLabel.Text = "Temp Class:"
         Fld_TempClassLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
@@ -273,7 +284,7 @@ Partial Class form_AddNewEntry
         Fld_PRLabel.Location = New System.Drawing.Point(351, 0)
         Fld_PRLabel.Name = "Fld_PRLabel"
         Fld_PRLabel.Size = New System.Drawing.Size(73, 26)
-        Fld_PRLabel.TabIndex = 15
+        Fld_PRLabel.TabIndex = 99
         Fld_PRLabel.Text = "PR:"
         Fld_PRLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
@@ -284,7 +295,7 @@ Partial Class form_AddNewEntry
         Fld_PressureLabel.Location = New System.Drawing.Point(3, 52)
         Fld_PressureLabel.Name = "Fld_PressureLabel"
         Fld_PressureLabel.Size = New System.Drawing.Size(73, 28)
-        Fld_PressureLabel.TabIndex = 16
+        Fld_PressureLabel.TabIndex = 99
         Fld_PressureLabel.Text = "Pressure:"
         Fld_PressureLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
@@ -293,7 +304,7 @@ Partial Class form_AddNewEntry
         Fld_ProductTypeLabel.Location = New System.Drawing.Point(307, 0)
         Fld_ProductTypeLabel.Name = "Fld_ProductTypeLabel"
         Fld_ProductTypeLabel.Size = New System.Drawing.Size(99, 23)
-        Fld_ProductTypeLabel.TabIndex = 29
+        Fld_ProductTypeLabel.TabIndex = 99
         Fld_ProductTypeLabel.Text = "Product Type:"
         Fld_ProductTypeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
@@ -304,7 +315,7 @@ Partial Class form_AddNewEntry
         Fld_TrimLabel.Location = New System.Drawing.Point(177, 26)
         Fld_TrimLabel.Name = "Fld_TrimLabel"
         Fld_TrimLabel.Size = New System.Drawing.Size(73, 26)
-        Fld_TrimLabel.TabIndex = 24
+        Fld_TrimLabel.TabIndex = 99
         Fld_TrimLabel.Text = "Trim:"
         Fld_TrimLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
@@ -315,7 +326,7 @@ Partial Class form_AddNewEntry
         Fld_SizeLabel.Location = New System.Drawing.Point(3, 26)
         Fld_SizeLabel.Name = "Fld_SizeLabel"
         Fld_SizeLabel.Size = New System.Drawing.Size(73, 26)
-        Fld_SizeLabel.TabIndex = 20
+        Fld_SizeLabel.TabIndex = 99
         Fld_SizeLabel.Text = "Size:"
         Fld_SizeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
@@ -326,7 +337,7 @@ Partial Class form_AddNewEntry
         Fld_WOnumLabel.Location = New System.Drawing.Point(3, 0)
         Fld_WOnumLabel.Name = "Fld_WOnumLabel"
         Fld_WOnumLabel.Size = New System.Drawing.Size(95, 25)
-        Fld_WOnumLabel.TabIndex = 1
+        Fld_WOnumLabel.TabIndex = 99
         Fld_WOnumLabel.Text = "Work Order #:"
         Fld_WOnumLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
@@ -337,37 +348,9 @@ Partial Class form_AddNewEntry
         Label12.Location = New System.Drawing.Point(3, 65)
         Label12.Name = "Label12"
         Label12.Size = New System.Drawing.Size(95, 25)
-        Label12.TabIndex = 101
+        Label12.TabIndex = 99
         Label12.Text = "Status:"
         Label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'Tbl_WOnumBindingNavigator
-        '
-        Me.Tbl_WOnumBindingNavigator.AddNewItem = Me.BindingNavigatorAddNewItem
-        Me.Tbl_WOnumBindingNavigator.BindingSource = Me.Tbl_WOnumBindingSource
-        Me.Tbl_WOnumBindingNavigator.CountItem = Me.BindingNavigatorCountItem
-        Me.Tbl_WOnumBindingNavigator.DeleteItem = Me.BindingNavigatorDeleteItem
-        Me.Tbl_WOnumBindingNavigator.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BindingNavigatorMoveFirstItem, Me.BindingNavigatorMovePreviousItem, Me.BindingNavigatorSeparator, Me.BindingNavigatorPositionItem, Me.BindingNavigatorCountItem, Me.BindingNavigatorSeparator1, Me.BindingNavigatorMoveNextItem, Me.BindingNavigatorMoveLastItem, Me.BindingNavigatorSeparator2, Me.BindingNavigatorAddNewItem, Me.BindingNavigatorDeleteItem, Me.Tbl_WOnumBindingNavigatorSaveItem})
-        Me.Tbl_WOnumBindingNavigator.Location = New System.Drawing.Point(0, 0)
-        Me.Tbl_WOnumBindingNavigator.MoveFirstItem = Me.BindingNavigatorMoveFirstItem
-        Me.Tbl_WOnumBindingNavigator.MoveLastItem = Me.BindingNavigatorMoveLastItem
-        Me.Tbl_WOnumBindingNavigator.MoveNextItem = Me.BindingNavigatorMoveNextItem
-        Me.Tbl_WOnumBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
-        Me.Tbl_WOnumBindingNavigator.Name = "Tbl_WOnumBindingNavigator"
-        Me.Tbl_WOnumBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.Tbl_WOnumBindingNavigator.Size = New System.Drawing.Size(784, 25)
-        Me.Tbl_WOnumBindingNavigator.TabIndex = 0
-        Me.Tbl_WOnumBindingNavigator.Text = "BindingNavigator1"
-        Me.Tbl_WOnumBindingNavigator.Visible = False
-        '
-        'BindingNavigatorAddNewItem
-        '
-        Me.BindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
-        Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorAddNewItem.Text = "Add new"
         '
         'Tbl_WOnumBindingSource
         '
@@ -379,90 +362,6 @@ Partial Class form_AddNewEntry
         Me.Db_WOlogDataSet.DataSetName = "db_WOlogDataSet"
         Me.Db_WOlogDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'BindingNavigatorCountItem
-        '
-        Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(35, 22)
-        Me.BindingNavigatorCountItem.Text = "of {0}"
-        Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
-        '
-        'BindingNavigatorDeleteItem
-        '
-        Me.BindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
-        Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorDeleteItem.Text = "Delete"
-        '
-        'BindingNavigatorMoveFirstItem
-        '
-        Me.BindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorMoveFirstItem.Image = CType(resources.GetObject("BindingNavigatorMoveFirstItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
-        Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorMoveFirstItem.Text = "Move first"
-        '
-        'BindingNavigatorMovePreviousItem
-        '
-        Me.BindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorMovePreviousItem.Image = CType(resources.GetObject("BindingNavigatorMovePreviousItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
-        Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorMovePreviousItem.Text = "Move previous"
-        '
-        'BindingNavigatorSeparator
-        '
-        Me.BindingNavigatorSeparator.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 25)
-        '
-        'BindingNavigatorPositionItem
-        '
-        Me.BindingNavigatorPositionItem.AccessibleName = "Position"
-        Me.BindingNavigatorPositionItem.AutoSize = False
-        Me.BindingNavigatorPositionItem.Name = "BindingNavigatorPositionItem"
-        Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(50, 23)
-        Me.BindingNavigatorPositionItem.Text = "0"
-        Me.BindingNavigatorPositionItem.ToolTipText = "Current position"
-        '
-        'BindingNavigatorSeparator1
-        '
-        Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
-        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 25)
-        '
-        'BindingNavigatorMoveNextItem
-        '
-        Me.BindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
-        Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorMoveNextItem.Text = "Move next"
-        '
-        'BindingNavigatorMoveLastItem
-        '
-        Me.BindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
-        Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorMoveLastItem.Text = "Move last"
-        '
-        'BindingNavigatorSeparator2
-        '
-        Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
-        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 25)
-        '
-        'Tbl_WOnumBindingNavigatorSaveItem
-        '
-        Me.Tbl_WOnumBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.Tbl_WOnumBindingNavigatorSaveItem.Image = CType(resources.GetObject("Tbl_WOnumBindingNavigatorSaveItem.Image"), System.Drawing.Image)
-        Me.Tbl_WOnumBindingNavigatorSaveItem.Name = "Tbl_WOnumBindingNavigatorSaveItem"
-        Me.Tbl_WOnumBindingNavigatorSaveItem.Size = New System.Drawing.Size(23, 22)
-        Me.Tbl_WOnumBindingNavigatorSaveItem.Text = "Save Data"
-        '
         'button_Exit
         '
         Me.button_Exit.DialogResult = System.Windows.Forms.DialogResult.Cancel
@@ -470,14 +369,9 @@ Partial Class form_AddNewEntry
         Me.button_Exit.Location = New System.Drawing.Point(670, 3)
         Me.button_Exit.Name = "button_Exit"
         Me.button_Exit.Size = New System.Drawing.Size(105, 28)
-        Me.button_Exit.TabIndex = 24
+        Me.button_Exit.TabIndex = 68
         Me.button_Exit.Text = "CANCEL"
         Me.button_Exit.UseVisualStyleBackColor = True
-        '
-        'Tbl_term_CustomersBindingSource
-        '
-        Me.Tbl_term_CustomersBindingSource.DataMember = "tbl_term_Customers"
-        Me.Tbl_term_CustomersBindingSource.DataSource = Me.Db_WOlogDataSet
         '
         'Tbl_term_HHPPBindingSource
         '
@@ -498,11 +392,6 @@ Partial Class form_AddNewEntry
         '
         Me.Tbl_term_PSLBindingSource.DataMember = "tbl_term_PSL"
         Me.Tbl_term_PSLBindingSource.DataSource = Me.Db_WOlogDataSet
-        '
-        'Tbl_term_ShipMethodBindingSource
-        '
-        Me.Tbl_term_ShipMethodBindingSource.DataMember = "tbl_term_ShipMethod"
-        Me.Tbl_term_ShipMethodBindingSource.DataSource = Me.Db_WOlogDataSet
         '
         'Tbl_term_SizeBindingSource
         '
@@ -537,23 +426,28 @@ Partial Class form_AddNewEntry
         '
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
         Me.TableAdapterManager.tbl_data_WOlogTableAdapter = Nothing
+        Me.TableAdapterManager.tbl_term_Customers10TableAdapter = Nothing
+        Me.TableAdapterManager.tbl_term_Customers1TableAdapter = Nothing
+        Me.TableAdapterManager.tbl_term_Customers2TableAdapter = Nothing
+        Me.TableAdapterManager.tbl_term_Customers3TableAdapter = Nothing
+        Me.TableAdapterManager.tbl_term_Customers4TableAdapter = Nothing
+        Me.TableAdapterManager.tbl_term_Customers5TableAdapter = Nothing
+        Me.TableAdapterManager.tbl_term_Customers6TableAdapter = Nothing
+        Me.TableAdapterManager.tbl_term_Customers7TableAdapter = Nothing
+        Me.TableAdapterManager.tbl_term_Customers8TableAdapter = Nothing
+        Me.TableAdapterManager.tbl_term_Customers9TableAdapter = Nothing
         Me.TableAdapterManager.tbl_term_CustomersTableAdapter = Nothing
         Me.TableAdapterManager.tbl_term_HHPPTableAdapter = Nothing
         Me.TableAdapterManager.tbl_term_PressureTableAdapter = Nothing
         Me.TableAdapterManager.tbl_term_ProductTypeTableAdapter = Nothing
         Me.TableAdapterManager.tbl_term_PRTableAdapter = Nothing
         Me.TableAdapterManager.tbl_term_PSLTableAdapter = Nothing
-        Me.TableAdapterManager.tbl_term_ShipMethodTableAdapter = Nothing
         Me.TableAdapterManager.tbl_term_SizeTableAdapter = Nothing
         Me.TableAdapterManager.tbl_term_StyleTableAdapter = Nothing
         Me.TableAdapterManager.tbl_term_TempClassTableAdapter = Nothing
         Me.TableAdapterManager.tbl_term_TrimTableAdapter = Nothing
         Me.TableAdapterManager.tbl_WOnumTableAdapter = Me.Tbl_WOnumTableAdapter
         Me.TableAdapterManager.UpdateOrder = Neeco_Work_Order.db_WOlogDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-        '
-        'Tbl_term_CustomersTableAdapter
-        '
-        Me.Tbl_term_CustomersTableAdapter.ClearBeforeFill = True
         '
         'Tbl_term_HHPPTableAdapter
         '
@@ -570,10 +464,6 @@ Partial Class form_AddNewEntry
         'Tbl_term_PSLTableAdapter
         '
         Me.Tbl_term_PSLTableAdapter.ClearBeforeFill = True
-        '
-        'Tbl_term_ShipMethodTableAdapter
-        '
-        Me.Tbl_term_ShipMethodTableAdapter.ClearBeforeFill = True
         '
         'Tbl_term_SizeTableAdapter
         '
@@ -602,7 +492,7 @@ Partial Class form_AddNewEntry
         Me.button_Submit.Location = New System.Drawing.Point(556, 3)
         Me.button_Submit.Name = "button_Submit"
         Me.button_Submit.Size = New System.Drawing.Size(108, 28)
-        Me.button_Submit.TabIndex = 23
+        Me.button_Submit.TabIndex = 67
         Me.button_Submit.Text = "SUBMIT"
         Me.button_Submit.UseVisualStyleBackColor = True
         '
@@ -613,7 +503,7 @@ Partial Class form_AddNewEntry
         Me.button_Clear.Location = New System.Drawing.Point(3, 3)
         Me.button_Clear.Name = "button_Clear"
         Me.button_Clear.Size = New System.Drawing.Size(114, 28)
-        Me.button_Clear.TabIndex = 25
+        Me.button_Clear.TabIndex = 69
         Me.button_Clear.Text = "CLEAR FORM"
         Me.button_Clear.UseVisualStyleBackColor = True
         '
@@ -630,7 +520,7 @@ Partial Class form_AddNewEntry
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 93.0!))
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.0!))
         Me.TableLayoutPanel4.Size = New System.Drawing.Size(784, 561)
-        Me.TableLayoutPanel4.TabIndex = 47
+        Me.TableLayoutPanel4.TabIndex = 99
         '
         'TableLayoutPanel5
         '
@@ -648,7 +538,7 @@ Partial Class form_AddNewEntry
         Me.TableLayoutPanel5.RowCount = 1
         Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel5.Size = New System.Drawing.Size(778, 34)
-        Me.TableLayoutPanel5.TabIndex = 47
+        Me.TableLayoutPanel5.TabIndex = 99
         '
         'TabControl1
         '
@@ -659,7 +549,8 @@ Partial Class form_AddNewEntry
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
         Me.TabControl1.Size = New System.Drawing.Size(778, 515)
-        Me.TabControl1.TabIndex = 46
+        Me.TabControl1.TabIndex = 99
+        Me.TabControl1.TabStop = False
         Me.TabControl1.Tag = ""
         '
         'TabPage1
@@ -686,7 +577,7 @@ Partial Class form_AddNewEntry
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 36.43892!))
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 63.56108!))
         Me.TableLayoutPanel3.Size = New System.Drawing.Size(764, 483)
-        Me.TableLayoutPanel3.TabIndex = 45
+        Me.TableLayoutPanel3.TabIndex = 99
         '
         'TableLayoutPanel2
         '
@@ -701,7 +592,7 @@ Partial Class form_AddNewEntry
         Me.TableLayoutPanel2.RowCount = 1
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel2.Size = New System.Drawing.Size(758, 169)
-        Me.TableLayoutPanel2.TabIndex = 44
+        Me.TableLayoutPanel2.TabIndex = 99
         '
         'GroupBox1
         '
@@ -710,7 +601,7 @@ Partial Class form_AddNewEntry
         Me.GroupBox1.Location = New System.Drawing.Point(3, 3)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(209, 163)
-        Me.GroupBox1.TabIndex = 41
+        Me.GroupBox1.TabIndex = 99
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Work Order Info"
         '
@@ -740,7 +631,7 @@ Partial Class form_AddNewEntry
         Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.89474!))
         Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.89474!))
         Me.TableLayoutPanel9.Size = New System.Drawing.Size(203, 144)
-        Me.TableLayoutPanel9.TabIndex = 102
+        Me.TableLayoutPanel9.TabIndex = 99
         '
         'date_WOdate
         '
@@ -758,7 +649,7 @@ Partial Class form_AddNewEntry
         Me.text_Qty.Location = New System.Drawing.Point(104, 119)
         Me.text_Qty.Name = "text_Qty"
         Me.text_Qty.Size = New System.Drawing.Size(96, 20)
-        Me.text_Qty.TabIndex = 6
+        Me.text_Qty.TabIndex = 4
         '
         'combo_Status
         '
@@ -769,11 +660,11 @@ Partial Class form_AddNewEntry
         Me.combo_Status.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.Tbl_term_HHPPBindingSource, "fld_HHPP", True))
         Me.combo_Status.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.combo_Status.FormattingEnabled = True
-        Me.combo_Status.Items.AddRange(New Object() {"OPEN", "PARTIAL", "STOCK", "CLOSED"})
+        Me.combo_Status.Items.AddRange(New Object() {"", "OPEN", "PARTIAL", "STOCK", "CLOSED"})
         Me.combo_Status.Location = New System.Drawing.Point(104, 68)
         Me.combo_Status.Name = "combo_Status"
         Me.combo_Status.Size = New System.Drawing.Size(96, 21)
-        Me.combo_Status.TabIndex = 100
+        Me.combo_Status.TabIndex = 2
         '
         'text_QBBAnum
         '
@@ -790,7 +681,7 @@ Partial Class form_AddNewEntry
         Me.Label8.Location = New System.Drawing.Point(3, 115)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(95, 29)
-        Me.Label8.TabIndex = 40
+        Me.Label8.TabIndex = 99
         Me.Label8.Text = "Order Quantity:"
         Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
@@ -801,7 +692,7 @@ Partial Class form_AddNewEntry
         Me.Label7.Location = New System.Drawing.Point(3, 90)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(95, 25)
-        Me.Label7.TabIndex = 38
+        Me.Label7.TabIndex = 99
         Me.Label7.Text = "QB BA #:"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
@@ -812,7 +703,7 @@ Partial Class form_AddNewEntry
         Me.Label1.Location = New System.Drawing.Point(3, 40)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(95, 25)
-        Me.Label1.TabIndex = 27
+        Me.Label1.TabIndex = 99
         Me.Label1.Text = "Date:"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
@@ -824,7 +715,7 @@ Partial Class form_AddNewEntry
         Me.text_WOnum.Name = "text_WOnum"
         Me.text_WOnum.ReadOnly = True
         Me.text_WOnum.Size = New System.Drawing.Size(96, 20)
-        Me.text_WOnum.TabIndex = 99
+        Me.text_WOnum.TabIndex = 0
         Me.text_WOnum.TabStop = False
         '
         'GroupBox2
@@ -834,7 +725,7 @@ Partial Class form_AddNewEntry
         Me.GroupBox2.Location = New System.Drawing.Point(218, 3)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(537, 163)
-        Me.GroupBox2.TabIndex = 42
+        Me.GroupBox2.TabIndex = 99
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Product Info"
         '
@@ -842,7 +733,7 @@ Partial Class form_AddNewEntry
         '
         Me.TableLayoutPanel8.ColumnCount = 1
         Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel8.Controls.Add(Me.CheckBox1, 0, 2)
+        Me.TableLayoutPanel8.Controls.Add(Me.check_BO, 0, 2)
         Me.TableLayoutPanel8.Controls.Add(Me.TableLayoutPanel7, 0, 0)
         Me.TableLayoutPanel8.Controls.Add(Me.TableLayoutPanel6, 0, 1)
         Me.TableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill
@@ -853,18 +744,18 @@ Partial Class form_AddNewEntry
         Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60.0!))
         Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.0!))
         Me.TableLayoutPanel8.Size = New System.Drawing.Size(531, 144)
-        Me.TableLayoutPanel8.TabIndex = 42
+        Me.TableLayoutPanel8.TabIndex = 99
         '
-        'CheckBox1
+        'check_BO
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(3, 122)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(421, 17)
-        Me.CheckBox1.TabIndex = 40
-        Me.CheckBox1.Text = "Check this box if you are buying out the material as a finished product from a Ve" &
+        Me.check_BO.AutoSize = True
+        Me.check_BO.Location = New System.Drawing.Point(3, 122)
+        Me.check_BO.Name = "check_BO"
+        Me.check_BO.Size = New System.Drawing.Size(421, 17)
+        Me.check_BO.TabIndex = 15
+        Me.check_BO.Text = "Check this box if you are buying out the material as a finished product from a Ve" &
     "ndor"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.check_BO.UseVisualStyleBackColor = True
         '
         'TableLayoutPanel7
         '
@@ -883,7 +774,7 @@ Partial Class form_AddNewEntry
         Me.TableLayoutPanel7.RowCount = 1
         Me.TableLayoutPanel7.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel7.Size = New System.Drawing.Size(525, 27)
-        Me.TableLayoutPanel7.TabIndex = 41
+        Me.TableLayoutPanel7.TabIndex = 99
         '
         'Label2
         '
@@ -892,7 +783,7 @@ Partial Class form_AddNewEntry
         Me.Label2.Location = New System.Drawing.Point(3, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(88, 27)
-        Me.Label2.TabIndex = 28
+        Me.Label2.TabIndex = 99
         Me.Label2.Text = "Part Number:"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
@@ -902,7 +793,7 @@ Partial Class form_AddNewEntry
         Me.text_PartNum.Location = New System.Drawing.Point(97, 3)
         Me.text_PartNum.Name = "text_PartNum"
         Me.text_PartNum.Size = New System.Drawing.Size(204, 20)
-        Me.text_PartNum.TabIndex = 8
+        Me.text_PartNum.TabIndex = 5
         '
         'combo_ProductType
         '
@@ -918,7 +809,7 @@ Partial Class form_AddNewEntry
         Me.combo_ProductType.Location = New System.Drawing.Point(412, 3)
         Me.combo_ProductType.Name = "combo_ProductType"
         Me.combo_ProductType.Size = New System.Drawing.Size(110, 21)
-        Me.combo_ProductType.TabIndex = 9
+        Me.combo_ProductType.TabIndex = 6
         Me.combo_ProductType.ValueMember = "fld_ProductType"
         '
         'TableLayoutPanel6
@@ -954,7 +845,7 @@ Partial Class form_AddNewEntry
         Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel6.Size = New System.Drawing.Size(525, 80)
-        Me.TableLayoutPanel6.TabIndex = 40
+        Me.TableLayoutPanel6.TabIndex = 99
         '
         'combo_Size
         '
@@ -970,7 +861,7 @@ Partial Class form_AddNewEntry
         Me.combo_Size.Location = New System.Drawing.Point(82, 29)
         Me.combo_Size.Name = "combo_Size"
         Me.combo_Size.Size = New System.Drawing.Size(89, 21)
-        Me.combo_Size.TabIndex = 10
+        Me.combo_Size.TabIndex = 8
         Me.combo_Size.ValueMember = "fld_Size"
         '
         'combo_Pressure
@@ -987,7 +878,7 @@ Partial Class form_AddNewEntry
         Me.combo_Pressure.Location = New System.Drawing.Point(82, 55)
         Me.combo_Pressure.Name = "combo_Pressure"
         Me.combo_Pressure.Size = New System.Drawing.Size(89, 21)
-        Me.combo_Pressure.TabIndex = 11
+        Me.combo_Pressure.TabIndex = 9
         Me.combo_Pressure.ValueMember = "fld_Pressure"
         '
         'combo_Style
@@ -1004,7 +895,7 @@ Partial Class form_AddNewEntry
         Me.combo_Style.Location = New System.Drawing.Point(82, 3)
         Me.combo_Style.Name = "combo_Style"
         Me.combo_Style.Size = New System.Drawing.Size(89, 21)
-        Me.combo_Style.TabIndex = 15
+        Me.combo_Style.TabIndex = 7
         Me.combo_Style.ValueMember = "fld_Style"
         '
         'combo_Operator
@@ -1021,7 +912,7 @@ Partial Class form_AddNewEntry
         Me.combo_Operator.Location = New System.Drawing.Point(430, 29)
         Me.combo_Operator.Name = "combo_Operator"
         Me.combo_Operator.Size = New System.Drawing.Size(92, 21)
-        Me.combo_Operator.TabIndex = 12
+        Me.combo_Operator.TabIndex = 14
         Me.combo_Operator.ValueMember = "fld_HHPP"
         '
         'combo_PR
@@ -1038,7 +929,7 @@ Partial Class form_AddNewEntry
         Me.combo_PR.Location = New System.Drawing.Point(430, 3)
         Me.combo_PR.Name = "combo_PR"
         Me.combo_PR.Size = New System.Drawing.Size(92, 21)
-        Me.combo_PR.TabIndex = 17
+        Me.combo_PR.TabIndex = 13
         Me.combo_PR.ValueMember = "fld_PR"
         '
         'combo_PSL
@@ -1055,7 +946,7 @@ Partial Class form_AddNewEntry
         Me.combo_PSL.Location = New System.Drawing.Point(256, 55)
         Me.combo_PSL.Name = "combo_PSL"
         Me.combo_PSL.Size = New System.Drawing.Size(89, 21)
-        Me.combo_PSL.TabIndex = 16
+        Me.combo_PSL.TabIndex = 12
         Me.combo_PSL.ValueMember = "fld_PSL"
         '
         'combo_Trim
@@ -1072,7 +963,7 @@ Partial Class form_AddNewEntry
         Me.combo_Trim.Location = New System.Drawing.Point(256, 29)
         Me.combo_Trim.Name = "combo_Trim"
         Me.combo_Trim.Size = New System.Drawing.Size(89, 21)
-        Me.combo_Trim.TabIndex = 14
+        Me.combo_Trim.TabIndex = 11
         Me.combo_Trim.ValueMember = "fld_Trim"
         '
         'combo_TempClass
@@ -1089,7 +980,7 @@ Partial Class form_AddNewEntry
         Me.combo_TempClass.Location = New System.Drawing.Point(256, 3)
         Me.combo_TempClass.Name = "combo_TempClass"
         Me.combo_TempClass.Size = New System.Drawing.Size(89, 21)
-        Me.combo_TempClass.TabIndex = 13
+        Me.combo_TempClass.TabIndex = 10
         Me.combo_TempClass.ValueMember = "fld_TempClass"
         '
         'GroupBox3
@@ -1099,7 +990,7 @@ Partial Class form_AddNewEntry
         Me.GroupBox3.Location = New System.Drawing.Point(3, 178)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(758, 302)
-        Me.GroupBox3.TabIndex = 43
+        Me.GroupBox3.TabIndex = 99
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Shipping Info"
         '
@@ -1112,72 +1003,72 @@ Partial Class form_AddNewEntry
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.0!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.0!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
-        Me.TableLayoutPanel1.Controls.Add(Me.TextBox20, 5, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.TextBox21, 5, 3)
-        Me.TableLayoutPanel1.Controls.Add(Me.TextBox22, 5, 4)
-        Me.TableLayoutPanel1.Controls.Add(Me.TextBox23, 5, 5)
-        Me.TableLayoutPanel1.Controls.Add(Me.TextBox24, 5, 6)
-        Me.TableLayoutPanel1.Controls.Add(Me.TextBox25, 5, 7)
-        Me.TableLayoutPanel1.Controls.Add(Me.TextBox26, 5, 8)
-        Me.TableLayoutPanel1.Controls.Add(Me.TextBox27, 5, 9)
-        Me.TableLayoutPanel1.Controls.Add(Me.TextBox28, 5, 10)
-        Me.TableLayoutPanel1.Controls.Add(Me.DateTimePicker1, 4, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.DateTimePicker3, 4, 4)
-        Me.TableLayoutPanel1.Controls.Add(Me.DateTimePicker4, 4, 5)
-        Me.TableLayoutPanel1.Controls.Add(Me.DateTimePicker5, 4, 6)
-        Me.TableLayoutPanel1.Controls.Add(Me.DateTimePicker6, 4, 7)
-        Me.TableLayoutPanel1.Controls.Add(Me.DateTimePicker7, 4, 8)
-        Me.TableLayoutPanel1.Controls.Add(Me.DateTimePicker8, 4, 9)
-        Me.TableLayoutPanel1.Controls.Add(Me.DateTimePicker9, 4, 10)
-        Me.TableLayoutPanel1.Controls.Add(Me.TextBox11, 3, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.TextBox12, 3, 4)
-        Me.TableLayoutPanel1.Controls.Add(Me.TextBox14, 3, 6)
-        Me.TableLayoutPanel1.Controls.Add(Me.TextBox15, 3, 7)
-        Me.TableLayoutPanel1.Controls.Add(Me.TextBox16, 3, 8)
-        Me.TableLayoutPanel1.Controls.Add(Me.TextBox17, 3, 3)
-        Me.TableLayoutPanel1.Controls.Add(Me.TextBox18, 3, 9)
-        Me.TableLayoutPanel1.Controls.Add(Me.TextBox19, 3, 10)
-        Me.TableLayoutPanel1.Controls.Add(Me.ComboBox9, 2, 10)
-        Me.TableLayoutPanel1.Controls.Add(Me.ComboBox8, 2, 9)
-        Me.TableLayoutPanel1.Controls.Add(Me.ComboBox7, 2, 8)
-        Me.TableLayoutPanel1.Controls.Add(Me.ComboBox6, 2, 7)
-        Me.TableLayoutPanel1.Controls.Add(Me.ComboBox5, 2, 6)
-        Me.TableLayoutPanel1.Controls.Add(Me.ComboBox4, 2, 5)
-        Me.TableLayoutPanel1.Controls.Add(Me.ComboBox3, 2, 4)
-        Me.TableLayoutPanel1.Controls.Add(Me.ComboBox2, 2, 3)
-        Me.TableLayoutPanel1.Controls.Add(Me.ComboBox1, 2, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.TextBox10, 1, 7)
-        Me.TableLayoutPanel1.Controls.Add(Me.TextBox9, 1, 6)
-        Me.TableLayoutPanel1.Controls.Add(Me.TextBox8, 1, 5)
-        Me.TableLayoutPanel1.Controls.Add(Me.TextBox7, 1, 4)
-        Me.TableLayoutPanel1.Controls.Add(Me.TextBox6, 1, 3)
-        Me.TableLayoutPanel1.Controls.Add(Me.TextBox5, 1, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.TextBox4, 1, 8)
+        Me.TableLayoutPanel1.Controls.Add(Me.text_Ticket2, 5, 2)
+        Me.TableLayoutPanel1.Controls.Add(Me.text_Ticket3, 5, 3)
+        Me.TableLayoutPanel1.Controls.Add(Me.text_Ticket4, 5, 4)
+        Me.TableLayoutPanel1.Controls.Add(Me.text_Ticket5, 5, 5)
+        Me.TableLayoutPanel1.Controls.Add(Me.text_Ticket6, 5, 6)
+        Me.TableLayoutPanel1.Controls.Add(Me.text_Ticket7, 5, 7)
+        Me.TableLayoutPanel1.Controls.Add(Me.text_Ticket8, 5, 8)
+        Me.TableLayoutPanel1.Controls.Add(Me.text_Ticket9, 5, 9)
+        Me.TableLayoutPanel1.Controls.Add(Me.text_Ticket10, 5, 10)
+        Me.TableLayoutPanel1.Controls.Add(Me.date_ShipDate2, 4, 2)
+        Me.TableLayoutPanel1.Controls.Add(Me.combo_Customer1, 2, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.date_ShipDate4, 4, 4)
+        Me.TableLayoutPanel1.Controls.Add(Me.date_ShipDate5, 4, 5)
+        Me.TableLayoutPanel1.Controls.Add(Me.date_ShipDate6, 4, 6)
+        Me.TableLayoutPanel1.Controls.Add(Me.date_ShipDate7, 4, 7)
+        Me.TableLayoutPanel1.Controls.Add(Me.date_ShipDate8, 4, 8)
+        Me.TableLayoutPanel1.Controls.Add(Me.date_ShipDate9, 4, 9)
+        Me.TableLayoutPanel1.Controls.Add(Me.date_ShipDate10, 4, 10)
+        Me.TableLayoutPanel1.Controls.Add(Me.text_QtyShip2, 3, 2)
+        Me.TableLayoutPanel1.Controls.Add(Me.text_QtyShip4, 3, 4)
+        Me.TableLayoutPanel1.Controls.Add(Me.text_QtyShip6, 3, 6)
+        Me.TableLayoutPanel1.Controls.Add(Me.text_QtyShip7, 3, 7)
+        Me.TableLayoutPanel1.Controls.Add(Me.text_QtyShip8, 3, 8)
+        Me.TableLayoutPanel1.Controls.Add(Me.text_QtyShip3, 3, 3)
+        Me.TableLayoutPanel1.Controls.Add(Me.text_QtyShip9, 3, 9)
+        Me.TableLayoutPanel1.Controls.Add(Me.text_QtyShip10, 3, 10)
+        Me.TableLayoutPanel1.Controls.Add(Me.combo_Customer10, 2, 10)
+        Me.TableLayoutPanel1.Controls.Add(Me.combo_Customer9, 2, 9)
+        Me.TableLayoutPanel1.Controls.Add(Me.combo_Customer8, 2, 8)
+        Me.TableLayoutPanel1.Controls.Add(Me.combo_Customer7, 2, 7)
+        Me.TableLayoutPanel1.Controls.Add(Me.combo_Customer6, 2, 6)
+        Me.TableLayoutPanel1.Controls.Add(Me.combo_Customer5, 2, 5)
+        Me.TableLayoutPanel1.Controls.Add(Me.combo_Customer4, 2, 4)
+        Me.TableLayoutPanel1.Controls.Add(Me.combo_Customer3, 2, 3)
+        Me.TableLayoutPanel1.Controls.Add(Me.combo_Customer2, 2, 2)
+        Me.TableLayoutPanel1.Controls.Add(Me.text_POnum7, 1, 7)
+        Me.TableLayoutPanel1.Controls.Add(Me.text_POnum6, 1, 6)
+        Me.TableLayoutPanel1.Controls.Add(Me.text_POnum5, 1, 5)
+        Me.TableLayoutPanel1.Controls.Add(Me.text_POnum4, 1, 4)
+        Me.TableLayoutPanel1.Controls.Add(Me.text_POnum3, 1, 3)
+        Me.TableLayoutPanel1.Controls.Add(Me.text_POnum2, 1, 2)
+        Me.TableLayoutPanel1.Controls.Add(Me.text_POnum8, 1, 8)
         Me.TableLayoutPanel1.Controls.Add(Me.Label17, 3, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.Label15, 0, 5)
         Me.TableLayoutPanel1.Controls.Add(Me.Label16, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.Label6, 0, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.Label10, 0, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.date_ShipDate, 4, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.date_ShipDate1, 4, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.Label13, 0, 3)
-        Me.TableLayoutPanel1.Controls.Add(Me.text_DeliveryTicketNum, 5, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.text_Ticket1, 5, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.Label14, 0, 4)
         Me.TableLayoutPanel1.Controls.Add(Me.Label5, 5, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.Label9, 4, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.Label4, 1, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.text_POnum, 1, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.text_POnum1, 1, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.Fld_CustomerLabel, 2, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.combo_Customer, 2, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.TextBox1, 3, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.text_QtyShip1, 3, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.Label3, 0, 6)
         Me.TableLayoutPanel1.Controls.Add(Me.Label11, 0, 7)
         Me.TableLayoutPanel1.Controls.Add(Me.Label18, 0, 8)
         Me.TableLayoutPanel1.Controls.Add(Me.Label19, 0, 9)
         Me.TableLayoutPanel1.Controls.Add(Me.Label20, 0, 10)
-        Me.TableLayoutPanel1.Controls.Add(Me.TextBox3, 1, 9)
-        Me.TableLayoutPanel1.Controls.Add(Me.TextBox2, 1, 10)
-        Me.TableLayoutPanel1.Controls.Add(Me.TextBox13, 3, 5)
-        Me.TableLayoutPanel1.Controls.Add(Me.DateTimePicker2, 4, 3)
+        Me.TableLayoutPanel1.Controls.Add(Me.text_POnum9, 1, 9)
+        Me.TableLayoutPanel1.Controls.Add(Me.text_POnum10, 1, 10)
+        Me.TableLayoutPanel1.Controls.Add(Me.text_QtyShip5, 3, 5)
+        Me.TableLayoutPanel1.Controls.Add(Me.date_ShipDate3, 4, 3)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(3, 16)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
@@ -1193,8 +1084,491 @@ Partial Class form_AddNewEntry
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(752, 283)
-        Me.TableLayoutPanel1.TabIndex = 0
+        Me.TableLayoutPanel1.TabIndex = 99
+        '
+        'text_Ticket2
+        '
+        Me.text_Ticket2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.text_Ticket2.Location = New System.Drawing.Point(566, 56)
+        Me.text_Ticket2.Name = "text_Ticket2"
+        Me.text_Ticket2.Size = New System.Drawing.Size(183, 20)
+        Me.text_Ticket2.TabIndex = 25
+        '
+        'text_Ticket3
+        '
+        Me.text_Ticket3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.text_Ticket3.Location = New System.Drawing.Point(566, 81)
+        Me.text_Ticket3.Name = "text_Ticket3"
+        Me.text_Ticket3.Size = New System.Drawing.Size(183, 20)
+        Me.text_Ticket3.TabIndex = 30
+        '
+        'text_Ticket4
+        '
+        Me.text_Ticket4.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.text_Ticket4.Location = New System.Drawing.Point(566, 106)
+        Me.text_Ticket4.Name = "text_Ticket4"
+        Me.text_Ticket4.Size = New System.Drawing.Size(183, 20)
+        Me.text_Ticket4.TabIndex = 35
+        '
+        'text_Ticket5
+        '
+        Me.text_Ticket5.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.text_Ticket5.Location = New System.Drawing.Point(566, 131)
+        Me.text_Ticket5.Name = "text_Ticket5"
+        Me.text_Ticket5.Size = New System.Drawing.Size(183, 20)
+        Me.text_Ticket5.TabIndex = 40
+        '
+        'text_Ticket6
+        '
+        Me.text_Ticket6.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.text_Ticket6.Location = New System.Drawing.Point(566, 156)
+        Me.text_Ticket6.Name = "text_Ticket6"
+        Me.text_Ticket6.Size = New System.Drawing.Size(183, 20)
+        Me.text_Ticket6.TabIndex = 45
+        '
+        'text_Ticket7
+        '
+        Me.text_Ticket7.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.text_Ticket7.Location = New System.Drawing.Point(566, 181)
+        Me.text_Ticket7.Name = "text_Ticket7"
+        Me.text_Ticket7.Size = New System.Drawing.Size(183, 20)
+        Me.text_Ticket7.TabIndex = 50
+        '
+        'text_Ticket8
+        '
+        Me.text_Ticket8.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.text_Ticket8.Location = New System.Drawing.Point(566, 206)
+        Me.text_Ticket8.Name = "text_Ticket8"
+        Me.text_Ticket8.Size = New System.Drawing.Size(183, 20)
+        Me.text_Ticket8.TabIndex = 55
+        '
+        'text_Ticket9
+        '
+        Me.text_Ticket9.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.text_Ticket9.Location = New System.Drawing.Point(566, 231)
+        Me.text_Ticket9.Name = "text_Ticket9"
+        Me.text_Ticket9.Size = New System.Drawing.Size(183, 20)
+        Me.text_Ticket9.TabIndex = 60
+        '
+        'text_Ticket10
+        '
+        Me.text_Ticket10.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.text_Ticket10.Location = New System.Drawing.Point(566, 256)
+        Me.text_Ticket10.Name = "text_Ticket10"
+        Me.text_Ticket10.Size = New System.Drawing.Size(183, 20)
+        Me.text_Ticket10.TabIndex = 65
+        '
+        'date_ShipDate2
+        '
+        Me.date_ShipDate2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.date_ShipDate2.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.date_ShipDate2.Location = New System.Drawing.Point(469, 56)
+        Me.date_ShipDate2.Name = "date_ShipDate2"
+        Me.date_ShipDate2.Size = New System.Drawing.Size(91, 20)
+        Me.date_ShipDate2.TabIndex = 24
+        Me.date_ShipDate2.Value = New Date(2018, 6, 14, 14, 14, 51, 0)
+        '
+        'combo_Customer1
+        '
+        Me.combo_Customer1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.combo_Customer1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.combo_Customer1.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.TbltermCustomers1BindingSource, "fld_Customer", True))
+        Me.combo_Customer1.DataSource = Me.TbltermCustomers1BindingSource
+        Me.combo_Customer1.DisplayMember = "fld_Customer"
+        Me.combo_Customer1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.combo_Customer1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.combo_Customer1.FormattingEnabled = True
+        Me.combo_Customer1.Location = New System.Drawing.Point(221, 31)
+        Me.combo_Customer1.Name = "combo_Customer1"
+        Me.combo_Customer1.Size = New System.Drawing.Size(182, 21)
+        Me.combo_Customer1.TabIndex = 17
+        Me.combo_Customer1.ValueMember = "fld_Customer"
+        '
+        'TbltermCustomers1BindingSource
+        '
+        Me.TbltermCustomers1BindingSource.DataMember = "tbl_term_Customers1"
+        Me.TbltermCustomers1BindingSource.DataSource = Me.Db_WOlogDataSet
+        '
+        'date_ShipDate4
+        '
+        Me.date_ShipDate4.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.date_ShipDate4.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.date_ShipDate4.Location = New System.Drawing.Point(469, 106)
+        Me.date_ShipDate4.Name = "date_ShipDate4"
+        Me.date_ShipDate4.Size = New System.Drawing.Size(91, 20)
+        Me.date_ShipDate4.TabIndex = 34
+        Me.date_ShipDate4.Value = New Date(2018, 6, 14, 14, 14, 51, 0)
+        '
+        'date_ShipDate5
+        '
+        Me.date_ShipDate5.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.date_ShipDate5.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.date_ShipDate5.Location = New System.Drawing.Point(469, 131)
+        Me.date_ShipDate5.Name = "date_ShipDate5"
+        Me.date_ShipDate5.Size = New System.Drawing.Size(91, 20)
+        Me.date_ShipDate5.TabIndex = 39
+        Me.date_ShipDate5.Value = New Date(2018, 6, 14, 14, 14, 51, 0)
+        '
+        'date_ShipDate6
+        '
+        Me.date_ShipDate6.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.date_ShipDate6.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.date_ShipDate6.Location = New System.Drawing.Point(469, 156)
+        Me.date_ShipDate6.Name = "date_ShipDate6"
+        Me.date_ShipDate6.Size = New System.Drawing.Size(91, 20)
+        Me.date_ShipDate6.TabIndex = 44
+        Me.date_ShipDate6.Value = New Date(2018, 6, 14, 14, 14, 51, 0)
+        '
+        'date_ShipDate7
+        '
+        Me.date_ShipDate7.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.date_ShipDate7.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.date_ShipDate7.Location = New System.Drawing.Point(469, 181)
+        Me.date_ShipDate7.Name = "date_ShipDate7"
+        Me.date_ShipDate7.Size = New System.Drawing.Size(91, 20)
+        Me.date_ShipDate7.TabIndex = 49
+        Me.date_ShipDate7.Value = New Date(2018, 6, 14, 14, 14, 51, 0)
+        '
+        'date_ShipDate8
+        '
+        Me.date_ShipDate8.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.date_ShipDate8.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.date_ShipDate8.Location = New System.Drawing.Point(469, 206)
+        Me.date_ShipDate8.Name = "date_ShipDate8"
+        Me.date_ShipDate8.Size = New System.Drawing.Size(91, 20)
+        Me.date_ShipDate8.TabIndex = 54
+        Me.date_ShipDate8.Value = New Date(2018, 6, 14, 14, 14, 51, 0)
+        '
+        'date_ShipDate9
+        '
+        Me.date_ShipDate9.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.date_ShipDate9.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.date_ShipDate9.Location = New System.Drawing.Point(469, 231)
+        Me.date_ShipDate9.Name = "date_ShipDate9"
+        Me.date_ShipDate9.Size = New System.Drawing.Size(91, 20)
+        Me.date_ShipDate9.TabIndex = 59
+        Me.date_ShipDate9.Value = New Date(2018, 6, 14, 14, 14, 51, 0)
+        '
+        'date_ShipDate10
+        '
+        Me.date_ShipDate10.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.date_ShipDate10.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.date_ShipDate10.Location = New System.Drawing.Point(469, 256)
+        Me.date_ShipDate10.Name = "date_ShipDate10"
+        Me.date_ShipDate10.Size = New System.Drawing.Size(91, 20)
+        Me.date_ShipDate10.TabIndex = 64
+        Me.date_ShipDate10.Value = New Date(2018, 6, 14, 14, 14, 51, 0)
+        '
+        'text_QtyShip2
+        '
+        Me.text_QtyShip2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.text_QtyShip2.Location = New System.Drawing.Point(409, 56)
+        Me.text_QtyShip2.Name = "text_QtyShip2"
+        Me.text_QtyShip2.Size = New System.Drawing.Size(54, 20)
+        Me.text_QtyShip2.TabIndex = 23
+        '
+        'text_QtyShip4
+        '
+        Me.text_QtyShip4.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.text_QtyShip4.Location = New System.Drawing.Point(409, 106)
+        Me.text_QtyShip4.Name = "text_QtyShip4"
+        Me.text_QtyShip4.Size = New System.Drawing.Size(54, 20)
+        Me.text_QtyShip4.TabIndex = 33
+        '
+        'text_QtyShip6
+        '
+        Me.text_QtyShip6.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.text_QtyShip6.Location = New System.Drawing.Point(409, 156)
+        Me.text_QtyShip6.Name = "text_QtyShip6"
+        Me.text_QtyShip6.Size = New System.Drawing.Size(54, 20)
+        Me.text_QtyShip6.TabIndex = 43
+        '
+        'text_QtyShip7
+        '
+        Me.text_QtyShip7.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.text_QtyShip7.Location = New System.Drawing.Point(409, 181)
+        Me.text_QtyShip7.Name = "text_QtyShip7"
+        Me.text_QtyShip7.Size = New System.Drawing.Size(54, 20)
+        Me.text_QtyShip7.TabIndex = 48
+        '
+        'text_QtyShip8
+        '
+        Me.text_QtyShip8.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.text_QtyShip8.Location = New System.Drawing.Point(409, 206)
+        Me.text_QtyShip8.Name = "text_QtyShip8"
+        Me.text_QtyShip8.Size = New System.Drawing.Size(54, 20)
+        Me.text_QtyShip8.TabIndex = 53
+        '
+        'text_QtyShip3
+        '
+        Me.text_QtyShip3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.text_QtyShip3.Location = New System.Drawing.Point(409, 81)
+        Me.text_QtyShip3.Name = "text_QtyShip3"
+        Me.text_QtyShip3.Size = New System.Drawing.Size(54, 20)
+        Me.text_QtyShip3.TabIndex = 28
+        '
+        'text_QtyShip9
+        '
+        Me.text_QtyShip9.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.text_QtyShip9.Location = New System.Drawing.Point(409, 231)
+        Me.text_QtyShip9.Name = "text_QtyShip9"
+        Me.text_QtyShip9.Size = New System.Drawing.Size(54, 20)
+        Me.text_QtyShip9.TabIndex = 58
+        '
+        'text_QtyShip10
+        '
+        Me.text_QtyShip10.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.text_QtyShip10.Location = New System.Drawing.Point(409, 256)
+        Me.text_QtyShip10.Name = "text_QtyShip10"
+        Me.text_QtyShip10.Size = New System.Drawing.Size(54, 20)
+        Me.text_QtyShip10.TabIndex = 63
+        '
+        'combo_Customer10
+        '
+        Me.combo_Customer10.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.combo_Customer10.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.combo_Customer10.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.TbltermCustomers10BindingSource, "fld_Customer", True))
+        Me.combo_Customer10.DataSource = Me.TbltermCustomers10BindingSource
+        Me.combo_Customer10.DisplayMember = "fld_Customer"
+        Me.combo_Customer10.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.combo_Customer10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.combo_Customer10.FormattingEnabled = True
+        Me.combo_Customer10.Location = New System.Drawing.Point(221, 256)
+        Me.combo_Customer10.Name = "combo_Customer10"
+        Me.combo_Customer10.Size = New System.Drawing.Size(182, 21)
+        Me.combo_Customer10.TabIndex = 62
+        Me.combo_Customer10.ValueMember = "fld_Customer"
+        '
+        'TbltermCustomers10BindingSource
+        '
+        Me.TbltermCustomers10BindingSource.DataMember = "tbl_term_Customers10"
+        Me.TbltermCustomers10BindingSource.DataSource = Me.Db_WOlogDataSet
+        '
+        'combo_Customer9
+        '
+        Me.combo_Customer9.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.combo_Customer9.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.combo_Customer9.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.TbltermCustomers9BindingSource, "fld_Customer", True))
+        Me.combo_Customer9.DataSource = Me.TbltermCustomers9BindingSource
+        Me.combo_Customer9.DisplayMember = "fld_Customer"
+        Me.combo_Customer9.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.combo_Customer9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.combo_Customer9.FormattingEnabled = True
+        Me.combo_Customer9.Location = New System.Drawing.Point(221, 231)
+        Me.combo_Customer9.Name = "combo_Customer9"
+        Me.combo_Customer9.Size = New System.Drawing.Size(182, 21)
+        Me.combo_Customer9.TabIndex = 57
+        Me.combo_Customer9.ValueMember = "fld_Customer"
+        '
+        'TbltermCustomers9BindingSource
+        '
+        Me.TbltermCustomers9BindingSource.DataMember = "tbl_term_Customers9"
+        Me.TbltermCustomers9BindingSource.DataSource = Me.Db_WOlogDataSet
+        '
+        'combo_Customer8
+        '
+        Me.combo_Customer8.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.combo_Customer8.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.combo_Customer8.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.TbltermCustomers8BindingSource, "fld_Customer", True))
+        Me.combo_Customer8.DataSource = Me.TbltermCustomers8BindingSource
+        Me.combo_Customer8.DisplayMember = "fld_Customer"
+        Me.combo_Customer8.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.combo_Customer8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.combo_Customer8.FormattingEnabled = True
+        Me.combo_Customer8.Location = New System.Drawing.Point(221, 206)
+        Me.combo_Customer8.Name = "combo_Customer8"
+        Me.combo_Customer8.Size = New System.Drawing.Size(182, 21)
+        Me.combo_Customer8.TabIndex = 52
+        Me.combo_Customer8.ValueMember = "fld_Customer"
+        '
+        'TbltermCustomers8BindingSource
+        '
+        Me.TbltermCustomers8BindingSource.DataMember = "tbl_term_Customers8"
+        Me.TbltermCustomers8BindingSource.DataSource = Me.Db_WOlogDataSet
+        '
+        'combo_Customer7
+        '
+        Me.combo_Customer7.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.combo_Customer7.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.combo_Customer7.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.TbltermCustomers7BindingSource, "fld_Customer", True))
+        Me.combo_Customer7.DataSource = Me.TbltermCustomers7BindingSource
+        Me.combo_Customer7.DisplayMember = "fld_Customer"
+        Me.combo_Customer7.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.combo_Customer7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.combo_Customer7.FormattingEnabled = True
+        Me.combo_Customer7.Location = New System.Drawing.Point(221, 181)
+        Me.combo_Customer7.Name = "combo_Customer7"
+        Me.combo_Customer7.Size = New System.Drawing.Size(182, 21)
+        Me.combo_Customer7.TabIndex = 47
+        Me.combo_Customer7.ValueMember = "fld_Customer"
+        '
+        'TbltermCustomers7BindingSource
+        '
+        Me.TbltermCustomers7BindingSource.DataMember = "tbl_term_Customers7"
+        Me.TbltermCustomers7BindingSource.DataSource = Me.Db_WOlogDataSet
+        '
+        'combo_Customer6
+        '
+        Me.combo_Customer6.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.combo_Customer6.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.combo_Customer6.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.TbltermCustomers6BindingSource, "fld_Customer", True))
+        Me.combo_Customer6.DataSource = Me.TbltermCustomers6BindingSource
+        Me.combo_Customer6.DisplayMember = "fld_Customer"
+        Me.combo_Customer6.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.combo_Customer6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.combo_Customer6.FormattingEnabled = True
+        Me.combo_Customer6.Location = New System.Drawing.Point(221, 156)
+        Me.combo_Customer6.Name = "combo_Customer6"
+        Me.combo_Customer6.Size = New System.Drawing.Size(182, 21)
+        Me.combo_Customer6.TabIndex = 42
+        Me.combo_Customer6.ValueMember = "fld_Customer"
+        '
+        'TbltermCustomers6BindingSource
+        '
+        Me.TbltermCustomers6BindingSource.DataMember = "tbl_term_Customers6"
+        Me.TbltermCustomers6BindingSource.DataSource = Me.Db_WOlogDataSet
+        '
+        'combo_Customer5
+        '
+        Me.combo_Customer5.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.combo_Customer5.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.combo_Customer5.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.TbltermCustomers5BindingSource, "fld_Customer", True))
+        Me.combo_Customer5.DataSource = Me.TbltermCustomers5BindingSource
+        Me.combo_Customer5.DisplayMember = "fld_Customer"
+        Me.combo_Customer5.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.combo_Customer5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.combo_Customer5.FormattingEnabled = True
+        Me.combo_Customer5.Location = New System.Drawing.Point(221, 131)
+        Me.combo_Customer5.Name = "combo_Customer5"
+        Me.combo_Customer5.Size = New System.Drawing.Size(182, 21)
+        Me.combo_Customer5.TabIndex = 37
+        Me.combo_Customer5.ValueMember = "fld_Customer"
+        '
+        'TbltermCustomers5BindingSource
+        '
+        Me.TbltermCustomers5BindingSource.DataMember = "tbl_term_Customers5"
+        Me.TbltermCustomers5BindingSource.DataSource = Me.Db_WOlogDataSet
+        '
+        'combo_Customer4
+        '
+        Me.combo_Customer4.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.combo_Customer4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.combo_Customer4.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.TbltermCustomers4BindingSource, "fld_Customer", True))
+        Me.combo_Customer4.DataSource = Me.TbltermCustomers4BindingSource
+        Me.combo_Customer4.DisplayMember = "fld_Customer"
+        Me.combo_Customer4.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.combo_Customer4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.combo_Customer4.FormattingEnabled = True
+        Me.combo_Customer4.Location = New System.Drawing.Point(221, 106)
+        Me.combo_Customer4.Name = "combo_Customer4"
+        Me.combo_Customer4.Size = New System.Drawing.Size(182, 21)
+        Me.combo_Customer4.TabIndex = 32
+        Me.combo_Customer4.ValueMember = "fld_Customer"
+        '
+        'TbltermCustomers4BindingSource
+        '
+        Me.TbltermCustomers4BindingSource.DataMember = "tbl_term_Customers4"
+        Me.TbltermCustomers4BindingSource.DataSource = Me.Db_WOlogDataSet
+        '
+        'combo_Customer3
+        '
+        Me.combo_Customer3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.combo_Customer3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.combo_Customer3.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.TbltermCustomers3BindingSource, "fld_Customer", True))
+        Me.combo_Customer3.DataSource = Me.TbltermCustomers3BindingSource
+        Me.combo_Customer3.DisplayMember = "fld_Customer"
+        Me.combo_Customer3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.combo_Customer3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.combo_Customer3.FormattingEnabled = True
+        Me.combo_Customer3.Location = New System.Drawing.Point(221, 81)
+        Me.combo_Customer3.Name = "combo_Customer3"
+        Me.combo_Customer3.Size = New System.Drawing.Size(182, 21)
+        Me.combo_Customer3.TabIndex = 27
+        Me.combo_Customer3.ValueMember = "fld_Customer"
+        '
+        'TbltermCustomers3BindingSource
+        '
+        Me.TbltermCustomers3BindingSource.DataMember = "tbl_term_Customers3"
+        Me.TbltermCustomers3BindingSource.DataSource = Me.Db_WOlogDataSet
+        '
+        'combo_Customer2
+        '
+        Me.combo_Customer2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.combo_Customer2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.combo_Customer2.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.TbltermCustomers2BindingSource, "fld_Customer", True))
+        Me.combo_Customer2.DataSource = Me.TbltermCustomers2BindingSource
+        Me.combo_Customer2.DisplayMember = "fld_Customer"
+        Me.combo_Customer2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.combo_Customer2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.combo_Customer2.FormattingEnabled = True
+        Me.combo_Customer2.Location = New System.Drawing.Point(221, 56)
+        Me.combo_Customer2.Name = "combo_Customer2"
+        Me.combo_Customer2.Size = New System.Drawing.Size(182, 21)
+        Me.combo_Customer2.TabIndex = 22
+        Me.combo_Customer2.ValueMember = "fld_Customer"
+        '
+        'TbltermCustomers2BindingSource
+        '
+        Me.TbltermCustomers2BindingSource.DataMember = "tbl_term_Customers2"
+        Me.TbltermCustomers2BindingSource.DataSource = Me.Db_WOlogDataSet
+        '
+        'text_POnum7
+        '
+        Me.text_POnum7.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.text_POnum7.Location = New System.Drawing.Point(33, 181)
+        Me.text_POnum7.Name = "text_POnum7"
+        Me.text_POnum7.Size = New System.Drawing.Size(182, 20)
+        Me.text_POnum7.TabIndex = 46
+        '
+        'text_POnum6
+        '
+        Me.text_POnum6.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.text_POnum6.Location = New System.Drawing.Point(33, 156)
+        Me.text_POnum6.Name = "text_POnum6"
+        Me.text_POnum6.Size = New System.Drawing.Size(182, 20)
+        Me.text_POnum6.TabIndex = 41
+        '
+        'text_POnum5
+        '
+        Me.text_POnum5.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.text_POnum5.Location = New System.Drawing.Point(33, 131)
+        Me.text_POnum5.Name = "text_POnum5"
+        Me.text_POnum5.Size = New System.Drawing.Size(182, 20)
+        Me.text_POnum5.TabIndex = 36
+        '
+        'text_POnum4
+        '
+        Me.text_POnum4.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.text_POnum4.Location = New System.Drawing.Point(33, 106)
+        Me.text_POnum4.Name = "text_POnum4"
+        Me.text_POnum4.Size = New System.Drawing.Size(182, 20)
+        Me.text_POnum4.TabIndex = 31
+        '
+        'text_POnum3
+        '
+        Me.text_POnum3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.text_POnum3.Location = New System.Drawing.Point(33, 81)
+        Me.text_POnum3.Name = "text_POnum3"
+        Me.text_POnum3.Size = New System.Drawing.Size(182, 20)
+        Me.text_POnum3.TabIndex = 26
+        '
+        'text_POnum2
+        '
+        Me.text_POnum2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.text_POnum2.Location = New System.Drawing.Point(33, 56)
+        Me.text_POnum2.Name = "text_POnum2"
+        Me.text_POnum2.Size = New System.Drawing.Size(182, 20)
+        Me.text_POnum2.TabIndex = 21
+        '
+        'text_POnum8
+        '
+        Me.text_POnum8.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.text_POnum8.Location = New System.Drawing.Point(33, 206)
+        Me.text_POnum8.Name = "text_POnum8"
+        Me.text_POnum8.Size = New System.Drawing.Size(182, 20)
+        Me.text_POnum8.TabIndex = 51
         '
         'Label17
         '
@@ -1203,7 +1577,7 @@ Partial Class form_AddNewEntry
         Me.Label17.Location = New System.Drawing.Point(409, 0)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(54, 28)
-        Me.Label17.TabIndex = 50
+        Me.Label17.TabIndex = 99
         Me.Label17.Text = "Qty Shipped"
         Me.Label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -1214,7 +1588,7 @@ Partial Class form_AddNewEntry
         Me.Label15.Location = New System.Drawing.Point(3, 128)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(24, 25)
-        Me.Label15.TabIndex = 48
+        Me.Label15.TabIndex = 99
         Me.Label15.Text = "5"
         Me.Label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -1227,7 +1601,7 @@ Partial Class form_AddNewEntry
         Me.Label16.Location = New System.Drawing.Point(3, 0)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(24, 28)
-        Me.Label16.TabIndex = 45
+        Me.Label16.TabIndex = 99
         Me.Label16.Text = "#"
         Me.Label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -1238,7 +1612,7 @@ Partial Class form_AddNewEntry
         Me.Label6.Location = New System.Drawing.Point(3, 28)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(24, 25)
-        Me.Label6.TabIndex = 44
+        Me.Label6.TabIndex = 99
         Me.Label6.Text = "1"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -1249,19 +1623,19 @@ Partial Class form_AddNewEntry
         Me.Label10.Location = New System.Drawing.Point(3, 53)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(24, 25)
-        Me.Label10.TabIndex = 45
+        Me.Label10.TabIndex = 99
         Me.Label10.Text = "2"
         Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'date_ShipDate
+        'date_ShipDate1
         '
-        Me.date_ShipDate.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.date_ShipDate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.date_ShipDate.Location = New System.Drawing.Point(469, 31)
-        Me.date_ShipDate.Name = "date_ShipDate"
-        Me.date_ShipDate.Size = New System.Drawing.Size(91, 20)
-        Me.date_ShipDate.TabIndex = 20
-        Me.date_ShipDate.Value = New Date(2018, 6, 14, 14, 14, 51, 0)
+        Me.date_ShipDate1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.date_ShipDate1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.date_ShipDate1.Location = New System.Drawing.Point(469, 31)
+        Me.date_ShipDate1.Name = "date_ShipDate1"
+        Me.date_ShipDate1.Size = New System.Drawing.Size(91, 20)
+        Me.date_ShipDate1.TabIndex = 19
+        Me.date_ShipDate1.Value = New Date(2018, 6, 14, 14, 14, 51, 0)
         '
         'Label13
         '
@@ -1270,17 +1644,17 @@ Partial Class form_AddNewEntry
         Me.Label13.Location = New System.Drawing.Point(3, 78)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(24, 25)
-        Me.Label13.TabIndex = 46
+        Me.Label13.TabIndex = 99
         Me.Label13.Text = "3"
         Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'text_DeliveryTicketNum
+        'text_Ticket1
         '
-        Me.text_DeliveryTicketNum.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.text_DeliveryTicketNum.Location = New System.Drawing.Point(566, 31)
-        Me.text_DeliveryTicketNum.Name = "text_DeliveryTicketNum"
-        Me.text_DeliveryTicketNum.Size = New System.Drawing.Size(183, 20)
-        Me.text_DeliveryTicketNum.TabIndex = 18
+        Me.text_Ticket1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.text_Ticket1.Location = New System.Drawing.Point(566, 31)
+        Me.text_Ticket1.Name = "text_Ticket1"
+        Me.text_Ticket1.Size = New System.Drawing.Size(183, 20)
+        Me.text_Ticket1.TabIndex = 20
         '
         'Label14
         '
@@ -1289,7 +1663,7 @@ Partial Class form_AddNewEntry
         Me.Label14.Location = New System.Drawing.Point(3, 103)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(24, 25)
-        Me.Label14.TabIndex = 47
+        Me.Label14.TabIndex = 99
         Me.Label14.Text = "4"
         Me.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -1300,7 +1674,7 @@ Partial Class form_AddNewEntry
         Me.Label5.Location = New System.Drawing.Point(566, 0)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(183, 28)
-        Me.Label5.TabIndex = 34
+        Me.Label5.TabIndex = 99
         Me.Label5.Text = "Ticket #"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -1311,7 +1685,7 @@ Partial Class form_AddNewEntry
         Me.Label9.Location = New System.Drawing.Point(469, 0)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(91, 28)
-        Me.Label9.TabIndex = 39
+        Me.Label9.TabIndex = 99
         Me.Label9.Text = "Shipping Date"
         Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -1322,17 +1696,17 @@ Partial Class form_AddNewEntry
         Me.Label4.Location = New System.Drawing.Point(33, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(182, 28)
-        Me.Label4.TabIndex = 32
+        Me.Label4.TabIndex = 99
         Me.Label4.Text = "PO Number"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'text_POnum
+        'text_POnum1
         '
-        Me.text_POnum.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.text_POnum.Location = New System.Drawing.Point(33, 31)
-        Me.text_POnum.Name = "text_POnum"
-        Me.text_POnum.Size = New System.Drawing.Size(182, 20)
-        Me.text_POnum.TabIndex = 2
+        Me.text_POnum1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.text_POnum1.Location = New System.Drawing.Point(33, 31)
+        Me.text_POnum1.Name = "text_POnum1"
+        Me.text_POnum1.Size = New System.Drawing.Size(182, 20)
+        Me.text_POnum1.TabIndex = 16
         '
         'Fld_CustomerLabel
         '
@@ -1341,34 +1715,17 @@ Partial Class form_AddNewEntry
         Me.Fld_CustomerLabel.Location = New System.Drawing.Point(221, 0)
         Me.Fld_CustomerLabel.Name = "Fld_CustomerLabel"
         Me.Fld_CustomerLabel.Size = New System.Drawing.Size(182, 28)
-        Me.Fld_CustomerLabel.TabIndex = 13
+        Me.Fld_CustomerLabel.TabIndex = 99
         Me.Fld_CustomerLabel.Text = "Customer"
         Me.Fld_CustomerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'combo_Customer
+        'text_QtyShip1
         '
-        Me.combo_Customer.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
-        Me.combo_Customer.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
-        Me.combo_Customer.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Tbl_term_CustomersBindingSource, "fld_Customer", True))
-        Me.combo_Customer.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.Tbl_term_CustomersBindingSource, "fld_Customer", True))
-        Me.combo_Customer.DataSource = Me.Tbl_term_CustomersBindingSource
-        Me.combo_Customer.DisplayMember = "fld_Customer"
-        Me.combo_Customer.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.combo_Customer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.combo_Customer.FormattingEnabled = True
-        Me.combo_Customer.Location = New System.Drawing.Point(221, 31)
-        Me.combo_Customer.Name = "combo_Customer"
-        Me.combo_Customer.Size = New System.Drawing.Size(182, 21)
-        Me.combo_Customer.TabIndex = 4
-        Me.combo_Customer.ValueMember = "fld_Customer"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBox1.Location = New System.Drawing.Point(409, 31)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(54, 20)
-        Me.TextBox1.TabIndex = 49
+        Me.text_QtyShip1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.text_QtyShip1.Location = New System.Drawing.Point(409, 31)
+        Me.text_QtyShip1.Name = "text_QtyShip1"
+        Me.text_QtyShip1.Size = New System.Drawing.Size(54, 20)
+        Me.text_QtyShip1.TabIndex = 18
         '
         'Label3
         '
@@ -1377,7 +1734,7 @@ Partial Class form_AddNewEntry
         Me.Label3.Location = New System.Drawing.Point(3, 153)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(24, 25)
-        Me.Label3.TabIndex = 51
+        Me.Label3.TabIndex = 99
         Me.Label3.Text = "6"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -1388,7 +1745,7 @@ Partial Class form_AddNewEntry
         Me.Label11.Location = New System.Drawing.Point(3, 178)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(24, 25)
-        Me.Label11.TabIndex = 52
+        Me.Label11.TabIndex = 99
         Me.Label11.Text = "7"
         Me.Label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -1399,7 +1756,7 @@ Partial Class form_AddNewEntry
         Me.Label18.Location = New System.Drawing.Point(3, 203)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(24, 25)
-        Me.Label18.TabIndex = 53
+        Me.Label18.TabIndex = 99
         Me.Label18.Text = "8"
         Me.Label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -1410,7 +1767,7 @@ Partial Class form_AddNewEntry
         Me.Label19.Location = New System.Drawing.Point(3, 228)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(24, 25)
-        Me.Label19.TabIndex = 54
+        Me.Label19.TabIndex = 99
         Me.Label19.Text = "9"
         Me.Label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -1421,9 +1778,43 @@ Partial Class form_AddNewEntry
         Me.Label20.Location = New System.Drawing.Point(3, 253)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(24, 30)
-        Me.Label20.TabIndex = 55
+        Me.Label20.TabIndex = 99
         Me.Label20.Text = "10"
         Me.Label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'text_POnum9
+        '
+        Me.text_POnum9.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.text_POnum9.Location = New System.Drawing.Point(33, 231)
+        Me.text_POnum9.Name = "text_POnum9"
+        Me.text_POnum9.Size = New System.Drawing.Size(182, 20)
+        Me.text_POnum9.TabIndex = 56
+        '
+        'text_POnum10
+        '
+        Me.text_POnum10.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.text_POnum10.Location = New System.Drawing.Point(33, 256)
+        Me.text_POnum10.Name = "text_POnum10"
+        Me.text_POnum10.Size = New System.Drawing.Size(182, 20)
+        Me.text_POnum10.TabIndex = 61
+        '
+        'text_QtyShip5
+        '
+        Me.text_QtyShip5.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.text_QtyShip5.Location = New System.Drawing.Point(409, 131)
+        Me.text_QtyShip5.Name = "text_QtyShip5"
+        Me.text_QtyShip5.Size = New System.Drawing.Size(54, 20)
+        Me.text_QtyShip5.TabIndex = 38
+        '
+        'date_ShipDate3
+        '
+        Me.date_ShipDate3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.date_ShipDate3.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.date_ShipDate3.Location = New System.Drawing.Point(469, 81)
+        Me.date_ShipDate3.Name = "date_ShipDate3"
+        Me.date_ShipDate3.Size = New System.Drawing.Size(91, 20)
+        Me.date_ShipDate3.TabIndex = 29
+        Me.date_ShipDate3.Value = New Date(2018, 6, 14, 14, 14, 51, 0)
         '
         'TabPage2
         '
@@ -1443,466 +1834,51 @@ Partial Class form_AddNewEntry
         Me.text_Notes.Multiline = True
         Me.text_Notes.Name = "text_Notes"
         Me.text_Notes.Size = New System.Drawing.Size(764, 483)
-        Me.text_Notes.TabIndex = 7
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBox2.Location = New System.Drawing.Point(33, 256)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(182, 20)
-        Me.TextBox2.TabIndex = 56
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBox3.Location = New System.Drawing.Point(33, 231)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(182, 20)
-        Me.TextBox3.TabIndex = 57
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBox4.Location = New System.Drawing.Point(33, 206)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(182, 20)
-        Me.TextBox4.TabIndex = 57
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBox5.Location = New System.Drawing.Point(33, 56)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(182, 20)
-        Me.TextBox5.TabIndex = 57
-        '
-        'TextBox6
-        '
-        Me.TextBox6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBox6.Location = New System.Drawing.Point(33, 81)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(182, 20)
-        Me.TextBox6.TabIndex = 57
-        '
-        'TextBox7
-        '
-        Me.TextBox7.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBox7.Location = New System.Drawing.Point(33, 106)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(182, 20)
-        Me.TextBox7.TabIndex = 57
-        '
-        'TextBox8
-        '
-        Me.TextBox8.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBox8.Location = New System.Drawing.Point(33, 131)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(182, 20)
-        Me.TextBox8.TabIndex = 57
-        '
-        'TextBox9
-        '
-        Me.TextBox9.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBox9.Location = New System.Drawing.Point(33, 156)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(182, 20)
-        Me.TextBox9.TabIndex = 57
-        '
-        'TextBox10
-        '
-        Me.TextBox10.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBox10.Location = New System.Drawing.Point(33, 181)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(182, 20)
-        Me.TextBox10.TabIndex = 57
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
-        Me.ComboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
-        Me.ComboBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Tbl_term_CustomersBindingSource, "fld_Customer", True))
-        Me.ComboBox1.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.Tbl_term_CustomersBindingSource, "fld_Customer", True))
-        Me.ComboBox1.DataSource = Me.Tbl_term_CustomersBindingSource
-        Me.ComboBox1.DisplayMember = "fld_Customer"
-        Me.ComboBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(221, 56)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(182, 21)
-        Me.ComboBox1.TabIndex = 48
-        Me.ComboBox1.ValueMember = "fld_Customer"
-        '
-        'ComboBox2
-        '
-        Me.ComboBox2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
-        Me.ComboBox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
-        Me.ComboBox2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Tbl_term_CustomersBindingSource, "fld_Customer", True))
-        Me.ComboBox2.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.Tbl_term_CustomersBindingSource, "fld_Customer", True))
-        Me.ComboBox2.DataSource = Me.Tbl_term_CustomersBindingSource
-        Me.ComboBox2.DisplayMember = "fld_Customer"
-        Me.ComboBox2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(221, 81)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(182, 21)
-        Me.ComboBox2.TabIndex = 49
-        Me.ComboBox2.ValueMember = "fld_Customer"
-        '
-        'ComboBox3
-        '
-        Me.ComboBox3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
-        Me.ComboBox3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
-        Me.ComboBox3.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Tbl_term_CustomersBindingSource, "fld_Customer", True))
-        Me.ComboBox3.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.Tbl_term_CustomersBindingSource, "fld_Customer", True))
-        Me.ComboBox3.DataSource = Me.Tbl_term_CustomersBindingSource
-        Me.ComboBox3.DisplayMember = "fld_Customer"
-        Me.ComboBox3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(221, 106)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(182, 21)
-        Me.ComboBox3.TabIndex = 49
-        Me.ComboBox3.ValueMember = "fld_Customer"
-        '
-        'ComboBox4
-        '
-        Me.ComboBox4.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
-        Me.ComboBox4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
-        Me.ComboBox4.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Tbl_term_CustomersBindingSource, "fld_Customer", True))
-        Me.ComboBox4.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.Tbl_term_CustomersBindingSource, "fld_Customer", True))
-        Me.ComboBox4.DataSource = Me.Tbl_term_CustomersBindingSource
-        Me.ComboBox4.DisplayMember = "fld_Customer"
-        Me.ComboBox4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox4.FormattingEnabled = True
-        Me.ComboBox4.Location = New System.Drawing.Point(221, 131)
-        Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(182, 21)
-        Me.ComboBox4.TabIndex = 49
-        Me.ComboBox4.ValueMember = "fld_Customer"
-        '
-        'ComboBox5
-        '
-        Me.ComboBox5.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
-        Me.ComboBox5.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
-        Me.ComboBox5.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Tbl_term_CustomersBindingSource, "fld_Customer", True))
-        Me.ComboBox5.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.Tbl_term_CustomersBindingSource, "fld_Customer", True))
-        Me.ComboBox5.DataSource = Me.Tbl_term_CustomersBindingSource
-        Me.ComboBox5.DisplayMember = "fld_Customer"
-        Me.ComboBox5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ComboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox5.FormattingEnabled = True
-        Me.ComboBox5.Location = New System.Drawing.Point(221, 156)
-        Me.ComboBox5.Name = "ComboBox5"
-        Me.ComboBox5.Size = New System.Drawing.Size(182, 21)
-        Me.ComboBox5.TabIndex = 49
-        Me.ComboBox5.ValueMember = "fld_Customer"
-        '
-        'ComboBox6
-        '
-        Me.ComboBox6.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
-        Me.ComboBox6.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
-        Me.ComboBox6.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Tbl_term_CustomersBindingSource, "fld_Customer", True))
-        Me.ComboBox6.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.Tbl_term_CustomersBindingSource, "fld_Customer", True))
-        Me.ComboBox6.DataSource = Me.Tbl_term_CustomersBindingSource
-        Me.ComboBox6.DisplayMember = "fld_Customer"
-        Me.ComboBox6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ComboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox6.FormattingEnabled = True
-        Me.ComboBox6.Location = New System.Drawing.Point(221, 181)
-        Me.ComboBox6.Name = "ComboBox6"
-        Me.ComboBox6.Size = New System.Drawing.Size(182, 21)
-        Me.ComboBox6.TabIndex = 49
-        Me.ComboBox6.ValueMember = "fld_Customer"
-        '
-        'ComboBox7
-        '
-        Me.ComboBox7.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
-        Me.ComboBox7.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
-        Me.ComboBox7.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Tbl_term_CustomersBindingSource, "fld_Customer", True))
-        Me.ComboBox7.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.Tbl_term_CustomersBindingSource, "fld_Customer", True))
-        Me.ComboBox7.DataSource = Me.Tbl_term_CustomersBindingSource
-        Me.ComboBox7.DisplayMember = "fld_Customer"
-        Me.ComboBox7.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ComboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox7.FormattingEnabled = True
-        Me.ComboBox7.Location = New System.Drawing.Point(221, 206)
-        Me.ComboBox7.Name = "ComboBox7"
-        Me.ComboBox7.Size = New System.Drawing.Size(182, 21)
-        Me.ComboBox7.TabIndex = 49
-        Me.ComboBox7.ValueMember = "fld_Customer"
-        '
-        'ComboBox8
-        '
-        Me.ComboBox8.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
-        Me.ComboBox8.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
-        Me.ComboBox8.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Tbl_term_CustomersBindingSource, "fld_Customer", True))
-        Me.ComboBox8.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.Tbl_term_CustomersBindingSource, "fld_Customer", True))
-        Me.ComboBox8.DataSource = Me.Tbl_term_CustomersBindingSource
-        Me.ComboBox8.DisplayMember = "fld_Customer"
-        Me.ComboBox8.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ComboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox8.FormattingEnabled = True
-        Me.ComboBox8.Location = New System.Drawing.Point(221, 231)
-        Me.ComboBox8.Name = "ComboBox8"
-        Me.ComboBox8.Size = New System.Drawing.Size(182, 21)
-        Me.ComboBox8.TabIndex = 49
-        Me.ComboBox8.ValueMember = "fld_Customer"
-        '
-        'ComboBox9
-        '
-        Me.ComboBox9.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
-        Me.ComboBox9.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
-        Me.ComboBox9.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Tbl_term_CustomersBindingSource, "fld_Customer", True))
-        Me.ComboBox9.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.Tbl_term_CustomersBindingSource, "fld_Customer", True))
-        Me.ComboBox9.DataSource = Me.Tbl_term_CustomersBindingSource
-        Me.ComboBox9.DisplayMember = "fld_Customer"
-        Me.ComboBox9.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ComboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox9.FormattingEnabled = True
-        Me.ComboBox9.Location = New System.Drawing.Point(221, 256)
-        Me.ComboBox9.Name = "ComboBox9"
-        Me.ComboBox9.Size = New System.Drawing.Size(182, 21)
-        Me.ComboBox9.TabIndex = 49
-        Me.ComboBox9.ValueMember = "fld_Customer"
-        '
-        'TextBox11
-        '
-        Me.TextBox11.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBox11.Location = New System.Drawing.Point(409, 56)
-        Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(54, 20)
-        Me.TextBox11.TabIndex = 50
-        '
-        'TextBox12
-        '
-        Me.TextBox12.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBox12.Location = New System.Drawing.Point(409, 106)
-        Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.Size = New System.Drawing.Size(54, 20)
-        Me.TextBox12.TabIndex = 51
-        '
-        'TextBox13
-        '
-        Me.TextBox13.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBox13.Location = New System.Drawing.Point(409, 131)
-        Me.TextBox13.Name = "TextBox13"
-        Me.TextBox13.Size = New System.Drawing.Size(54, 20)
-        Me.TextBox13.TabIndex = 52
-        '
-        'TextBox14
-        '
-        Me.TextBox14.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBox14.Location = New System.Drawing.Point(409, 156)
-        Me.TextBox14.Name = "TextBox14"
-        Me.TextBox14.Size = New System.Drawing.Size(54, 20)
-        Me.TextBox14.TabIndex = 53
-        '
-        'TextBox15
-        '
-        Me.TextBox15.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBox15.Location = New System.Drawing.Point(409, 181)
-        Me.TextBox15.Name = "TextBox15"
-        Me.TextBox15.Size = New System.Drawing.Size(54, 20)
-        Me.TextBox15.TabIndex = 54
-        '
-        'TextBox16
-        '
-        Me.TextBox16.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBox16.Location = New System.Drawing.Point(409, 206)
-        Me.TextBox16.Name = "TextBox16"
-        Me.TextBox16.Size = New System.Drawing.Size(54, 20)
-        Me.TextBox16.TabIndex = 55
-        '
-        'TextBox17
-        '
-        Me.TextBox17.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBox17.Location = New System.Drawing.Point(409, 81)
-        Me.TextBox17.Name = "TextBox17"
-        Me.TextBox17.Size = New System.Drawing.Size(54, 20)
-        Me.TextBox17.TabIndex = 56
-        '
-        'TextBox18
-        '
-        Me.TextBox18.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBox18.Location = New System.Drawing.Point(409, 231)
-        Me.TextBox18.Name = "TextBox18"
-        Me.TextBox18.Size = New System.Drawing.Size(54, 20)
-        Me.TextBox18.TabIndex = 57
-        '
-        'TextBox19
-        '
-        Me.TextBox19.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBox19.Location = New System.Drawing.Point(409, 256)
-        Me.TextBox19.Name = "TextBox19"
-        Me.TextBox19.Size = New System.Drawing.Size(54, 20)
-        Me.TextBox19.TabIndex = 58
-        '
-        'DateTimePicker1
-        '
-        Me.DateTimePicker1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePicker1.Location = New System.Drawing.Point(469, 56)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(91, 20)
-        Me.DateTimePicker1.TabIndex = 48
-        Me.DateTimePicker1.Value = New Date(2018, 6, 14, 14, 14, 51, 0)
-        '
-        'DateTimePicker2
-        '
-        Me.DateTimePicker2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePicker2.Location = New System.Drawing.Point(469, 81)
-        Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(91, 20)
-        Me.DateTimePicker2.TabIndex = 49
-        Me.DateTimePicker2.Value = New Date(2018, 6, 14, 14, 14, 51, 0)
-        '
-        'DateTimePicker3
-        '
-        Me.DateTimePicker3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePicker3.Location = New System.Drawing.Point(469, 106)
-        Me.DateTimePicker3.Name = "DateTimePicker3"
-        Me.DateTimePicker3.Size = New System.Drawing.Size(91, 20)
-        Me.DateTimePicker3.TabIndex = 50
-        Me.DateTimePicker3.Value = New Date(2018, 6, 14, 14, 14, 51, 0)
-        '
-        'DateTimePicker4
-        '
-        Me.DateTimePicker4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePicker4.Location = New System.Drawing.Point(469, 131)
-        Me.DateTimePicker4.Name = "DateTimePicker4"
-        Me.DateTimePicker4.Size = New System.Drawing.Size(91, 20)
-        Me.DateTimePicker4.TabIndex = 51
-        Me.DateTimePicker4.Value = New Date(2018, 6, 14, 14, 14, 51, 0)
-        '
-        'DateTimePicker5
-        '
-        Me.DateTimePicker5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DateTimePicker5.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePicker5.Location = New System.Drawing.Point(469, 156)
-        Me.DateTimePicker5.Name = "DateTimePicker5"
-        Me.DateTimePicker5.Size = New System.Drawing.Size(91, 20)
-        Me.DateTimePicker5.TabIndex = 52
-        Me.DateTimePicker5.Value = New Date(2018, 6, 14, 14, 14, 51, 0)
-        '
-        'DateTimePicker6
-        '
-        Me.DateTimePicker6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DateTimePicker6.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePicker6.Location = New System.Drawing.Point(469, 181)
-        Me.DateTimePicker6.Name = "DateTimePicker6"
-        Me.DateTimePicker6.Size = New System.Drawing.Size(91, 20)
-        Me.DateTimePicker6.TabIndex = 53
-        Me.DateTimePicker6.Value = New Date(2018, 6, 14, 14, 14, 51, 0)
-        '
-        'DateTimePicker7
-        '
-        Me.DateTimePicker7.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DateTimePicker7.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePicker7.Location = New System.Drawing.Point(469, 206)
-        Me.DateTimePicker7.Name = "DateTimePicker7"
-        Me.DateTimePicker7.Size = New System.Drawing.Size(91, 20)
-        Me.DateTimePicker7.TabIndex = 54
-        Me.DateTimePicker7.Value = New Date(2018, 6, 14, 14, 14, 51, 0)
-        '
-        'DateTimePicker8
-        '
-        Me.DateTimePicker8.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DateTimePicker8.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePicker8.Location = New System.Drawing.Point(469, 231)
-        Me.DateTimePicker8.Name = "DateTimePicker8"
-        Me.DateTimePicker8.Size = New System.Drawing.Size(91, 20)
-        Me.DateTimePicker8.TabIndex = 55
-        Me.DateTimePicker8.Value = New Date(2018, 6, 14, 14, 14, 51, 0)
-        '
-        'DateTimePicker9
-        '
-        Me.DateTimePicker9.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DateTimePicker9.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePicker9.Location = New System.Drawing.Point(469, 256)
-        Me.DateTimePicker9.Name = "DateTimePicker9"
-        Me.DateTimePicker9.Size = New System.Drawing.Size(91, 20)
-        Me.DateTimePicker9.TabIndex = 56
-        Me.DateTimePicker9.Value = New Date(2018, 6, 14, 14, 14, 51, 0)
-        '
-        'TextBox20
-        '
-        Me.TextBox20.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBox20.Location = New System.Drawing.Point(566, 56)
-        Me.TextBox20.Name = "TextBox20"
-        Me.TextBox20.Size = New System.Drawing.Size(183, 20)
-        Me.TextBox20.TabIndex = 48
-        '
-        'TextBox21
-        '
-        Me.TextBox21.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBox21.Location = New System.Drawing.Point(566, 81)
-        Me.TextBox21.Name = "TextBox21"
-        Me.TextBox21.Size = New System.Drawing.Size(183, 20)
-        Me.TextBox21.TabIndex = 49
-        '
-        'TextBox22
-        '
-        Me.TextBox22.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBox22.Location = New System.Drawing.Point(566, 106)
-        Me.TextBox22.Name = "TextBox22"
-        Me.TextBox22.Size = New System.Drawing.Size(183, 20)
-        Me.TextBox22.TabIndex = 50
-        '
-        'TextBox23
-        '
-        Me.TextBox23.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBox23.Location = New System.Drawing.Point(566, 131)
-        Me.TextBox23.Name = "TextBox23"
-        Me.TextBox23.Size = New System.Drawing.Size(183, 20)
-        Me.TextBox23.TabIndex = 51
-        '
-        'TextBox24
-        '
-        Me.TextBox24.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBox24.Location = New System.Drawing.Point(566, 156)
-        Me.TextBox24.Name = "TextBox24"
-        Me.TextBox24.Size = New System.Drawing.Size(183, 20)
-        Me.TextBox24.TabIndex = 52
-        '
-        'TextBox25
-        '
-        Me.TextBox25.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBox25.Location = New System.Drawing.Point(566, 181)
-        Me.TextBox25.Name = "TextBox25"
-        Me.TextBox25.Size = New System.Drawing.Size(183, 20)
-        Me.TextBox25.TabIndex = 53
-        '
-        'TextBox26
-        '
-        Me.TextBox26.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBox26.Location = New System.Drawing.Point(566, 206)
-        Me.TextBox26.Name = "TextBox26"
-        Me.TextBox26.Size = New System.Drawing.Size(183, 20)
-        Me.TextBox26.TabIndex = 54
-        '
-        'TextBox27
-        '
-        Me.TextBox27.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBox27.Location = New System.Drawing.Point(566, 231)
-        Me.TextBox27.Name = "TextBox27"
-        Me.TextBox27.Size = New System.Drawing.Size(183, 20)
-        Me.TextBox27.TabIndex = 55
-        '
-        'TextBox28
-        '
-        Me.TextBox28.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBox28.Location = New System.Drawing.Point(566, 256)
-        Me.TextBox28.Name = "TextBox28"
-        Me.TextBox28.Size = New System.Drawing.Size(183, 20)
-        Me.TextBox28.TabIndex = 56
+        Me.text_Notes.TabIndex = 66
+        '
+        'TbltermCustomersBindingSource
+        '
+        Me.TbltermCustomersBindingSource.DataMember = "tbl_term_Customers"
+        '
+        'Tbl_term_Customers1TableAdapter
+        '
+        Me.Tbl_term_Customers1TableAdapter.ClearBeforeFill = True
+        '
+        'Tbl_term_Customers2TableAdapter
+        '
+        Me.Tbl_term_Customers2TableAdapter.ClearBeforeFill = True
+        '
+        'Tbl_term_Customers3TableAdapter
+        '
+        Me.Tbl_term_Customers3TableAdapter.ClearBeforeFill = True
+        '
+        'Tbl_term_Customers4TableAdapter
+        '
+        Me.Tbl_term_Customers4TableAdapter.ClearBeforeFill = True
+        '
+        'Tbl_term_Customers5TableAdapter
+        '
+        Me.Tbl_term_Customers5TableAdapter.ClearBeforeFill = True
+        '
+        'Tbl_term_Customers6TableAdapter
+        '
+        Me.Tbl_term_Customers6TableAdapter.ClearBeforeFill = True
+        '
+        'Tbl_term_Customers7TableAdapter
+        '
+        Me.Tbl_term_Customers7TableAdapter.ClearBeforeFill = True
+        '
+        'Tbl_term_Customers8TableAdapter
+        '
+        Me.Tbl_term_Customers8TableAdapter.ClearBeforeFill = True
+        '
+        'Tbl_term_Customers9TableAdapter
+        '
+        Me.Tbl_term_Customers9TableAdapter.ClearBeforeFill = True
+        '
+        'Tbl_term_Customers10TableAdapter
+        '
+        Me.Tbl_term_Customers10TableAdapter.ClearBeforeFill = True
         '
         'form_AddNewEntry
         '
@@ -1912,23 +1888,17 @@ Partial Class form_AddNewEntry
         Me.CancelButton = Me.button_Exit
         Me.ClientSize = New System.Drawing.Size(784, 561)
         Me.Controls.Add(Me.TableLayoutPanel4)
-        Me.Controls.Add(Me.Tbl_WOnumBindingNavigator)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "form_AddNewEntry"
         Me.Text = "Neeco Work Order App - Add New Work Order"
-        CType(Me.Tbl_WOnumBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Tbl_WOnumBindingNavigator.ResumeLayout(False)
-        Me.Tbl_WOnumBindingNavigator.PerformLayout()
         CType(Me.Tbl_WOnumBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Db_WOlogDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Tbl_term_CustomersBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Tbl_term_HHPPBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Tbl_term_PRBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Tbl_term_PressureBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Tbl_term_PSLBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Tbl_term_ShipMethodBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Tbl_term_SizeBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Tbl_term_StyleBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Tbl_term_TempClassBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1953,10 +1923,20 @@ Partial Class form_AddNewEntry
         Me.GroupBox3.ResumeLayout(False)
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()
+        CType(Me.TbltermCustomers1BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TbltermCustomers10BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TbltermCustomers9BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TbltermCustomers8BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TbltermCustomers7BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TbltermCustomers6BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TbltermCustomers5BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TbltermCustomers4BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TbltermCustomers3BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TbltermCustomers2BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage2.PerformLayout()
+        CType(Me.TbltermCustomersBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
@@ -1964,21 +1944,7 @@ Partial Class form_AddNewEntry
     Friend WithEvents Tbl_WOnumBindingSource As BindingSource
     Friend WithEvents Tbl_WOnumTableAdapter As db_WOlogDataSetTableAdapters.tbl_WOnumTableAdapter
     Friend WithEvents TableAdapterManager As db_WOlogDataSetTableAdapters.TableAdapterManager
-    Friend WithEvents Tbl_WOnumBindingNavigator As BindingNavigator
-    Friend WithEvents BindingNavigatorAddNewItem As ToolStripButton
-    Friend WithEvents BindingNavigatorCountItem As ToolStripLabel
-    Friend WithEvents BindingNavigatorDeleteItem As ToolStripButton
-    Friend WithEvents BindingNavigatorMoveFirstItem As ToolStripButton
-    Friend WithEvents BindingNavigatorMovePreviousItem As ToolStripButton
-    Friend WithEvents BindingNavigatorSeparator As ToolStripSeparator
-    Friend WithEvents BindingNavigatorPositionItem As ToolStripTextBox
-    Friend WithEvents BindingNavigatorSeparator1 As ToolStripSeparator
-    Friend WithEvents BindingNavigatorMoveNextItem As ToolStripButton
-    Friend WithEvents BindingNavigatorMoveLastItem As ToolStripButton
-    Friend WithEvents BindingNavigatorSeparator2 As ToolStripSeparator
-    Friend WithEvents Tbl_WOnumBindingNavigatorSaveItem As ToolStripButton
     Friend WithEvents button_Exit As Button
-    Friend WithEvents Tbl_term_CustomersBindingSource As BindingSource
     Friend WithEvents Tbl_term_CustomersTableAdapter As db_WOlogDataSetTableAdapters.tbl_term_CustomersTableAdapter
     Friend WithEvents Tbl_term_HHPPBindingSource As BindingSource
     Friend WithEvents Tbl_term_HHPPTableAdapter As db_WOlogDataSetTableAdapters.tbl_term_HHPPTableAdapter
@@ -1989,8 +1955,6 @@ Partial Class form_AddNewEntry
     Friend WithEvents Tbl_term_ProductTypeBindingSource As BindingSource
     Friend WithEvents Tbl_term_PSLBindingSource As BindingSource
     Friend WithEvents Tbl_term_PSLTableAdapter As db_WOlogDataSetTableAdapters.tbl_term_PSLTableAdapter
-    Friend WithEvents Tbl_term_ShipMethodBindingSource As BindingSource
-    Friend WithEvents Tbl_term_ShipMethodTableAdapter As db_WOlogDataSetTableAdapters.tbl_term_ShipMethodTableAdapter
     Friend WithEvents Tbl_term_SizeBindingSource As BindingSource
     Friend WithEvents Tbl_term_SizeTableAdapter As db_WOlogDataSetTableAdapters.tbl_term_SizeTableAdapter
     Friend WithEvents Tbl_term_StyleBindingSource As BindingSource
@@ -2036,17 +2000,17 @@ Partial Class form_AddNewEntry
     Friend WithEvents Label16 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label10 As Label
-    Friend WithEvents date_ShipDate As DateTimePicker
+    Friend WithEvents date_ShipDate1 As DateTimePicker
     Friend WithEvents Label13 As Label
-    Friend WithEvents text_DeliveryTicketNum As TextBox
+    Friend WithEvents text_Ticket1 As TextBox
     Friend WithEvents Label14 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents text_POnum As TextBox
+    Friend WithEvents text_POnum1 As TextBox
     Friend WithEvents Fld_CustomerLabel As Label
-    Friend WithEvents combo_Customer As ComboBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents combo_Customer1 As ComboBox
+    Friend WithEvents text_QtyShip1 As TextBox
     Friend WithEvents TabPage2 As TabPage
     Friend WithEvents text_Notes As TextBox
     Friend WithEvents Label3 As Label
@@ -2055,53 +2019,74 @@ Partial Class form_AddNewEntry
     Friend WithEvents Label19 As Label
     Friend WithEvents Label20 As Label
     Friend WithEvents TableLayoutPanel6 As TableLayoutPanel
-    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents check_BO As CheckBox
     Friend WithEvents TableLayoutPanel8 As TableLayoutPanel
     Friend WithEvents TableLayoutPanel7 As TableLayoutPanel
     Friend WithEvents TableLayoutPanel9 As TableLayoutPanel
-    Friend WithEvents ComboBox9 As ComboBox
-    Friend WithEvents ComboBox8 As ComboBox
-    Friend WithEvents ComboBox7 As ComboBox
-    Friend WithEvents ComboBox6 As ComboBox
-    Friend WithEvents ComboBox5 As ComboBox
-    Friend WithEvents ComboBox4 As ComboBox
-    Friend WithEvents ComboBox3 As ComboBox
-    Friend WithEvents ComboBox2 As ComboBox
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents TextBox10 As TextBox
-    Friend WithEvents TextBox9 As TextBox
-    Friend WithEvents TextBox8 As TextBox
-    Friend WithEvents TextBox7 As TextBox
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox20 As TextBox
-    Friend WithEvents TextBox21 As TextBox
-    Friend WithEvents TextBox22 As TextBox
-    Friend WithEvents TextBox23 As TextBox
-    Friend WithEvents TextBox24 As TextBox
-    Friend WithEvents TextBox25 As TextBox
-    Friend WithEvents TextBox26 As TextBox
-    Friend WithEvents TextBox27 As TextBox
-    Friend WithEvents TextBox28 As TextBox
-    Friend WithEvents DateTimePicker1 As DateTimePicker
-    Friend WithEvents DateTimePicker3 As DateTimePicker
-    Friend WithEvents DateTimePicker4 As DateTimePicker
-    Friend WithEvents DateTimePicker5 As DateTimePicker
-    Friend WithEvents DateTimePicker6 As DateTimePicker
-    Friend WithEvents DateTimePicker7 As DateTimePicker
-    Friend WithEvents DateTimePicker8 As DateTimePicker
-    Friend WithEvents DateTimePicker9 As DateTimePicker
-    Friend WithEvents TextBox11 As TextBox
-    Friend WithEvents TextBox12 As TextBox
-    Friend WithEvents TextBox14 As TextBox
-    Friend WithEvents TextBox15 As TextBox
-    Friend WithEvents TextBox16 As TextBox
-    Friend WithEvents TextBox17 As TextBox
-    Friend WithEvents TextBox18 As TextBox
-    Friend WithEvents TextBox19 As TextBox
-    Friend WithEvents TextBox13 As TextBox
-    Friend WithEvents DateTimePicker2 As DateTimePicker
+    Friend WithEvents combo_Customer10 As ComboBox
+    Friend WithEvents combo_Customer9 As ComboBox
+    Friend WithEvents combo_Customer8 As ComboBox
+    Friend WithEvents combo_Customer7 As ComboBox
+    Friend WithEvents combo_Customer6 As ComboBox
+    Friend WithEvents combo_Customer5 As ComboBox
+    Friend WithEvents combo_Customer4 As ComboBox
+    Friend WithEvents combo_Customer3 As ComboBox
+    Friend WithEvents combo_Customer2 As ComboBox
+    Friend WithEvents text_POnum7 As TextBox
+    Friend WithEvents text_POnum6 As TextBox
+    Friend WithEvents text_POnum5 As TextBox
+    Friend WithEvents text_POnum4 As TextBox
+    Friend WithEvents text_POnum3 As TextBox
+    Friend WithEvents text_POnum2 As TextBox
+    Friend WithEvents text_POnum8 As TextBox
+    Friend WithEvents text_POnum9 As TextBox
+    Friend WithEvents text_POnum10 As TextBox
+    Friend WithEvents text_Ticket2 As TextBox
+    Friend WithEvents text_Ticket3 As TextBox
+    Friend WithEvents text_Ticket4 As TextBox
+    Friend WithEvents text_Ticket5 As TextBox
+    Friend WithEvents text_Ticket6 As TextBox
+    Friend WithEvents text_Ticket7 As TextBox
+    Friend WithEvents text_Ticket8 As TextBox
+    Friend WithEvents text_Ticket9 As TextBox
+    Friend WithEvents text_Ticket10 As TextBox
+    Friend WithEvents date_ShipDate2 As DateTimePicker
+    Friend WithEvents date_ShipDate4 As DateTimePicker
+    Friend WithEvents date_ShipDate5 As DateTimePicker
+    Friend WithEvents date_ShipDate6 As DateTimePicker
+    Friend WithEvents date_ShipDate7 As DateTimePicker
+    Friend WithEvents date_ShipDate8 As DateTimePicker
+    Friend WithEvents date_ShipDate9 As DateTimePicker
+    Friend WithEvents date_ShipDate10 As DateTimePicker
+    Friend WithEvents text_QtyShip2 As TextBox
+    Friend WithEvents text_QtyShip4 As TextBox
+    Friend WithEvents text_QtyShip6 As TextBox
+    Friend WithEvents text_QtyShip7 As TextBox
+    Friend WithEvents text_QtyShip8 As TextBox
+    Friend WithEvents text_QtyShip3 As TextBox
+    Friend WithEvents text_QtyShip9 As TextBox
+    Friend WithEvents text_QtyShip10 As TextBox
+    Friend WithEvents text_QtyShip5 As TextBox
+    Friend WithEvents date_ShipDate3 As DateTimePicker
+    Friend WithEvents TbltermCustomersBindingSource As BindingSource
+    Friend WithEvents TbltermCustomers1BindingSource As BindingSource
+    Friend WithEvents Tbl_term_Customers1TableAdapter As db_WOlogDataSetTableAdapters.tbl_term_Customers1TableAdapter
+    Friend WithEvents TbltermCustomers2BindingSource As BindingSource
+    Friend WithEvents Tbl_term_Customers2TableAdapter As db_WOlogDataSetTableAdapters.tbl_term_Customers2TableAdapter
+    Friend WithEvents TbltermCustomers3BindingSource As BindingSource
+    Friend WithEvents Tbl_term_Customers3TableAdapter As db_WOlogDataSetTableAdapters.tbl_term_Customers3TableAdapter
+    Friend WithEvents TbltermCustomers4BindingSource As BindingSource
+    Friend WithEvents Tbl_term_Customers4TableAdapter As db_WOlogDataSetTableAdapters.tbl_term_Customers4TableAdapter
+    Friend WithEvents TbltermCustomers5BindingSource As BindingSource
+    Friend WithEvents Tbl_term_Customers5TableAdapter As db_WOlogDataSetTableAdapters.tbl_term_Customers5TableAdapter
+    Friend WithEvents TbltermCustomers6BindingSource As BindingSource
+    Friend WithEvents Tbl_term_Customers6TableAdapter As db_WOlogDataSetTableAdapters.tbl_term_Customers6TableAdapter
+    Friend WithEvents TbltermCustomers7BindingSource As BindingSource
+    Friend WithEvents Tbl_term_Customers7TableAdapter As db_WOlogDataSetTableAdapters.tbl_term_Customers7TableAdapter
+    Friend WithEvents TbltermCustomers8BindingSource As BindingSource
+    Friend WithEvents Tbl_term_Customers8TableAdapter As db_WOlogDataSetTableAdapters.tbl_term_Customers8TableAdapter
+    Friend WithEvents TbltermCustomers9BindingSource As BindingSource
+    Friend WithEvents Tbl_term_Customers9TableAdapter As db_WOlogDataSetTableAdapters.tbl_term_Customers9TableAdapter
+    Friend WithEvents TbltermCustomers10BindingSource As BindingSource
+    Friend WithEvents Tbl_term_Customers10TableAdapter As db_WOlogDataSetTableAdapters.tbl_term_Customers10TableAdapter
 End Class

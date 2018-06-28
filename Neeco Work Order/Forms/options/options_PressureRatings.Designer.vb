@@ -66,7 +66,6 @@ Partial Class options_PressureRatings
         Me.TableAdapterManager.tbl_term_ProductTypeTableAdapter = Nothing
         Me.TableAdapterManager.tbl_term_PRTableAdapter = Nothing
         Me.TableAdapterManager.tbl_term_PSLTableAdapter = Nothing
-        Me.TableAdapterManager.tbl_term_ShipMethodTableAdapter = Nothing
         Me.TableAdapterManager.tbl_term_SizeTableAdapter = Nothing
         Me.TableAdapterManager.tbl_term_StyleTableAdapter = Nothing
         Me.TableAdapterManager.tbl_term_TempClassTableAdapter = Nothing
