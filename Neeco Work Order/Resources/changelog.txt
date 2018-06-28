@@ -1,3 +1,7 @@
+Version 0.9.6.1 - June 28th, 2018
+	- THIS IS A NON-PRODUCTION VERSION. THINGS ARE BROKEN.
+	- Code commited strictly for backup purposes. Full changelog to follow with a production release.
+
 Version 0.9.5 - June 26th, 2018
 	- Changed the AutoScaleMode property of each form to dpi for high-rez displays.
 

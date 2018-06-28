@@ -16,7 +16,7 @@
         'TODO: This line of code loads data into the 'Db_WOlogDataSet.tbl_term_Size' table. You can move, or remove it, as needed.
         Me.Tbl_term_SizeTableAdapter.Fill(Me.Db_WOlogDataSet.tbl_term_Size)
         'TODO: This line of code loads data into the 'Db_WOlogDataSet.tbl_term_ShipMethod' table. You can move, or remove it, as needed.
-        Me.Tbl_term_ShipMethodTableAdapter.Fill(Me.Db_WOlogDataSet.tbl_term_ShipMethod)
+        'Me.Tbl_term_ShipMethodTableAdapter.Fill(Me.Db_WOlogDataSet.tbl_term_ShipMethod)
         'TODO: This line of code loads data into the 'Db_WOlogDataSet.tbl_term_PSL' table. You can move, or remove it, as needed.
         Me.Tbl_term_PSLTableAdapter.Fill(Me.Db_WOlogDataSet.tbl_term_PSL)
         'TODO: This line of code loads data into the 'Db_WOlogDataSet.tbl_term_ProductType' table. You can move, or remove it, as needed.
@@ -47,12 +47,13 @@
 
     Sub Clear_Form()
         'Clears Form by resetting all values
+        'commented items are deprecated
         date_WOdate.Value = Date.Today
-        date_DueDate.Value = Date.Today
-        date_InvDate.Value = Date.Today
+        'date_DueDate.Value = Date.Today
+        'date_InvDate.Value = Date.Today
         date_ShipDate.Value = Date.Today
         text_DeliveryTicketNum.Text = ""
-        text_InvNum.Text = ""
+        'text_InvNum.Text = ""
         text_Notes.Text = ""
         text_PartNum.Text = ""
         text_POnum.Text = ""
@@ -65,7 +66,7 @@
         combo_Pressure.SelectedIndex = -1
         combo_ProductType.SelectedIndex = -1
         combo_PSL.SelectedIndex = -1
-        combo_ShipTerms.SelectedIndex = -1
+        'combo_ShipTerms.SelectedIndex = -1
         combo_Size.SelectedIndex = -1
         combo_Style.SelectedIndex = -1
         combo_TempClass.SelectedIndex = -1
@@ -158,7 +159,7 @@
         PullWOnum()
 
         'generate Query
-        sql_queryInsertData.CommandText = "INSERT INTO tbl_data_WOlog([fld_wo_num],[fld_wo_date],[fld_part_num],[fld_product],[fld_size],[fld_pressure],[fld_hhpp],[fld_tempclass],[fld_trim],[fld_style],[fld_psl],[fld_pr],[fld_qty],[fld_customer],[fld_notes],[fld_po_num],[fld_po_due],[fld_ship_date],[fld_delivery_num],[fld_inv_date],[fld_inv_num],[fld_ship_method],[fld_api_audit],[fld_qb_ba_num],[fld_CreatedBy],[fld_CreatedByDate],[fld_LastModifiedBy],[fld_LastModifiedDate])VALUES(@WONUM,@WODATE,@PARTNUM,@PRODUCT,@SIZE,@PRESSURE,@HHPP,@TEMPCLASS,@TRIM,@STYLE,@PSL,@PR,@QTY,@CUSTOMER,@NOTES,@PONUM,@PODUE,@SHIPDATE,@DELIVERYNUM,@INVDATE,@INVNUM,@SHIPMETHOD,@APIAUDIT,@QBBANUM,@CREATEDBY,@CREATEDBYDATE,@MODIFIEDBY,@MODIFIEDBYDATE)"
+        sql_queryInsertData.CommandText = "INSERT INTO tbl_data_WOlog([fld_wo_num],[fld_wo_date],[fld_part_num],[fld_product],[fld_size],[fld_pressure],[fld_hhpp],[fld_tempclass],[fld_trim],[fld_style],[fld_psl],[fld_pr],[fld_qty],[fld_customer],[fld_notes],[fld_po_num],[fld_ship_date],[fld_delivery_num],[fld_qb_ba_num],[fld_CreatedBy],[fld_CreatedByDate],[fld_LastModifiedBy],[fld_LastModifiedDate])VALUES(@WONUM,@WODATE,@PARTNUM,@PRODUCT,@SIZE,@PRESSURE,@HHPP,@TEMPCLASS,@TRIM,@STYLE,@PSL,@PR,@QTY,@CUSTOMER,@NOTES,@PONUM,@SHIPDATE,@DELIVERYNUM,@QBBANUM,@CREATEDBY,@CREATEDBYDATE,@MODIFIEDBY,@MODIFIEDBYDATE)"
         sql_queryInsertData.Parameters.AddWithValue("@WONUM", text_WOnum.Text)
         sql_queryInsertData.Parameters.AddWithValue("@WODATE", date_WOdate.Value.Date)
         sql_queryInsertData.Parameters.AddWithValue("@PARTNUM", text_PartNum.Text)
@@ -175,13 +176,13 @@
         sql_queryInsertData.Parameters.AddWithValue("@CUSTOMER", combo_Customer.Text)
         sql_queryInsertData.Parameters.AddWithValue("@NOTES", text_Notes.Text)
         sql_queryInsertData.Parameters.AddWithValue("@PONUM", text_POnum.Text)
-        sql_queryInsertData.Parameters.AddWithValue("@PODUE", date_DueDate.Value.Date)
+        'sql_queryInsertData.Parameters.AddWithValue("@PODUE", date_DueDate.Value.Date)
         sql_queryInsertData.Parameters.AddWithValue("@SHIPDATE", date_ShipDate.Value.Date)
         sql_queryInsertData.Parameters.AddWithValue("@DELIVERYNUM", text_DeliveryTicketNum.Text)
-        sql_queryInsertData.Parameters.AddWithValue("@INVDATE", date_InvDate.Value.Date)
-        sql_queryInsertData.Parameters.AddWithValue("@INVNUM", text_InvNum.Text)
-        sql_queryInsertData.Parameters.AddWithValue("@SHIPMETHOD", combo_ShipTerms.Text)
-        sql_queryInsertData.Parameters.AddWithValue("@APIAUDIT", "")
+        'sql_queryInsertData.Parameters.AddWithValue("@INVDATE", date_InvDate.Value.Date)
+        'sql_queryInsertData.Parameters.AddWithValue("@INVNUM", text_InvNum.Text)
+        'sql_queryInsertData.Parameters.AddWithValue("@SHIPMETHOD", combo_ShipTerms.Text)
+        'sql_queryInsertData.Parameters.AddWithValue("@APIAUDIT", "")
         sql_queryInsertData.Parameters.AddWithValue("@QBBANUM", text_QBBAnum.Text)
         sql_queryInsertData.Parameters.AddWithValue("@CREATEDBY", current_user)
         sql_queryInsertData.Parameters.AddWithValue("@CREATEDBYDATE", Date.Today)

@@ -67,7 +67,7 @@
     <ApplicationIcon>Resources\Neeco Logo Square.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <ApplicationManifest>data\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>D5D68D61377E839D35770776E2B0227633703924</ManifestCertificateThumbprint>
@@ -297,6 +297,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="data\app.manifest" />
     <None Include="data\db_WOlogDataSet.xsc">
       <DependentUpon>db_WOlogDataSet.xsd</DependentUpon>
     </None>
