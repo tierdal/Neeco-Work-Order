@@ -30,6 +30,6 @@
 
     Private Sub button_EditWO_Click(sender As Object, e As EventArgs) Handles button_EditWO.Click
         'BUTTON TO OPEN form_Search AND EDIT THE DATA FOR SELECTED WORK ORDER WHICH WOULD BE EDITABLE ON form_EditEntry
-        form_EditEntry.Show()
+        form_EditIEntryNew.Show()
     End Sub
 End Class

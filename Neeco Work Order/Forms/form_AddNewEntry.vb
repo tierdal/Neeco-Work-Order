@@ -1,4 +1,6 @@
 ﻿Public Class form_AddNewEntry
+
+    'LOADING SUB
     Private Sub form_AddNewEntry_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'Db_WOlogDataSet.tbl_term_Customers10' table. You can move, or remove it, as needed.
         Me.Tbl_term_Customers10TableAdapter.Fill(Me.Db_WOlogDataSet.tbl_term_Customers10)
@@ -49,15 +51,18 @@
 
     End Sub
 
+    'EXIT THE FORM
     Private Sub button_Exit_Click(sender As Object, e As EventArgs) Handles button_Exit.Click
         Me.Close()
     End Sub
 
+    'ACTUAL BUTTON CLICK TO CLEAR THE FORM
     Private Sub button_Clear_Click(sender As Object, e As EventArgs) Handles button_Clear.Click
         'CLEAR FORM BUTTON
         Clear_Form()
     End Sub
 
+    'RESETS THE FORM TO DEFAULT VIEW
     Sub Clear_Form()
         'Clears Form by resetting all values
 
@@ -94,16 +99,16 @@
         text_POnum8.Text = ""
         text_POnum9.Text = ""
         text_POnum10.Text = ""
-        combo_Customer1.SelectedIndex = 0
-        combo_Customer2.SelectedIndex = 0
-        combo_Customer3.SelectedIndex = 0
-        combo_Customer4.SelectedIndex = 0
-        combo_Customer5.SelectedIndex = 0
-        combo_Customer6.SelectedIndex = 0
-        combo_Customer7.SelectedIndex = 0
-        combo_Customer8.SelectedIndex = 0
-        combo_Customer9.SelectedIndex = 0
-        combo_Customer10.SelectedIndex = 0
+        combo_Customer1.SelectedIndex = -1
+        combo_Customer2.SelectedIndex = -1
+        combo_Customer3.SelectedIndex = -1
+        combo_Customer4.SelectedIndex = -1
+        combo_Customer5.SelectedIndex = -1
+        combo_Customer6.SelectedIndex = -1
+        combo_Customer7.SelectedIndex = -1
+        combo_Customer8.SelectedIndex = -1
+        combo_Customer9.SelectedIndex = -1
+        combo_Customer10.SelectedIndex = -1
         text_QtyShip1.Text = ""
         text_QtyShip2.Text = ""
         text_QtyShip3.Text = ""
@@ -137,6 +142,7 @@
 
     End Sub
 
+    'PULLS THE WORK ORDER NUMBER FROM THE DB
     Sub PullWOnum()
         'define vars
         Dim sql_conn As New OleDb.OleDbConnection
@@ -163,6 +169,7 @@
 
     End Sub
 
+    'UPDATES THE WORK ORDER NUMBER IN THE DB 
     Sub PushWOnum()
         'define vars
         Dim sql_conn As New OleDb.OleDbConnection
@@ -191,6 +198,7 @@
 
     End Sub
 
+    'submits a new record to the database based on the entered values
     Private Sub button_Submit_Click(sender As Object, e As EventArgs) Handles button_Submit.Click
         'Submit form
         'define vars
@@ -321,8 +329,148 @@
             MsgBox(ex.Message)
         End Try
 
+        CreateWOfolder()
+        CreateShippingFolder()
+
     End Sub
 
+    'GENERATE A FOLDER STRUCTURE FOR THE WORK ORDER DOCUMENTS 
+    '\\neecosvr1\Work Orders\
+    Sub CreateWOfolder()
+        Dim wo_number As String
+        Dim CurrentYear As String
+        Dim FolderPathMain As String
+        Dim FolderPathInternal As String
+        Dim FolderPathExternal As String
+
+        CurrentYear = Year(Now) & "\"
+
+        wo_number = text_WOnum.Text
+
+        On Error Resume Next
+        FolderPathMain = "\\neecosvr1\Work Orders\" & CurrentYear
+        MkDir(FolderPathMain)
+        MkDir(FolderPathMain & wo_number)
+        MkDir(FolderPathMain & wo_number & "\" & "Production")
+        MkDir(FolderPathMain & wo_number & "\" & "Quality")
+        MkDir(FolderPathMain & wo_number & "\" & "Shipping")
+        MkDir(FolderPathMain & wo_number & "\" & "Purchasing")
+
+        ' MsgBox("The WO Folders have been created.")
+
+    End Sub
+
+    'GENERATE A FOLDER STRUCTURE FOR EACH SHIPMENT FOR THE WORK ORDER
+    Sub CreateShippingFolder()
+        Dim wo_number As String
+        Dim CurrentYear As String
+        Dim wo_year As String
+        Dim FolderPathMain As String
+        Dim FolderPathInternal As String
+        Dim FolderPathExternal As String
+
+        wo_year = Year(date_WOdate.Value.Date) & "\"
+        CurrentYear = Year(Now)
+
+        wo_number = text_WOnum.Text
+
+        On Error Resume Next
+        FolderPathMain = "\\neecosvr1\Work Orders\" & wo_year & wo_number & "\" & "Shipping\"
+
+        If Not text_POnum1.Text = "" Or combo_Customer1.Text = "" Or combo_Customer1.Text = "Stock" Then
+            MkDir(FolderPathMain & CurrentYear)
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer1.Text)
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer1.Text & "\" & text_POnum1.Text)
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer1.Text & "\" & text_POnum1.Text & "\" & "Shipping Docs")
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer1.Text & "\" & text_POnum1.Text & "\" & "Quality")
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer1.Text & "\" & text_POnum1.Text & "\" & "Customer PO")
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer1.Text & "\" & text_POnum1.Text & "\" & "Other")
+        End If
+        If Not text_POnum2.Text = "" Or combo_Customer2.Text = "" Or combo_Customer2.Text = "Stock" Then
+            MkDir(FolderPathMain & CurrentYear)
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer2.Text)
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer2.Text & "\" & text_POnum2.Text)
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer2.Text & "\" & text_POnum2.Text & "\" & "Shipping Docs")
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer2.Text & "\" & text_POnum2.Text & "\" & "Quality")
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer2.Text & "\" & text_POnum2.Text & "\" & "Customer PO")
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer2.Text & "\" & text_POnum2.Text & "\" & "Other")
+        End If
+        If Not text_POnum3.Text = "" Or combo_Customer3.Text = "" Or combo_Customer3.Text = "Stock" Then
+            MkDir(FolderPathMain & CurrentYear)
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer3.Text)
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer3.Text & "\" & text_POnum3.Text)
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer3.Text & "\" & text_POnum3.Text & "\" & "Shipping Docs")
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer3.Text & "\" & text_POnum3.Text & "\" & "Quality")
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer3.Text & "\" & text_POnum3.Text & "\" & "Customer PO")
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer3.Text & "\" & text_POnum3.Text & "\" & "Other")
+        End If
+        If Not text_POnum4.Text = "" Or combo_Customer4.Text = "" Or combo_Customer4.Text = "Stock" Then
+            MkDir(FolderPathMain & CurrentYear)
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer4.Text)
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer4.Text & "\" & text_POnum4.Text)
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer4.Text & "\" & text_POnum4.Text & "\" & "Shipping Docs")
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer4.Text & "\" & text_POnum4.Text & "\" & "Quality")
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer4.Text & "\" & text_POnum4.Text & "\" & "Customer PO")
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer4.Text & "\" & text_POnum4.Text & "\" & "Other")
+        End If
+        If Not text_POnum5.Text = "" Or combo_Customer5.Text = "" Or combo_Customer5.Text = "Stock" Then
+            MkDir(FolderPathMain & CurrentYear)
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer5.Text)
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer5.Text & "\" & text_POnum5.Text)
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer5.Text & "\" & text_POnum5.Text & "\" & "Shipping Docs")
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer5.Text & "\" & text_POnum5.Text & "\" & "Quality")
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer5.Text & "\" & text_POnum5.Text & "\" & "Customer PO")
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer5.Text & "\" & text_POnum5.Text & "\" & "Other")
+        End If
+        If Not text_POnum6.Text = "" Or combo_Customer6.Text = "" Or combo_Customer6.Text = "Stock" Then
+            MkDir(FolderPathMain & CurrentYear)
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer6.Text)
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer6.Text & "\" & text_POnum6.Text)
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer6.Text & "\" & text_POnum6.Text & "\" & "Shipping Docs")
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer6.Text & "\" & text_POnum6.Text & "\" & "Quality")
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer6.Text & "\" & text_POnum6.Text & "\" & "Customer PO")
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer6.Text & "\" & text_POnum6.Text & "\" & "Other")
+        End If
+        If Not text_POnum7.Text = "" Or combo_Customer7.Text = "" Or combo_Customer7.Text = "Stock" Then
+            MkDir(FolderPathMain & CurrentYear)
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer7.Text)
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer7.Text & "\" & text_POnum7.Text)
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer7.Text & "\" & text_POnum7.Text & "\" & "Shipping Docs")
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer7.Text & "\" & text_POnum7.Text & "\" & "Quality")
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer7.Text & "\" & text_POnum7.Text & "\" & "Customer PO")
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer7.Text & "\" & text_POnum7.Text & "\" & "Other")
+        End If
+        If Not text_POnum8.Text = "" Or combo_Customer8.Text = "" Or combo_Customer8.Text = "Stock" Then
+            MkDir(FolderPathMain & CurrentYear)
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer8.Text)
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer8.Text & "\" & text_POnum8.Text)
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer8.Text & "\" & text_POnum8.Text & "\" & "Shipping Docs")
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer8.Text & "\" & text_POnum8.Text & "\" & "Quality")
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer8.Text & "\" & text_POnum8.Text & "\" & "Customer PO")
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer8.Text & "\" & text_POnum8.Text & "\" & "Other")
+        End If
+        If Not text_POnum9.Text = "" Or combo_Customer9.Text = "" Or combo_Customer9.Text = "Stock" Then
+            MkDir(FolderPathMain & CurrentYear)
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer9.Text)
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer9.Text & "\" & text_POnum9.Text)
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer9.Text & "\" & text_POnum9.Text & "\" & "Shipping Docs")
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer9.Text & "\" & text_POnum9.Text & "\" & "Quality")
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer9.Text & "\" & text_POnum9.Text & "\" & "Customer PO")
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer9.Text & "\" & text_POnum9.Text & "\" & "Other")
+        End If
+        If Not text_POnum10.Text = "" Or combo_Customer10.Text = "" Or combo_Customer10.Text = "Stock" Then
+            MkDir(FolderPathMain & CurrentYear)
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer10.Text)
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer10.Text & "\" & text_POnum10.Text)
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer10.Text & "\" & text_POnum10.Text & "\" & "Shipping Docs")
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer10.Text & "\" & text_POnum10.Text & "\" & "Quality")
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer10.Text & "\" & text_POnum10.Text & "\" & "Customer PO")
+            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer10.Text & "\" & text_POnum10.Text & "\" & "Other")
+        End If
+
+        'MsgBox("The PO Folders have been created.")
+
+    End Sub
 
     'CAUSES VALIDATION TO MAKE SURE ONLY NUMBERS ARE ENTERED
     Private Sub text_Qty_KeyPress(sender As Object, e As KeyPressEventArgs) Handles text_Qty.KeyPress
@@ -391,4 +539,97 @@
             e.Handled = True
         End If
     End Sub
+
+    'CAUSES VALIDATION TO CHECK THAT ONLY VALID ITEMS ARE ENTERED
+    Private Sub text_POnum1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles text_POnum1.KeyPress
+        Dim KeyAsciiString As String
+        KeyAsciiString = e.KeyChar
+
+        If KeyAsciiString = "/" Or KeyAsciiString = "\" Or KeyAsciiString = ":" Or KeyAsciiString = "*" Or KeyAsciiString = "?" Or KeyAsciiString = """" Or KeyAsciiString = "<" Or KeyAsciiString = ">" Or KeyAsciiString = "|" Then
+            MsgBox("This key is not allowed: " & KeyAsciiString)
+            e.Handled = True
+        End If
+    End Sub
+    Private Sub text_POnum2_KeyPress(sender As Object, e As KeyPressEventArgs) Handles text_POnum2.KeyPress
+        Dim KeyAsciiString As String
+        KeyAsciiString = e.KeyChar
+
+        If KeyAsciiString = "/" Or KeyAsciiString = "\" Or KeyAsciiString = ":" Or KeyAsciiString = "*" Or KeyAsciiString = "?" Or KeyAsciiString = """" Or KeyAsciiString = "<" Or KeyAsciiString = ">" Or KeyAsciiString = "|" Then
+            MsgBox("This key is not allowed: " & KeyAsciiString)
+            e.Handled = True
+        End If
+    End Sub
+    Private Sub text_POnum3_KeyPress(sender As Object, e As KeyPressEventArgs) Handles text_POnum3.KeyPress
+        Dim KeyAsciiString As String
+        KeyAsciiString = e.KeyChar
+
+        If KeyAsciiString = "/" Or KeyAsciiString = "\" Or KeyAsciiString = ":" Or KeyAsciiString = "*" Or KeyAsciiString = "?" Or KeyAsciiString = """" Or KeyAsciiString = "<" Or KeyAsciiString = ">" Or KeyAsciiString = "|" Then
+            MsgBox("This key is not allowed: " & KeyAsciiString)
+            e.Handled = True
+        End If
+    End Sub
+    Private Sub text_POnum4_KeyPress(sender As Object, e As KeyPressEventArgs) Handles text_POnum4.KeyPress
+        Dim KeyAsciiString As String
+        KeyAsciiString = e.KeyChar
+
+        If KeyAsciiString = "/" Or KeyAsciiString = "\" Or KeyAsciiString = ":" Or KeyAsciiString = "*" Or KeyAsciiString = "?" Or KeyAsciiString = """" Or KeyAsciiString = "<" Or KeyAsciiString = ">" Or KeyAsciiString = "|" Then
+            MsgBox("This key is not allowed: " & KeyAsciiString)
+            e.Handled = True
+        End If
+    End Sub
+    Private Sub text_POnum5_KeyPress(sender As Object, e As KeyPressEventArgs) Handles text_POnum5.KeyPress
+        Dim KeyAsciiString As String
+        KeyAsciiString = e.KeyChar
+
+        If KeyAsciiString = "/" Or KeyAsciiString = "\" Or KeyAsciiString = ":" Or KeyAsciiString = "*" Or KeyAsciiString = "?" Or KeyAsciiString = """" Or KeyAsciiString = "<" Or KeyAsciiString = ">" Or KeyAsciiString = "|" Then
+            MsgBox("This key is not allowed: " & KeyAsciiString)
+            e.Handled = True
+        End If
+    End Sub
+    Private Sub text_POnum6_KeyPress(sender As Object, e As KeyPressEventArgs) Handles text_POnum6.KeyPress
+        Dim KeyAsciiString As String
+        KeyAsciiString = e.KeyChar
+
+        If KeyAsciiString = "/" Or KeyAsciiString = "\" Or KeyAsciiString = ":" Or KeyAsciiString = "*" Or KeyAsciiString = "?" Or KeyAsciiString = """" Or KeyAsciiString = "<" Or KeyAsciiString = ">" Or KeyAsciiString = "|" Then
+            MsgBox("This key is not allowed: " & KeyAsciiString)
+            e.Handled = True
+        End If
+    End Sub
+    Private Sub text_POnum7_KeyPress(sender As Object, e As KeyPressEventArgs) Handles text_POnum7.KeyPress
+        Dim KeyAsciiString As String
+        KeyAsciiString = e.KeyChar
+
+        If KeyAsciiString = "/" Or KeyAsciiString = "\" Or KeyAsciiString = ":" Or KeyAsciiString = "*" Or KeyAsciiString = "?" Or KeyAsciiString = """" Or KeyAsciiString = "<" Or KeyAsciiString = ">" Or KeyAsciiString = "|" Then
+            MsgBox("This key is not allowed: " & KeyAsciiString)
+            e.Handled = True
+        End If
+    End Sub
+    Private Sub text_POnum8_KeyPress(sender As Object, e As KeyPressEventArgs) Handles text_POnum8.KeyPress
+        Dim KeyAsciiString As String
+        KeyAsciiString = e.KeyChar
+
+        If KeyAsciiString = "/" Or KeyAsciiString = "\" Or KeyAsciiString = ":" Or KeyAsciiString = "*" Or KeyAsciiString = "?" Or KeyAsciiString = """" Or KeyAsciiString = "<" Or KeyAsciiString = ">" Or KeyAsciiString = "|" Then
+            MsgBox("This key is not allowed: " & KeyAsciiString)
+            e.Handled = True
+        End If
+    End Sub
+    Private Sub text_POnum9_KeyPress(sender As Object, e As KeyPressEventArgs) Handles text_POnum9.KeyPress
+        Dim KeyAsciiString As String
+        KeyAsciiString = e.KeyChar
+
+        If KeyAsciiString = "/" Or KeyAsciiString = "\" Or KeyAsciiString = ":" Or KeyAsciiString = "*" Or KeyAsciiString = "?" Or KeyAsciiString = """" Or KeyAsciiString = "<" Or KeyAsciiString = ">" Or KeyAsciiString = "|" Then
+            MsgBox("This key is not allowed: " & KeyAsciiString)
+            e.Handled = True
+        End If
+    End Sub
+    Private Sub text_POnum10_KeyPress(sender As Object, e As KeyPressEventArgs) Handles text_POnum10.KeyPress
+        Dim KeyAsciiString As String
+        KeyAsciiString = e.KeyChar
+
+        If KeyAsciiString = "/" Or KeyAsciiString = "\" Or KeyAsciiString = ":" Or KeyAsciiString = "*" Or KeyAsciiString = "?" Or KeyAsciiString = """" Or KeyAsciiString = "<" Or KeyAsciiString = ">" Or KeyAsciiString = "|" Then
+            MsgBox("This key is not allowed: " & KeyAsciiString)
+            e.Handled = True
+        End If
+    End Sub
+
 End Class

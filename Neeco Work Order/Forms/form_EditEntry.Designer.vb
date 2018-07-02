@@ -253,7 +253,7 @@ Partial Class form_EditEntry
         Me.GroupBox3.Controls.Add(Me.Label6)
         Me.GroupBox3.Controls.Add(Me.text_DeliveryTicketNum)
         Me.GroupBox3.Controls.Add(Me.Label5)
-        Me.GroupBox3.Controls.Add(Me.combo_ShipTerms)
+        '        Me.GroupBox3.Controls.Add(Me.combo_ShipTerms)
         Me.GroupBox3.Controls.Add(Fld_ShipmentMethodLabel)
         Me.GroupBox3.Location = New System.Drawing.Point(12, 372)
         Me.GroupBox3.Name = "GroupBox3"

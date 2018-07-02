@@ -1,3 +1,15 @@
+Version 1.0.0.0 - July 2nd, 2018
+	- First MAJOR Release
+	- Completely redesigned the db structure.
+	- Changed the Add and Edit interfaces to reflect the changes to the db.
+	- Added a folder creator for the background task.
+	- Cleaned up some code.
+	- Added status indicator.
+	- Added 10 fields for each shipment.
+	- Moved notes to 2nd tab.
+	- Added buyout checkbox.
+	- Removed old edit form and added a brand new edit form.
+
 Version 0.9.6.3 - June 28th, 2016
 	- THIS IS A NON-PRODUCTION VERSION. THINGS ARE BROKEN.
 	- Code commited strictly for backup purposes. Full changelog to follow with a production release.

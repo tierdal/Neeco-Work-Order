@@ -25,8 +25,8 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <PublisherName>Egor Shumeyko</PublisherName>
-    <ApplicationRevision>1</ApplicationRevision>
-    <ApplicationVersion>0.9.5.%2a</ApplicationVersion>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -118,6 +118,12 @@
     <Compile Include="data\db_WOlogDataSet.vb">
       <DependentUpon>db_WOlogDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Forms\form_EditIEntryNew.Designer.vb">
+      <DependentUpon>form_EditIEntryNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\form_EditIEntryNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\form_Options.Designer.vb">
       <DependentUpon>form_Options.vb</DependentUpon>
     </Compile>
@@ -134,12 +140,6 @@
       <DependentUpon>form_AddNewEntry.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\form_AddNewEntry.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\form_EditEntry.Designer.vb">
-      <DependentUpon>form_EditEntry.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\form_EditEntry.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\form_Main.vb">
@@ -235,8 +235,8 @@
     <EmbeddedResource Include="Forms\form_AddNewEntry.resx">
       <DependentUpon>form_AddNewEntry.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\form_EditEntry.resx">
-      <DependentUpon>form_EditEntry.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\form_EditIEntryNew.resx">
+      <DependentUpon>form_EditIEntryNew.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\form_Main.resx">
       <DependentUpon>form_Main.vb</DependentUpon>
