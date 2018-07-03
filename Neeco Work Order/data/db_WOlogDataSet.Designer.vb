@@ -2371,7 +2371,7 @@ Partial Public Class db_WOlogDataSet
         Protected Overrides Sub OnRowDeleting(ByVal e As Global.System.Data.DataRowChangeEventArgs)
             MyBase.OnRowDeleting(e)
             If (Not (Me.tbl_term_PressureRowDeletingEvent) Is Nothing) Then
-                RaiseEvent tbl_term_PressureRowDeleting(Me, New tbl_term_PressureRowChangeEvent(CType(e.Row,tbl_term_PressureRow), e.Action))
+                RaiseEvent tbl_term_PressureRowDeleting(Me, New tbl_term_PressureRowChangeEvent(CType(e.Row, tbl_term_PressureRow), e.Action))
             End If
         End Sub
         

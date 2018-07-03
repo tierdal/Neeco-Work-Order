@@ -11,7 +11,7 @@
 
     Private Sub button_ViewWO_Click(sender As Object, e As EventArgs) Handles button_ViewWO.Click
         '
-        Dim wo_File As String = "\\neecosvr1\1.  Quality\WORK ORDER\WO App\Work Order Log.xlsx"
+        Dim wo_File As String = "\\neecosvr1\Work Orders\WO App\Work Order Log.xlsx"
 
         If System.IO.File.Exists(wo_File) = True Then
             Process.Start(wo_File)

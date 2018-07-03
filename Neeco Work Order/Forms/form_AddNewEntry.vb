@@ -150,7 +150,7 @@
         Dim conn_string As String
         Dim wo_num_string As String
         'define SQL connection
-        conn_string = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=\\neecosvr1\1.  Quality\WORK ORDER\WO App\db\db_WOlog.accdb"
+        conn_string = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=\\neecosvr1\Work Orders\WO App\db\db_WOlog.accdb"
         sql_conn.ConnectionString = conn_string
         sql_queryPullWOnum.Connection = sql_conn
 
@@ -177,7 +177,7 @@
         Dim conn_string As String
         Dim wo_num_string As String
         'define SQL connection
-        conn_string = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=\\neecosvr1\1.  Quality\WORK ORDER\WO App\db\db_WOlog.accdb"
+        conn_string = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=\\neecosvr1\Work Orders\WO App\db\db_WOlog.accdb"
         sql_conn.ConnectionString = conn_string
         sql_queryPushWOnum.Connection = sql_conn
 
@@ -208,7 +208,7 @@
         Dim current_user As String
 
         'define SQL connection
-        conn_string = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=\\neecosvr1\1.  Quality\WORK ORDER\WO App\db\db_WOlog.accdb"
+        conn_string = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=\\neecosvr1\Work Orders\WO App\db\db_WOlog.accdb"
         sql_conn.ConnectionString = conn_string
         sql_queryInsertData.Connection = sql_conn
 

@@ -64,7 +64,7 @@
         Dim conn_string As String
 
         'define SQL connection
-        conn_string = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=\\neecosvr1\1.  Quality\WORK ORDER\WO App\db\db_WOlog.accdb"
+        conn_string = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=\\neecosvr1\Work Orders\WO App\db\db_WOlog.accdb"
         sql_conn.ConnectionString = conn_string
         sql_queryPulldata_ID.Connection = sql_conn
         sql_queryPulldata_WODATE.Connection = sql_conn
@@ -346,7 +346,7 @@
         Dim current_user As String
 
         'define SQL connection
-        conn_string = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=\\neecosvr1\1.  Quality\WORK ORDER\WO App\db\db_WOlog.accdb"
+        conn_string = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=\\neecosvr1\Work Orders\WO App\db\db_WOlog.accdb"
         sql_conn.ConnectionString = conn_string
         sql_queryUpdateData.Connection = sql_conn
 
@@ -615,7 +615,7 @@
 
 
         'define SQL connection
-        conn_string = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=\\neecosvr1\1.  Quality\WORK ORDER\WO App\db\db_WOlog.accdb"
+        conn_string = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=\\neecosvr1\Work Orders\WO App\db\db_WOlog.accdb"
         sql_conn.ConnectionString = conn_string
         sql_queryDeleteWOnum.Connection = sql_conn
 
