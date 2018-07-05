@@ -449,7 +449,8 @@
             sql_queryUpdateData.ExecuteNonQuery()
             MsgBox("The Work Order has been updated!" & Environment.NewLine & "Thank You!")
             sql_conn.Close()
-            Clear_Form()
+            CreateWOfolder()
+            CreateShippingFolder()
             Exit Sub
         Catch ex As Exception
             MsgBox(ex.Message)
@@ -457,8 +458,7 @@
             Exit Sub
         End Try
 
-        CreateWOfolder()
-        CreateShippingFolder()
+        Me.Close()
 
     End Sub
 
@@ -631,7 +631,7 @@
                 sql_conn.Close()
 
                 MsgBox("Work Order #" & text_WOnum.Text & " has been deleted!")
-                Clear_Form()
+
                 Me.Close()
             Catch ex As Exception
                 MsgBox(ex.Message)
@@ -650,6 +650,8 @@
         'Clears Form by resetting all values
 
         'NOTES
+        text_WOnum.Text = ""
+
         text_Notes.Text = ""
 
         'WO FIELDS

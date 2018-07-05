@@ -49,6 +49,8 @@
 
         date_WOdate.Select()
 
+        PullWOnum()
+
     End Sub
 
     'EXIT THE FORM
@@ -322,15 +324,15 @@
             sql_queryInsertData.ExecuteNonQuery()
             MsgBox("The Work Order has been submitted!" & Environment.NewLine & "Your WO Number is: " & text_WOnum.Text & Environment.NewLine & "Thank You!")
             sql_conn.Close()
-            Clear_Form()
+            CreateWOfolder()
+            CreateShippingFolder()
             PushWOnum()
+            Clear_Form()
             PullWOnum()
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
 
-        CreateWOfolder()
-        CreateShippingFolder()
 
     End Sub
 
