@@ -1725,7 +1725,7 @@ Partial Class form_EditIEntryNew
         Me.combo_Status.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.Tbl_term_HHPPBindingSource, "fld_HHPP", True))
         Me.combo_Status.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.combo_Status.FormattingEnabled = True
-        Me.combo_Status.Items.AddRange(New Object() {"", "OPEN", "PARTIAL", "STOCK", "CLOSED"})
+        Me.combo_Status.Items.AddRange(New Object() {"", "OPEN", "PARTIAL", "STOCK", "REPAIR", "CLOSED"})
         Me.combo_Status.Location = New System.Drawing.Point(104, 68)
         Me.combo_Status.Name = "combo_Status"
         Me.combo_Status.Size = New System.Drawing.Size(96, 21)
@@ -1738,6 +1738,7 @@ Partial Class form_EditIEntryNew
         Me.text_QBBAnum.Name = "text_QBBAnum"
         Me.text_QBBAnum.Size = New System.Drawing.Size(96, 20)
         Me.text_QBBAnum.TabIndex = 3
+        Me.text_QBBAnum.Visible = False
         '
         'Label8
         '
@@ -1760,6 +1761,7 @@ Partial Class form_EditIEntryNew
         Me.Label7.TabIndex = 99
         Me.Label7.Text = "QB BA #:"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label7.Visible = False
         '
         'Tbl_term_TempClassTableAdapter
         '

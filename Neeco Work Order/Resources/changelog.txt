@@ -1,3 +1,11 @@
+Planned Features:
+	- Undo the high-DPI changes. The scaling doesnt work.
+
+Version 1.0.1.0	- July 9th, 2018
+	- Hid the QB BA field due to redundand data entry.
+	- Added new status "Repair".
+	- If the status is "Repair" on data add then the DB will remember even if you change the status at a later time.
+
 Version 1.0.0.2 - July 5th, 2018
 	- Fix the display of WO number on add new form.
 	- Change some post-submit actions like form clearing.
