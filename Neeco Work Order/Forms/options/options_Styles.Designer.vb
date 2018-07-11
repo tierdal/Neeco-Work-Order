@@ -60,6 +60,16 @@ Partial Class options_Styles
         '
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
         Me.TableAdapterManager.tbl_data_WOlogTableAdapter = Nothing
+        Me.TableAdapterManager.tbl_term_Customers10TableAdapter = Nothing
+        Me.TableAdapterManager.tbl_term_Customers1TableAdapter = Nothing
+        Me.TableAdapterManager.tbl_term_Customers2TableAdapter = Nothing
+        Me.TableAdapterManager.tbl_term_Customers3TableAdapter = Nothing
+        Me.TableAdapterManager.tbl_term_Customers4TableAdapter = Nothing
+        Me.TableAdapterManager.tbl_term_Customers5TableAdapter = Nothing
+        Me.TableAdapterManager.tbl_term_Customers6TableAdapter = Nothing
+        Me.TableAdapterManager.tbl_term_Customers7TableAdapter = Nothing
+        Me.TableAdapterManager.tbl_term_Customers8TableAdapter = Nothing
+        Me.TableAdapterManager.tbl_term_Customers9TableAdapter = Nothing
         Me.TableAdapterManager.tbl_term_CustomersTableAdapter = Nothing
         Me.TableAdapterManager.tbl_term_HHPPTableAdapter = Nothing
         Me.TableAdapterManager.tbl_term_PressureTableAdapter = Nothing
@@ -144,8 +154,8 @@ Partial Class options_Styles
         '
         'options_Styles
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(325, 411)
         Me.Controls.Add(Me.Tbl_term_StyleDataGridView)
         Me.Controls.Add(Me.Tbl_term_StyleBindingNavigator)

@@ -1,5 +1,11 @@
 Planned Features:
+	- Add another status called "Parts Order" 
+
+
+Version 1.0.1.1 - July 11th, 2018
 	- Undo the high-DPI changes. The scaling doesnt work.
+	- Add option to select blank items from dropdowns on add and edit screens.
+	- Fixed an issue where same WO number would be used when adding a WO from two or more different devices at the same time.
 
 Version 1.0.1.0	- July 9th, 2018
 	- Hid the QB BA field due to redundand data entry.

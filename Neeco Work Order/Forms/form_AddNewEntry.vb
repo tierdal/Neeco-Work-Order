@@ -159,10 +159,11 @@
         'write SQL query
         sql_queryPullWOnum.CommandText = "SELECT fld_WOnum FROM tbl_WOnum WHERE ID = 1"
         Try
+            text_WOnum.Text = ""
             sql_conn.Open()
             wo_num_string = Convert.ToString(sql_queryPullWOnum.ExecuteScalar())
             sql_conn.Close()
-            'update the WO number if necessary
+            'update the WO number
             text_WOnum.Text = wo_num_string
         Catch ex As Exception
             MsgBox(ex.Message)
@@ -210,6 +211,9 @@
         Dim current_user As String
         Dim is_repair As String = 0
 
+        'UPDATE WO NUMBER
+        PullWOnum()
+
         'define SQL connection
         conn_string = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=\\neecosvr1\Work Orders\WO App\db\db_WOlog.accdb"
         sql_conn.ConnectionString = conn_string
@@ -237,9 +241,6 @@
             MsgBox("Please type a Quantity")
             Exit Sub
         End If
-
-        'UPDATE WO NUMBER
-        PullWOnum()
 
         'generate Query
         sql_queryInsertData.CommandText = "INSERT INTO tbl_data_WOlog([fld_wo_num],[fld_wo_date],[fld_status],[fld_qb_ba_num],[fld_qty],[fld_part_num],[fld_product],[fld_style],[fld_size],[fld_pressure],[fld_tempclass],[fld_trim],[fld_psl],[fld_pr],[fld_hhpp],[fld_buyout],[fld_isrepair],[fld_notes],[fld_s1_po],[fld_s1_customer],[fld_s1_qty],[fld_s1_date],[fld_s1_ticket],[fld_s2_po],[fld_s2_customer],[fld_s2_qty],[fld_s2_date],[fld_s2_ticket],[fld_s3_po],[fld_s3_customer],[fld_s3_qty],[fld_s3_date],[fld_s3_ticket],[fld_s4_po],[fld_s4_customer],[fld_s4_qty],[fld_s4_date],[fld_s4_ticket],[fld_s5_po],[fld_s5_customer],[fld_s5_qty],[fld_s5_date],[fld_s5_ticket],[fld_s6_po],[fld_s6_customer],[fld_s6_qty],[fld_s6_date],[fld_s6_ticket],[fld_s7_po],[fld_s7_customer],[fld_s7_qty],[fld_s7_date],[fld_s7_ticket],[fld_s8_po],[fld_s8_customer],[fld_s8_qty],[fld_s8_date],[fld_s8_ticket],[fld_s9_po],[fld_s9_customer],[fld_s9_qty],[fld_s9_date],[fld_s9_ticket],[fld_s10_po],[fld_s10_customer],[fld_s10_qty],[fld_s10_date],[fld_s10_ticket],[fld_CreatedBy],[fld_CreatedByDate],[fld_LastModifiedBy],[fld_LastModifiedDate])VALUES(@WONUM,@WODATE,@STATUS,@QBBANUM,@QTY,@PARTNUM,@PRODUCT,@STYLE,@SIZE,@PRESSURE,@TEMPCLASS,@TRIM,@PSL,@PR,@HHPP,@BUYOUT,@REPAIR,@NOTES,@PONUM1,@CUSTOMER1,@SHIPQTY1,@SHIPDATE1,@TICKET1,@PONUM2,@CUSTOMER2,@SHIPQTY2,@SHIPDATE2,@TICKET2,@PONUM3,@CUSTOMER3,@SHIPQTY3,@SHIPDATE3,@TICKET3,@PONUM4,@CUSTOMER4,@SHIPQTY4,@SHIPDATE4,@TICKET4,@PONUM5,@CUSTOMER5,@SHIPQTY5,@SHIPDATE5,@TICKET5,@PONUM6,@CUSTOMER6,@SHIPQTY6,@SHIPDATE6,@TICKET6,@PONUM7,@CUSTOMER7,@SHIPQTY7,@SHIPDATE7,@TICKET7,@PONUM8,@CUSTOMER8,@SHIPQTY8,@SHIPDATE8,@TICKET8,@PONUM9,@CUSTOMER9,@SHIPQTY9,@SHIPDATE9,@TICKET9,@PONUM10,@CUSTOMER10,@SHIPQTY10,@SHIPDATE10,@TICKET10,@CREATEDBY,@CREATEDBYDATE,@MODIFIEDBY,@MODIFIEDBYDATE)"
@@ -636,5 +637,4 @@
             e.Handled = True
         End If
     End Sub
-
 End Class

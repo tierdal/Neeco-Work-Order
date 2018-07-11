@@ -1888,8 +1888,8 @@ Partial Class form_AddNewEntry
         'form_AddNewEntry
         '
         Me.AcceptButton = Me.button_Submit
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.button_Exit
         Me.ClientSize = New System.Drawing.Size(784, 561)
         Me.Controls.Add(Me.TableLayoutPanel4)

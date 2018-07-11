@@ -537,7 +537,6 @@ Partial Class form_EditIEntryNew
         '
         'combo_Style
         '
-        Me.combo_Style.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
         Me.combo_Style.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.combo_Style.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Tbl_term_StyleBindingSource, "fld_Style", True))
         Me.combo_Style.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.Tbl_term_StyleBindingSource, "fld_Style", True))
@@ -1887,8 +1886,8 @@ Partial Class form_EditIEntryNew
         '
         'form_EditIEntryNew
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(784, 561)
         Me.Controls.Add(Me.TableLayoutPanel4)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -1956,7 +1955,6 @@ Partial Class form_EditIEntryNew
     Friend WithEvents Tbl_term_SizeBindingSource As BindingSource
     Friend WithEvents combo_Pressure As ComboBox
     Friend WithEvents Tbl_term_PressureBindingSource As BindingSource
-    Friend WithEvents combo_Style As ComboBox
     Friend WithEvents Tbl_term_StyleBindingSource As BindingSource
     Friend WithEvents combo_Operator As ComboBox
     Friend WithEvents Tbl_term_HHPPBindingSource As BindingSource
@@ -2090,4 +2088,5 @@ Partial Class form_EditIEntryNew
     Friend WithEvents button_Submit As Button
     Friend WithEvents Tbl_term_TrimTableAdapter As db_WOlogDataSetTableAdapters.tbl_term_TrimTableAdapter
     Friend WithEvents TableLayoutPanel4 As TableLayoutPanel
+    Friend WithEvents combo_Style As ComboBox
 End Class
