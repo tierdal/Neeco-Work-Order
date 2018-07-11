@@ -1,6 +1,8 @@
 Planned Features:
 	- Add another status called "Parts Order" 
 
+Version 1.0.1.3 - July 11th, 2018
+	- Disabled local caching of database data due to it not refreshing dropdown items.
 
 Version 1.0.1.2 - July 11th, 2018
 	- Updated the data bindings to work with the blank items from dropdowns.

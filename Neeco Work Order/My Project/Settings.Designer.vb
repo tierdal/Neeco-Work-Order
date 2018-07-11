@@ -57,8 +57,8 @@ Namespace My
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=""\\neecosvr1\1.  Quality\WORK ORDER"& _ 
-            "\WO App\db\db_WOlog.accdb""")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=""\\neecosvr1\Work Orders\WO App\db\"& _ 
+            "db_WOlog.accdb"";Jet OLEDB:Limited DB Caching=True")>  _
         Public ReadOnly Property db_WOlogConnectionString() As String
             Get
                 Return CType(Me("db_WOlogConnectionString"),String)

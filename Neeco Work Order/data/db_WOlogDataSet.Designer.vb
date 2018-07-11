@@ -1046,15 +1046,7 @@ Partial Public Class db_WOlogDataSet
         
         Private columnfld_qty As Global.System.Data.DataColumn
         
-        Private columnfld_customer As Global.System.Data.DataColumn
-        
         Private columnfld_notes As Global.System.Data.DataColumn
-        
-        Private columnfld_po_num As Global.System.Data.DataColumn
-        
-        Private columnfld_ship_date As Global.System.Data.DataColumn
-        
-        Private columnfld_delivery_num As Global.System.Data.DataColumn
         
         Private columnfld_qb_ba_num As Global.System.Data.DataColumn
         
@@ -1065,6 +1057,112 @@ Partial Public Class db_WOlogDataSet
         Private columnfld_CreatedByDate As Global.System.Data.DataColumn
         
         Private columnfld_LastModifiedDate As Global.System.Data.DataColumn
+        
+        Private columnfld_status As Global.System.Data.DataColumn
+        
+        Private columnfld_buyout As Global.System.Data.DataColumn
+        
+        Private columnfld_IsRepair As Global.System.Data.DataColumn
+        
+        Private columnfld_s1_po As Global.System.Data.DataColumn
+        
+        Private columnfld_s1_customer As Global.System.Data.DataColumn
+        
+        Private columnfld_s1_qty As Global.System.Data.DataColumn
+        
+        Private columnfld_s1_date As Global.System.Data.DataColumn
+        
+        Private columnfld_s1_ticket As Global.System.Data.DataColumn
+        
+        Private columnfld_s2_po As Global.System.Data.DataColumn
+        
+        Private columnfld_s2_customer As Global.System.Data.DataColumn
+        
+        Private columnfld_s2_qty As Global.System.Data.DataColumn
+        
+        Private columnfld_s2_date As Global.System.Data.DataColumn
+        
+        Private columnfld_s2_ticket As Global.System.Data.DataColumn
+        
+        Private columnfld_s3_po As Global.System.Data.DataColumn
+        
+        Private columnfld_s3_customer As Global.System.Data.DataColumn
+        
+        Private columnfld_s3_qty As Global.System.Data.DataColumn
+        
+        Private columnfld_s3_date As Global.System.Data.DataColumn
+        
+        Private columnfld_s3_ticket As Global.System.Data.DataColumn
+        
+        Private columnfld_s4_po As Global.System.Data.DataColumn
+        
+        Private columnfld_s4_customer As Global.System.Data.DataColumn
+        
+        Private columnfld_s4_qty As Global.System.Data.DataColumn
+        
+        Private columnfld_s4_date As Global.System.Data.DataColumn
+        
+        Private columnfld_s4_ticket As Global.System.Data.DataColumn
+        
+        Private columnfld_s5_po As Global.System.Data.DataColumn
+        
+        Private columnfld_s5_customer As Global.System.Data.DataColumn
+        
+        Private columnfld_s5_qty As Global.System.Data.DataColumn
+        
+        Private columnfld_s5_date As Global.System.Data.DataColumn
+        
+        Private columnfld_s5_ticket As Global.System.Data.DataColumn
+        
+        Private columnfld_s6_po As Global.System.Data.DataColumn
+        
+        Private columnfld_s6_customer As Global.System.Data.DataColumn
+        
+        Private columnfld_s6_qty As Global.System.Data.DataColumn
+        
+        Private columnfld_s6_date As Global.System.Data.DataColumn
+        
+        Private columnfld_s6_ticket As Global.System.Data.DataColumn
+        
+        Private columnfld_s7_po As Global.System.Data.DataColumn
+        
+        Private columnfld_s7_customer As Global.System.Data.DataColumn
+        
+        Private columnfld_s7_qty As Global.System.Data.DataColumn
+        
+        Private columnfld_s7_date As Global.System.Data.DataColumn
+        
+        Private columnfld_s7_ticket As Global.System.Data.DataColumn
+        
+        Private columnfld_s8_po As Global.System.Data.DataColumn
+        
+        Private columnfld_s8_customer As Global.System.Data.DataColumn
+        
+        Private columnfld_s8_qty As Global.System.Data.DataColumn
+        
+        Private columnfld_s8_date As Global.System.Data.DataColumn
+        
+        Private columnfld_s8_ticket As Global.System.Data.DataColumn
+        
+        Private columnfld_s9_po As Global.System.Data.DataColumn
+        
+        Private columnfld_s9_customer As Global.System.Data.DataColumn
+        
+        Private columnfld_s9_qty As Global.System.Data.DataColumn
+        
+        Private columnfld_s9_date As Global.System.Data.DataColumn
+        
+        Private columnfld_s9_ticket As Global.System.Data.DataColumn
+        
+        Private columnfld_s10_po As Global.System.Data.DataColumn
+        
+        Private columnfld_s10_customer As Global.System.Data.DataColumn
+        
+        Private columnfld_s10_qty As Global.System.Data.DataColumn
+        
+        Private columnfld_s10_date As Global.System.Data.DataColumn
+        
+        Private columnfld_s10_ticket As Global.System.Data.DataColumn
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
@@ -1215,41 +1313,9 @@ Partial Public Class db_WOlogDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
-        Public ReadOnly Property fld_customerColumn() As Global.System.Data.DataColumn
-            Get
-                Return Me.columnfld_customer
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Public ReadOnly Property fld_notesColumn() As Global.System.Data.DataColumn
             Get
                 Return Me.columnfld_notes
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
-        Public ReadOnly Property fld_po_numColumn() As Global.System.Data.DataColumn
-            Get
-                Return Me.columnfld_po_num
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
-        Public ReadOnly Property fld_ship_dateColumn() As Global.System.Data.DataColumn
-            Get
-                Return Me.columnfld_ship_date
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
-        Public ReadOnly Property fld_delivery_numColumn() As Global.System.Data.DataColumn
-            Get
-                Return Me.columnfld_delivery_num
             End Get
         End Property
         
@@ -1290,6 +1356,430 @@ Partial Public Class db_WOlogDataSet
         Public ReadOnly Property fld_LastModifiedDateColumn() As Global.System.Data.DataColumn
             Get
                 Return Me.columnfld_LastModifiedDate
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_statusColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_status
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_buyoutColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_buyout
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_IsRepairColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_IsRepair
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s1_poColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s1_po
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s1_customerColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s1_customer
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s1_qtyColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s1_qty
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s1_dateColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s1_date
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s1_ticketColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s1_ticket
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s2_poColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s2_po
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s2_customerColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s2_customer
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s2_qtyColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s2_qty
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s2_dateColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s2_date
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s2_ticketColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s2_ticket
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s3_poColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s3_po
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s3_customerColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s3_customer
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s3_qtyColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s3_qty
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s3_dateColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s3_date
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s3_ticketColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s3_ticket
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s4_poColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s4_po
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s4_customerColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s4_customer
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s4_qtyColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s4_qty
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s4_dateColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s4_date
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s4_ticketColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s4_ticket
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s5_poColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s5_po
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s5_customerColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s5_customer
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s5_qtyColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s5_qty
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s5_dateColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s5_date
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s5_ticketColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s5_ticket
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s6_poColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s6_po
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s6_customerColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s6_customer
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s6_qtyColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s6_qty
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s6_dateColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s6_date
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s6_ticketColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s6_ticket
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s7_poColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s7_po
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s7_customerColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s7_customer
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s7_qtyColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s7_qty
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s7_dateColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s7_date
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s7_ticketColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s7_ticket
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s8_poColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s8_po
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s8_customerColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s8_customer
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s8_qtyColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s8_qty
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s8_dateColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s8_date
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s8_ticketColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s8_ticket
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s9_poColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s9_po
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s9_customerColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s9_customer
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s9_qtyColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s9_qty
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s9_dateColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s9_date
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s9_ticketColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s9_ticket
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s10_poColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s10_po
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s10_customerColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s10_customer
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s10_qtyColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s10_qty
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s10_dateColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s10_date
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property fld_s10_ticketColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfld_s10_ticket
             End Get
         End Property
         
@@ -1344,18 +1834,67 @@ Partial Public Class db_WOlogDataSet
                     ByVal fld_psl As String,  _
                     ByVal fld_pr As String,  _
                     ByVal fld_qty As Integer,  _
-                    ByVal fld_customer As String,  _
                     ByVal fld_notes As String,  _
-                    ByVal fld_po_num As String,  _
-                    ByVal fld_ship_date As Date,  _
-                    ByVal fld_delivery_num As String,  _
                     ByVal fld_qb_ba_num As String,  _
                     ByVal fld_CreatedBy As String,  _
                     ByVal fld_LastModifiedBy As String,  _
                     ByVal fld_CreatedByDate As Date,  _
-                    ByVal fld_LastModifiedDate As Date) As tbl_data_WOlogRow
+                    ByVal fld_LastModifiedDate As Date,  _
+                    ByVal fld_status As String,  _
+                    ByVal fld_buyout As Boolean,  _
+                    ByVal fld_IsRepair As Boolean,  _
+                    ByVal fld_s1_po As String,  _
+                    ByVal fld_s1_customer As String,  _
+                    ByVal fld_s1_qty As String,  _
+                    ByVal fld_s1_date As Date,  _
+                    ByVal fld_s1_ticket As String,  _
+                    ByVal fld_s2_po As String,  _
+                    ByVal fld_s2_customer As String,  _
+                    ByVal fld_s2_qty As String,  _
+                    ByVal fld_s2_date As Date,  _
+                    ByVal fld_s2_ticket As String,  _
+                    ByVal fld_s3_po As String,  _
+                    ByVal fld_s3_customer As String,  _
+                    ByVal fld_s3_qty As String,  _
+                    ByVal fld_s3_date As Date,  _
+                    ByVal fld_s3_ticket As String,  _
+                    ByVal fld_s4_po As String,  _
+                    ByVal fld_s4_customer As String,  _
+                    ByVal fld_s4_qty As String,  _
+                    ByVal fld_s4_date As Date,  _
+                    ByVal fld_s4_ticket As String,  _
+                    ByVal fld_s5_po As String,  _
+                    ByVal fld_s5_customer As String,  _
+                    ByVal fld_s5_qty As String,  _
+                    ByVal fld_s5_date As Date,  _
+                    ByVal fld_s5_ticket As String,  _
+                    ByVal fld_s6_po As String,  _
+                    ByVal fld_s6_customer As String,  _
+                    ByVal fld_s6_qty As String,  _
+                    ByVal fld_s6_date As Date,  _
+                    ByVal fld_s6_ticket As String,  _
+                    ByVal fld_s7_po As String,  _
+                    ByVal fld_s7_customer As String,  _
+                    ByVal fld_s7_qty As String,  _
+                    ByVal fld_s7_date As Date,  _
+                    ByVal fld_s7_ticket As String,  _
+                    ByVal fld_s8_po As String,  _
+                    ByVal fld_s8_customer As String,  _
+                    ByVal fld_s8_qty As String,  _
+                    ByVal fld_s8_date As Date,  _
+                    ByVal fld_s8_ticket As String,  _
+                    ByVal fld_s9_po As String,  _
+                    ByVal fld_s9_customer As String,  _
+                    ByVal fld_s9_qty As String,  _
+                    ByVal fld_s9_date As Date,  _
+                    ByVal fld_s9_ticket As String,  _
+                    ByVal fld_s10_po As String,  _
+                    ByVal fld_s10_customer As String,  _
+                    ByVal fld_s10_qty As String,  _
+                    ByVal fld_s10_date As Date,  _
+                    ByVal fld_s10_ticket As String) As tbl_data_WOlogRow
             Dim rowtbl_data_WOlogRow As tbl_data_WOlogRow = CType(Me.NewRow,tbl_data_WOlogRow)
-            Dim columnValuesArray() As Object = New Object() {Nothing, fld_wo_num, fld_wo_date, fld_part_num, fld_product, fld_size, fld_pressure, fld_hhpp, fld_tempclass, fld_trim, fld_style, fld_psl, fld_pr, fld_qty, fld_customer, fld_notes, fld_po_num, fld_ship_date, fld_delivery_num, fld_qb_ba_num, fld_CreatedBy, fld_LastModifiedBy, fld_CreatedByDate, fld_LastModifiedDate}
+            Dim columnValuesArray() As Object = New Object() {Nothing, fld_wo_num, fld_wo_date, fld_part_num, fld_product, fld_size, fld_pressure, fld_hhpp, fld_tempclass, fld_trim, fld_style, fld_psl, fld_pr, fld_qty, fld_notes, fld_qb_ba_num, fld_CreatedBy, fld_LastModifiedBy, fld_CreatedByDate, fld_LastModifiedDate, fld_status, fld_buyout, fld_IsRepair, fld_s1_po, fld_s1_customer, fld_s1_qty, fld_s1_date, fld_s1_ticket, fld_s2_po, fld_s2_customer, fld_s2_qty, fld_s2_date, fld_s2_ticket, fld_s3_po, fld_s3_customer, fld_s3_qty, fld_s3_date, fld_s3_ticket, fld_s4_po, fld_s4_customer, fld_s4_qty, fld_s4_date, fld_s4_ticket, fld_s5_po, fld_s5_customer, fld_s5_qty, fld_s5_date, fld_s5_ticket, fld_s6_po, fld_s6_customer, fld_s6_qty, fld_s6_date, fld_s6_ticket, fld_s7_po, fld_s7_customer, fld_s7_qty, fld_s7_date, fld_s7_ticket, fld_s8_po, fld_s8_customer, fld_s8_qty, fld_s8_date, fld_s8_ticket, fld_s9_po, fld_s9_customer, fld_s9_qty, fld_s9_date, fld_s9_ticket, fld_s10_po, fld_s10_customer, fld_s10_qty, fld_s10_date, fld_s10_ticket}
             rowtbl_data_WOlogRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowtbl_data_WOlogRow)
             Return rowtbl_data_WOlogRow
@@ -1398,16 +1937,65 @@ Partial Public Class db_WOlogDataSet
             Me.columnfld_psl = MyBase.Columns("fld_psl")
             Me.columnfld_pr = MyBase.Columns("fld_pr")
             Me.columnfld_qty = MyBase.Columns("fld_qty")
-            Me.columnfld_customer = MyBase.Columns("fld_customer")
             Me.columnfld_notes = MyBase.Columns("fld_notes")
-            Me.columnfld_po_num = MyBase.Columns("fld_po_num")
-            Me.columnfld_ship_date = MyBase.Columns("fld_ship_date")
-            Me.columnfld_delivery_num = MyBase.Columns("fld_delivery_num")
             Me.columnfld_qb_ba_num = MyBase.Columns("fld_qb_ba_num")
             Me.columnfld_CreatedBy = MyBase.Columns("fld_CreatedBy")
             Me.columnfld_LastModifiedBy = MyBase.Columns("fld_LastModifiedBy")
             Me.columnfld_CreatedByDate = MyBase.Columns("fld_CreatedByDate")
             Me.columnfld_LastModifiedDate = MyBase.Columns("fld_LastModifiedDate")
+            Me.columnfld_status = MyBase.Columns("fld_status")
+            Me.columnfld_buyout = MyBase.Columns("fld_buyout")
+            Me.columnfld_IsRepair = MyBase.Columns("fld_IsRepair")
+            Me.columnfld_s1_po = MyBase.Columns("fld_s1_po")
+            Me.columnfld_s1_customer = MyBase.Columns("fld_s1_customer")
+            Me.columnfld_s1_qty = MyBase.Columns("fld_s1_qty")
+            Me.columnfld_s1_date = MyBase.Columns("fld_s1_date")
+            Me.columnfld_s1_ticket = MyBase.Columns("fld_s1_ticket")
+            Me.columnfld_s2_po = MyBase.Columns("fld_s2_po")
+            Me.columnfld_s2_customer = MyBase.Columns("fld_s2_customer")
+            Me.columnfld_s2_qty = MyBase.Columns("fld_s2_qty")
+            Me.columnfld_s2_date = MyBase.Columns("fld_s2_date")
+            Me.columnfld_s2_ticket = MyBase.Columns("fld_s2_ticket")
+            Me.columnfld_s3_po = MyBase.Columns("fld_s3_po")
+            Me.columnfld_s3_customer = MyBase.Columns("fld_s3_customer")
+            Me.columnfld_s3_qty = MyBase.Columns("fld_s3_qty")
+            Me.columnfld_s3_date = MyBase.Columns("fld_s3_date")
+            Me.columnfld_s3_ticket = MyBase.Columns("fld_s3_ticket")
+            Me.columnfld_s4_po = MyBase.Columns("fld_s4_po")
+            Me.columnfld_s4_customer = MyBase.Columns("fld_s4_customer")
+            Me.columnfld_s4_qty = MyBase.Columns("fld_s4_qty")
+            Me.columnfld_s4_date = MyBase.Columns("fld_s4_date")
+            Me.columnfld_s4_ticket = MyBase.Columns("fld_s4_ticket")
+            Me.columnfld_s5_po = MyBase.Columns("fld_s5_po")
+            Me.columnfld_s5_customer = MyBase.Columns("fld_s5_customer")
+            Me.columnfld_s5_qty = MyBase.Columns("fld_s5_qty")
+            Me.columnfld_s5_date = MyBase.Columns("fld_s5_date")
+            Me.columnfld_s5_ticket = MyBase.Columns("fld_s5_ticket")
+            Me.columnfld_s6_po = MyBase.Columns("fld_s6_po")
+            Me.columnfld_s6_customer = MyBase.Columns("fld_s6_customer")
+            Me.columnfld_s6_qty = MyBase.Columns("fld_s6_qty")
+            Me.columnfld_s6_date = MyBase.Columns("fld_s6_date")
+            Me.columnfld_s6_ticket = MyBase.Columns("fld_s6_ticket")
+            Me.columnfld_s7_po = MyBase.Columns("fld_s7_po")
+            Me.columnfld_s7_customer = MyBase.Columns("fld_s7_customer")
+            Me.columnfld_s7_qty = MyBase.Columns("fld_s7_qty")
+            Me.columnfld_s7_date = MyBase.Columns("fld_s7_date")
+            Me.columnfld_s7_ticket = MyBase.Columns("fld_s7_ticket")
+            Me.columnfld_s8_po = MyBase.Columns("fld_s8_po")
+            Me.columnfld_s8_customer = MyBase.Columns("fld_s8_customer")
+            Me.columnfld_s8_qty = MyBase.Columns("fld_s8_qty")
+            Me.columnfld_s8_date = MyBase.Columns("fld_s8_date")
+            Me.columnfld_s8_ticket = MyBase.Columns("fld_s8_ticket")
+            Me.columnfld_s9_po = MyBase.Columns("fld_s9_po")
+            Me.columnfld_s9_customer = MyBase.Columns("fld_s9_customer")
+            Me.columnfld_s9_qty = MyBase.Columns("fld_s9_qty")
+            Me.columnfld_s9_date = MyBase.Columns("fld_s9_date")
+            Me.columnfld_s9_ticket = MyBase.Columns("fld_s9_ticket")
+            Me.columnfld_s10_po = MyBase.Columns("fld_s10_po")
+            Me.columnfld_s10_customer = MyBase.Columns("fld_s10_customer")
+            Me.columnfld_s10_qty = MyBase.Columns("fld_s10_qty")
+            Me.columnfld_s10_date = MyBase.Columns("fld_s10_date")
+            Me.columnfld_s10_ticket = MyBase.Columns("fld_s10_ticket")
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -1441,16 +2029,8 @@ Partial Public Class db_WOlogDataSet
             MyBase.Columns.Add(Me.columnfld_pr)
             Me.columnfld_qty = New Global.System.Data.DataColumn("fld_qty", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnfld_qty)
-            Me.columnfld_customer = New Global.System.Data.DataColumn("fld_customer", GetType(String), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnfld_customer)
             Me.columnfld_notes = New Global.System.Data.DataColumn("fld_notes", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnfld_notes)
-            Me.columnfld_po_num = New Global.System.Data.DataColumn("fld_po_num", GetType(String), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnfld_po_num)
-            Me.columnfld_ship_date = New Global.System.Data.DataColumn("fld_ship_date", GetType(Date), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnfld_ship_date)
-            Me.columnfld_delivery_num = New Global.System.Data.DataColumn("fld_delivery_num", GetType(String), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnfld_delivery_num)
             Me.columnfld_qb_ba_num = New Global.System.Data.DataColumn("fld_qb_ba_num", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnfld_qb_ba_num)
             Me.columnfld_CreatedBy = New Global.System.Data.DataColumn("fld_CreatedBy", GetType(String), Nothing, Global.System.Data.MappingType.Element)
@@ -1461,6 +2041,112 @@ Partial Public Class db_WOlogDataSet
             MyBase.Columns.Add(Me.columnfld_CreatedByDate)
             Me.columnfld_LastModifiedDate = New Global.System.Data.DataColumn("fld_LastModifiedDate", GetType(Date), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnfld_LastModifiedDate)
+            Me.columnfld_status = New Global.System.Data.DataColumn("fld_status", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_status)
+            Me.columnfld_buyout = New Global.System.Data.DataColumn("fld_buyout", GetType(Boolean), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_buyout)
+            Me.columnfld_IsRepair = New Global.System.Data.DataColumn("fld_IsRepair", GetType(Boolean), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_IsRepair)
+            Me.columnfld_s1_po = New Global.System.Data.DataColumn("fld_s1_po", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s1_po)
+            Me.columnfld_s1_customer = New Global.System.Data.DataColumn("fld_s1_customer", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s1_customer)
+            Me.columnfld_s1_qty = New Global.System.Data.DataColumn("fld_s1_qty", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s1_qty)
+            Me.columnfld_s1_date = New Global.System.Data.DataColumn("fld_s1_date", GetType(Date), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s1_date)
+            Me.columnfld_s1_ticket = New Global.System.Data.DataColumn("fld_s1_ticket", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s1_ticket)
+            Me.columnfld_s2_po = New Global.System.Data.DataColumn("fld_s2_po", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s2_po)
+            Me.columnfld_s2_customer = New Global.System.Data.DataColumn("fld_s2_customer", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s2_customer)
+            Me.columnfld_s2_qty = New Global.System.Data.DataColumn("fld_s2_qty", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s2_qty)
+            Me.columnfld_s2_date = New Global.System.Data.DataColumn("fld_s2_date", GetType(Date), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s2_date)
+            Me.columnfld_s2_ticket = New Global.System.Data.DataColumn("fld_s2_ticket", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s2_ticket)
+            Me.columnfld_s3_po = New Global.System.Data.DataColumn("fld_s3_po", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s3_po)
+            Me.columnfld_s3_customer = New Global.System.Data.DataColumn("fld_s3_customer", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s3_customer)
+            Me.columnfld_s3_qty = New Global.System.Data.DataColumn("fld_s3_qty", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s3_qty)
+            Me.columnfld_s3_date = New Global.System.Data.DataColumn("fld_s3_date", GetType(Date), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s3_date)
+            Me.columnfld_s3_ticket = New Global.System.Data.DataColumn("fld_s3_ticket", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s3_ticket)
+            Me.columnfld_s4_po = New Global.System.Data.DataColumn("fld_s4_po", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s4_po)
+            Me.columnfld_s4_customer = New Global.System.Data.DataColumn("fld_s4_customer", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s4_customer)
+            Me.columnfld_s4_qty = New Global.System.Data.DataColumn("fld_s4_qty", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s4_qty)
+            Me.columnfld_s4_date = New Global.System.Data.DataColumn("fld_s4_date", GetType(Date), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s4_date)
+            Me.columnfld_s4_ticket = New Global.System.Data.DataColumn("fld_s4_ticket", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s4_ticket)
+            Me.columnfld_s5_po = New Global.System.Data.DataColumn("fld_s5_po", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s5_po)
+            Me.columnfld_s5_customer = New Global.System.Data.DataColumn("fld_s5_customer", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s5_customer)
+            Me.columnfld_s5_qty = New Global.System.Data.DataColumn("fld_s5_qty", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s5_qty)
+            Me.columnfld_s5_date = New Global.System.Data.DataColumn("fld_s5_date", GetType(Date), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s5_date)
+            Me.columnfld_s5_ticket = New Global.System.Data.DataColumn("fld_s5_ticket", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s5_ticket)
+            Me.columnfld_s6_po = New Global.System.Data.DataColumn("fld_s6_po", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s6_po)
+            Me.columnfld_s6_customer = New Global.System.Data.DataColumn("fld_s6_customer", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s6_customer)
+            Me.columnfld_s6_qty = New Global.System.Data.DataColumn("fld_s6_qty", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s6_qty)
+            Me.columnfld_s6_date = New Global.System.Data.DataColumn("fld_s6_date", GetType(Date), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s6_date)
+            Me.columnfld_s6_ticket = New Global.System.Data.DataColumn("fld_s6_ticket", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s6_ticket)
+            Me.columnfld_s7_po = New Global.System.Data.DataColumn("fld_s7_po", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s7_po)
+            Me.columnfld_s7_customer = New Global.System.Data.DataColumn("fld_s7_customer", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s7_customer)
+            Me.columnfld_s7_qty = New Global.System.Data.DataColumn("fld_s7_qty", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s7_qty)
+            Me.columnfld_s7_date = New Global.System.Data.DataColumn("fld_s7_date", GetType(Date), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s7_date)
+            Me.columnfld_s7_ticket = New Global.System.Data.DataColumn("fld_s7_ticket", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s7_ticket)
+            Me.columnfld_s8_po = New Global.System.Data.DataColumn("fld_s8_po", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s8_po)
+            Me.columnfld_s8_customer = New Global.System.Data.DataColumn("fld_s8_customer", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s8_customer)
+            Me.columnfld_s8_qty = New Global.System.Data.DataColumn("fld_s8_qty", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s8_qty)
+            Me.columnfld_s8_date = New Global.System.Data.DataColumn("fld_s8_date", GetType(Date), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s8_date)
+            Me.columnfld_s8_ticket = New Global.System.Data.DataColumn("fld_s8_ticket", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s8_ticket)
+            Me.columnfld_s9_po = New Global.System.Data.DataColumn("fld_s9_po", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s9_po)
+            Me.columnfld_s9_customer = New Global.System.Data.DataColumn("fld_s9_customer", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s9_customer)
+            Me.columnfld_s9_qty = New Global.System.Data.DataColumn("fld_s9_qty", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s9_qty)
+            Me.columnfld_s9_date = New Global.System.Data.DataColumn("fld_s9_date", GetType(Date), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s9_date)
+            Me.columnfld_s9_ticket = New Global.System.Data.DataColumn("fld_s9_ticket", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s9_ticket)
+            Me.columnfld_s10_po = New Global.System.Data.DataColumn("fld_s10_po", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s10_po)
+            Me.columnfld_s10_customer = New Global.System.Data.DataColumn("fld_s10_customer", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s10_customer)
+            Me.columnfld_s10_qty = New Global.System.Data.DataColumn("fld_s10_qty", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s10_qty)
+            Me.columnfld_s10_date = New Global.System.Data.DataColumn("fld_s10_date", GetType(Date), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s10_date)
+            Me.columnfld_s10_ticket = New Global.System.Data.DataColumn("fld_s10_ticket", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfld_s10_ticket)
             Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnID}, true))
             Me.columnID.AutoIncrement = true
             Me.columnID.AutoIncrementSeed = -1
@@ -1478,13 +2164,51 @@ Partial Public Class db_WOlogDataSet
             Me.columnfld_style.MaxLength = 255
             Me.columnfld_psl.MaxLength = 255
             Me.columnfld_pr.MaxLength = 255
-            Me.columnfld_customer.MaxLength = 255
             Me.columnfld_notes.MaxLength = 536870910
-            Me.columnfld_po_num.MaxLength = 255
-            Me.columnfld_delivery_num.MaxLength = 255
             Me.columnfld_qb_ba_num.MaxLength = 255
             Me.columnfld_CreatedBy.MaxLength = 255
             Me.columnfld_LastModifiedBy.MaxLength = 255
+            Me.columnfld_status.MaxLength = 255
+            Me.columnfld_s1_po.MaxLength = 255
+            Me.columnfld_s1_customer.MaxLength = 255
+            Me.columnfld_s1_qty.MaxLength = 255
+            Me.columnfld_s1_ticket.MaxLength = 255
+            Me.columnfld_s2_po.MaxLength = 255
+            Me.columnfld_s2_customer.MaxLength = 255
+            Me.columnfld_s2_qty.MaxLength = 255
+            Me.columnfld_s2_ticket.MaxLength = 255
+            Me.columnfld_s3_po.MaxLength = 255
+            Me.columnfld_s3_customer.MaxLength = 255
+            Me.columnfld_s3_qty.MaxLength = 255
+            Me.columnfld_s3_ticket.MaxLength = 255
+            Me.columnfld_s4_po.MaxLength = 255
+            Me.columnfld_s4_customer.MaxLength = 255
+            Me.columnfld_s4_qty.MaxLength = 255
+            Me.columnfld_s4_ticket.MaxLength = 255
+            Me.columnfld_s5_po.MaxLength = 255
+            Me.columnfld_s5_customer.MaxLength = 255
+            Me.columnfld_s5_qty.MaxLength = 255
+            Me.columnfld_s5_ticket.MaxLength = 255
+            Me.columnfld_s6_po.MaxLength = 255
+            Me.columnfld_s6_customer.MaxLength = 255
+            Me.columnfld_s6_qty.MaxLength = 255
+            Me.columnfld_s6_ticket.MaxLength = 255
+            Me.columnfld_s7_po.MaxLength = 255
+            Me.columnfld_s7_customer.MaxLength = 255
+            Me.columnfld_s7_qty.MaxLength = 255
+            Me.columnfld_s7_ticket.MaxLength = 255
+            Me.columnfld_s8_po.MaxLength = 255
+            Me.columnfld_s8_customer.MaxLength = 255
+            Me.columnfld_s8_qty.MaxLength = 255
+            Me.columnfld_s8_ticket.MaxLength = 255
+            Me.columnfld_s9_po.MaxLength = 255
+            Me.columnfld_s9_customer.MaxLength = 255
+            Me.columnfld_s9_qty.MaxLength = 255
+            Me.columnfld_s9_ticket.MaxLength = 255
+            Me.columnfld_s10_po.MaxLength = 255
+            Me.columnfld_s10_customer.MaxLength = 255
+            Me.columnfld_s10_qty.MaxLength = 255
+            Me.columnfld_s10_ticket.MaxLength = 255
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -2371,7 +3095,7 @@ Partial Public Class db_WOlogDataSet
         Protected Overrides Sub OnRowDeleting(ByVal e As Global.System.Data.DataRowChangeEventArgs)
             MyBase.OnRowDeleting(e)
             If (Not (Me.tbl_term_PressureRowDeletingEvent) Is Nothing) Then
-                RaiseEvent tbl_term_PressureRowDeleting(Me, New tbl_term_PressureRowChangeEvent(CType(e.Row, tbl_term_PressureRow), e.Action))
+                RaiseEvent tbl_term_PressureRowDeleting(Me, New tbl_term_PressureRowChangeEvent(CType(e.Row,tbl_term_PressureRow), e.Action))
             End If
         End Sub
         
@@ -7674,21 +8398,6 @@ Partial Public Class db_WOlogDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
-        Public Property fld_customer() As String
-            Get
-                Try 
-                    Return CType(Me(Me.tabletbl_data_WOlog.fld_customerColumn),String)
-                Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_customer' in table 'tbl_data_WOlog' is DBNull.", e)
-                End Try
-            End Get
-            Set
-                Me(Me.tabletbl_data_WOlog.fld_customerColumn) = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Public Property fld_notes() As String
             Get
                 Try 
@@ -7699,51 +8408,6 @@ Partial Public Class db_WOlogDataSet
             End Get
             Set
                 Me(Me.tabletbl_data_WOlog.fld_notesColumn) = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
-        Public Property fld_po_num() As String
-            Get
-                Try 
-                    Return CType(Me(Me.tabletbl_data_WOlog.fld_po_numColumn),String)
-                Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_po_num' in table 'tbl_data_WOlog' is DBNull.", e)
-                End Try
-            End Get
-            Set
-                Me(Me.tabletbl_data_WOlog.fld_po_numColumn) = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
-        Public Property fld_ship_date() As Date
-            Get
-                Try 
-                    Return CType(Me(Me.tabletbl_data_WOlog.fld_ship_dateColumn),Date)
-                Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_ship_date' in table 'tbl_data_WOlog' is DBNull.", e)
-                End Try
-            End Get
-            Set
-                Me(Me.tabletbl_data_WOlog.fld_ship_dateColumn) = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
-        Public Property fld_delivery_num() As String
-            Get
-                Try 
-                    Return CType(Me(Me.tabletbl_data_WOlog.fld_delivery_numColumn),String)
-                Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_delivery_num' in table 'tbl_data_WOlog' is DBNull.", e)
-                End Try
-            End Get
-            Set
-                Me(Me.tabletbl_data_WOlog.fld_delivery_numColumn) = value
             End Set
         End Property
         
@@ -7819,6 +8483,801 @@ Partial Public Class db_WOlogDataSet
             End Get
             Set
                 Me(Me.tabletbl_data_WOlog.fld_LastModifiedDateColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_status() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_statusColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_status' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_statusColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_buyout() As Boolean
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_buyoutColumn),Boolean)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_buyout' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_buyoutColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_IsRepair() As Boolean
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_IsRepairColumn),Boolean)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_IsRepair' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_IsRepairColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s1_po() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s1_poColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s1_po' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s1_poColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s1_customer() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s1_customerColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s1_customer' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s1_customerColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s1_qty() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s1_qtyColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s1_qty' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s1_qtyColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s1_date() As Date
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s1_dateColumn),Date)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s1_date' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s1_dateColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s1_ticket() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s1_ticketColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s1_ticket' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s1_ticketColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s2_po() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s2_poColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s2_po' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s2_poColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s2_customer() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s2_customerColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s2_customer' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s2_customerColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s2_qty() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s2_qtyColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s2_qty' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s2_qtyColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s2_date() As Date
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s2_dateColumn),Date)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s2_date' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s2_dateColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s2_ticket() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s2_ticketColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s2_ticket' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s2_ticketColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s3_po() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s3_poColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s3_po' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s3_poColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s3_customer() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s3_customerColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s3_customer' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s3_customerColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s3_qty() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s3_qtyColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s3_qty' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s3_qtyColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s3_date() As Date
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s3_dateColumn),Date)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s3_date' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s3_dateColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s3_ticket() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s3_ticketColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s3_ticket' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s3_ticketColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s4_po() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s4_poColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s4_po' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s4_poColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s4_customer() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s4_customerColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s4_customer' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s4_customerColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s4_qty() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s4_qtyColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s4_qty' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s4_qtyColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s4_date() As Date
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s4_dateColumn),Date)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s4_date' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s4_dateColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s4_ticket() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s4_ticketColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s4_ticket' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s4_ticketColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s5_po() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s5_poColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s5_po' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s5_poColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s5_customer() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s5_customerColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s5_customer' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s5_customerColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s5_qty() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s5_qtyColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s5_qty' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s5_qtyColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s5_date() As Date
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s5_dateColumn),Date)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s5_date' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s5_dateColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s5_ticket() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s5_ticketColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s5_ticket' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s5_ticketColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s6_po() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s6_poColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s6_po' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s6_poColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s6_customer() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s6_customerColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s6_customer' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s6_customerColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s6_qty() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s6_qtyColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s6_qty' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s6_qtyColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s6_date() As Date
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s6_dateColumn),Date)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s6_date' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s6_dateColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s6_ticket() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s6_ticketColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s6_ticket' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s6_ticketColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s7_po() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s7_poColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s7_po' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s7_poColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s7_customer() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s7_customerColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s7_customer' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s7_customerColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s7_qty() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s7_qtyColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s7_qty' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s7_qtyColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s7_date() As Date
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s7_dateColumn),Date)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s7_date' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s7_dateColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s7_ticket() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s7_ticketColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s7_ticket' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s7_ticketColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s8_po() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s8_poColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s8_po' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s8_poColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s8_customer() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s8_customerColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s8_customer' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s8_customerColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s8_qty() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s8_qtyColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s8_qty' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s8_qtyColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s8_date() As Date
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s8_dateColumn),Date)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s8_date' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s8_dateColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s8_ticket() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s8_ticketColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s8_ticket' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s8_ticketColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s9_po() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s9_poColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s9_po' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s9_poColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s9_customer() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s9_customerColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s9_customer' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s9_customerColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s9_qty() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s9_qtyColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s9_qty' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s9_qtyColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s9_date() As Date
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s9_dateColumn),Date)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s9_date' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s9_dateColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s9_ticket() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s9_ticketColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s9_ticket' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s9_ticketColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s10_po() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s10_poColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s10_po' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s10_poColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s10_customer() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s10_customerColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s10_customer' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s10_customerColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s10_qty() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s10_qtyColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s10_qty' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s10_qtyColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s10_date() As Date
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s10_dateColumn),Date)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s10_date' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s10_dateColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property fld_s10_ticket() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbl_data_WOlog.fld_s10_ticketColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'fld_s10_ticket' in table 'tbl_data_WOlog' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbl_data_WOlog.fld_s10_ticketColumn) = value
             End Set
         End Property
         
@@ -7980,18 +9439,6 @@ Partial Public Class db_WOlogDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
-        Public Function Isfld_customerNull() As Boolean
-            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_customerColumn)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
-        Public Sub Setfld_customerNull()
-            Me(Me.tabletbl_data_WOlog.fld_customerColumn) = Global.System.Convert.DBNull
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Public Function Isfld_notesNull() As Boolean
             Return Me.IsNull(Me.tabletbl_data_WOlog.fld_notesColumn)
         End Function
@@ -8000,42 +9447,6 @@ Partial Public Class db_WOlogDataSet
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Public Sub Setfld_notesNull()
             Me(Me.tabletbl_data_WOlog.fld_notesColumn) = Global.System.Convert.DBNull
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
-        Public Function Isfld_po_numNull() As Boolean
-            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_po_numColumn)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
-        Public Sub Setfld_po_numNull()
-            Me(Me.tabletbl_data_WOlog.fld_po_numColumn) = Global.System.Convert.DBNull
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
-        Public Function Isfld_ship_dateNull() As Boolean
-            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_ship_dateColumn)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
-        Public Sub Setfld_ship_dateNull()
-            Me(Me.tabletbl_data_WOlog.fld_ship_dateColumn) = Global.System.Convert.DBNull
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
-        Public Function Isfld_delivery_numNull() As Boolean
-            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_delivery_numColumn)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
-        Public Sub Setfld_delivery_numNull()
-            Me(Me.tabletbl_data_WOlog.fld_delivery_numColumn) = Global.System.Convert.DBNull
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -8096,6 +9507,642 @@ Partial Public Class db_WOlogDataSet
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Public Sub Setfld_LastModifiedDateNull()
             Me(Me.tabletbl_data_WOlog.fld_LastModifiedDateColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_statusNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_statusColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_statusNull()
+            Me(Me.tabletbl_data_WOlog.fld_statusColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_buyoutNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_buyoutColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_buyoutNull()
+            Me(Me.tabletbl_data_WOlog.fld_buyoutColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_IsRepairNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_IsRepairColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_IsRepairNull()
+            Me(Me.tabletbl_data_WOlog.fld_IsRepairColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s1_poNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s1_poColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s1_poNull()
+            Me(Me.tabletbl_data_WOlog.fld_s1_poColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s1_customerNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s1_customerColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s1_customerNull()
+            Me(Me.tabletbl_data_WOlog.fld_s1_customerColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s1_qtyNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s1_qtyColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s1_qtyNull()
+            Me(Me.tabletbl_data_WOlog.fld_s1_qtyColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s1_dateNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s1_dateColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s1_dateNull()
+            Me(Me.tabletbl_data_WOlog.fld_s1_dateColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s1_ticketNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s1_ticketColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s1_ticketNull()
+            Me(Me.tabletbl_data_WOlog.fld_s1_ticketColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s2_poNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s2_poColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s2_poNull()
+            Me(Me.tabletbl_data_WOlog.fld_s2_poColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s2_customerNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s2_customerColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s2_customerNull()
+            Me(Me.tabletbl_data_WOlog.fld_s2_customerColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s2_qtyNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s2_qtyColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s2_qtyNull()
+            Me(Me.tabletbl_data_WOlog.fld_s2_qtyColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s2_dateNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s2_dateColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s2_dateNull()
+            Me(Me.tabletbl_data_WOlog.fld_s2_dateColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s2_ticketNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s2_ticketColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s2_ticketNull()
+            Me(Me.tabletbl_data_WOlog.fld_s2_ticketColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s3_poNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s3_poColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s3_poNull()
+            Me(Me.tabletbl_data_WOlog.fld_s3_poColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s3_customerNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s3_customerColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s3_customerNull()
+            Me(Me.tabletbl_data_WOlog.fld_s3_customerColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s3_qtyNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s3_qtyColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s3_qtyNull()
+            Me(Me.tabletbl_data_WOlog.fld_s3_qtyColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s3_dateNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s3_dateColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s3_dateNull()
+            Me(Me.tabletbl_data_WOlog.fld_s3_dateColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s3_ticketNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s3_ticketColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s3_ticketNull()
+            Me(Me.tabletbl_data_WOlog.fld_s3_ticketColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s4_poNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s4_poColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s4_poNull()
+            Me(Me.tabletbl_data_WOlog.fld_s4_poColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s4_customerNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s4_customerColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s4_customerNull()
+            Me(Me.tabletbl_data_WOlog.fld_s4_customerColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s4_qtyNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s4_qtyColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s4_qtyNull()
+            Me(Me.tabletbl_data_WOlog.fld_s4_qtyColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s4_dateNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s4_dateColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s4_dateNull()
+            Me(Me.tabletbl_data_WOlog.fld_s4_dateColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s4_ticketNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s4_ticketColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s4_ticketNull()
+            Me(Me.tabletbl_data_WOlog.fld_s4_ticketColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s5_poNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s5_poColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s5_poNull()
+            Me(Me.tabletbl_data_WOlog.fld_s5_poColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s5_customerNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s5_customerColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s5_customerNull()
+            Me(Me.tabletbl_data_WOlog.fld_s5_customerColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s5_qtyNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s5_qtyColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s5_qtyNull()
+            Me(Me.tabletbl_data_WOlog.fld_s5_qtyColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s5_dateNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s5_dateColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s5_dateNull()
+            Me(Me.tabletbl_data_WOlog.fld_s5_dateColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s5_ticketNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s5_ticketColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s5_ticketNull()
+            Me(Me.tabletbl_data_WOlog.fld_s5_ticketColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s6_poNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s6_poColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s6_poNull()
+            Me(Me.tabletbl_data_WOlog.fld_s6_poColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s6_customerNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s6_customerColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s6_customerNull()
+            Me(Me.tabletbl_data_WOlog.fld_s6_customerColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s6_qtyNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s6_qtyColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s6_qtyNull()
+            Me(Me.tabletbl_data_WOlog.fld_s6_qtyColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s6_dateNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s6_dateColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s6_dateNull()
+            Me(Me.tabletbl_data_WOlog.fld_s6_dateColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s6_ticketNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s6_ticketColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s6_ticketNull()
+            Me(Me.tabletbl_data_WOlog.fld_s6_ticketColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s7_poNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s7_poColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s7_poNull()
+            Me(Me.tabletbl_data_WOlog.fld_s7_poColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s7_customerNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s7_customerColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s7_customerNull()
+            Me(Me.tabletbl_data_WOlog.fld_s7_customerColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s7_qtyNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s7_qtyColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s7_qtyNull()
+            Me(Me.tabletbl_data_WOlog.fld_s7_qtyColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s7_dateNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s7_dateColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s7_dateNull()
+            Me(Me.tabletbl_data_WOlog.fld_s7_dateColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s7_ticketNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s7_ticketColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s7_ticketNull()
+            Me(Me.tabletbl_data_WOlog.fld_s7_ticketColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s8_poNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s8_poColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s8_poNull()
+            Me(Me.tabletbl_data_WOlog.fld_s8_poColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s8_customerNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s8_customerColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s8_customerNull()
+            Me(Me.tabletbl_data_WOlog.fld_s8_customerColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s8_qtyNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s8_qtyColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s8_qtyNull()
+            Me(Me.tabletbl_data_WOlog.fld_s8_qtyColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s8_dateNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s8_dateColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s8_dateNull()
+            Me(Me.tabletbl_data_WOlog.fld_s8_dateColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s8_ticketNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s8_ticketColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s8_ticketNull()
+            Me(Me.tabletbl_data_WOlog.fld_s8_ticketColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s9_poNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s9_poColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s9_poNull()
+            Me(Me.tabletbl_data_WOlog.fld_s9_poColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s9_customerNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s9_customerColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s9_customerNull()
+            Me(Me.tabletbl_data_WOlog.fld_s9_customerColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s9_qtyNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s9_qtyColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s9_qtyNull()
+            Me(Me.tabletbl_data_WOlog.fld_s9_qtyColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s9_dateNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s9_dateColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s9_dateNull()
+            Me(Me.tabletbl_data_WOlog.fld_s9_dateColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s9_ticketNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s9_ticketColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s9_ticketNull()
+            Me(Me.tabletbl_data_WOlog.fld_s9_ticketColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s10_poNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s10_poColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s10_poNull()
+            Me(Me.tabletbl_data_WOlog.fld_s10_poColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s10_customerNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s10_customerColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s10_customerNull()
+            Me(Me.tabletbl_data_WOlog.fld_s10_customerColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s10_qtyNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s10_qtyColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s10_qtyNull()
+            Me(Me.tabletbl_data_WOlog.fld_s10_qtyColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s10_dateNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s10_dateColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s10_dateNull()
+            Me(Me.tabletbl_data_WOlog.fld_s10_dateColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function Isfld_s10_ticketNull() As Boolean
+            Return Me.IsNull(Me.tabletbl_data_WOlog.fld_s10_ticketColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub Setfld_s10_ticketNull()
+            Me(Me.tabletbl_data_WOlog.fld_s10_ticketColumn) = Global.System.Convert.DBNull
         End Sub
     End Class
     
@@ -10170,16 +12217,65 @@ Namespace db_WOlogDataSetTableAdapters
             tableMapping.ColumnMappings.Add("fld_psl", "fld_psl")
             tableMapping.ColumnMappings.Add("fld_pr", "fld_pr")
             tableMapping.ColumnMappings.Add("fld_qty", "fld_qty")
-            tableMapping.ColumnMappings.Add("fld_customer", "fld_customer")
             tableMapping.ColumnMappings.Add("fld_notes", "fld_notes")
-            tableMapping.ColumnMappings.Add("fld_po_num", "fld_po_num")
-            tableMapping.ColumnMappings.Add("fld_ship_date", "fld_ship_date")
-            tableMapping.ColumnMappings.Add("fld_delivery_num", "fld_delivery_num")
             tableMapping.ColumnMappings.Add("fld_qb_ba_num", "fld_qb_ba_num")
             tableMapping.ColumnMappings.Add("fld_CreatedBy", "fld_CreatedBy")
             tableMapping.ColumnMappings.Add("fld_LastModifiedBy", "fld_LastModifiedBy")
             tableMapping.ColumnMappings.Add("fld_CreatedByDate", "fld_CreatedByDate")
             tableMapping.ColumnMappings.Add("fld_LastModifiedDate", "fld_LastModifiedDate")
+            tableMapping.ColumnMappings.Add("fld_status", "fld_status")
+            tableMapping.ColumnMappings.Add("fld_buyout", "fld_buyout")
+            tableMapping.ColumnMappings.Add("fld_IsRepair", "fld_IsRepair")
+            tableMapping.ColumnMappings.Add("fld_s1_po", "fld_s1_po")
+            tableMapping.ColumnMappings.Add("fld_s1_customer", "fld_s1_customer")
+            tableMapping.ColumnMappings.Add("fld_s1_qty", "fld_s1_qty")
+            tableMapping.ColumnMappings.Add("fld_s1_date", "fld_s1_date")
+            tableMapping.ColumnMappings.Add("fld_s1_ticket", "fld_s1_ticket")
+            tableMapping.ColumnMappings.Add("fld_s2_po", "fld_s2_po")
+            tableMapping.ColumnMappings.Add("fld_s2_customer", "fld_s2_customer")
+            tableMapping.ColumnMappings.Add("fld_s2_qty", "fld_s2_qty")
+            tableMapping.ColumnMappings.Add("fld_s2_date", "fld_s2_date")
+            tableMapping.ColumnMappings.Add("fld_s2_ticket", "fld_s2_ticket")
+            tableMapping.ColumnMappings.Add("fld_s3_po", "fld_s3_po")
+            tableMapping.ColumnMappings.Add("fld_s3_customer", "fld_s3_customer")
+            tableMapping.ColumnMappings.Add("fld_s3_qty", "fld_s3_qty")
+            tableMapping.ColumnMappings.Add("fld_s3_date", "fld_s3_date")
+            tableMapping.ColumnMappings.Add("fld_s3_ticket", "fld_s3_ticket")
+            tableMapping.ColumnMappings.Add("fld_s4_po", "fld_s4_po")
+            tableMapping.ColumnMappings.Add("fld_s4_customer", "fld_s4_customer")
+            tableMapping.ColumnMappings.Add("fld_s4_qty", "fld_s4_qty")
+            tableMapping.ColumnMappings.Add("fld_s4_date", "fld_s4_date")
+            tableMapping.ColumnMappings.Add("fld_s4_ticket", "fld_s4_ticket")
+            tableMapping.ColumnMappings.Add("fld_s5_po", "fld_s5_po")
+            tableMapping.ColumnMappings.Add("fld_s5_customer", "fld_s5_customer")
+            tableMapping.ColumnMappings.Add("fld_s5_qty", "fld_s5_qty")
+            tableMapping.ColumnMappings.Add("fld_s5_date", "fld_s5_date")
+            tableMapping.ColumnMappings.Add("fld_s5_ticket", "fld_s5_ticket")
+            tableMapping.ColumnMappings.Add("fld_s6_po", "fld_s6_po")
+            tableMapping.ColumnMappings.Add("fld_s6_customer", "fld_s6_customer")
+            tableMapping.ColumnMappings.Add("fld_s6_qty", "fld_s6_qty")
+            tableMapping.ColumnMappings.Add("fld_s6_date", "fld_s6_date")
+            tableMapping.ColumnMappings.Add("fld_s6_ticket", "fld_s6_ticket")
+            tableMapping.ColumnMappings.Add("fld_s7_po", "fld_s7_po")
+            tableMapping.ColumnMappings.Add("fld_s7_customer", "fld_s7_customer")
+            tableMapping.ColumnMappings.Add("fld_s7_qty", "fld_s7_qty")
+            tableMapping.ColumnMappings.Add("fld_s7_date", "fld_s7_date")
+            tableMapping.ColumnMappings.Add("fld_s7_ticket", "fld_s7_ticket")
+            tableMapping.ColumnMappings.Add("fld_s8_po", "fld_s8_po")
+            tableMapping.ColumnMappings.Add("fld_s8_customer", "fld_s8_customer")
+            tableMapping.ColumnMappings.Add("fld_s8_qty", "fld_s8_qty")
+            tableMapping.ColumnMappings.Add("fld_s8_date", "fld_s8_date")
+            tableMapping.ColumnMappings.Add("fld_s8_ticket", "fld_s8_ticket")
+            tableMapping.ColumnMappings.Add("fld_s9_po", "fld_s9_po")
+            tableMapping.ColumnMappings.Add("fld_s9_customer", "fld_s9_customer")
+            tableMapping.ColumnMappings.Add("fld_s9_qty", "fld_s9_qty")
+            tableMapping.ColumnMappings.Add("fld_s9_date", "fld_s9_date")
+            tableMapping.ColumnMappings.Add("fld_s9_ticket", "fld_s9_ticket")
+            tableMapping.ColumnMappings.Add("fld_s10_po", "fld_s10_po")
+            tableMapping.ColumnMappings.Add("fld_s10_customer", "fld_s10_customer")
+            tableMapping.ColumnMappings.Add("fld_s10_qty", "fld_s10_qty")
+            tableMapping.ColumnMappings.Add("fld_s10_date", "fld_s10_date")
+            tableMapping.ColumnMappings.Add("fld_s10_ticket", "fld_s10_ticket")
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.DeleteCommand = New Global.System.Data.OleDb.OleDbCommand()
             Me._adapter.DeleteCommand.Connection = Me.Connection
@@ -10193,15 +12289,54 @@ Namespace db_WOlogDataSetTableAdapters
                 "`fld_trim` IS NULL) OR (`fld_trim` = ?)) AND ((? = 1 AND `fld_style` IS NULL) OR"& _ 
                 " (`fld_style` = ?)) AND ((? = 1 AND `fld_psl` IS NULL) OR (`fld_psl` = ?)) AND ("& _ 
                 "(? = 1 AND `fld_pr` IS NULL) OR (`fld_pr` = ?)) AND ((? = 1 AND `fld_qty` IS NUL"& _ 
-                "L) OR (`fld_qty` = ?)) AND ((? = 1 AND `fld_customer` IS NULL) OR (`fld_customer"& _ 
-                "` = ?)) AND ((? = 1 AND `fld_po_num` IS NULL) OR (`fld_po_num` = ?)) AND ((? = 1"& _ 
-                " AND `fld_ship_date` IS NULL) OR (`fld_ship_date` = ?)) AND ((? = 1 AND `fld_del"& _ 
-                "ivery_num` IS NULL) OR (`fld_delivery_num` = ?)) AND ((? = 1 AND `fld_qb_ba_num`"& _ 
-                " IS NULL) OR (`fld_qb_ba_num` = ?)) AND ((? = 1 AND `fld_CreatedBy` IS NULL) OR "& _ 
-                "(`fld_CreatedBy` = ?)) AND ((? = 1 AND `fld_CreatedByDate` IS NULL) OR (`fld_Cre"& _ 
-                "atedByDate` = ?)) AND ((? = 1 AND `fld_LastModifiedBy` IS NULL) OR (`fld_LastMod"& _ 
-                "ifiedBy` = ?)) AND ((? = 1 AND `fld_LastModifiedDate` IS NULL) OR (`fld_LastModi"& _ 
-                "fiedDate` = ?)))"
+                "L) OR (`fld_qty` = ?)) AND ((? = 1 AND `fld_qb_ba_num` IS NULL) OR (`fld_qb_ba_n"& _ 
+                "um` = ?)) AND ((? = 1 AND `fld_CreatedBy` IS NULL) OR (`fld_CreatedBy` = ?)) AND"& _ 
+                " ((? = 1 AND `fld_CreatedByDate` IS NULL) OR (`fld_CreatedByDate` = ?)) AND ((? "& _ 
+                "= 1 AND `fld_LastModifiedBy` IS NULL) OR (`fld_LastModifiedBy` = ?)) AND ((? = 1"& _ 
+                " AND `fld_LastModifiedDate` IS NULL) OR (`fld_LastModifiedDate` = ?)) AND ((? = "& _ 
+                "1 AND `fld_IsRepair` IS NULL) OR (`fld_IsRepair` = ?)) AND ((? = 1 AND `fld_buyo"& _ 
+                "ut` IS NULL) OR (`fld_buyout` = ?)) AND ((? = 1 AND `fld_s10_customer` IS NULL) "& _ 
+                "OR (`fld_s10_customer` = ?)) AND ((? = 1 AND `fld_s10_date` IS NULL) OR (`fld_s1"& _ 
+                "0_date` = ?)) AND ((? = 1 AND `fld_s10_po` IS NULL) OR (`fld_s10_po` = ?)) AND ("& _ 
+                "(? = 1 AND `fld_s10_qty` IS NULL) OR (`fld_s10_qty` = ?)) AND ((? = 1 AND `fld_s"& _ 
+                "10_ticket` IS NULL) OR (`fld_s10_ticket` = ?)) AND ((? = 1 AND `fld_s1_customer`"& _ 
+                " IS NULL) OR (`fld_s1_customer` = ?)) AND ((? = 1 AND `fld_s1_date` IS NULL) OR "& _ 
+                "(`fld_s1_date` = ?)) AND ((? = 1 AND `fld_s1_po` IS NULL) OR (`fld_s1_po` = ?)) "& _ 
+                "AND ((? = 1 AND `fld_s1_qty` IS NULL) OR (`fld_s1_qty` = ?)) AND ((? = 1 AND `fl"& _ 
+                "d_s1_ticket` IS NULL) OR (`fld_s1_ticket` = ?)) AND ((? = 1 AND `fld_s2_customer"& _ 
+                "` IS NULL) OR (`fld_s2_customer` = ?)) AND ((? = 1 AND `fld_s2_date` IS NULL) OR"& _ 
+                " (`fld_s2_date` = ?)) AND ((? = 1 AND `fld_s2_po` IS NULL) OR (`fld_s2_po` = ?))"& _ 
+                " AND ((? = 1 AND `fld_s2_qty` IS NULL) OR (`fld_s2_qty` = ?)) AND ((? = 1 AND `f"& _ 
+                "ld_s2_ticket` IS NULL) OR (`fld_s2_ticket` = ?)) AND ((? = 1 AND `fld_s3_custome"& _ 
+                "r` IS NULL) OR (`fld_s3_customer` = ?)) AND ((? = 1 AND `fld_s3_date` IS NULL) O"& _ 
+                "R (`fld_s3_date` = ?)) AND ((? = 1 AND `fld_s3_po` IS NULL) OR (`fld_s3_po` = ?)"& _ 
+                ") AND ((? = 1 AND `fld_s3_qty` IS NULL) OR (`fld_s3_qty` = ?)) AND ((? = 1 AND `"& _ 
+                "fld_s3_ticket` IS NULL) OR (`fld_s3_ticket` = ?)) AND ((? = 1 AND `fld_s4_custom"& _ 
+                "er` IS NULL) OR (`fld_s4_customer` = ?)) AND ((? = 1 AND `fld_s4_date` IS NULL) "& _ 
+                "OR (`fld_s4_date` = ?)) AND ((? = 1 AND `fld_s4_po` IS NULL) OR (`fld_s4_po` = ?"& _ 
+                ")) AND ((? = 1 AND `fld_s4_qty` IS NULL) OR (`fld_s4_qty` = ?)) AND ((? = 1 AND "& _ 
+                "`fld_s4_ticket` IS NULL) OR (`fld_s4_ticket` = ?)) AND ((? = 1 AND `fld_s5_custo"& _ 
+                "mer` IS NULL) OR (`fld_s5_customer` = ?)) AND ((? = 1 AND `fld_s5_date` IS NULL)"& _ 
+                " OR (`fld_s5_date` = ?)) AND ((? = 1 AND `fld_s5_po` IS NULL) OR (`fld_s5_po` = "& _ 
+                "?)) AND ((? = 1 AND `fld_s5_qty` IS NULL) OR (`fld_s5_qty` = ?)) AND ((? = 1 AND"& _ 
+                " `fld_s5_ticket` IS NULL) OR (`fld_s5_ticket` = ?)) AND ((? = 1 AND `fld_s6_cust"& _ 
+                "omer` IS NULL) OR (`fld_s6_customer` = ?)) AND ((? = 1 AND `fld_s6_date` IS NULL"& _ 
+                ") OR (`fld_s6_date` = ?)) AND ((? = 1 AND `fld_s6_po` IS NULL) OR (`fld_s6_po` ="& _ 
+                " ?)) AND ((? = 1 AND `fld_s6_qty` IS NULL) OR (`fld_s6_qty` = ?)) AND ((? = 1 AN"& _ 
+                "D `fld_s6_ticket` IS NULL) OR (`fld_s6_ticket` = ?)) AND ((? = 1 AND `fld_s7_cus"& _ 
+                "tomer` IS NULL) OR (`fld_s7_customer` = ?)) AND ((? = 1 AND `fld_s7_date` IS NUL"& _ 
+                "L) OR (`fld_s7_date` = ?)) AND ((? = 1 AND `fld_s7_po` IS NULL) OR (`fld_s7_po` "& _ 
+                "= ?)) AND ((? = 1 AND `fld_s7_qty` IS NULL) OR (`fld_s7_qty` = ?)) AND ((? = 1 A"& _ 
+                "ND `fld_s7_ticket` IS NULL) OR (`fld_s7_ticket` = ?)) AND ((? = 1 AND `fld_s8_cu"& _ 
+                "stomer` IS NULL) OR (`fld_s8_customer` = ?)) AND ((? = 1 AND `fld_s8_date` IS NU"& _ 
+                "LL) OR (`fld_s8_date` = ?)) AND ((? = 1 AND `fld_s8_po` IS NULL) OR (`fld_s8_po`"& _ 
+                " = ?)) AND ((? = 1 AND `fld_s8_qty` IS NULL) OR (`fld_s8_qty` = ?)) AND ((? = 1 "& _ 
+                "AND `fld_s8_ticket` IS NULL) OR (`fld_s8_ticket` = ?)) AND ((? = 1 AND `fld_s9_c"& _ 
+                "ustomer` IS NULL) OR (`fld_s9_customer` = ?)) AND ((? = 1 AND `fld_s9_date` IS N"& _ 
+                "ULL) OR (`fld_s9_date` = ?)) AND ((? = 1 AND `fld_s9_po` IS NULL) OR (`fld_s9_po"& _ 
+                "` = ?)) AND ((? = 1 AND `fld_s9_qty` IS NULL) OR (`fld_s9_qty` = ?)) AND ((? = 1"& _ 
+                " AND `fld_s9_ticket` IS NULL) OR (`fld_s9_ticket` = ?)) AND ((? = 1 AND `fld_sta"& _ 
+                "tus` IS NULL) OR (`fld_status` = ?)))"
             Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_ID", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "ID", Global.System.Data.DataRowVersion.Original, false, Nothing))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_wo_num", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_wo_num", Global.System.Data.DataRowVersion.Original, true, Nothing))
@@ -10229,15 +12364,7 @@ Namespace db_WOlogDataSetTableAdapters
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_pr", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_pr", Global.System.Data.DataRowVersion.Original, true, Nothing))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_pr", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_pr", Global.System.Data.DataRowVersion.Original, false, Nothing))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_qty", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_qty", Global.System.Data.DataRowVersion.Original, true, Nothing))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_qty", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_qty", Global.System.Data.DataRowVersion.Original, false, Nothing))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_customer", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_customer", Global.System.Data.DataRowVersion.Original, true, Nothing))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_customer", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_customer", Global.System.Data.DataRowVersion.Original, false, Nothing))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_po_num", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_po_num", Global.System.Data.DataRowVersion.Original, true, Nothing))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_po_num", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_po_num", Global.System.Data.DataRowVersion.Original, false, Nothing))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_ship_date", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_ship_date", Global.System.Data.DataRowVersion.Original, true, Nothing))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_ship_date", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_ship_date", Global.System.Data.DataRowVersion.Original, false, Nothing))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_delivery_num", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_delivery_num", Global.System.Data.DataRowVersion.Original, true, Nothing))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_delivery_num", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_delivery_num", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_qty", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_qty", Global.System.Data.DataRowVersion.Original, false, Nothing))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_qb_ba_num", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_qb_ba_num", Global.System.Data.DataRowVersion.Original, true, Nothing))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_qb_ba_num", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_qb_ba_num", Global.System.Data.DataRowVersion.Original, false, Nothing))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_CreatedBy", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_CreatedBy", Global.System.Data.DataRowVersion.Original, true, Nothing))
@@ -10248,14 +12375,132 @@ Namespace db_WOlogDataSetTableAdapters
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_LastModifiedBy", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_LastModifiedBy", Global.System.Data.DataRowVersion.Original, false, Nothing))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_LastModifiedDate", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_LastModifiedDate", Global.System.Data.DataRowVersion.Original, true, Nothing))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_LastModifiedDate", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_LastModifiedDate", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_IsRepair", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_IsRepair", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_IsRepair", Global.System.Data.OleDb.OleDbType.[Boolean], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_IsRepair", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_buyout", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_buyout", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_buyout", Global.System.Data.OleDb.OleDbType.[Boolean], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_buyout", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s10_customer", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s10_customer", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s10_customer", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s10_customer", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s10_date", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s10_date", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s10_date", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s10_date", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s10_po", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s10_po", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s10_po", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s10_po", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s10_qty", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s10_qty", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s10_qty", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s10_qty", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s10_ticket", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s10_ticket", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s10_ticket", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s10_ticket", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s1_customer", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s1_customer", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s1_customer", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s1_customer", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s1_date", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s1_date", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s1_date", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s1_date", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s1_po", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s1_po", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s1_po", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s1_po", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s1_qty", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s1_qty", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s1_qty", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s1_qty", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s1_ticket", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s1_ticket", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s1_ticket", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s1_ticket", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s2_customer", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s2_customer", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s2_customer", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s2_customer", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s2_date", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s2_date", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s2_date", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s2_date", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s2_po", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s2_po", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s2_po", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s2_po", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s2_qty", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s2_qty", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s2_qty", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s2_qty", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s2_ticket", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s2_ticket", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s2_ticket", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s2_ticket", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s3_customer", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s3_customer", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s3_customer", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s3_customer", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s3_date", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s3_date", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s3_date", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s3_date", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s3_po", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s3_po", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s3_po", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s3_po", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s3_qty", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s3_qty", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s3_qty", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s3_qty", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s3_ticket", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s3_ticket", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s3_ticket", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s3_ticket", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s4_customer", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s4_customer", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s4_customer", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s4_customer", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s4_date", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s4_date", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s4_date", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s4_date", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s4_po", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s4_po", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s4_po", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s4_po", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s4_qty", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s4_qty", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s4_qty", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s4_qty", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s4_ticket", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s4_ticket", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s4_ticket", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s4_ticket", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s5_customer", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s5_customer", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s5_customer", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s5_customer", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s5_date", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s5_date", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s5_date", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s5_date", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s5_po", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s5_po", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s5_po", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s5_po", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s5_qty", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s5_qty", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s5_qty", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s5_qty", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s5_ticket", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s5_ticket", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s5_ticket", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s5_ticket", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s6_customer", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s6_customer", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s6_customer", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s6_customer", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s6_date", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s6_date", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s6_date", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s6_date", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s6_po", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s6_po", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s6_po", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s6_po", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s6_qty", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s6_qty", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s6_qty", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s6_qty", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s6_ticket", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s6_ticket", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s6_ticket", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s6_ticket", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s7_customer", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s7_customer", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s7_customer", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s7_customer", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s7_date", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s7_date", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s7_date", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s7_date", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s7_po", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s7_po", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s7_po", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s7_po", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s7_qty", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s7_qty", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s7_qty", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s7_qty", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s7_ticket", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s7_ticket", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s7_ticket", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s7_ticket", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s8_customer", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s8_customer", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s8_customer", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s8_customer", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s8_date", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s8_date", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s8_date", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s8_date", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s8_po", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s8_po", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s8_po", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s8_po", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s8_qty", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s8_qty", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s8_qty", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s8_qty", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s8_ticket", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s8_ticket", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s8_ticket", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s8_ticket", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s9_customer", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s9_customer", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s9_customer", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s9_customer", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s9_date", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s9_date", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s9_date", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s9_date", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s9_po", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s9_po", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s9_po", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s9_po", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s9_qty", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s9_qty", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s9_qty", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s9_qty", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s9_ticket", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s9_ticket", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s9_ticket", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s9_ticket", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_status", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_status", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_status", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_status", Global.System.Data.DataRowVersion.Original, false, Nothing))
             Me._adapter.InsertCommand = New Global.System.Data.OleDb.OleDbCommand()
             Me._adapter.InsertCommand.Connection = Me.Connection
             Me._adapter.InsertCommand.CommandText = "INSERT INTO `tbl_data_WOlog` (`fld_wo_num`, `fld_wo_date`, `fld_part_num`, `fld_p"& _ 
                 "roduct`, `fld_size`, `fld_pressure`, `fld_hhpp`, `fld_tempclass`, `fld_trim`, `f"& _ 
-                "ld_style`, `fld_psl`, `fld_pr`, `fld_qty`, `fld_customer`, `fld_notes`, `fld_po_"& _ 
-                "num`, `fld_ship_date`, `fld_delivery_num`, `fld_qb_ba_num`, `fld_CreatedBy`, `fl"& _ 
-                "d_CreatedByDate`, `fld_LastModifiedBy`, `fld_LastModifiedDate`) VALUES (?, ?, ?,"& _ 
-                " ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
+                "ld_style`, `fld_psl`, `fld_pr`, `fld_qty`, `fld_notes`, `fld_qb_ba_num`, `fld_Cr"& _ 
+                "eatedBy`, `fld_CreatedByDate`, `fld_LastModifiedBy`, `fld_LastModifiedDate`, `fl"& _ 
+                "d_IsRepair`, `fld_buyout`, `fld_s10_customer`, `fld_s10_date`, `fld_s10_po`, `fl"& _ 
+                "d_s10_qty`, `fld_s10_ticket`, `fld_s1_customer`, `fld_s1_date`, `fld_s1_po`, `fl"& _ 
+                "d_s1_qty`, `fld_s1_ticket`, `fld_s2_customer`, `fld_s2_date`, `fld_s2_po`, `fld_"& _ 
+                "s2_qty`, `fld_s2_ticket`, `fld_s3_customer`, `fld_s3_date`, `fld_s3_po`, `fld_s3"& _ 
+                "_qty`, `fld_s3_ticket`, `fld_s4_customer`, `fld_s4_date`, `fld_s4_po`, `fld_s4_q"& _ 
+                "ty`, `fld_s4_ticket`, `fld_s5_customer`, `fld_s5_date`, `fld_s5_po`, `fld_s5_qty"& _ 
+                "`, `fld_s5_ticket`, `fld_s6_customer`, `fld_s6_date`, `fld_s6_po`, `fld_s6_qty`,"& _ 
+                " `fld_s6_ticket`, `fld_s7_customer`, `fld_s7_date`, `fld_s7_po`, `fld_s7_qty`, `"& _ 
+                "fld_s7_ticket`, `fld_s8_customer`, `fld_s8_date`, `fld_s8_po`, `fld_s8_qty`, `fl"& _ 
+                "d_s8_ticket`, `fld_s9_customer`, `fld_s9_date`, `fld_s9_po`, `fld_s9_qty`, `fld_"& _ 
+                "s9_ticket`, `fld_status`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?"& _ 
+                ", ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, "& _ 
+                "?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,"& _ 
+                " ?, ?, ?)"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_wo_num", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_wo_num", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_wo_date", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_wo_date", Global.System.Data.DataRowVersion.Current, false, Nothing))
@@ -10269,43 +12514,144 @@ Namespace db_WOlogDataSetTableAdapters
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_style", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_style", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_psl", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_psl", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_pr", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_pr", Global.System.Data.DataRowVersion.Current, false, Nothing))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_qty", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_qty", Global.System.Data.DataRowVersion.Current, false, Nothing))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_customer", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_customer", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_qty", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_qty", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_notes", Global.System.Data.OleDb.OleDbType.LongVarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_notes", Global.System.Data.DataRowVersion.Current, false, Nothing))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_po_num", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_po_num", Global.System.Data.DataRowVersion.Current, false, Nothing))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_ship_date", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_ship_date", Global.System.Data.DataRowVersion.Current, false, Nothing))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_delivery_num", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_delivery_num", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_qb_ba_num", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_qb_ba_num", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_CreatedBy", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_CreatedBy", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_CreatedByDate", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_CreatedByDate", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_LastModifiedBy", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_LastModifiedBy", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_LastModifiedDate", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_LastModifiedDate", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_IsRepair", Global.System.Data.OleDb.OleDbType.[Boolean], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_IsRepair", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_buyout", Global.System.Data.OleDb.OleDbType.[Boolean], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_buyout", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s10_customer", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s10_customer", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s10_date", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s10_date", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s10_po", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s10_po", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s10_qty", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s10_qty", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s10_ticket", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s10_ticket", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s1_customer", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s1_customer", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s1_date", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s1_date", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s1_po", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s1_po", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s1_qty", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s1_qty", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s1_ticket", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s1_ticket", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s2_customer", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s2_customer", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s2_date", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s2_date", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s2_po", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s2_po", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s2_qty", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s2_qty", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s2_ticket", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s2_ticket", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s3_customer", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s3_customer", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s3_date", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s3_date", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s3_po", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s3_po", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s3_qty", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s3_qty", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s3_ticket", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s3_ticket", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s4_customer", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s4_customer", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s4_date", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s4_date", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s4_po", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s4_po", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s4_qty", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s4_qty", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s4_ticket", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s4_ticket", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s5_customer", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s5_customer", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s5_date", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s5_date", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s5_po", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s5_po", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s5_qty", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s5_qty", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s5_ticket", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s5_ticket", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s6_customer", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s6_customer", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s6_date", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s6_date", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s6_po", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s6_po", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s6_qty", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s6_qty", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s6_ticket", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s6_ticket", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s7_customer", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s7_customer", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s7_date", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s7_date", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s7_po", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s7_po", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s7_qty", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s7_qty", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s7_ticket", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s7_ticket", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s8_customer", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s8_customer", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s8_date", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s8_date", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s8_po", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s8_po", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s8_qty", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s8_qty", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s8_ticket", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s8_ticket", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s9_customer", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s9_customer", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s9_date", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s9_date", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s9_po", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s9_po", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s9_qty", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s9_qty", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s9_ticket", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s9_ticket", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_status", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_status", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.UpdateCommand = New Global.System.Data.OleDb.OleDbCommand()
             Me._adapter.UpdateCommand.Connection = Me.Connection
             Me._adapter.UpdateCommand.CommandText = "UPDATE `tbl_data_WOlog` SET `fld_wo_num` = ?, `fld_wo_date` = ?, `fld_part_num` ="& _ 
                 " ?, `fld_product` = ?, `fld_size` = ?, `fld_pressure` = ?, `fld_hhpp` = ?, `fld_"& _ 
                 "tempclass` = ?, `fld_trim` = ?, `fld_style` = ?, `fld_psl` = ?, `fld_pr` = ?, `f"& _ 
-                "ld_qty` = ?, `fld_customer` = ?, `fld_notes` = ?, `fld_po_num` = ?, `fld_ship_da"& _ 
-                "te` = ?, `fld_delivery_num` = ?, `fld_qb_ba_num` = ?, `fld_CreatedBy` = ?, `fld_"& _ 
-                "CreatedByDate` = ?, `fld_LastModifiedBy` = ?, `fld_LastModifiedDate` = ? WHERE ("& _ 
-                "(`ID` = ?) AND ((? = 1 AND `fld_wo_num` IS NULL) OR (`fld_wo_num` = ?)) AND ((? "& _ 
-                "= 1 AND `fld_wo_date` IS NULL) OR (`fld_wo_date` = ?)) AND ((? = 1 AND `fld_part"& _ 
-                "_num` IS NULL) OR (`fld_part_num` = ?)) AND ((? = 1 AND `fld_product` IS NULL) O"& _ 
-                "R (`fld_product` = ?)) AND ((? = 1 AND `fld_size` IS NULL) OR (`fld_size` = ?)) "& _ 
-                "AND ((? = 1 AND `fld_pressure` IS NULL) OR (`fld_pressure` = ?)) AND ((? = 1 AND"& _ 
-                " `fld_hhpp` IS NULL) OR (`fld_hhpp` = ?)) AND ((? = 1 AND `fld_tempclass` IS NUL"& _ 
-                "L) OR (`fld_tempclass` = ?)) AND ((? = 1 AND `fld_trim` IS NULL) OR (`fld_trim` "& _ 
-                "= ?)) AND ((? = 1 AND `fld_style` IS NULL) OR (`fld_style` = ?)) AND ((? = 1 AND"& _ 
-                " `fld_psl` IS NULL) OR (`fld_psl` = ?)) AND ((? = 1 AND `fld_pr` IS NULL) OR (`f"& _ 
-                "ld_pr` = ?)) AND ((? = 1 AND `fld_qty` IS NULL) OR (`fld_qty` = ?)) AND ((? = 1 "& _ 
-                "AND `fld_customer` IS NULL) OR (`fld_customer` = ?)) AND ((? = 1 AND `fld_po_num"& _ 
-                "` IS NULL) OR (`fld_po_num` = ?)) AND ((? = 1 AND `fld_ship_date` IS NULL) OR (`"& _ 
-                "fld_ship_date` = ?)) AND ((? = 1 AND `fld_delivery_num` IS NULL) OR (`fld_delive"& _ 
-                "ry_num` = ?)) AND ((? = 1 AND `fld_qb_ba_num` IS NULL) OR (`fld_qb_ba_num` = ?))"& _ 
-                " AND ((? = 1 AND `fld_CreatedBy` IS NULL) OR (`fld_CreatedBy` = ?)) AND ((? = 1 "& _ 
-                "AND `fld_CreatedByDate` IS NULL) OR (`fld_CreatedByDate` = ?)) AND ((? = 1 AND `"& _ 
-                "fld_LastModifiedBy` IS NULL) OR (`fld_LastModifiedBy` = ?)) AND ((? = 1 AND `fld"& _ 
-                "_LastModifiedDate` IS NULL) OR (`fld_LastModifiedDate` = ?)))"
+                "ld_qty` = ?, `fld_notes` = ?, `fld_qb_ba_num` = ?, `fld_CreatedBy` = ?, `fld_Cre"& _ 
+                "atedByDate` = ?, `fld_LastModifiedBy` = ?, `fld_LastModifiedDate` = ?, `fld_IsRe"& _ 
+                "pair` = ?, `fld_buyout` = ?, `fld_s10_customer` = ?, `fld_s10_date` = ?, `fld_s1"& _ 
+                "0_po` = ?, `fld_s10_qty` = ?, `fld_s10_ticket` = ?, `fld_s1_customer` = ?, `fld_"& _ 
+                "s1_date` = ?, `fld_s1_po` = ?, `fld_s1_qty` = ?, `fld_s1_ticket` = ?, `fld_s2_cu"& _ 
+                "stomer` = ?, `fld_s2_date` = ?, `fld_s2_po` = ?, `fld_s2_qty` = ?, `fld_s2_ticke"& _ 
+                "t` = ?, `fld_s3_customer` = ?, `fld_s3_date` = ?, `fld_s3_po` = ?, `fld_s3_qty` "& _ 
+                "= ?, `fld_s3_ticket` = ?, `fld_s4_customer` = ?, `fld_s4_date` = ?, `fld_s4_po` "& _ 
+                "= ?, `fld_s4_qty` = ?, `fld_s4_ticket` = ?, `fld_s5_customer` = ?, `fld_s5_date`"& _ 
+                " = ?, `fld_s5_po` = ?, `fld_s5_qty` = ?, `fld_s5_ticket` = ?, `fld_s6_customer` "& _ 
+                "= ?, `fld_s6_date` = ?, `fld_s6_po` = ?, `fld_s6_qty` = ?, `fld_s6_ticket` = ?, "& _ 
+                "`fld_s7_customer` = ?, `fld_s7_date` = ?, `fld_s7_po` = ?, `fld_s7_qty` = ?, `fl"& _ 
+                "d_s7_ticket` = ?, `fld_s8_customer` = ?, `fld_s8_date` = ?, `fld_s8_po` = ?, `fl"& _ 
+                "d_s8_qty` = ?, `fld_s8_ticket` = ?, `fld_s9_customer` = ?, `fld_s9_date` = ?, `f"& _ 
+                "ld_s9_po` = ?, `fld_s9_qty` = ?, `fld_s9_ticket` = ?, `fld_status` = ? WHERE ((`"& _ 
+                "ID` = ?) AND ((? = 1 AND `fld_wo_num` IS NULL) OR (`fld_wo_num` = ?)) AND ((? = "& _ 
+                "1 AND `fld_wo_date` IS NULL) OR (`fld_wo_date` = ?)) AND ((? = 1 AND `fld_part_n"& _ 
+                "um` IS NULL) OR (`fld_part_num` = ?)) AND ((? = 1 AND `fld_product` IS NULL) OR "& _ 
+                "(`fld_product` = ?)) AND ((? = 1 AND `fld_size` IS NULL) OR (`fld_size` = ?)) AN"& _ 
+                "D ((? = 1 AND `fld_pressure` IS NULL) OR (`fld_pressure` = ?)) AND ((? = 1 AND `"& _ 
+                "fld_hhpp` IS NULL) OR (`fld_hhpp` = ?)) AND ((? = 1 AND `fld_tempclass` IS NULL)"& _ 
+                " OR (`fld_tempclass` = ?)) AND ((? = 1 AND `fld_trim` IS NULL) OR (`fld_trim` = "& _ 
+                "?)) AND ((? = 1 AND `fld_style` IS NULL) OR (`fld_style` = ?)) AND ((? = 1 AND `"& _ 
+                "fld_psl` IS NULL) OR (`fld_psl` = ?)) AND ((? = 1 AND `fld_pr` IS NULL) OR (`fld"& _ 
+                "_pr` = ?)) AND ((? = 1 AND `fld_qty` IS NULL) OR (`fld_qty` = ?)) AND ((? = 1 AN"& _ 
+                "D `fld_qb_ba_num` IS NULL) OR (`fld_qb_ba_num` = ?)) AND ((? = 1 AND `fld_Create"& _ 
+                "dBy` IS NULL) OR (`fld_CreatedBy` = ?)) AND ((? = 1 AND `fld_CreatedByDate` IS N"& _ 
+                "ULL) OR (`fld_CreatedByDate` = ?)) AND ((? = 1 AND `fld_LastModifiedBy` IS NULL)"& _ 
+                " OR (`fld_LastModifiedBy` = ?)) AND ((? = 1 AND `fld_LastModifiedDate` IS NULL) "& _ 
+                "OR (`fld_LastModifiedDate` = ?)) AND ((? = 1 AND `fld_IsRepair` IS NULL) OR (`fl"& _ 
+                "d_IsRepair` = ?)) AND ((? = 1 AND `fld_buyout` IS NULL) OR (`fld_buyout` = ?)) A"& _ 
+                "ND ((? = 1 AND `fld_s10_customer` IS NULL) OR (`fld_s10_customer` = ?)) AND ((? "& _ 
+                "= 1 AND `fld_s10_date` IS NULL) OR (`fld_s10_date` = ?)) AND ((? = 1 AND `fld_s1"& _ 
+                "0_po` IS NULL) OR (`fld_s10_po` = ?)) AND ((? = 1 AND `fld_s10_qty` IS NULL) OR "& _ 
+                "(`fld_s10_qty` = ?)) AND ((? = 1 AND `fld_s10_ticket` IS NULL) OR (`fld_s10_tick"& _ 
+                "et` = ?)) AND ((? = 1 AND `fld_s1_customer` IS NULL) OR (`fld_s1_customer` = ?))"& _ 
+                " AND ((? = 1 AND `fld_s1_date` IS NULL) OR (`fld_s1_date` = ?)) AND ((? = 1 AND "& _ 
+                "`fld_s1_po` IS NULL) OR (`fld_s1_po` = ?)) AND ((? = 1 AND `fld_s1_qty` IS NULL)"& _ 
+                " OR (`fld_s1_qty` = ?)) AND ((? = 1 AND `fld_s1_ticket` IS NULL) OR (`fld_s1_tic"& _ 
+                "ket` = ?)) AND ((? = 1 AND `fld_s2_customer` IS NULL) OR (`fld_s2_customer` = ?)"& _ 
+                ") AND ((? = 1 AND `fld_s2_date` IS NULL) OR (`fld_s2_date` = ?)) AND ((? = 1 AND"& _ 
+                " `fld_s2_po` IS NULL) OR (`fld_s2_po` = ?)) AND ((? = 1 AND `fld_s2_qty` IS NULL"& _ 
+                ") OR (`fld_s2_qty` = ?)) AND ((? = 1 AND `fld_s2_ticket` IS NULL) OR (`fld_s2_ti"& _ 
+                "cket` = ?)) AND ((? = 1 AND `fld_s3_customer` IS NULL) OR (`fld_s3_customer` = ?"& _ 
+                ")) AND ((? = 1 AND `fld_s3_date` IS NULL) OR (`fld_s3_date` = ?)) AND ((? = 1 AN"& _ 
+                "D `fld_s3_po` IS NULL) OR (`fld_s3_po` = ?)) AND ((? = 1 AND `fld_s3_qty` IS NUL"& _ 
+                "L) OR (`fld_s3_qty` = ?)) AND ((? = 1 AND `fld_s3_ticket` IS NULL) OR (`fld_s3_t"& _ 
+                "icket` = ?)) AND ((? = 1 AND `fld_s4_customer` IS NULL) OR (`fld_s4_customer` = "& _ 
+                "?)) AND ((? = 1 AND `fld_s4_date` IS NULL) OR (`fld_s4_date` = ?)) AND ((? = 1 A"& _ 
+                "ND `fld_s4_po` IS NULL) OR (`fld_s4_po` = ?)) AND ((? = 1 AND `fld_s4_qty` IS NU"& _ 
+                "LL) OR (`fld_s4_qty` = ?)) AND ((? = 1 AND `fld_s4_ticket` IS NULL) OR (`fld_s4_"& _ 
+                "ticket` = ?)) AND ((? = 1 AND `fld_s5_customer` IS NULL) OR (`fld_s5_customer` ="& _ 
+                " ?)) AND ((? = 1 AND `fld_s5_date` IS NULL) OR (`fld_s5_date` = ?)) AND ((? = 1 "& _ 
+                "AND `fld_s5_po` IS NULL) OR (`fld_s5_po` = ?)) AND ((? = 1 AND `fld_s5_qty` IS N"& _ 
+                "ULL) OR (`fld_s5_qty` = ?)) AND ((? = 1 AND `fld_s5_ticket` IS NULL) OR (`fld_s5"& _ 
+                "_ticket` = ?)) AND ((? = 1 AND `fld_s6_customer` IS NULL) OR (`fld_s6_customer` "& _ 
+                "= ?)) AND ((? = 1 AND `fld_s6_date` IS NULL) OR (`fld_s6_date` = ?)) AND ((? = 1"& _ 
+                " AND `fld_s6_po` IS NULL) OR (`fld_s6_po` = ?)) AND ((? = 1 AND `fld_s6_qty` IS "& _ 
+                "NULL) OR (`fld_s6_qty` = ?)) AND ((? = 1 AND `fld_s6_ticket` IS NULL) OR (`fld_s"& _ 
+                "6_ticket` = ?)) AND ((? = 1 AND `fld_s7_customer` IS NULL) OR (`fld_s7_customer`"& _ 
+                " = ?)) AND ((? = 1 AND `fld_s7_date` IS NULL) OR (`fld_s7_date` = ?)) AND ((? = "& _ 
+                "1 AND `fld_s7_po` IS NULL) OR (`fld_s7_po` = ?)) AND ((? = 1 AND `fld_s7_qty` IS"& _ 
+                " NULL) OR (`fld_s7_qty` = ?)) AND ((? = 1 AND `fld_s7_ticket` IS NULL) OR (`fld_"& _ 
+                "s7_ticket` = ?)) AND ((? = 1 AND `fld_s8_customer` IS NULL) OR (`fld_s8_customer"& _ 
+                "` = ?)) AND ((? = 1 AND `fld_s8_date` IS NULL) OR (`fld_s8_date` = ?)) AND ((? ="& _ 
+                " 1 AND `fld_s8_po` IS NULL) OR (`fld_s8_po` = ?)) AND ((? = 1 AND `fld_s8_qty` I"& _ 
+                "S NULL) OR (`fld_s8_qty` = ?)) AND ((? = 1 AND `fld_s8_ticket` IS NULL) OR (`fld"& _ 
+                "_s8_ticket` = ?)) AND ((? = 1 AND `fld_s9_customer` IS NULL) OR (`fld_s9_custome"& _ 
+                "r` = ?)) AND ((? = 1 AND `fld_s9_date` IS NULL) OR (`fld_s9_date` = ?)) AND ((? "& _ 
+                "= 1 AND `fld_s9_po` IS NULL) OR (`fld_s9_po` = ?)) AND ((? = 1 AND `fld_s9_qty` "& _ 
+                "IS NULL) OR (`fld_s9_qty` = ?)) AND ((? = 1 AND `fld_s9_ticket` IS NULL) OR (`fl"& _ 
+                "d_s9_ticket` = ?)) AND ((? = 1 AND `fld_status` IS NULL) OR (`fld_status` = ?)))"& _ 
+                ""
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_wo_num", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_wo_num", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_wo_date", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_wo_date", Global.System.Data.DataRowVersion.Current, false, Nothing))
@@ -10319,17 +12665,66 @@ Namespace db_WOlogDataSetTableAdapters
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_style", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_style", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_psl", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_psl", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_pr", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_pr", Global.System.Data.DataRowVersion.Current, false, Nothing))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_qty", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_qty", Global.System.Data.DataRowVersion.Current, false, Nothing))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_customer", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_customer", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_qty", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_qty", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_notes", Global.System.Data.OleDb.OleDbType.LongVarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_notes", Global.System.Data.DataRowVersion.Current, false, Nothing))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_po_num", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_po_num", Global.System.Data.DataRowVersion.Current, false, Nothing))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_ship_date", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_ship_date", Global.System.Data.DataRowVersion.Current, false, Nothing))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_delivery_num", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_delivery_num", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_qb_ba_num", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_qb_ba_num", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_CreatedBy", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_CreatedBy", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_CreatedByDate", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_CreatedByDate", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_LastModifiedBy", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_LastModifiedBy", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_LastModifiedDate", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_LastModifiedDate", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_IsRepair", Global.System.Data.OleDb.OleDbType.[Boolean], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_IsRepair", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_buyout", Global.System.Data.OleDb.OleDbType.[Boolean], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_buyout", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s10_customer", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s10_customer", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s10_date", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s10_date", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s10_po", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s10_po", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s10_qty", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s10_qty", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s10_ticket", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s10_ticket", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s1_customer", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s1_customer", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s1_date", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s1_date", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s1_po", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s1_po", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s1_qty", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s1_qty", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s1_ticket", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s1_ticket", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s2_customer", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s2_customer", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s2_date", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s2_date", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s2_po", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s2_po", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s2_qty", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s2_qty", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s2_ticket", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s2_ticket", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s3_customer", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s3_customer", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s3_date", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s3_date", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s3_po", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s3_po", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s3_qty", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s3_qty", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s3_ticket", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s3_ticket", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s4_customer", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s4_customer", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s4_date", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s4_date", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s4_po", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s4_po", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s4_qty", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s4_qty", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s4_ticket", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s4_ticket", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s5_customer", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s5_customer", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s5_date", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s5_date", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s5_po", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s5_po", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s5_qty", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s5_qty", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s5_ticket", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s5_ticket", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s6_customer", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s6_customer", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s6_date", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s6_date", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s6_po", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s6_po", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s6_qty", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s6_qty", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s6_ticket", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s6_ticket", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s7_customer", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s7_customer", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s7_date", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s7_date", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s7_po", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s7_po", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s7_qty", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s7_qty", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s7_ticket", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s7_ticket", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s8_customer", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s8_customer", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s8_date", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s8_date", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s8_po", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s8_po", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s8_qty", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s8_qty", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s8_ticket", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s8_ticket", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s9_customer", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s9_customer", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s9_date", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s9_date", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s9_po", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s9_po", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s9_qty", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s9_qty", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_s9_ticket", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s9_ticket", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fld_status", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_status", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_ID", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "ID", Global.System.Data.DataRowVersion.Original, false, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_wo_num", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_wo_num", Global.System.Data.DataRowVersion.Original, true, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_wo_num", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_wo_num", Global.System.Data.DataRowVersion.Original, false, Nothing))
@@ -10356,15 +12751,7 @@ Namespace db_WOlogDataSetTableAdapters
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_pr", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_pr", Global.System.Data.DataRowVersion.Original, true, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_pr", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_pr", Global.System.Data.DataRowVersion.Original, false, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_qty", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_qty", Global.System.Data.DataRowVersion.Original, true, Nothing))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_qty", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_qty", Global.System.Data.DataRowVersion.Original, false, Nothing))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_customer", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_customer", Global.System.Data.DataRowVersion.Original, true, Nothing))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_customer", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_customer", Global.System.Data.DataRowVersion.Original, false, Nothing))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_po_num", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_po_num", Global.System.Data.DataRowVersion.Original, true, Nothing))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_po_num", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_po_num", Global.System.Data.DataRowVersion.Original, false, Nothing))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_ship_date", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_ship_date", Global.System.Data.DataRowVersion.Original, true, Nothing))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_ship_date", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_ship_date", Global.System.Data.DataRowVersion.Original, false, Nothing))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_delivery_num", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_delivery_num", Global.System.Data.DataRowVersion.Original, true, Nothing))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_delivery_num", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_delivery_num", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_qty", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_qty", Global.System.Data.DataRowVersion.Original, false, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_qb_ba_num", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_qb_ba_num", Global.System.Data.DataRowVersion.Original, true, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_qb_ba_num", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_qb_ba_num", Global.System.Data.DataRowVersion.Original, false, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_CreatedBy", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_CreatedBy", Global.System.Data.DataRowVersion.Original, true, Nothing))
@@ -10375,6 +12762,112 @@ Namespace db_WOlogDataSetTableAdapters
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_LastModifiedBy", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_LastModifiedBy", Global.System.Data.DataRowVersion.Original, false, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_LastModifiedDate", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_LastModifiedDate", Global.System.Data.DataRowVersion.Original, true, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_LastModifiedDate", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_LastModifiedDate", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_IsRepair", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_IsRepair", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_IsRepair", Global.System.Data.OleDb.OleDbType.[Boolean], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_IsRepair", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_buyout", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_buyout", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_buyout", Global.System.Data.OleDb.OleDbType.[Boolean], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_buyout", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s10_customer", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s10_customer", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s10_customer", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s10_customer", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s10_date", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s10_date", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s10_date", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s10_date", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s10_po", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s10_po", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s10_po", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s10_po", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s10_qty", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s10_qty", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s10_qty", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s10_qty", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s10_ticket", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s10_ticket", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s10_ticket", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s10_ticket", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s1_customer", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s1_customer", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s1_customer", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s1_customer", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s1_date", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s1_date", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s1_date", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s1_date", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s1_po", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s1_po", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s1_po", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s1_po", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s1_qty", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s1_qty", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s1_qty", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s1_qty", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s1_ticket", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s1_ticket", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s1_ticket", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s1_ticket", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s2_customer", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s2_customer", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s2_customer", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s2_customer", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s2_date", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s2_date", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s2_date", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s2_date", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s2_po", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s2_po", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s2_po", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s2_po", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s2_qty", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s2_qty", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s2_qty", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s2_qty", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s2_ticket", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s2_ticket", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s2_ticket", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s2_ticket", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s3_customer", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s3_customer", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s3_customer", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s3_customer", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s3_date", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s3_date", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s3_date", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s3_date", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s3_po", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s3_po", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s3_po", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s3_po", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s3_qty", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s3_qty", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s3_qty", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s3_qty", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s3_ticket", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s3_ticket", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s3_ticket", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s3_ticket", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s4_customer", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s4_customer", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s4_customer", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s4_customer", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s4_date", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s4_date", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s4_date", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s4_date", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s4_po", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s4_po", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s4_po", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s4_po", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s4_qty", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s4_qty", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s4_qty", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s4_qty", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s4_ticket", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s4_ticket", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s4_ticket", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s4_ticket", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s5_customer", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s5_customer", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s5_customer", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s5_customer", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s5_date", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s5_date", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s5_date", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s5_date", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s5_po", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s5_po", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s5_po", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s5_po", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s5_qty", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s5_qty", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s5_qty", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s5_qty", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s5_ticket", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s5_ticket", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s5_ticket", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s5_ticket", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s6_customer", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s6_customer", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s6_customer", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s6_customer", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s6_date", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s6_date", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s6_date", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s6_date", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s6_po", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s6_po", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s6_po", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s6_po", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s6_qty", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s6_qty", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s6_qty", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s6_qty", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s6_ticket", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s6_ticket", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s6_ticket", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s6_ticket", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s7_customer", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s7_customer", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s7_customer", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s7_customer", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s7_date", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s7_date", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s7_date", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s7_date", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s7_po", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s7_po", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s7_po", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s7_po", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s7_qty", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s7_qty", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s7_qty", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s7_qty", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s7_ticket", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s7_ticket", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s7_ticket", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s7_ticket", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s8_customer", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s8_customer", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s8_customer", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s8_customer", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s8_date", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s8_date", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s8_date", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s8_date", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s8_po", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s8_po", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s8_po", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s8_po", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s8_qty", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s8_qty", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s8_qty", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s8_qty", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s8_ticket", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s8_ticket", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s8_ticket", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s8_ticket", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s9_customer", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s9_customer", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s9_customer", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s9_customer", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s9_date", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s9_date", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s9_date", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s9_date", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s9_po", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s9_po", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s9_po", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s9_po", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s9_qty", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s9_qty", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s9_qty", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s9_qty", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_s9_ticket", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s9_ticket", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_s9_ticket", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_s9_ticket", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_fld_status", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_status", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fld_status", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fld_status", Global.System.Data.DataRowVersion.Original, false, Nothing))
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -10392,9 +12885,17 @@ Namespace db_WOlogDataSetTableAdapters
             Me._commandCollection(0).Connection = Me.Connection
             Me._commandCollection(0).CommandText = "SELECT ID, fld_wo_num, fld_wo_date, fld_part_num, fld_product, fld_size, fld_pres"& _ 
                 "sure, fld_hhpp, fld_tempclass, fld_trim, fld_style, fld_psl, fld_pr, fld_qty, fl"& _ 
-                "d_customer, fld_notes, fld_po_num, fld_ship_date, fld_delivery_num, fld_qb_ba_nu"& _ 
-                "m, fld_CreatedBy, fld_CreatedByDate, fld_LastModifiedBy, fld_LastModifiedDate FR"& _ 
-                "OM tbl_data_WOlog"
+                "d_notes, fld_qb_ba_num, fld_CreatedBy, fld_CreatedByDate, fld_LastModifiedBy, fl"& _ 
+                "d_LastModifiedDate, fld_IsRepair, fld_buyout, fld_s10_customer, fld_s10_date, fl"& _ 
+                "d_s10_po, fld_s10_qty, fld_s10_ticket, fld_s1_customer, fld_s1_date, fld_s1_po, "& _ 
+                "fld_s1_qty, fld_s1_ticket, fld_s2_customer, fld_s2_date, fld_s2_po, fld_s2_qty, "& _ 
+                "fld_s2_ticket, fld_s3_customer, fld_s3_date, fld_s3_po, fld_s3_qty, fld_s3_ticke"& _ 
+                "t, fld_s4_customer, fld_s4_date, fld_s4_po, fld_s4_qty, fld_s4_ticket, fld_s5_cu"& _ 
+                "stomer, fld_s5_date, fld_s5_po, fld_s5_qty, fld_s5_ticket, fld_s6_customer, fld_"& _ 
+                "s6_date, fld_s6_po, fld_s6_qty, fld_s6_ticket, fld_s7_customer, fld_s7_date, fld"& _ 
+                "_s7_po, fld_s7_qty, fld_s7_ticket, fld_s8_customer, fld_s8_date, fld_s8_po, fld_"& _ 
+                "s8_qty, fld_s8_ticket, fld_s9_customer, fld_s9_date, fld_s9_po, fld_s9_qty, fld_"& _ 
+                "s9_ticket, fld_status FROM tbl_data_WOlog"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
         
@@ -10468,16 +12969,65 @@ Namespace db_WOlogDataSetTableAdapters
                     ByVal Original_fld_style As String,  _
                     ByVal Original_fld_psl As String,  _
                     ByVal Original_fld_pr As String,  _
-                    ByVal Original_fld_qty As Global.System.Nullable(Of Integer),  _
-                    ByVal Original_fld_customer As String,  _
-                    ByVal Original_fld_po_num As String,  _
-                    ByVal Original_fld_ship_date As Global.System.Nullable(Of Date),  _
-                    ByVal Original_fld_delivery_num As String,  _
+                    ByVal Original_fld_qty As String,  _
                     ByVal Original_fld_qb_ba_num As String,  _
                     ByVal Original_fld_CreatedBy As String,  _
                     ByVal Original_fld_CreatedByDate As Global.System.Nullable(Of Date),  _
                     ByVal Original_fld_LastModifiedBy As String,  _
-                    ByVal Original_fld_LastModifiedDate As Global.System.Nullable(Of Date)) As Integer
+                    ByVal Original_fld_LastModifiedDate As Global.System.Nullable(Of Date),  _
+                    ByVal Original_fld_IsRepair As Boolean,  _
+                    ByVal Original_fld_buyout As Boolean,  _
+                    ByVal Original_fld_s10_customer As String,  _
+                    ByVal Original_fld_s10_date As Global.System.Nullable(Of Date),  _
+                    ByVal Original_fld_s10_po As String,  _
+                    ByVal Original_fld_s10_qty As String,  _
+                    ByVal Original_fld_s10_ticket As String,  _
+                    ByVal Original_fld_s1_customer As String,  _
+                    ByVal Original_fld_s1_date As Global.System.Nullable(Of Date),  _
+                    ByVal Original_fld_s1_po As String,  _
+                    ByVal Original_fld_s1_qty As String,  _
+                    ByVal Original_fld_s1_ticket As String,  _
+                    ByVal Original_fld_s2_customer As String,  _
+                    ByVal Original_fld_s2_date As Global.System.Nullable(Of Date),  _
+                    ByVal Original_fld_s2_po As String,  _
+                    ByVal Original_fld_s2_qty As String,  _
+                    ByVal Original_fld_s2_ticket As String,  _
+                    ByVal Original_fld_s3_customer As String,  _
+                    ByVal Original_fld_s3_date As Global.System.Nullable(Of Date),  _
+                    ByVal Original_fld_s3_po As String,  _
+                    ByVal Original_fld_s3_qty As String,  _
+                    ByVal Original_fld_s3_ticket As String,  _
+                    ByVal Original_fld_s4_customer As String,  _
+                    ByVal Original_fld_s4_date As Global.System.Nullable(Of Date),  _
+                    ByVal Original_fld_s4_po As String,  _
+                    ByVal Original_fld_s4_qty As String,  _
+                    ByVal Original_fld_s4_ticket As String,  _
+                    ByVal Original_fld_s5_customer As String,  _
+                    ByVal Original_fld_s5_date As Global.System.Nullable(Of Date),  _
+                    ByVal Original_fld_s5_po As String,  _
+                    ByVal Original_fld_s5_qty As String,  _
+                    ByVal Original_fld_s5_ticket As String,  _
+                    ByVal Original_fld_s6_customer As String,  _
+                    ByVal Original_fld_s6_date As Global.System.Nullable(Of Date),  _
+                    ByVal Original_fld_s6_po As String,  _
+                    ByVal Original_fld_s6_qty As String,  _
+                    ByVal Original_fld_s6_ticket As String,  _
+                    ByVal Original_fld_s7_customer As String,  _
+                    ByVal Original_fld_s7_date As Global.System.Nullable(Of Date),  _
+                    ByVal Original_fld_s7_po As String,  _
+                    ByVal Original_fld_s7_qty As String,  _
+                    ByVal Original_fld_s7_ticket As String,  _
+                    ByVal Original_fld_s8_customer As String,  _
+                    ByVal Original_fld_s8_date As Global.System.Nullable(Of Date),  _
+                    ByVal Original_fld_s8_po As String,  _
+                    ByVal Original_fld_s8_qty As String,  _
+                    ByVal Original_fld_s8_ticket As String,  _
+                    ByVal Original_fld_s9_customer As String,  _
+                    ByVal Original_fld_s9_date As Global.System.Nullable(Of Date),  _
+                    ByVal Original_fld_s9_po As String,  _
+                    ByVal Original_fld_s9_qty As String,  _
+                    ByVal Original_fld_s9_ticket As String,  _
+                    ByVal Original_fld_status As String) As Integer
             Me.Adapter.DeleteCommand.Parameters(0).Value = CType(Original_ID,Integer)
             If (Original_fld_wo_num Is Nothing) Then
                 Me.Adapter.DeleteCommand.Parameters(1).Value = CType(1,Object)
@@ -10563,75 +13113,408 @@ Namespace db_WOlogDataSetTableAdapters
                 Me.Adapter.DeleteCommand.Parameters(23).Value = CType(0,Object)
                 Me.Adapter.DeleteCommand.Parameters(24).Value = CType(Original_fld_pr,String)
             End If
-            If (Original_fld_qty.HasValue = true) Then
-                Me.Adapter.DeleteCommand.Parameters(25).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(26).Value = CType(Original_fld_qty.Value,Integer)
-            Else
+            If (Original_fld_qty Is Nothing) Then
                 Me.Adapter.DeleteCommand.Parameters(25).Value = CType(1,Object)
                 Me.Adapter.DeleteCommand.Parameters(26).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(25).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(26).Value = CType(Original_fld_qty,String)
             End If
-            If (Original_fld_customer Is Nothing) Then
+            If (Original_fld_qb_ba_num Is Nothing) Then
                 Me.Adapter.DeleteCommand.Parameters(27).Value = CType(1,Object)
                 Me.Adapter.DeleteCommand.Parameters(28).Value = Global.System.DBNull.Value
             Else
                 Me.Adapter.DeleteCommand.Parameters(27).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(28).Value = CType(Original_fld_customer,String)
+                Me.Adapter.DeleteCommand.Parameters(28).Value = CType(Original_fld_qb_ba_num,String)
             End If
-            If (Original_fld_po_num Is Nothing) Then
+            If (Original_fld_CreatedBy Is Nothing) Then
                 Me.Adapter.DeleteCommand.Parameters(29).Value = CType(1,Object)
                 Me.Adapter.DeleteCommand.Parameters(30).Value = Global.System.DBNull.Value
             Else
                 Me.Adapter.DeleteCommand.Parameters(29).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(30).Value = CType(Original_fld_po_num,String)
+                Me.Adapter.DeleteCommand.Parameters(30).Value = CType(Original_fld_CreatedBy,String)
             End If
-            If (Original_fld_ship_date.HasValue = true) Then
+            If (Original_fld_CreatedByDate.HasValue = true) Then
                 Me.Adapter.DeleteCommand.Parameters(31).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(32).Value = CType(Original_fld_ship_date.Value,Date)
+                Me.Adapter.DeleteCommand.Parameters(32).Value = CType(Original_fld_CreatedByDate.Value,Date)
             Else
                 Me.Adapter.DeleteCommand.Parameters(31).Value = CType(1,Object)
                 Me.Adapter.DeleteCommand.Parameters(32).Value = Global.System.DBNull.Value
             End If
-            If (Original_fld_delivery_num Is Nothing) Then
+            If (Original_fld_LastModifiedBy Is Nothing) Then
                 Me.Adapter.DeleteCommand.Parameters(33).Value = CType(1,Object)
                 Me.Adapter.DeleteCommand.Parameters(34).Value = Global.System.DBNull.Value
             Else
                 Me.Adapter.DeleteCommand.Parameters(33).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(34).Value = CType(Original_fld_delivery_num,String)
+                Me.Adapter.DeleteCommand.Parameters(34).Value = CType(Original_fld_LastModifiedBy,String)
             End If
-            If (Original_fld_qb_ba_num Is Nothing) Then
+            If (Original_fld_LastModifiedDate.HasValue = true) Then
+                Me.Adapter.DeleteCommand.Parameters(35).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(36).Value = CType(Original_fld_LastModifiedDate.Value,Date)
+            Else
                 Me.Adapter.DeleteCommand.Parameters(35).Value = CType(1,Object)
                 Me.Adapter.DeleteCommand.Parameters(36).Value = Global.System.DBNull.Value
-            Else
-                Me.Adapter.DeleteCommand.Parameters(35).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(36).Value = CType(Original_fld_qb_ba_num,String)
             End If
-            If (Original_fld_CreatedBy Is Nothing) Then
-                Me.Adapter.DeleteCommand.Parameters(37).Value = CType(1,Object)
-                Me.Adapter.DeleteCommand.Parameters(38).Value = Global.System.DBNull.Value
-            Else
-                Me.Adapter.DeleteCommand.Parameters(37).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(38).Value = CType(Original_fld_CreatedBy,String)
-            End If
-            If (Original_fld_CreatedByDate.HasValue = true) Then
-                Me.Adapter.DeleteCommand.Parameters(39).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(40).Value = CType(Original_fld_CreatedByDate.Value,Date)
-            Else
-                Me.Adapter.DeleteCommand.Parameters(39).Value = CType(1,Object)
-                Me.Adapter.DeleteCommand.Parameters(40).Value = Global.System.DBNull.Value
-            End If
-            If (Original_fld_LastModifiedBy Is Nothing) Then
+            Me.Adapter.DeleteCommand.Parameters(37).Value = CType(0,Object)
+            Me.Adapter.DeleteCommand.Parameters(38).Value = CType(Original_fld_IsRepair,Boolean)
+            Me.Adapter.DeleteCommand.Parameters(39).Value = CType(0,Object)
+            Me.Adapter.DeleteCommand.Parameters(40).Value = CType(Original_fld_buyout,Boolean)
+            If (Original_fld_s10_customer Is Nothing) Then
                 Me.Adapter.DeleteCommand.Parameters(41).Value = CType(1,Object)
                 Me.Adapter.DeleteCommand.Parameters(42).Value = Global.System.DBNull.Value
             Else
                 Me.Adapter.DeleteCommand.Parameters(41).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(42).Value = CType(Original_fld_LastModifiedBy,String)
+                Me.Adapter.DeleteCommand.Parameters(42).Value = CType(Original_fld_s10_customer,String)
             End If
-            If (Original_fld_LastModifiedDate.HasValue = true) Then
+            If (Original_fld_s10_date.HasValue = true) Then
                 Me.Adapter.DeleteCommand.Parameters(43).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(44).Value = CType(Original_fld_LastModifiedDate.Value,Date)
+                Me.Adapter.DeleteCommand.Parameters(44).Value = CType(Original_fld_s10_date.Value,Date)
             Else
                 Me.Adapter.DeleteCommand.Parameters(43).Value = CType(1,Object)
                 Me.Adapter.DeleteCommand.Parameters(44).Value = Global.System.DBNull.Value
+            End If
+            If (Original_fld_s10_po Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(45).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(46).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(45).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(46).Value = CType(Original_fld_s10_po,String)
+            End If
+            If (Original_fld_s10_qty Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(47).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(48).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(47).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(48).Value = CType(Original_fld_s10_qty,String)
+            End If
+            If (Original_fld_s10_ticket Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(49).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(50).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(49).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(50).Value = CType(Original_fld_s10_ticket,String)
+            End If
+            If (Original_fld_s1_customer Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(51).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(52).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(51).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(52).Value = CType(Original_fld_s1_customer,String)
+            End If
+            If (Original_fld_s1_date.HasValue = true) Then
+                Me.Adapter.DeleteCommand.Parameters(53).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(54).Value = CType(Original_fld_s1_date.Value,Date)
+            Else
+                Me.Adapter.DeleteCommand.Parameters(53).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(54).Value = Global.System.DBNull.Value
+            End If
+            If (Original_fld_s1_po Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(55).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(56).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(55).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(56).Value = CType(Original_fld_s1_po,String)
+            End If
+            If (Original_fld_s1_qty Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(57).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(58).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(57).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(58).Value = CType(Original_fld_s1_qty,String)
+            End If
+            If (Original_fld_s1_ticket Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(59).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(60).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(59).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(60).Value = CType(Original_fld_s1_ticket,String)
+            End If
+            If (Original_fld_s2_customer Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(61).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(62).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(61).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(62).Value = CType(Original_fld_s2_customer,String)
+            End If
+            If (Original_fld_s2_date.HasValue = true) Then
+                Me.Adapter.DeleteCommand.Parameters(63).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(64).Value = CType(Original_fld_s2_date.Value,Date)
+            Else
+                Me.Adapter.DeleteCommand.Parameters(63).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(64).Value = Global.System.DBNull.Value
+            End If
+            If (Original_fld_s2_po Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(65).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(66).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(65).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(66).Value = CType(Original_fld_s2_po,String)
+            End If
+            If (Original_fld_s2_qty Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(67).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(68).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(67).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(68).Value = CType(Original_fld_s2_qty,String)
+            End If
+            If (Original_fld_s2_ticket Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(69).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(70).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(69).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(70).Value = CType(Original_fld_s2_ticket,String)
+            End If
+            If (Original_fld_s3_customer Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(71).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(72).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(71).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(72).Value = CType(Original_fld_s3_customer,String)
+            End If
+            If (Original_fld_s3_date.HasValue = true) Then
+                Me.Adapter.DeleteCommand.Parameters(73).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(74).Value = CType(Original_fld_s3_date.Value,Date)
+            Else
+                Me.Adapter.DeleteCommand.Parameters(73).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(74).Value = Global.System.DBNull.Value
+            End If
+            If (Original_fld_s3_po Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(75).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(76).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(75).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(76).Value = CType(Original_fld_s3_po,String)
+            End If
+            If (Original_fld_s3_qty Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(77).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(78).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(77).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(78).Value = CType(Original_fld_s3_qty,String)
+            End If
+            If (Original_fld_s3_ticket Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(79).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(80).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(79).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(80).Value = CType(Original_fld_s3_ticket,String)
+            End If
+            If (Original_fld_s4_customer Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(81).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(82).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(81).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(82).Value = CType(Original_fld_s4_customer,String)
+            End If
+            If (Original_fld_s4_date.HasValue = true) Then
+                Me.Adapter.DeleteCommand.Parameters(83).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(84).Value = CType(Original_fld_s4_date.Value,Date)
+            Else
+                Me.Adapter.DeleteCommand.Parameters(83).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(84).Value = Global.System.DBNull.Value
+            End If
+            If (Original_fld_s4_po Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(85).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(86).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(85).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(86).Value = CType(Original_fld_s4_po,String)
+            End If
+            If (Original_fld_s4_qty Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(87).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(88).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(87).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(88).Value = CType(Original_fld_s4_qty,String)
+            End If
+            If (Original_fld_s4_ticket Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(89).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(90).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(89).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(90).Value = CType(Original_fld_s4_ticket,String)
+            End If
+            If (Original_fld_s5_customer Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(91).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(92).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(91).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(92).Value = CType(Original_fld_s5_customer,String)
+            End If
+            If (Original_fld_s5_date.HasValue = true) Then
+                Me.Adapter.DeleteCommand.Parameters(93).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(94).Value = CType(Original_fld_s5_date.Value,Date)
+            Else
+                Me.Adapter.DeleteCommand.Parameters(93).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(94).Value = Global.System.DBNull.Value
+            End If
+            If (Original_fld_s5_po Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(95).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(96).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(95).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(96).Value = CType(Original_fld_s5_po,String)
+            End If
+            If (Original_fld_s5_qty Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(97).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(98).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(97).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(98).Value = CType(Original_fld_s5_qty,String)
+            End If
+            If (Original_fld_s5_ticket Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(99).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(100).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(99).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(100).Value = CType(Original_fld_s5_ticket,String)
+            End If
+            If (Original_fld_s6_customer Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(101).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(102).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(101).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(102).Value = CType(Original_fld_s6_customer,String)
+            End If
+            If (Original_fld_s6_date.HasValue = true) Then
+                Me.Adapter.DeleteCommand.Parameters(103).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(104).Value = CType(Original_fld_s6_date.Value,Date)
+            Else
+                Me.Adapter.DeleteCommand.Parameters(103).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(104).Value = Global.System.DBNull.Value
+            End If
+            If (Original_fld_s6_po Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(105).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(106).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(105).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(106).Value = CType(Original_fld_s6_po,String)
+            End If
+            If (Original_fld_s6_qty Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(107).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(108).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(107).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(108).Value = CType(Original_fld_s6_qty,String)
+            End If
+            If (Original_fld_s6_ticket Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(109).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(110).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(109).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(110).Value = CType(Original_fld_s6_ticket,String)
+            End If
+            If (Original_fld_s7_customer Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(111).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(112).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(111).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(112).Value = CType(Original_fld_s7_customer,String)
+            End If
+            If (Original_fld_s7_date.HasValue = true) Then
+                Me.Adapter.DeleteCommand.Parameters(113).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(114).Value = CType(Original_fld_s7_date.Value,Date)
+            Else
+                Me.Adapter.DeleteCommand.Parameters(113).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(114).Value = Global.System.DBNull.Value
+            End If
+            If (Original_fld_s7_po Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(115).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(116).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(115).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(116).Value = CType(Original_fld_s7_po,String)
+            End If
+            If (Original_fld_s7_qty Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(117).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(118).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(117).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(118).Value = CType(Original_fld_s7_qty,String)
+            End If
+            If (Original_fld_s7_ticket Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(119).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(120).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(119).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(120).Value = CType(Original_fld_s7_ticket,String)
+            End If
+            If (Original_fld_s8_customer Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(121).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(122).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(121).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(122).Value = CType(Original_fld_s8_customer,String)
+            End If
+            If (Original_fld_s8_date.HasValue = true) Then
+                Me.Adapter.DeleteCommand.Parameters(123).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(124).Value = CType(Original_fld_s8_date.Value,Date)
+            Else
+                Me.Adapter.DeleteCommand.Parameters(123).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(124).Value = Global.System.DBNull.Value
+            End If
+            If (Original_fld_s8_po Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(125).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(126).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(125).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(126).Value = CType(Original_fld_s8_po,String)
+            End If
+            If (Original_fld_s8_qty Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(127).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(128).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(127).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(128).Value = CType(Original_fld_s8_qty,String)
+            End If
+            If (Original_fld_s8_ticket Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(129).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(130).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(129).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(130).Value = CType(Original_fld_s8_ticket,String)
+            End If
+            If (Original_fld_s9_customer Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(131).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(132).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(131).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(132).Value = CType(Original_fld_s9_customer,String)
+            End If
+            If (Original_fld_s9_date.HasValue = true) Then
+                Me.Adapter.DeleteCommand.Parameters(133).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(134).Value = CType(Original_fld_s9_date.Value,Date)
+            Else
+                Me.Adapter.DeleteCommand.Parameters(133).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(134).Value = Global.System.DBNull.Value
+            End If
+            If (Original_fld_s9_po Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(135).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(136).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(135).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(136).Value = CType(Original_fld_s9_po,String)
+            End If
+            If (Original_fld_s9_qty Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(137).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(138).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(137).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(138).Value = CType(Original_fld_s9_qty,String)
+            End If
+            If (Original_fld_s9_ticket Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(139).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(140).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(139).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(140).Value = CType(Original_fld_s9_ticket,String)
+            End If
+            If (Original_fld_status Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(141).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(142).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(141).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(142).Value = CType(Original_fld_status,String)
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.DeleteCommand.Connection.State
             If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
@@ -10665,17 +13548,66 @@ Namespace db_WOlogDataSetTableAdapters
                     ByVal fld_style As String,  _
                     ByVal fld_psl As String,  _
                     ByVal fld_pr As String,  _
-                    ByVal fld_qty As Global.System.Nullable(Of Integer),  _
-                    ByVal fld_customer As String,  _
+                    ByVal fld_qty As String,  _
                     ByVal fld_notes As String,  _
-                    ByVal fld_po_num As String,  _
-                    ByVal fld_ship_date As Global.System.Nullable(Of Date),  _
-                    ByVal fld_delivery_num As String,  _
                     ByVal fld_qb_ba_num As String,  _
                     ByVal fld_CreatedBy As String,  _
                     ByVal fld_CreatedByDate As Global.System.Nullable(Of Date),  _
                     ByVal fld_LastModifiedBy As String,  _
-                    ByVal fld_LastModifiedDate As Global.System.Nullable(Of Date)) As Integer
+                    ByVal fld_LastModifiedDate As Global.System.Nullable(Of Date),  _
+                    ByVal fld_IsRepair As Boolean,  _
+                    ByVal fld_buyout As Boolean,  _
+                    ByVal fld_s10_customer As String,  _
+                    ByVal fld_s10_date As Global.System.Nullable(Of Date),  _
+                    ByVal fld_s10_po As String,  _
+                    ByVal fld_s10_qty As String,  _
+                    ByVal fld_s10_ticket As String,  _
+                    ByVal fld_s1_customer As String,  _
+                    ByVal fld_s1_date As Global.System.Nullable(Of Date),  _
+                    ByVal fld_s1_po As String,  _
+                    ByVal fld_s1_qty As String,  _
+                    ByVal fld_s1_ticket As String,  _
+                    ByVal fld_s2_customer As String,  _
+                    ByVal fld_s2_date As Global.System.Nullable(Of Date),  _
+                    ByVal fld_s2_po As String,  _
+                    ByVal fld_s2_qty As String,  _
+                    ByVal fld_s2_ticket As String,  _
+                    ByVal fld_s3_customer As String,  _
+                    ByVal fld_s3_date As Global.System.Nullable(Of Date),  _
+                    ByVal fld_s3_po As String,  _
+                    ByVal fld_s3_qty As String,  _
+                    ByVal fld_s3_ticket As String,  _
+                    ByVal fld_s4_customer As String,  _
+                    ByVal fld_s4_date As Global.System.Nullable(Of Date),  _
+                    ByVal fld_s4_po As String,  _
+                    ByVal fld_s4_qty As String,  _
+                    ByVal fld_s4_ticket As String,  _
+                    ByVal fld_s5_customer As String,  _
+                    ByVal fld_s5_date As Global.System.Nullable(Of Date),  _
+                    ByVal fld_s5_po As String,  _
+                    ByVal fld_s5_qty As String,  _
+                    ByVal fld_s5_ticket As String,  _
+                    ByVal fld_s6_customer As String,  _
+                    ByVal fld_s6_date As Global.System.Nullable(Of Date),  _
+                    ByVal fld_s6_po As String,  _
+                    ByVal fld_s6_qty As String,  _
+                    ByVal fld_s6_ticket As String,  _
+                    ByVal fld_s7_customer As String,  _
+                    ByVal fld_s7_date As Global.System.Nullable(Of Date),  _
+                    ByVal fld_s7_po As String,  _
+                    ByVal fld_s7_qty As String,  _
+                    ByVal fld_s7_ticket As String,  _
+                    ByVal fld_s8_customer As String,  _
+                    ByVal fld_s8_date As Global.System.Nullable(Of Date),  _
+                    ByVal fld_s8_po As String,  _
+                    ByVal fld_s8_qty As String,  _
+                    ByVal fld_s8_ticket As String,  _
+                    ByVal fld_s9_customer As String,  _
+                    ByVal fld_s9_date As Global.System.Nullable(Of Date),  _
+                    ByVal fld_s9_po As String,  _
+                    ByVal fld_s9_qty As String,  _
+                    ByVal fld_s9_ticket As String,  _
+                    ByVal fld_status As String) As Integer
             If (fld_wo_num Is Nothing) Then
                 Me.Adapter.InsertCommand.Parameters(0).Value = Global.System.DBNull.Value
             Else
@@ -10736,60 +13668,297 @@ Namespace db_WOlogDataSetTableAdapters
             Else
                 Me.Adapter.InsertCommand.Parameters(11).Value = CType(fld_pr,String)
             End If
-            If (fld_qty.HasValue = true) Then
-                Me.Adapter.InsertCommand.Parameters(12).Value = CType(fld_qty.Value,Integer)
-            Else
+            If (fld_qty Is Nothing) Then
                 Me.Adapter.InsertCommand.Parameters(12).Value = Global.System.DBNull.Value
-            End If
-            If (fld_customer Is Nothing) Then
-                Me.Adapter.InsertCommand.Parameters(13).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.InsertCommand.Parameters(13).Value = CType(fld_customer,String)
+                Me.Adapter.InsertCommand.Parameters(12).Value = CType(fld_qty,String)
             End If
             If (fld_notes Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(13).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(13).Value = CType(fld_notes,String)
+            End If
+            If (fld_qb_ba_num Is Nothing) Then
                 Me.Adapter.InsertCommand.Parameters(14).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.InsertCommand.Parameters(14).Value = CType(fld_notes,String)
+                Me.Adapter.InsertCommand.Parameters(14).Value = CType(fld_qb_ba_num,String)
             End If
-            If (fld_po_num Is Nothing) Then
+            If (fld_CreatedBy Is Nothing) Then
                 Me.Adapter.InsertCommand.Parameters(15).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.InsertCommand.Parameters(15).Value = CType(fld_po_num,String)
+                Me.Adapter.InsertCommand.Parameters(15).Value = CType(fld_CreatedBy,String)
             End If
-            If (fld_ship_date.HasValue = true) Then
-                Me.Adapter.InsertCommand.Parameters(16).Value = CType(fld_ship_date.Value,Date)
+            If (fld_CreatedByDate.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(16).Value = CType(fld_CreatedByDate.Value,Date)
             Else
                 Me.Adapter.InsertCommand.Parameters(16).Value = Global.System.DBNull.Value
             End If
-            If (fld_delivery_num Is Nothing) Then
+            If (fld_LastModifiedBy Is Nothing) Then
                 Me.Adapter.InsertCommand.Parameters(17).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.InsertCommand.Parameters(17).Value = CType(fld_delivery_num,String)
-            End If
-            If (fld_qb_ba_num Is Nothing) Then
-                Me.Adapter.InsertCommand.Parameters(18).Value = Global.System.DBNull.Value
-            Else
-                Me.Adapter.InsertCommand.Parameters(18).Value = CType(fld_qb_ba_num,String)
-            End If
-            If (fld_CreatedBy Is Nothing) Then
-                Me.Adapter.InsertCommand.Parameters(19).Value = Global.System.DBNull.Value
-            Else
-                Me.Adapter.InsertCommand.Parameters(19).Value = CType(fld_CreatedBy,String)
-            End If
-            If (fld_CreatedByDate.HasValue = true) Then
-                Me.Adapter.InsertCommand.Parameters(20).Value = CType(fld_CreatedByDate.Value,Date)
-            Else
-                Me.Adapter.InsertCommand.Parameters(20).Value = Global.System.DBNull.Value
-            End If
-            If (fld_LastModifiedBy Is Nothing) Then
-                Me.Adapter.InsertCommand.Parameters(21).Value = Global.System.DBNull.Value
-            Else
-                Me.Adapter.InsertCommand.Parameters(21).Value = CType(fld_LastModifiedBy,String)
+                Me.Adapter.InsertCommand.Parameters(17).Value = CType(fld_LastModifiedBy,String)
             End If
             If (fld_LastModifiedDate.HasValue = true) Then
-                Me.Adapter.InsertCommand.Parameters(22).Value = CType(fld_LastModifiedDate.Value,Date)
+                Me.Adapter.InsertCommand.Parameters(18).Value = CType(fld_LastModifiedDate.Value,Date)
+            Else
+                Me.Adapter.InsertCommand.Parameters(18).Value = Global.System.DBNull.Value
+            End If
+            Me.Adapter.InsertCommand.Parameters(19).Value = CType(fld_IsRepair,Boolean)
+            Me.Adapter.InsertCommand.Parameters(20).Value = CType(fld_buyout,Boolean)
+            If (fld_s10_customer Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(21).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(21).Value = CType(fld_s10_customer,String)
+            End If
+            If (fld_s10_date.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(22).Value = CType(fld_s10_date.Value,Date)
             Else
                 Me.Adapter.InsertCommand.Parameters(22).Value = Global.System.DBNull.Value
+            End If
+            If (fld_s10_po Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(23).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(23).Value = CType(fld_s10_po,String)
+            End If
+            If (fld_s10_qty Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(24).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(24).Value = CType(fld_s10_qty,String)
+            End If
+            If (fld_s10_ticket Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(25).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(25).Value = CType(fld_s10_ticket,String)
+            End If
+            If (fld_s1_customer Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(26).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(26).Value = CType(fld_s1_customer,String)
+            End If
+            If (fld_s1_date.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(27).Value = CType(fld_s1_date.Value,Date)
+            Else
+                Me.Adapter.InsertCommand.Parameters(27).Value = Global.System.DBNull.Value
+            End If
+            If (fld_s1_po Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(28).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(28).Value = CType(fld_s1_po,String)
+            End If
+            If (fld_s1_qty Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(29).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(29).Value = CType(fld_s1_qty,String)
+            End If
+            If (fld_s1_ticket Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(30).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(30).Value = CType(fld_s1_ticket,String)
+            End If
+            If (fld_s2_customer Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(31).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(31).Value = CType(fld_s2_customer,String)
+            End If
+            If (fld_s2_date.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(32).Value = CType(fld_s2_date.Value,Date)
+            Else
+                Me.Adapter.InsertCommand.Parameters(32).Value = Global.System.DBNull.Value
+            End If
+            If (fld_s2_po Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(33).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(33).Value = CType(fld_s2_po,String)
+            End If
+            If (fld_s2_qty Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(34).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(34).Value = CType(fld_s2_qty,String)
+            End If
+            If (fld_s2_ticket Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(35).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(35).Value = CType(fld_s2_ticket,String)
+            End If
+            If (fld_s3_customer Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(36).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(36).Value = CType(fld_s3_customer,String)
+            End If
+            If (fld_s3_date.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(37).Value = CType(fld_s3_date.Value,Date)
+            Else
+                Me.Adapter.InsertCommand.Parameters(37).Value = Global.System.DBNull.Value
+            End If
+            If (fld_s3_po Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(38).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(38).Value = CType(fld_s3_po,String)
+            End If
+            If (fld_s3_qty Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(39).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(39).Value = CType(fld_s3_qty,String)
+            End If
+            If (fld_s3_ticket Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(40).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(40).Value = CType(fld_s3_ticket,String)
+            End If
+            If (fld_s4_customer Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(41).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(41).Value = CType(fld_s4_customer,String)
+            End If
+            If (fld_s4_date.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(42).Value = CType(fld_s4_date.Value,Date)
+            Else
+                Me.Adapter.InsertCommand.Parameters(42).Value = Global.System.DBNull.Value
+            End If
+            If (fld_s4_po Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(43).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(43).Value = CType(fld_s4_po,String)
+            End If
+            If (fld_s4_qty Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(44).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(44).Value = CType(fld_s4_qty,String)
+            End If
+            If (fld_s4_ticket Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(45).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(45).Value = CType(fld_s4_ticket,String)
+            End If
+            If (fld_s5_customer Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(46).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(46).Value = CType(fld_s5_customer,String)
+            End If
+            If (fld_s5_date.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(47).Value = CType(fld_s5_date.Value,Date)
+            Else
+                Me.Adapter.InsertCommand.Parameters(47).Value = Global.System.DBNull.Value
+            End If
+            If (fld_s5_po Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(48).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(48).Value = CType(fld_s5_po,String)
+            End If
+            If (fld_s5_qty Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(49).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(49).Value = CType(fld_s5_qty,String)
+            End If
+            If (fld_s5_ticket Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(50).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(50).Value = CType(fld_s5_ticket,String)
+            End If
+            If (fld_s6_customer Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(51).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(51).Value = CType(fld_s6_customer,String)
+            End If
+            If (fld_s6_date.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(52).Value = CType(fld_s6_date.Value,Date)
+            Else
+                Me.Adapter.InsertCommand.Parameters(52).Value = Global.System.DBNull.Value
+            End If
+            If (fld_s6_po Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(53).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(53).Value = CType(fld_s6_po,String)
+            End If
+            If (fld_s6_qty Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(54).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(54).Value = CType(fld_s6_qty,String)
+            End If
+            If (fld_s6_ticket Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(55).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(55).Value = CType(fld_s6_ticket,String)
+            End If
+            If (fld_s7_customer Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(56).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(56).Value = CType(fld_s7_customer,String)
+            End If
+            If (fld_s7_date.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(57).Value = CType(fld_s7_date.Value,Date)
+            Else
+                Me.Adapter.InsertCommand.Parameters(57).Value = Global.System.DBNull.Value
+            End If
+            If (fld_s7_po Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(58).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(58).Value = CType(fld_s7_po,String)
+            End If
+            If (fld_s7_qty Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(59).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(59).Value = CType(fld_s7_qty,String)
+            End If
+            If (fld_s7_ticket Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(60).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(60).Value = CType(fld_s7_ticket,String)
+            End If
+            If (fld_s8_customer Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(61).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(61).Value = CType(fld_s8_customer,String)
+            End If
+            If (fld_s8_date.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(62).Value = CType(fld_s8_date.Value,Date)
+            Else
+                Me.Adapter.InsertCommand.Parameters(62).Value = Global.System.DBNull.Value
+            End If
+            If (fld_s8_po Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(63).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(63).Value = CType(fld_s8_po,String)
+            End If
+            If (fld_s8_qty Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(64).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(64).Value = CType(fld_s8_qty,String)
+            End If
+            If (fld_s8_ticket Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(65).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(65).Value = CType(fld_s8_ticket,String)
+            End If
+            If (fld_s9_customer Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(66).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(66).Value = CType(fld_s9_customer,String)
+            End If
+            If (fld_s9_date.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(67).Value = CType(fld_s9_date.Value,Date)
+            Else
+                Me.Adapter.InsertCommand.Parameters(67).Value = Global.System.DBNull.Value
+            End If
+            If (fld_s9_po Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(68).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(68).Value = CType(fld_s9_po,String)
+            End If
+            If (fld_s9_qty Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(69).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(69).Value = CType(fld_s9_qty,String)
+            End If
+            If (fld_s9_ticket Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(70).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(70).Value = CType(fld_s9_ticket,String)
+            End If
+            If (fld_status Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(71).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(71).Value = CType(fld_status,String)
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
             If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
@@ -10823,17 +13992,66 @@ Namespace db_WOlogDataSetTableAdapters
                     ByVal fld_style As String,  _
                     ByVal fld_psl As String,  _
                     ByVal fld_pr As String,  _
-                    ByVal fld_qty As Global.System.Nullable(Of Integer),  _
-                    ByVal fld_customer As String,  _
+                    ByVal fld_qty As String,  _
                     ByVal fld_notes As String,  _
-                    ByVal fld_po_num As String,  _
-                    ByVal fld_ship_date As Global.System.Nullable(Of Date),  _
-                    ByVal fld_delivery_num As String,  _
                     ByVal fld_qb_ba_num As String,  _
                     ByVal fld_CreatedBy As String,  _
                     ByVal fld_CreatedByDate As Global.System.Nullable(Of Date),  _
                     ByVal fld_LastModifiedBy As String,  _
                     ByVal fld_LastModifiedDate As Global.System.Nullable(Of Date),  _
+                    ByVal fld_IsRepair As Boolean,  _
+                    ByVal fld_buyout As Boolean,  _
+                    ByVal fld_s10_customer As String,  _
+                    ByVal fld_s10_date As Global.System.Nullable(Of Date),  _
+                    ByVal fld_s10_po As String,  _
+                    ByVal fld_s10_qty As String,  _
+                    ByVal fld_s10_ticket As String,  _
+                    ByVal fld_s1_customer As String,  _
+                    ByVal fld_s1_date As Global.System.Nullable(Of Date),  _
+                    ByVal fld_s1_po As String,  _
+                    ByVal fld_s1_qty As String,  _
+                    ByVal fld_s1_ticket As String,  _
+                    ByVal fld_s2_customer As String,  _
+                    ByVal fld_s2_date As Global.System.Nullable(Of Date),  _
+                    ByVal fld_s2_po As String,  _
+                    ByVal fld_s2_qty As String,  _
+                    ByVal fld_s2_ticket As String,  _
+                    ByVal fld_s3_customer As String,  _
+                    ByVal fld_s3_date As Global.System.Nullable(Of Date),  _
+                    ByVal fld_s3_po As String,  _
+                    ByVal fld_s3_qty As String,  _
+                    ByVal fld_s3_ticket As String,  _
+                    ByVal fld_s4_customer As String,  _
+                    ByVal fld_s4_date As Global.System.Nullable(Of Date),  _
+                    ByVal fld_s4_po As String,  _
+                    ByVal fld_s4_qty As String,  _
+                    ByVal fld_s4_ticket As String,  _
+                    ByVal fld_s5_customer As String,  _
+                    ByVal fld_s5_date As Global.System.Nullable(Of Date),  _
+                    ByVal fld_s5_po As String,  _
+                    ByVal fld_s5_qty As String,  _
+                    ByVal fld_s5_ticket As String,  _
+                    ByVal fld_s6_customer As String,  _
+                    ByVal fld_s6_date As Global.System.Nullable(Of Date),  _
+                    ByVal fld_s6_po As String,  _
+                    ByVal fld_s6_qty As String,  _
+                    ByVal fld_s6_ticket As String,  _
+                    ByVal fld_s7_customer As String,  _
+                    ByVal fld_s7_date As Global.System.Nullable(Of Date),  _
+                    ByVal fld_s7_po As String,  _
+                    ByVal fld_s7_qty As String,  _
+                    ByVal fld_s7_ticket As String,  _
+                    ByVal fld_s8_customer As String,  _
+                    ByVal fld_s8_date As Global.System.Nullable(Of Date),  _
+                    ByVal fld_s8_po As String,  _
+                    ByVal fld_s8_qty As String,  _
+                    ByVal fld_s8_ticket As String,  _
+                    ByVal fld_s9_customer As String,  _
+                    ByVal fld_s9_date As Global.System.Nullable(Of Date),  _
+                    ByVal fld_s9_po As String,  _
+                    ByVal fld_s9_qty As String,  _
+                    ByVal fld_s9_ticket As String,  _
+                    ByVal fld_status As String,  _
                     ByVal Original_ID As Integer,  _
                     ByVal Original_fld_wo_num As String,  _
                     ByVal Original_fld_wo_date As Global.System.Nullable(Of Date),  _
@@ -10847,16 +14065,65 @@ Namespace db_WOlogDataSetTableAdapters
                     ByVal Original_fld_style As String,  _
                     ByVal Original_fld_psl As String,  _
                     ByVal Original_fld_pr As String,  _
-                    ByVal Original_fld_qty As Global.System.Nullable(Of Integer),  _
-                    ByVal Original_fld_customer As String,  _
-                    ByVal Original_fld_po_num As String,  _
-                    ByVal Original_fld_ship_date As Global.System.Nullable(Of Date),  _
-                    ByVal Original_fld_delivery_num As String,  _
+                    ByVal Original_fld_qty As String,  _
                     ByVal Original_fld_qb_ba_num As String,  _
                     ByVal Original_fld_CreatedBy As String,  _
                     ByVal Original_fld_CreatedByDate As Global.System.Nullable(Of Date),  _
                     ByVal Original_fld_LastModifiedBy As String,  _
-                    ByVal Original_fld_LastModifiedDate As Global.System.Nullable(Of Date)) As Integer
+                    ByVal Original_fld_LastModifiedDate As Global.System.Nullable(Of Date),  _
+                    ByVal Original_fld_IsRepair As Boolean,  _
+                    ByVal Original_fld_buyout As Boolean,  _
+                    ByVal Original_fld_s10_customer As String,  _
+                    ByVal Original_fld_s10_date As Global.System.Nullable(Of Date),  _
+                    ByVal Original_fld_s10_po As String,  _
+                    ByVal Original_fld_s10_qty As String,  _
+                    ByVal Original_fld_s10_ticket As String,  _
+                    ByVal Original_fld_s1_customer As String,  _
+                    ByVal Original_fld_s1_date As Global.System.Nullable(Of Date),  _
+                    ByVal Original_fld_s1_po As String,  _
+                    ByVal Original_fld_s1_qty As String,  _
+                    ByVal Original_fld_s1_ticket As String,  _
+                    ByVal Original_fld_s2_customer As String,  _
+                    ByVal Original_fld_s2_date As Global.System.Nullable(Of Date),  _
+                    ByVal Original_fld_s2_po As String,  _
+                    ByVal Original_fld_s2_qty As String,  _
+                    ByVal Original_fld_s2_ticket As String,  _
+                    ByVal Original_fld_s3_customer As String,  _
+                    ByVal Original_fld_s3_date As Global.System.Nullable(Of Date),  _
+                    ByVal Original_fld_s3_po As String,  _
+                    ByVal Original_fld_s3_qty As String,  _
+                    ByVal Original_fld_s3_ticket As String,  _
+                    ByVal Original_fld_s4_customer As String,  _
+                    ByVal Original_fld_s4_date As Global.System.Nullable(Of Date),  _
+                    ByVal Original_fld_s4_po As String,  _
+                    ByVal Original_fld_s4_qty As String,  _
+                    ByVal Original_fld_s4_ticket As String,  _
+                    ByVal Original_fld_s5_customer As String,  _
+                    ByVal Original_fld_s5_date As Global.System.Nullable(Of Date),  _
+                    ByVal Original_fld_s5_po As String,  _
+                    ByVal Original_fld_s5_qty As String,  _
+                    ByVal Original_fld_s5_ticket As String,  _
+                    ByVal Original_fld_s6_customer As String,  _
+                    ByVal Original_fld_s6_date As Global.System.Nullable(Of Date),  _
+                    ByVal Original_fld_s6_po As String,  _
+                    ByVal Original_fld_s6_qty As String,  _
+                    ByVal Original_fld_s6_ticket As String,  _
+                    ByVal Original_fld_s7_customer As String,  _
+                    ByVal Original_fld_s7_date As Global.System.Nullable(Of Date),  _
+                    ByVal Original_fld_s7_po As String,  _
+                    ByVal Original_fld_s7_qty As String,  _
+                    ByVal Original_fld_s7_ticket As String,  _
+                    ByVal Original_fld_s8_customer As String,  _
+                    ByVal Original_fld_s8_date As Global.System.Nullable(Of Date),  _
+                    ByVal Original_fld_s8_po As String,  _
+                    ByVal Original_fld_s8_qty As String,  _
+                    ByVal Original_fld_s8_ticket As String,  _
+                    ByVal Original_fld_s9_customer As String,  _
+                    ByVal Original_fld_s9_date As Global.System.Nullable(Of Date),  _
+                    ByVal Original_fld_s9_po As String,  _
+                    ByVal Original_fld_s9_qty As String,  _
+                    ByVal Original_fld_s9_ticket As String,  _
+                    ByVal Original_fld_status As String) As Integer
             If (fld_wo_num Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(0).Value = Global.System.DBNull.Value
             Else
@@ -10917,215 +14184,785 @@ Namespace db_WOlogDataSetTableAdapters
             Else
                 Me.Adapter.UpdateCommand.Parameters(11).Value = CType(fld_pr,String)
             End If
-            If (fld_qty.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(12).Value = CType(fld_qty.Value,Integer)
-            Else
+            If (fld_qty Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(12).Value = Global.System.DBNull.Value
-            End If
-            If (fld_customer Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(13).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(13).Value = CType(fld_customer,String)
+                Me.Adapter.UpdateCommand.Parameters(12).Value = CType(fld_qty,String)
             End If
             If (fld_notes Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(13).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(13).Value = CType(fld_notes,String)
+            End If
+            If (fld_qb_ba_num Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(14).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(14).Value = CType(fld_notes,String)
+                Me.Adapter.UpdateCommand.Parameters(14).Value = CType(fld_qb_ba_num,String)
             End If
-            If (fld_po_num Is Nothing) Then
+            If (fld_CreatedBy Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(15).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(15).Value = CType(fld_po_num,String)
+                Me.Adapter.UpdateCommand.Parameters(15).Value = CType(fld_CreatedBy,String)
             End If
-            If (fld_ship_date.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(16).Value = CType(fld_ship_date.Value,Date)
+            If (fld_CreatedByDate.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(16).Value = CType(fld_CreatedByDate.Value,Date)
             Else
                 Me.Adapter.UpdateCommand.Parameters(16).Value = Global.System.DBNull.Value
             End If
-            If (fld_delivery_num Is Nothing) Then
+            If (fld_LastModifiedBy Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(17).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(17).Value = CType(fld_delivery_num,String)
-            End If
-            If (fld_qb_ba_num Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(18).Value = Global.System.DBNull.Value
-            Else
-                Me.Adapter.UpdateCommand.Parameters(18).Value = CType(fld_qb_ba_num,String)
-            End If
-            If (fld_CreatedBy Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(19).Value = Global.System.DBNull.Value
-            Else
-                Me.Adapter.UpdateCommand.Parameters(19).Value = CType(fld_CreatedBy,String)
-            End If
-            If (fld_CreatedByDate.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(20).Value = CType(fld_CreatedByDate.Value,Date)
-            Else
-                Me.Adapter.UpdateCommand.Parameters(20).Value = Global.System.DBNull.Value
-            End If
-            If (fld_LastModifiedBy Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(21).Value = Global.System.DBNull.Value
-            Else
-                Me.Adapter.UpdateCommand.Parameters(21).Value = CType(fld_LastModifiedBy,String)
+                Me.Adapter.UpdateCommand.Parameters(17).Value = CType(fld_LastModifiedBy,String)
             End If
             If (fld_LastModifiedDate.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(22).Value = CType(fld_LastModifiedDate.Value,Date)
+                Me.Adapter.UpdateCommand.Parameters(18).Value = CType(fld_LastModifiedDate.Value,Date)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(18).Value = Global.System.DBNull.Value
+            End If
+            Me.Adapter.UpdateCommand.Parameters(19).Value = CType(fld_IsRepair,Boolean)
+            Me.Adapter.UpdateCommand.Parameters(20).Value = CType(fld_buyout,Boolean)
+            If (fld_s10_customer Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(21).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(21).Value = CType(fld_s10_customer,String)
+            End If
+            If (fld_s10_date.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(22).Value = CType(fld_s10_date.Value,Date)
             Else
                 Me.Adapter.UpdateCommand.Parameters(22).Value = Global.System.DBNull.Value
             End If
-            Me.Adapter.UpdateCommand.Parameters(23).Value = CType(Original_ID,Integer)
-            If (Original_fld_wo_num Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(24).Value = CType(1,Object)
+            If (fld_s10_po Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(23).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(23).Value = CType(fld_s10_po,String)
+            End If
+            If (fld_s10_qty Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(24).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(24).Value = CType(fld_s10_qty,String)
+            End If
+            If (fld_s10_ticket Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(25).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(24).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(25).Value = CType(Original_fld_wo_num,String)
+                Me.Adapter.UpdateCommand.Parameters(25).Value = CType(fld_s10_ticket,String)
             End If
-            If (Original_fld_wo_date.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(26).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(27).Value = CType(Original_fld_wo_date.Value,Date)
+            If (fld_s1_customer Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(26).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(26).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(26).Value = CType(fld_s1_customer,String)
+            End If
+            If (fld_s1_date.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(27).Value = CType(fld_s1_date.Value,Date)
+            Else
                 Me.Adapter.UpdateCommand.Parameters(27).Value = Global.System.DBNull.Value
             End If
-            If (Original_fld_part_num Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(28).Value = CType(1,Object)
+            If (fld_s1_po Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(28).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(28).Value = CType(fld_s1_po,String)
+            End If
+            If (fld_s1_qty Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(29).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(28).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(29).Value = CType(Original_fld_part_num,String)
+                Me.Adapter.UpdateCommand.Parameters(29).Value = CType(fld_s1_qty,String)
             End If
-            If (Original_fld_product Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(30).Value = CType(1,Object)
+            If (fld_s1_ticket Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(30).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(30).Value = CType(fld_s1_ticket,String)
+            End If
+            If (fld_s2_customer Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(31).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(30).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(31).Value = CType(Original_fld_product,String)
+                Me.Adapter.UpdateCommand.Parameters(31).Value = CType(fld_s2_customer,String)
             End If
-            If (Original_fld_size Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(32).Value = CType(1,Object)
+            If (fld_s2_date.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(32).Value = CType(fld_s2_date.Value,Date)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(32).Value = Global.System.DBNull.Value
+            End If
+            If (fld_s2_po Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(33).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(32).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(33).Value = CType(Original_fld_size,String)
+                Me.Adapter.UpdateCommand.Parameters(33).Value = CType(fld_s2_po,String)
             End If
-            If (Original_fld_pressure Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(34).Value = CType(1,Object)
+            If (fld_s2_qty Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(34).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(34).Value = CType(fld_s2_qty,String)
+            End If
+            If (fld_s2_ticket Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(35).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(34).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(35).Value = CType(Original_fld_pressure,String)
+                Me.Adapter.UpdateCommand.Parameters(35).Value = CType(fld_s2_ticket,String)
             End If
-            If (Original_fld_hhpp Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(36).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(37).Value = Global.System.DBNull.Value
+            If (fld_s3_customer Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(36).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(36).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(37).Value = CType(Original_fld_hhpp,String)
+                Me.Adapter.UpdateCommand.Parameters(36).Value = CType(fld_s3_customer,String)
             End If
-            If (Original_fld_tempclass Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(38).Value = CType(1,Object)
+            If (fld_s3_date.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(37).Value = CType(fld_s3_date.Value,Date)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(37).Value = Global.System.DBNull.Value
+            End If
+            If (fld_s3_po Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(38).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(38).Value = CType(fld_s3_po,String)
+            End If
+            If (fld_s3_qty Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(39).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(38).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(39).Value = CType(Original_fld_tempclass,String)
+                Me.Adapter.UpdateCommand.Parameters(39).Value = CType(fld_s3_qty,String)
             End If
-            If (Original_fld_trim Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(40).Value = CType(1,Object)
+            If (fld_s3_ticket Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(40).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(40).Value = CType(fld_s3_ticket,String)
+            End If
+            If (fld_s4_customer Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(41).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(40).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(41).Value = CType(Original_fld_trim,String)
+                Me.Adapter.UpdateCommand.Parameters(41).Value = CType(fld_s4_customer,String)
             End If
-            If (Original_fld_style Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(42).Value = CType(1,Object)
+            If (fld_s4_date.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(42).Value = CType(fld_s4_date.Value,Date)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(42).Value = Global.System.DBNull.Value
+            End If
+            If (fld_s4_po Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(43).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(42).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(43).Value = CType(Original_fld_style,String)
+                Me.Adapter.UpdateCommand.Parameters(43).Value = CType(fld_s4_po,String)
             End If
-            If (Original_fld_psl Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(44).Value = CType(1,Object)
+            If (fld_s4_qty Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(44).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(44).Value = CType(fld_s4_qty,String)
+            End If
+            If (fld_s4_ticket Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(45).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(44).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(45).Value = CType(Original_fld_psl,String)
+                Me.Adapter.UpdateCommand.Parameters(45).Value = CType(fld_s4_ticket,String)
             End If
-            If (Original_fld_pr Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(46).Value = CType(1,Object)
+            If (fld_s5_customer Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(46).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(46).Value = CType(fld_s5_customer,String)
+            End If
+            If (fld_s5_date.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(47).Value = CType(fld_s5_date.Value,Date)
+            Else
                 Me.Adapter.UpdateCommand.Parameters(47).Value = Global.System.DBNull.Value
-            Else
-                Me.Adapter.UpdateCommand.Parameters(46).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(47).Value = CType(Original_fld_pr,String)
             End If
-            If (Original_fld_qty.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(48).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(49).Value = CType(Original_fld_qty.Value,Integer)
+            If (fld_s5_po Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(48).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(48).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(48).Value = CType(fld_s5_po,String)
+            End If
+            If (fld_s5_qty Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(49).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(49).Value = CType(fld_s5_qty,String)
             End If
-            If (Original_fld_customer Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(50).Value = CType(1,Object)
+            If (fld_s5_ticket Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(50).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(50).Value = CType(fld_s5_ticket,String)
+            End If
+            If (fld_s6_customer Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(51).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(50).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(51).Value = CType(Original_fld_customer,String)
+                Me.Adapter.UpdateCommand.Parameters(51).Value = CType(fld_s6_customer,String)
             End If
-            If (Original_fld_po_num Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(52).Value = CType(1,Object)
+            If (fld_s6_date.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(52).Value = CType(fld_s6_date.Value,Date)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(52).Value = Global.System.DBNull.Value
+            End If
+            If (fld_s6_po Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(53).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(52).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(53).Value = CType(Original_fld_po_num,String)
+                Me.Adapter.UpdateCommand.Parameters(53).Value = CType(fld_s6_po,String)
             End If
-            If (Original_fld_ship_date.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(54).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(55).Value = CType(Original_fld_ship_date.Value,Date)
+            If (fld_s6_qty Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(54).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(54).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(54).Value = CType(fld_s6_qty,String)
+            End If
+            If (fld_s6_ticket Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(55).Value = Global.System.DBNull.Value
-            End If
-            If (Original_fld_delivery_num Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(56).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(57).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(56).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(57).Value = CType(Original_fld_delivery_num,String)
+                Me.Adapter.UpdateCommand.Parameters(55).Value = CType(fld_s6_ticket,String)
             End If
-            If (Original_fld_qb_ba_num Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(58).Value = CType(1,Object)
+            If (fld_s7_customer Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(56).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(56).Value = CType(fld_s7_customer,String)
+            End If
+            If (fld_s7_date.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(57).Value = CType(fld_s7_date.Value,Date)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(57).Value = Global.System.DBNull.Value
+            End If
+            If (fld_s7_po Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(58).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(58).Value = CType(fld_s7_po,String)
+            End If
+            If (fld_s7_qty Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(59).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(58).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(59).Value = CType(Original_fld_qb_ba_num,String)
+                Me.Adapter.UpdateCommand.Parameters(59).Value = CType(fld_s7_qty,String)
             End If
-            If (Original_fld_CreatedBy Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(60).Value = CType(1,Object)
+            If (fld_s7_ticket Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(60).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(60).Value = CType(fld_s7_ticket,String)
+            End If
+            If (fld_s8_customer Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(61).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(60).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(61).Value = CType(Original_fld_CreatedBy,String)
+                Me.Adapter.UpdateCommand.Parameters(61).Value = CType(fld_s8_customer,String)
             End If
-            If (Original_fld_CreatedByDate.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(62).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(63).Value = CType(Original_fld_CreatedByDate.Value,Date)
+            If (fld_s8_date.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(62).Value = CType(fld_s8_date.Value,Date)
             Else
-                Me.Adapter.UpdateCommand.Parameters(62).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(63).Value = Global.System.DBNull.Value
+                Me.Adapter.UpdateCommand.Parameters(62).Value = Global.System.DBNull.Value
             End If
-            If (Original_fld_LastModifiedBy Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(64).Value = CType(1,Object)
+            If (fld_s8_po Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(63).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(63).Value = CType(fld_s8_po,String)
+            End If
+            If (fld_s8_qty Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(64).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(64).Value = CType(fld_s8_qty,String)
+            End If
+            If (fld_s8_ticket Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(65).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(64).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(65).Value = CType(Original_fld_LastModifiedBy,String)
+                Me.Adapter.UpdateCommand.Parameters(65).Value = CType(fld_s8_ticket,String)
+            End If
+            If (fld_s9_customer Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(66).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(66).Value = CType(fld_s9_customer,String)
+            End If
+            If (fld_s9_date.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(67).Value = CType(fld_s9_date.Value,Date)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(67).Value = Global.System.DBNull.Value
+            End If
+            If (fld_s9_po Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(68).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(68).Value = CType(fld_s9_po,String)
+            End If
+            If (fld_s9_qty Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(69).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(69).Value = CType(fld_s9_qty,String)
+            End If
+            If (fld_s9_ticket Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(70).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(70).Value = CType(fld_s9_ticket,String)
+            End If
+            If (fld_status Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(71).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(71).Value = CType(fld_status,String)
+            End If
+            Me.Adapter.UpdateCommand.Parameters(72).Value = CType(Original_ID,Integer)
+            If (Original_fld_wo_num Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(73).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(74).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(73).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(74).Value = CType(Original_fld_wo_num,String)
+            End If
+            If (Original_fld_wo_date.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(75).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(76).Value = CType(Original_fld_wo_date.Value,Date)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(75).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(76).Value = Global.System.DBNull.Value
+            End If
+            If (Original_fld_part_num Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(77).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(78).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(77).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(78).Value = CType(Original_fld_part_num,String)
+            End If
+            If (Original_fld_product Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(79).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(80).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(79).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(80).Value = CType(Original_fld_product,String)
+            End If
+            If (Original_fld_size Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(81).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(82).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(81).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(82).Value = CType(Original_fld_size,String)
+            End If
+            If (Original_fld_pressure Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(83).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(84).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(83).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(84).Value = CType(Original_fld_pressure,String)
+            End If
+            If (Original_fld_hhpp Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(85).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(86).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(85).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(86).Value = CType(Original_fld_hhpp,String)
+            End If
+            If (Original_fld_tempclass Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(87).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(88).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(87).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(88).Value = CType(Original_fld_tempclass,String)
+            End If
+            If (Original_fld_trim Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(89).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(90).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(89).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(90).Value = CType(Original_fld_trim,String)
+            End If
+            If (Original_fld_style Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(91).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(92).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(91).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(92).Value = CType(Original_fld_style,String)
+            End If
+            If (Original_fld_psl Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(93).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(94).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(93).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(94).Value = CType(Original_fld_psl,String)
+            End If
+            If (Original_fld_pr Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(95).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(96).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(95).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(96).Value = CType(Original_fld_pr,String)
+            End If
+            If (Original_fld_qty Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(97).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(98).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(97).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(98).Value = CType(Original_fld_qty,String)
+            End If
+            If (Original_fld_qb_ba_num Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(99).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(100).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(99).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(100).Value = CType(Original_fld_qb_ba_num,String)
+            End If
+            If (Original_fld_CreatedBy Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(101).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(102).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(101).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(102).Value = CType(Original_fld_CreatedBy,String)
+            End If
+            If (Original_fld_CreatedByDate.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(103).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(104).Value = CType(Original_fld_CreatedByDate.Value,Date)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(103).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(104).Value = Global.System.DBNull.Value
+            End If
+            If (Original_fld_LastModifiedBy Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(105).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(106).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(105).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(106).Value = CType(Original_fld_LastModifiedBy,String)
             End If
             If (Original_fld_LastModifiedDate.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(66).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(67).Value = CType(Original_fld_LastModifiedDate.Value,Date)
+                Me.Adapter.UpdateCommand.Parameters(107).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(108).Value = CType(Original_fld_LastModifiedDate.Value,Date)
             Else
-                Me.Adapter.UpdateCommand.Parameters(66).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(67).Value = Global.System.DBNull.Value
+                Me.Adapter.UpdateCommand.Parameters(107).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(108).Value = Global.System.DBNull.Value
+            End If
+            Me.Adapter.UpdateCommand.Parameters(109).Value = CType(0,Object)
+            Me.Adapter.UpdateCommand.Parameters(110).Value = CType(Original_fld_IsRepair,Boolean)
+            Me.Adapter.UpdateCommand.Parameters(111).Value = CType(0,Object)
+            Me.Adapter.UpdateCommand.Parameters(112).Value = CType(Original_fld_buyout,Boolean)
+            If (Original_fld_s10_customer Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(113).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(114).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(113).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(114).Value = CType(Original_fld_s10_customer,String)
+            End If
+            If (Original_fld_s10_date.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(115).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(116).Value = CType(Original_fld_s10_date.Value,Date)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(115).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(116).Value = Global.System.DBNull.Value
+            End If
+            If (Original_fld_s10_po Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(117).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(118).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(117).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(118).Value = CType(Original_fld_s10_po,String)
+            End If
+            If (Original_fld_s10_qty Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(119).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(120).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(119).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(120).Value = CType(Original_fld_s10_qty,String)
+            End If
+            If (Original_fld_s10_ticket Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(121).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(122).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(121).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(122).Value = CType(Original_fld_s10_ticket,String)
+            End If
+            If (Original_fld_s1_customer Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(123).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(124).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(123).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(124).Value = CType(Original_fld_s1_customer,String)
+            End If
+            If (Original_fld_s1_date.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(125).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(126).Value = CType(Original_fld_s1_date.Value,Date)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(125).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(126).Value = Global.System.DBNull.Value
+            End If
+            If (Original_fld_s1_po Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(127).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(128).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(127).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(128).Value = CType(Original_fld_s1_po,String)
+            End If
+            If (Original_fld_s1_qty Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(129).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(130).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(129).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(130).Value = CType(Original_fld_s1_qty,String)
+            End If
+            If (Original_fld_s1_ticket Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(131).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(132).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(131).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(132).Value = CType(Original_fld_s1_ticket,String)
+            End If
+            If (Original_fld_s2_customer Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(133).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(134).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(133).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(134).Value = CType(Original_fld_s2_customer,String)
+            End If
+            If (Original_fld_s2_date.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(135).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(136).Value = CType(Original_fld_s2_date.Value,Date)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(135).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(136).Value = Global.System.DBNull.Value
+            End If
+            If (Original_fld_s2_po Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(137).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(138).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(137).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(138).Value = CType(Original_fld_s2_po,String)
+            End If
+            If (Original_fld_s2_qty Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(139).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(140).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(139).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(140).Value = CType(Original_fld_s2_qty,String)
+            End If
+            If (Original_fld_s2_ticket Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(141).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(142).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(141).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(142).Value = CType(Original_fld_s2_ticket,String)
+            End If
+            If (Original_fld_s3_customer Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(143).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(144).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(143).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(144).Value = CType(Original_fld_s3_customer,String)
+            End If
+            If (Original_fld_s3_date.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(145).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(146).Value = CType(Original_fld_s3_date.Value,Date)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(145).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(146).Value = Global.System.DBNull.Value
+            End If
+            If (Original_fld_s3_po Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(147).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(148).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(147).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(148).Value = CType(Original_fld_s3_po,String)
+            End If
+            If (Original_fld_s3_qty Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(149).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(150).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(149).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(150).Value = CType(Original_fld_s3_qty,String)
+            End If
+            If (Original_fld_s3_ticket Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(151).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(152).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(151).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(152).Value = CType(Original_fld_s3_ticket,String)
+            End If
+            If (Original_fld_s4_customer Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(153).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(154).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(153).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(154).Value = CType(Original_fld_s4_customer,String)
+            End If
+            If (Original_fld_s4_date.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(155).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(156).Value = CType(Original_fld_s4_date.Value,Date)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(155).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(156).Value = Global.System.DBNull.Value
+            End If
+            If (Original_fld_s4_po Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(157).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(158).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(157).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(158).Value = CType(Original_fld_s4_po,String)
+            End If
+            If (Original_fld_s4_qty Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(159).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(160).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(159).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(160).Value = CType(Original_fld_s4_qty,String)
+            End If
+            If (Original_fld_s4_ticket Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(161).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(162).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(161).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(162).Value = CType(Original_fld_s4_ticket,String)
+            End If
+            If (Original_fld_s5_customer Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(163).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(164).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(163).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(164).Value = CType(Original_fld_s5_customer,String)
+            End If
+            If (Original_fld_s5_date.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(165).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(166).Value = CType(Original_fld_s5_date.Value,Date)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(165).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(166).Value = Global.System.DBNull.Value
+            End If
+            If (Original_fld_s5_po Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(167).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(168).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(167).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(168).Value = CType(Original_fld_s5_po,String)
+            End If
+            If (Original_fld_s5_qty Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(169).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(170).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(169).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(170).Value = CType(Original_fld_s5_qty,String)
+            End If
+            If (Original_fld_s5_ticket Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(171).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(172).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(171).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(172).Value = CType(Original_fld_s5_ticket,String)
+            End If
+            If (Original_fld_s6_customer Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(173).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(174).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(173).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(174).Value = CType(Original_fld_s6_customer,String)
+            End If
+            If (Original_fld_s6_date.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(175).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(176).Value = CType(Original_fld_s6_date.Value,Date)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(175).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(176).Value = Global.System.DBNull.Value
+            End If
+            If (Original_fld_s6_po Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(177).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(178).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(177).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(178).Value = CType(Original_fld_s6_po,String)
+            End If
+            If (Original_fld_s6_qty Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(179).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(180).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(179).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(180).Value = CType(Original_fld_s6_qty,String)
+            End If
+            If (Original_fld_s6_ticket Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(181).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(182).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(181).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(182).Value = CType(Original_fld_s6_ticket,String)
+            End If
+            If (Original_fld_s7_customer Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(183).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(184).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(183).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(184).Value = CType(Original_fld_s7_customer,String)
+            End If
+            If (Original_fld_s7_date.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(185).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(186).Value = CType(Original_fld_s7_date.Value,Date)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(185).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(186).Value = Global.System.DBNull.Value
+            End If
+            If (Original_fld_s7_po Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(187).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(188).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(187).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(188).Value = CType(Original_fld_s7_po,String)
+            End If
+            If (Original_fld_s7_qty Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(189).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(190).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(189).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(190).Value = CType(Original_fld_s7_qty,String)
+            End If
+            If (Original_fld_s7_ticket Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(191).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(192).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(191).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(192).Value = CType(Original_fld_s7_ticket,String)
+            End If
+            If (Original_fld_s8_customer Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(193).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(194).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(193).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(194).Value = CType(Original_fld_s8_customer,String)
+            End If
+            If (Original_fld_s8_date.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(195).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(196).Value = CType(Original_fld_s8_date.Value,Date)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(195).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(196).Value = Global.System.DBNull.Value
+            End If
+            If (Original_fld_s8_po Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(197).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(198).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(197).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(198).Value = CType(Original_fld_s8_po,String)
+            End If
+            If (Original_fld_s8_qty Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(199).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(200).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(199).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(200).Value = CType(Original_fld_s8_qty,String)
+            End If
+            If (Original_fld_s8_ticket Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(201).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(202).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(201).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(202).Value = CType(Original_fld_s8_ticket,String)
+            End If
+            If (Original_fld_s9_customer Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(203).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(204).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(203).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(204).Value = CType(Original_fld_s9_customer,String)
+            End If
+            If (Original_fld_s9_date.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(205).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(206).Value = CType(Original_fld_s9_date.Value,Date)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(205).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(206).Value = Global.System.DBNull.Value
+            End If
+            If (Original_fld_s9_po Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(207).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(208).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(207).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(208).Value = CType(Original_fld_s9_po,String)
+            End If
+            If (Original_fld_s9_qty Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(209).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(210).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(209).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(210).Value = CType(Original_fld_s9_qty,String)
+            End If
+            If (Original_fld_s9_ticket Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(211).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(212).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(211).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(212).Value = CType(Original_fld_s9_ticket,String)
+            End If
+            If (Original_fld_status Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(213).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(214).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(213).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(214).Value = CType(Original_fld_status,String)
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
             If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _

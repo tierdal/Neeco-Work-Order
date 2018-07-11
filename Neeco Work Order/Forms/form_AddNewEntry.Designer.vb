@@ -74,15 +74,24 @@ Partial Class form_AddNewEntry
         Me.Label2 = New System.Windows.Forms.Label()
         Me.text_PartNum = New System.Windows.Forms.TextBox()
         Me.combo_ProductType = New System.Windows.Forms.ComboBox()
+        Me.TbltermProductTypeBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.TableLayoutPanel6 = New System.Windows.Forms.TableLayoutPanel()
         Me.combo_Size = New System.Windows.Forms.ComboBox()
+        Me.TbltermSizeBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.combo_Pressure = New System.Windows.Forms.ComboBox()
+        Me.TbltermPressureBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.combo_Style = New System.Windows.Forms.ComboBox()
+        Me.TbltermStyleBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.combo_Operator = New System.Windows.Forms.ComboBox()
+        Me.TbltermHHPPBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.combo_PR = New System.Windows.Forms.ComboBox()
+        Me.TbltermPRBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.combo_PSL = New System.Windows.Forms.ComboBox()
+        Me.TbltermPSLBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.combo_Trim = New System.Windows.Forms.ComboBox()
+        Me.TbltermTrimBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.combo_TempClass = New System.Windows.Forms.ComboBox()
+        Me.TbltermTempClassBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.text_Ticket2 = New System.Windows.Forms.TextBox()
@@ -174,15 +183,6 @@ Partial Class form_AddNewEntry
         Me.Tbl_term_Customers8TableAdapter = New Neeco_Work_Order.db_WOlogDataSetTableAdapters.tbl_term_Customers8TableAdapter()
         Me.Tbl_term_Customers9TableAdapter = New Neeco_Work_Order.db_WOlogDataSetTableAdapters.tbl_term_Customers9TableAdapter()
         Me.Tbl_term_Customers10TableAdapter = New Neeco_Work_Order.db_WOlogDataSetTableAdapters.tbl_term_Customers10TableAdapter()
-        Me.TbltermStyleBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.TbltermSizeBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.TbltermPressureBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.TbltermTempClassBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.TbltermTrimBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.TbltermPRBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.TbltermPSLBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.TbltermHHPPBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.TbltermProductTypeBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Fld_StyleLabel = New System.Windows.Forms.Label()
         Fld_PSLLabel = New System.Windows.Forms.Label()
         Fld_HHPPLabel = New System.Windows.Forms.Label()
@@ -207,7 +207,16 @@ Partial Class form_AddNewEntry
         Me.GroupBox2.SuspendLayout()
         Me.TableLayoutPanel8.SuspendLayout()
         Me.TableLayoutPanel7.SuspendLayout()
+        CType(Me.TbltermProductTypeBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel6.SuspendLayout()
+        CType(Me.TbltermSizeBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TbltermPressureBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TbltermStyleBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TbltermHHPPBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TbltermPRBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TbltermPSLBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TbltermTrimBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TbltermTempClassBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox3.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         CType(Me.TbltermCustomers1BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -222,15 +231,6 @@ Partial Class form_AddNewEntry
         CType(Me.TbltermCustomers2BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage2.SuspendLayout()
         CType(Me.TbltermCustomersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TbltermStyleBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TbltermSizeBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TbltermPressureBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TbltermTempClassBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TbltermTrimBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TbltermPRBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TbltermPSLBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TbltermHHPPBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TbltermProductTypeBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Fld_StyleLabel
@@ -766,6 +766,11 @@ Partial Class form_AddNewEntry
         Me.combo_ProductType.TabIndex = 6
         Me.combo_ProductType.ValueMember = "fld_ProductType"
         '
+        'TbltermProductTypeBindingSource
+        '
+        Me.TbltermProductTypeBindingSource.DataMember = "tbl_term_ProductType"
+        Me.TbltermProductTypeBindingSource.DataSource = Me.Db_WOlogDataSet
+        '
         'TableLayoutPanel6
         '
         Me.TableLayoutPanel6.ColumnCount = 6
@@ -817,6 +822,11 @@ Partial Class form_AddNewEntry
         Me.combo_Size.TabIndex = 8
         Me.combo_Size.ValueMember = "fld_Size"
         '
+        'TbltermSizeBindingSource
+        '
+        Me.TbltermSizeBindingSource.DataMember = "tbl_term_Size"
+        Me.TbltermSizeBindingSource.DataSource = Me.Db_WOlogDataSet
+        '
         'combo_Pressure
         '
         Me.combo_Pressure.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
@@ -832,6 +842,11 @@ Partial Class form_AddNewEntry
         Me.combo_Pressure.Size = New System.Drawing.Size(89, 21)
         Me.combo_Pressure.TabIndex = 9
         Me.combo_Pressure.ValueMember = "fld_Pressure"
+        '
+        'TbltermPressureBindingSource
+        '
+        Me.TbltermPressureBindingSource.DataMember = "tbl_term_Pressure"
+        Me.TbltermPressureBindingSource.DataSource = Me.Db_WOlogDataSet
         '
         'combo_Style
         '
@@ -849,6 +864,11 @@ Partial Class form_AddNewEntry
         Me.combo_Style.TabIndex = 7
         Me.combo_Style.ValueMember = "fld_Style"
         '
+        'TbltermStyleBindingSource
+        '
+        Me.TbltermStyleBindingSource.DataMember = "tbl_term_Style"
+        Me.TbltermStyleBindingSource.DataSource = Me.Db_WOlogDataSet
+        '
         'combo_Operator
         '
         Me.combo_Operator.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
@@ -864,6 +884,11 @@ Partial Class form_AddNewEntry
         Me.combo_Operator.Size = New System.Drawing.Size(92, 21)
         Me.combo_Operator.TabIndex = 14
         Me.combo_Operator.ValueMember = "fld_HHPP"
+        '
+        'TbltermHHPPBindingSource
+        '
+        Me.TbltermHHPPBindingSource.DataMember = "tbl_term_HHPP"
+        Me.TbltermHHPPBindingSource.DataSource = Me.Db_WOlogDataSet
         '
         'combo_PR
         '
@@ -881,6 +906,11 @@ Partial Class form_AddNewEntry
         Me.combo_PR.TabIndex = 13
         Me.combo_PR.ValueMember = "fld_PR"
         '
+        'TbltermPRBindingSource
+        '
+        Me.TbltermPRBindingSource.DataMember = "tbl_term_PR"
+        Me.TbltermPRBindingSource.DataSource = Me.Db_WOlogDataSet
+        '
         'combo_PSL
         '
         Me.combo_PSL.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
@@ -896,6 +926,11 @@ Partial Class form_AddNewEntry
         Me.combo_PSL.Size = New System.Drawing.Size(89, 21)
         Me.combo_PSL.TabIndex = 12
         Me.combo_PSL.ValueMember = "fld_PSL"
+        '
+        'TbltermPSLBindingSource
+        '
+        Me.TbltermPSLBindingSource.DataMember = "tbl_term_PSL"
+        Me.TbltermPSLBindingSource.DataSource = Me.Db_WOlogDataSet
         '
         'combo_Trim
         '
@@ -913,6 +948,11 @@ Partial Class form_AddNewEntry
         Me.combo_Trim.TabIndex = 11
         Me.combo_Trim.ValueMember = "fld_Trim"
         '
+        'TbltermTrimBindingSource
+        '
+        Me.TbltermTrimBindingSource.DataMember = "tbl_term_Trim"
+        Me.TbltermTrimBindingSource.DataSource = Me.Db_WOlogDataSet
+        '
         'combo_TempClass
         '
         Me.combo_TempClass.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
@@ -928,6 +968,11 @@ Partial Class form_AddNewEntry
         Me.combo_TempClass.Size = New System.Drawing.Size(89, 21)
         Me.combo_TempClass.TabIndex = 10
         Me.combo_TempClass.ValueMember = "fld_TempClass"
+        '
+        'TbltermTempClassBindingSource
+        '
+        Me.TbltermTempClassBindingSource.DataMember = "tbl_term_TempClass"
+        Me.TbltermTempClassBindingSource.DataSource = Me.Db_WOlogDataSet
         '
         'GroupBox3
         '
@@ -1829,51 +1874,6 @@ Partial Class form_AddNewEntry
         '
         Me.Tbl_term_Customers10TableAdapter.ClearBeforeFill = True
         '
-        'TbltermStyleBindingSource
-        '
-        Me.TbltermStyleBindingSource.DataMember = "tbl_term_Style"
-        Me.TbltermStyleBindingSource.DataSource = Me.Db_WOlogDataSet
-        '
-        'TbltermSizeBindingSource
-        '
-        Me.TbltermSizeBindingSource.DataMember = "tbl_term_Size"
-        Me.TbltermSizeBindingSource.DataSource = Me.Db_WOlogDataSet
-        '
-        'TbltermPressureBindingSource
-        '
-        Me.TbltermPressureBindingSource.DataMember = "tbl_term_Pressure"
-        Me.TbltermPressureBindingSource.DataSource = Me.Db_WOlogDataSet
-        '
-        'TbltermTempClassBindingSource
-        '
-        Me.TbltermTempClassBindingSource.DataMember = "tbl_term_TempClass"
-        Me.TbltermTempClassBindingSource.DataSource = Me.Db_WOlogDataSet
-        '
-        'TbltermTrimBindingSource
-        '
-        Me.TbltermTrimBindingSource.DataMember = "tbl_term_Trim"
-        Me.TbltermTrimBindingSource.DataSource = Me.Db_WOlogDataSet
-        '
-        'TbltermPRBindingSource
-        '
-        Me.TbltermPRBindingSource.DataMember = "tbl_term_PR"
-        Me.TbltermPRBindingSource.DataSource = Me.Db_WOlogDataSet
-        '
-        'TbltermPSLBindingSource
-        '
-        Me.TbltermPSLBindingSource.DataMember = "tbl_term_PSL"
-        Me.TbltermPSLBindingSource.DataSource = Me.Db_WOlogDataSet
-        '
-        'TbltermHHPPBindingSource
-        '
-        Me.TbltermHHPPBindingSource.DataMember = "tbl_term_HHPP"
-        Me.TbltermHHPPBindingSource.DataSource = Me.Db_WOlogDataSet
-        '
-        'TbltermProductTypeBindingSource
-        '
-        Me.TbltermProductTypeBindingSource.DataMember = "tbl_term_ProductType"
-        Me.TbltermProductTypeBindingSource.DataSource = Me.Db_WOlogDataSet
-        '
         'form_AddNewEntry
         '
         Me.AcceptButton = Me.button_Submit
@@ -1903,8 +1903,17 @@ Partial Class form_AddNewEntry
         Me.TableLayoutPanel8.PerformLayout()
         Me.TableLayoutPanel7.ResumeLayout(False)
         Me.TableLayoutPanel7.PerformLayout()
+        CType(Me.TbltermProductTypeBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel6.ResumeLayout(False)
         Me.TableLayoutPanel6.PerformLayout()
+        CType(Me.TbltermSizeBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TbltermPressureBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TbltermStyleBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TbltermHHPPBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TbltermPRBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TbltermPSLBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TbltermTrimBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TbltermTempClassBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox3.ResumeLayout(False)
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()
@@ -1921,15 +1930,6 @@ Partial Class form_AddNewEntry
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage2.PerformLayout()
         CType(Me.TbltermCustomersBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TbltermStyleBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TbltermSizeBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TbltermPressureBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TbltermTempClassBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TbltermTrimBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TbltermPRBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TbltermPSLBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TbltermHHPPBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TbltermProductTypeBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
