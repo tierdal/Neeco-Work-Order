@@ -35,11 +35,13 @@ Partial Class options_Trims
         Me.Tbl_term_TrimDataGridView = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TbltermTrimBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         CType(Me.Db_WOlogDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Tbl_term_TrimBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Tbl_term_TrimBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Tbl_term_TrimBindingNavigator.SuspendLayout()
         CType(Me.Tbl_term_TrimDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TbltermTrimBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Db_WOlogDataSet
@@ -86,7 +88,7 @@ Partial Class options_Trims
         'Tbl_term_TrimBindingNavigator
         '
         Me.Tbl_term_TrimBindingNavigator.AddNewItem = Me.BindingNavigatorAddNewItem
-        Me.Tbl_term_TrimBindingNavigator.BindingSource = Me.Tbl_term_TrimBindingSource
+        Me.Tbl_term_TrimBindingNavigator.BindingSource = Me.TbltermTrimBindingSource
         Me.Tbl_term_TrimBindingNavigator.CountItem = Nothing
         Me.Tbl_term_TrimBindingNavigator.DeleteItem = Me.BindingNavigatorDeleteItem
         Me.Tbl_term_TrimBindingNavigator.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Tbl_term_TrimBindingNavigatorSaveItem, Me.BindingNavigatorAddNewItem, Me.BindingNavigatorDeleteItem})
@@ -133,7 +135,7 @@ Partial Class options_Trims
         Me.Tbl_term_TrimDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.Tbl_term_TrimDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Tbl_term_TrimDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2})
-        Me.Tbl_term_TrimDataGridView.DataSource = Me.Tbl_term_TrimBindingSource
+        Me.Tbl_term_TrimDataGridView.DataSource = Me.TbltermTrimBindingSource
         Me.Tbl_term_TrimDataGridView.Location = New System.Drawing.Point(0, 28)
         Me.Tbl_term_TrimDataGridView.Name = "Tbl_term_TrimDataGridView"
         Me.Tbl_term_TrimDataGridView.Size = New System.Drawing.Size(284, 383)
@@ -154,6 +156,11 @@ Partial Class options_Trims
         Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
         Me.DataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         '
+        'TbltermTrimBindingSource
+        '
+        Me.TbltermTrimBindingSource.DataMember = "tbl_term_Trim"
+        Me.TbltermTrimBindingSource.DataSource = Me.Db_WOlogDataSet
+        '
         'options_Trims
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -172,6 +179,7 @@ Partial Class options_Trims
         Me.Tbl_term_TrimBindingNavigator.ResumeLayout(False)
         Me.Tbl_term_TrimBindingNavigator.PerformLayout()
         CType(Me.Tbl_term_TrimDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TbltermTrimBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -188,4 +196,5 @@ Partial Class options_Trims
     Friend WithEvents Tbl_term_TrimDataGridView As DataGridView
     Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
+    Friend WithEvents TbltermTrimBindingSource As BindingSource
 End Class

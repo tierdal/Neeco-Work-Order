@@ -2,6 +2,9 @@ Planned Features:
 	- Add another status called "Parts Order" 
 
 
+Version 1.0.1.2 - July 11th, 2018
+	- Updated the data bindings to work with the blank items from dropdowns.
+
 Version 1.0.1.1 - July 11th, 2018
 	- Undo the high-DPI changes. The scaling doesnt work.
 	- Add option to select blank items from dropdowns on add and edit screens.

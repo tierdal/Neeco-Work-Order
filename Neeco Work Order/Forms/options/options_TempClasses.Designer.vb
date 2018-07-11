@@ -35,11 +35,13 @@ Partial Class options_TempClasses
         Me.Tbl_term_TempClassDataGridView = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TbltermTempClassBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         CType(Me.Db_WOlogDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Tbl_term_TempClassBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Tbl_term_TempClassBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Tbl_term_TempClassBindingNavigator.SuspendLayout()
         CType(Me.Tbl_term_TempClassDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TbltermTempClassBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Db_WOlogDataSet
@@ -86,7 +88,7 @@ Partial Class options_TempClasses
         'Tbl_term_TempClassBindingNavigator
         '
         Me.Tbl_term_TempClassBindingNavigator.AddNewItem = Me.BindingNavigatorAddNewItem
-        Me.Tbl_term_TempClassBindingNavigator.BindingSource = Me.Tbl_term_TempClassBindingSource
+        Me.Tbl_term_TempClassBindingNavigator.BindingSource = Me.TbltermTempClassBindingSource
         Me.Tbl_term_TempClassBindingNavigator.CountItem = Nothing
         Me.Tbl_term_TempClassBindingNavigator.DeleteItem = Me.BindingNavigatorDeleteItem
         Me.Tbl_term_TempClassBindingNavigator.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Tbl_term_TempClassBindingNavigatorSaveItem, Me.BindingNavigatorAddNewItem, Me.BindingNavigatorDeleteItem})
@@ -130,7 +132,7 @@ Partial Class options_TempClasses
         Me.Tbl_term_TempClassDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.Tbl_term_TempClassDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Tbl_term_TempClassDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2})
-        Me.Tbl_term_TempClassDataGridView.DataSource = Me.Tbl_term_TempClassBindingSource
+        Me.Tbl_term_TempClassDataGridView.DataSource = Me.TbltermTempClassBindingSource
         Me.Tbl_term_TempClassDataGridView.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Tbl_term_TempClassDataGridView.Location = New System.Drawing.Point(0, 25)
         Me.Tbl_term_TempClassDataGridView.Name = "Tbl_term_TempClassDataGridView"
@@ -152,6 +154,11 @@ Partial Class options_TempClasses
         Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
         Me.DataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         '
+        'TbltermTempClassBindingSource
+        '
+        Me.TbltermTempClassBindingSource.DataMember = "tbl_term_TempClass"
+        Me.TbltermTempClassBindingSource.DataSource = Me.Db_WOlogDataSet
+        '
         'options_TempClasses
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -170,6 +177,7 @@ Partial Class options_TempClasses
         Me.Tbl_term_TempClassBindingNavigator.ResumeLayout(False)
         Me.Tbl_term_TempClassBindingNavigator.PerformLayout()
         CType(Me.Tbl_term_TempClassDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TbltermTempClassBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -186,4 +194,5 @@ Partial Class options_TempClasses
     Friend WithEvents Tbl_term_TempClassDataGridView As DataGridView
     Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
+    Friend WithEvents TbltermTempClassBindingSource As BindingSource
 End Class

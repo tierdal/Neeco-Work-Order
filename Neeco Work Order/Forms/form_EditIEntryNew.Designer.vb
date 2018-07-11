@@ -42,25 +42,16 @@ Partial Class form_EditIEntryNew
         Me.Label2 = New System.Windows.Forms.Label()
         Me.text_PartNum = New System.Windows.Forms.TextBox()
         Me.combo_ProductType = New System.Windows.Forms.ComboBox()
-        Me.Tbl_term_ProductTypeBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Db_WOlogDataSet = New Neeco_Work_Order.db_WOlogDataSet()
         Me.TableLayoutPanel6 = New System.Windows.Forms.TableLayoutPanel()
         Me.combo_Size = New System.Windows.Forms.ComboBox()
-        Me.Tbl_term_SizeBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.combo_Pressure = New System.Windows.Forms.ComboBox()
-        Me.Tbl_term_PressureBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.combo_Style = New System.Windows.Forms.ComboBox()
-        Me.Tbl_term_StyleBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.combo_Operator = New System.Windows.Forms.ComboBox()
-        Me.Tbl_term_HHPPBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.combo_PR = New System.Windows.Forms.ComboBox()
-        Me.Tbl_term_PRBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.combo_PSL = New System.Windows.Forms.ComboBox()
-        Me.Tbl_term_PSLBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.combo_Trim = New System.Windows.Forms.ComboBox()
-        Me.Tbl_term_TrimBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.combo_TempClass = New System.Windows.Forms.ComboBox()
-        Me.Tbl_term_TempClassBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.text_Ticket2 = New System.Windows.Forms.TextBox()
         Me.text_Ticket3 = New System.Windows.Forms.TextBox()
         Me.text_Ticket4 = New System.Windows.Forms.TextBox()
@@ -183,6 +174,15 @@ Partial Class form_EditIEntryNew
         Me.button_Submit = New System.Windows.Forms.Button()
         Me.Tbl_term_TrimTableAdapter = New Neeco_Work_Order.db_WOlogDataSetTableAdapters.tbl_term_TrimTableAdapter()
         Me.TableLayoutPanel4 = New System.Windows.Forms.TableLayoutPanel()
+        Me.TbltermStyleBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.TbltermProductTypeBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.TbltermSizeBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.TbltermPressureBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.TbltermTempClassBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.TbltermTrimBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.TbltermPSLBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.TbltermPRBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.TbltermHHPPBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Fld_ProductTypeLabel = New System.Windows.Forms.Label()
         Fld_SizeLabel = New System.Windows.Forms.Label()
         Fld_PressureLabel = New System.Windows.Forms.Label()
@@ -197,17 +197,8 @@ Partial Class form_EditIEntryNew
         Me.GroupBox2.SuspendLayout()
         Me.TableLayoutPanel8.SuspendLayout()
         Me.TableLayoutPanel7.SuspendLayout()
-        CType(Me.Tbl_term_ProductTypeBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Db_WOlogDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel6.SuspendLayout()
-        CType(Me.Tbl_term_SizeBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Tbl_term_PressureBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Tbl_term_StyleBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Tbl_term_HHPPBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Tbl_term_PRBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Tbl_term_PSLBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Tbl_term_TrimBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Tbl_term_TempClassBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel1.SuspendLayout()
         CType(Me.TbltermCustomers1BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TbltermCustomers10BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -231,6 +222,15 @@ Partial Class form_EditIEntryNew
         Me.TableLayoutPanel9.SuspendLayout()
         Me.TableLayoutPanel5.SuspendLayout()
         Me.TableLayoutPanel4.SuspendLayout()
+        CType(Me.TbltermStyleBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TbltermProductTypeBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TbltermSizeBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TbltermPressureBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TbltermTempClassBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TbltermTrimBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TbltermPSLBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TbltermPRBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TbltermHHPPBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Fld_ProductTypeLabel
@@ -433,9 +433,8 @@ Partial Class form_EditIEntryNew
         '
         Me.combo_ProductType.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
         Me.combo_ProductType.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
-        Me.combo_ProductType.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Tbl_term_ProductTypeBindingSource, "fld_ProductType", True))
-        Me.combo_ProductType.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.Tbl_term_ProductTypeBindingSource, "fld_ProductType", True))
-        Me.combo_ProductType.DataSource = Me.Tbl_term_ProductTypeBindingSource
+        Me.combo_ProductType.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.TbltermProductTypeBindingSource, "fld_ProductType", True))
+        Me.combo_ProductType.DataSource = Me.TbltermProductTypeBindingSource
         Me.combo_ProductType.DisplayMember = "fld_ProductType"
         Me.combo_ProductType.Dock = System.Windows.Forms.DockStyle.Fill
         Me.combo_ProductType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
@@ -445,11 +444,6 @@ Partial Class form_EditIEntryNew
         Me.combo_ProductType.Size = New System.Drawing.Size(110, 21)
         Me.combo_ProductType.TabIndex = 6
         Me.combo_ProductType.ValueMember = "fld_ProductType"
-        '
-        'Tbl_term_ProductTypeBindingSource
-        '
-        Me.Tbl_term_ProductTypeBindingSource.DataMember = "tbl_term_ProductType"
-        Me.Tbl_term_ProductTypeBindingSource.DataSource = Me.Db_WOlogDataSet
         '
         'Db_WOlogDataSet
         '
@@ -495,9 +489,8 @@ Partial Class form_EditIEntryNew
         '
         Me.combo_Size.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
         Me.combo_Size.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
-        Me.combo_Size.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Tbl_term_SizeBindingSource, "fld_Size", True))
-        Me.combo_Size.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.Tbl_term_SizeBindingSource, "fld_Size", True))
-        Me.combo_Size.DataSource = Me.Tbl_term_SizeBindingSource
+        Me.combo_Size.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.TbltermSizeBindingSource, "fld_Size", True))
+        Me.combo_Size.DataSource = Me.TbltermSizeBindingSource
         Me.combo_Size.DisplayMember = "fld_Size"
         Me.combo_Size.Dock = System.Windows.Forms.DockStyle.Fill
         Me.combo_Size.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
@@ -508,18 +501,12 @@ Partial Class form_EditIEntryNew
         Me.combo_Size.TabIndex = 8
         Me.combo_Size.ValueMember = "fld_Size"
         '
-        'Tbl_term_SizeBindingSource
-        '
-        Me.Tbl_term_SizeBindingSource.DataMember = "tbl_term_Size"
-        Me.Tbl_term_SizeBindingSource.DataSource = Me.Db_WOlogDataSet
-        '
         'combo_Pressure
         '
         Me.combo_Pressure.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
         Me.combo_Pressure.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
-        Me.combo_Pressure.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Tbl_term_PressureBindingSource, "fld_Pressure", True))
-        Me.combo_Pressure.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.Tbl_term_PressureBindingSource, "fld_Pressure", True))
-        Me.combo_Pressure.DataSource = Me.Tbl_term_PressureBindingSource
+        Me.combo_Pressure.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.TbltermPressureBindingSource, "fld_Pressure", True))
+        Me.combo_Pressure.DataSource = Me.TbltermPressureBindingSource
         Me.combo_Pressure.DisplayMember = "fld_Pressure"
         Me.combo_Pressure.Dock = System.Windows.Forms.DockStyle.Fill
         Me.combo_Pressure.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
@@ -530,17 +517,11 @@ Partial Class form_EditIEntryNew
         Me.combo_Pressure.TabIndex = 9
         Me.combo_Pressure.ValueMember = "fld_Pressure"
         '
-        'Tbl_term_PressureBindingSource
-        '
-        Me.Tbl_term_PressureBindingSource.DataMember = "tbl_term_Pressure"
-        Me.Tbl_term_PressureBindingSource.DataSource = Me.Db_WOlogDataSet
-        '
         'combo_Style
         '
         Me.combo_Style.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
-        Me.combo_Style.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Tbl_term_StyleBindingSource, "fld_Style", True))
-        Me.combo_Style.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.Tbl_term_StyleBindingSource, "fld_Style", True))
-        Me.combo_Style.DataSource = Me.Tbl_term_StyleBindingSource
+        Me.combo_Style.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.TbltermStyleBindingSource, "fld_Style", True))
+        Me.combo_Style.DataSource = Me.TbltermStyleBindingSource
         Me.combo_Style.DisplayMember = "fld_Style"
         Me.combo_Style.Dock = System.Windows.Forms.DockStyle.Fill
         Me.combo_Style.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
@@ -551,18 +532,12 @@ Partial Class form_EditIEntryNew
         Me.combo_Style.TabIndex = 7
         Me.combo_Style.ValueMember = "fld_Style"
         '
-        'Tbl_term_StyleBindingSource
-        '
-        Me.Tbl_term_StyleBindingSource.DataMember = "tbl_term_Style"
-        Me.Tbl_term_StyleBindingSource.DataSource = Me.Db_WOlogDataSet
-        '
         'combo_Operator
         '
         Me.combo_Operator.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
         Me.combo_Operator.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
-        Me.combo_Operator.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Tbl_term_HHPPBindingSource, "fld_HHPP", True))
-        Me.combo_Operator.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.Tbl_term_HHPPBindingSource, "fld_HHPP", True))
-        Me.combo_Operator.DataSource = Me.Tbl_term_HHPPBindingSource
+        Me.combo_Operator.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.TbltermHHPPBindingSource, "fld_HHPP", True))
+        Me.combo_Operator.DataSource = Me.TbltermHHPPBindingSource
         Me.combo_Operator.DisplayMember = "fld_HHPP"
         Me.combo_Operator.Dock = System.Windows.Forms.DockStyle.Fill
         Me.combo_Operator.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
@@ -573,18 +548,12 @@ Partial Class form_EditIEntryNew
         Me.combo_Operator.TabIndex = 14
         Me.combo_Operator.ValueMember = "fld_HHPP"
         '
-        'Tbl_term_HHPPBindingSource
-        '
-        Me.Tbl_term_HHPPBindingSource.DataMember = "tbl_term_HHPP"
-        Me.Tbl_term_HHPPBindingSource.DataSource = Me.Db_WOlogDataSet
-        '
         'combo_PR
         '
         Me.combo_PR.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
         Me.combo_PR.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
-        Me.combo_PR.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Tbl_term_PRBindingSource, "fld_PR", True))
-        Me.combo_PR.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.Tbl_term_PRBindingSource, "fld_PR", True))
-        Me.combo_PR.DataSource = Me.Tbl_term_PRBindingSource
+        Me.combo_PR.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.TbltermPRBindingSource, "fld_PR", True))
+        Me.combo_PR.DataSource = Me.TbltermPRBindingSource
         Me.combo_PR.DisplayMember = "fld_PR"
         Me.combo_PR.Dock = System.Windows.Forms.DockStyle.Fill
         Me.combo_PR.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
@@ -595,18 +564,12 @@ Partial Class form_EditIEntryNew
         Me.combo_PR.TabIndex = 13
         Me.combo_PR.ValueMember = "fld_PR"
         '
-        'Tbl_term_PRBindingSource
-        '
-        Me.Tbl_term_PRBindingSource.DataMember = "tbl_term_PR"
-        Me.Tbl_term_PRBindingSource.DataSource = Me.Db_WOlogDataSet
-        '
         'combo_PSL
         '
         Me.combo_PSL.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
         Me.combo_PSL.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
-        Me.combo_PSL.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Tbl_term_PSLBindingSource, "fld_PSL", True))
-        Me.combo_PSL.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.Tbl_term_PSLBindingSource, "fld_PSL", True))
-        Me.combo_PSL.DataSource = Me.Tbl_term_PSLBindingSource
+        Me.combo_PSL.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.TbltermPSLBindingSource, "fld_PSL", True))
+        Me.combo_PSL.DataSource = Me.TbltermPSLBindingSource
         Me.combo_PSL.DisplayMember = "fld_PSL"
         Me.combo_PSL.Dock = System.Windows.Forms.DockStyle.Fill
         Me.combo_PSL.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
@@ -617,18 +580,12 @@ Partial Class form_EditIEntryNew
         Me.combo_PSL.TabIndex = 12
         Me.combo_PSL.ValueMember = "fld_PSL"
         '
-        'Tbl_term_PSLBindingSource
-        '
-        Me.Tbl_term_PSLBindingSource.DataMember = "tbl_term_PSL"
-        Me.Tbl_term_PSLBindingSource.DataSource = Me.Db_WOlogDataSet
-        '
         'combo_Trim
         '
         Me.combo_Trim.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
         Me.combo_Trim.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
-        Me.combo_Trim.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Tbl_term_TrimBindingSource, "fld_Trim", True))
-        Me.combo_Trim.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.Tbl_term_TrimBindingSource, "fld_Trim", True))
-        Me.combo_Trim.DataSource = Me.Tbl_term_TrimBindingSource
+        Me.combo_Trim.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.TbltermTrimBindingSource, "fld_Trim", True))
+        Me.combo_Trim.DataSource = Me.TbltermTrimBindingSource
         Me.combo_Trim.DisplayMember = "fld_Trim"
         Me.combo_Trim.Dock = System.Windows.Forms.DockStyle.Fill
         Me.combo_Trim.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
@@ -639,18 +596,12 @@ Partial Class form_EditIEntryNew
         Me.combo_Trim.TabIndex = 11
         Me.combo_Trim.ValueMember = "fld_Trim"
         '
-        'Tbl_term_TrimBindingSource
-        '
-        Me.Tbl_term_TrimBindingSource.DataMember = "tbl_term_Trim"
-        Me.Tbl_term_TrimBindingSource.DataSource = Me.Db_WOlogDataSet
-        '
         'combo_TempClass
         '
         Me.combo_TempClass.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
         Me.combo_TempClass.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
-        Me.combo_TempClass.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Tbl_term_TempClassBindingSource, "fld_TempClass", True))
-        Me.combo_TempClass.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.Tbl_term_TempClassBindingSource, "fld_TempClass", True))
-        Me.combo_TempClass.DataSource = Me.Tbl_term_TempClassBindingSource
+        Me.combo_TempClass.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.TbltermTempClassBindingSource, "fld_TempClass", True))
+        Me.combo_TempClass.DataSource = Me.TbltermTempClassBindingSource
         Me.combo_TempClass.DisplayMember = "fld_TempClass"
         Me.combo_TempClass.Dock = System.Windows.Forms.DockStyle.Fill
         Me.combo_TempClass.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
@@ -660,11 +611,6 @@ Partial Class form_EditIEntryNew
         Me.combo_TempClass.Size = New System.Drawing.Size(89, 21)
         Me.combo_TempClass.TabIndex = 10
         Me.combo_TempClass.ValueMember = "fld_TempClass"
-        '
-        'Tbl_term_TempClassBindingSource
-        '
-        Me.Tbl_term_TempClassBindingSource.DataMember = "tbl_term_TempClass"
-        Me.Tbl_term_TempClassBindingSource.DataSource = Me.Db_WOlogDataSet
         '
         'text_Ticket2
         '
@@ -1720,8 +1666,6 @@ Partial Class form_EditIEntryNew
         Me.combo_Status.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.combo_Status.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
         Me.combo_Status.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
-        Me.combo_Status.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Tbl_term_HHPPBindingSource, "fld_HHPP", True))
-        Me.combo_Status.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.Tbl_term_HHPPBindingSource, "fld_HHPP", True))
         Me.combo_Status.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.combo_Status.FormattingEnabled = True
         Me.combo_Status.Items.AddRange(New Object() {"", "OPEN", "PARTIAL", "STOCK", "REPAIR", "CLOSED"})
@@ -1884,6 +1828,51 @@ Partial Class form_EditIEntryNew
         Me.TableLayoutPanel4.Size = New System.Drawing.Size(784, 561)
         Me.TableLayoutPanel4.TabIndex = 100
         '
+        'TbltermStyleBindingSource
+        '
+        Me.TbltermStyleBindingSource.DataMember = "tbl_term_Style"
+        Me.TbltermStyleBindingSource.DataSource = Me.Db_WOlogDataSet
+        '
+        'TbltermProductTypeBindingSource
+        '
+        Me.TbltermProductTypeBindingSource.DataMember = "tbl_term_ProductType"
+        Me.TbltermProductTypeBindingSource.DataSource = Me.Db_WOlogDataSet
+        '
+        'TbltermSizeBindingSource
+        '
+        Me.TbltermSizeBindingSource.DataMember = "tbl_term_Size"
+        Me.TbltermSizeBindingSource.DataSource = Me.Db_WOlogDataSet
+        '
+        'TbltermPressureBindingSource
+        '
+        Me.TbltermPressureBindingSource.DataMember = "tbl_term_Pressure"
+        Me.TbltermPressureBindingSource.DataSource = Me.Db_WOlogDataSet
+        '
+        'TbltermTempClassBindingSource
+        '
+        Me.TbltermTempClassBindingSource.DataMember = "tbl_term_TempClass"
+        Me.TbltermTempClassBindingSource.DataSource = Me.Db_WOlogDataSet
+        '
+        'TbltermTrimBindingSource
+        '
+        Me.TbltermTrimBindingSource.DataMember = "tbl_term_Trim"
+        Me.TbltermTrimBindingSource.DataSource = Me.Db_WOlogDataSet
+        '
+        'TbltermPSLBindingSource
+        '
+        Me.TbltermPSLBindingSource.DataMember = "tbl_term_PSL"
+        Me.TbltermPSLBindingSource.DataSource = Me.Db_WOlogDataSet
+        '
+        'TbltermPRBindingSource
+        '
+        Me.TbltermPRBindingSource.DataMember = "tbl_term_PR"
+        Me.TbltermPRBindingSource.DataSource = Me.Db_WOlogDataSet
+        '
+        'TbltermHHPPBindingSource
+        '
+        Me.TbltermHHPPBindingSource.DataMember = "tbl_term_HHPP"
+        Me.TbltermHHPPBindingSource.DataSource = Me.Db_WOlogDataSet
+        '
         'form_EditIEntryNew
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1899,18 +1888,9 @@ Partial Class form_EditIEntryNew
         Me.TableLayoutPanel8.PerformLayout()
         Me.TableLayoutPanel7.ResumeLayout(False)
         Me.TableLayoutPanel7.PerformLayout()
-        CType(Me.Tbl_term_ProductTypeBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Db_WOlogDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel6.ResumeLayout(False)
         Me.TableLayoutPanel6.PerformLayout()
-        CType(Me.Tbl_term_SizeBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Tbl_term_PressureBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Tbl_term_StyleBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Tbl_term_HHPPBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Tbl_term_PRBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Tbl_term_PSLBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Tbl_term_TrimBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Tbl_term_TempClassBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()
         CType(Me.TbltermCustomers1BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1937,6 +1917,15 @@ Partial Class form_EditIEntryNew
         Me.TableLayoutPanel9.PerformLayout()
         Me.TableLayoutPanel5.ResumeLayout(False)
         Me.TableLayoutPanel4.ResumeLayout(False)
+        CType(Me.TbltermStyleBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TbltermProductTypeBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TbltermSizeBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TbltermPressureBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TbltermTempClassBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TbltermTrimBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TbltermPSLBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TbltermPRBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TbltermHHPPBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1948,24 +1937,15 @@ Partial Class form_EditIEntryNew
     Friend WithEvents Label2 As Label
     Friend WithEvents text_PartNum As TextBox
     Friend WithEvents combo_ProductType As ComboBox
-    Friend WithEvents Tbl_term_ProductTypeBindingSource As BindingSource
     Friend WithEvents Db_WOlogDataSet As db_WOlogDataSet
     Friend WithEvents TableLayoutPanel6 As TableLayoutPanel
     Friend WithEvents combo_Size As ComboBox
-    Friend WithEvents Tbl_term_SizeBindingSource As BindingSource
     Friend WithEvents combo_Pressure As ComboBox
-    Friend WithEvents Tbl_term_PressureBindingSource As BindingSource
-    Friend WithEvents Tbl_term_StyleBindingSource As BindingSource
     Friend WithEvents combo_Operator As ComboBox
-    Friend WithEvents Tbl_term_HHPPBindingSource As BindingSource
     Friend WithEvents combo_PR As ComboBox
-    Friend WithEvents Tbl_term_PRBindingSource As BindingSource
     Friend WithEvents combo_PSL As ComboBox
-    Friend WithEvents Tbl_term_PSLBindingSource As BindingSource
     Friend WithEvents combo_Trim As ComboBox
-    Friend WithEvents Tbl_term_TrimBindingSource As BindingSource
     Friend WithEvents combo_TempClass As ComboBox
-    Friend WithEvents Tbl_term_TempClassBindingSource As BindingSource
     Friend WithEvents text_Ticket2 As TextBox
     Friend WithEvents text_Ticket3 As TextBox
     Friend WithEvents text_Ticket4 As TextBox
@@ -2089,4 +2069,13 @@ Partial Class form_EditIEntryNew
     Friend WithEvents Tbl_term_TrimTableAdapter As db_WOlogDataSetTableAdapters.tbl_term_TrimTableAdapter
     Friend WithEvents TableLayoutPanel4 As TableLayoutPanel
     Friend WithEvents combo_Style As ComboBox
+    Friend WithEvents TbltermProductTypeBindingSource As BindingSource
+    Friend WithEvents TbltermSizeBindingSource As BindingSource
+    Friend WithEvents TbltermPressureBindingSource As BindingSource
+    Friend WithEvents TbltermStyleBindingSource As BindingSource
+    Friend WithEvents TbltermHHPPBindingSource As BindingSource
+    Friend WithEvents TbltermPRBindingSource As BindingSource
+    Friend WithEvents TbltermPSLBindingSource As BindingSource
+    Friend WithEvents TbltermTrimBindingSource As BindingSource
+    Friend WithEvents TbltermTempClassBindingSource As BindingSource
 End Class

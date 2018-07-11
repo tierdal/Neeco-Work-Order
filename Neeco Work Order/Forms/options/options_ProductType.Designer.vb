@@ -35,11 +35,13 @@ Partial Class options_ProductType
         Me.Tbl_term_ProductTypeDataGridView = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TbltermProductTypeBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         CType(Me.Db_WOlogDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Tbl_term_ProductTypeBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Tbl_term_ProductTypeBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Tbl_term_ProductTypeBindingNavigator.SuspendLayout()
         CType(Me.Tbl_term_ProductTypeDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TbltermProductTypeBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Db_WOlogDataSet
@@ -86,7 +88,7 @@ Partial Class options_ProductType
         'Tbl_term_ProductTypeBindingNavigator
         '
         Me.Tbl_term_ProductTypeBindingNavigator.AddNewItem = Me.BindingNavigatorAddNewItem
-        Me.Tbl_term_ProductTypeBindingNavigator.BindingSource = Me.Tbl_term_ProductTypeBindingSource
+        Me.Tbl_term_ProductTypeBindingNavigator.BindingSource = Me.TbltermProductTypeBindingSource
         Me.Tbl_term_ProductTypeBindingNavigator.CountItem = Nothing
         Me.Tbl_term_ProductTypeBindingNavigator.DeleteItem = Me.BindingNavigatorDeleteItem
         Me.Tbl_term_ProductTypeBindingNavigator.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Tbl_term_ProductTypeBindingNavigatorSaveItem, Me.BindingNavigatorAddNewItem, Me.BindingNavigatorDeleteItem})
@@ -132,7 +134,7 @@ Partial Class options_ProductType
         Me.Tbl_term_ProductTypeDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.Tbl_term_ProductTypeDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Tbl_term_ProductTypeDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2})
-        Me.Tbl_term_ProductTypeDataGridView.DataSource = Me.Tbl_term_ProductTypeBindingSource
+        Me.Tbl_term_ProductTypeDataGridView.DataSource = Me.TbltermProductTypeBindingSource
         Me.Tbl_term_ProductTypeDataGridView.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Tbl_term_ProductTypeDataGridView.Location = New System.Drawing.Point(0, 25)
         Me.Tbl_term_ProductTypeDataGridView.Name = "Tbl_term_ProductTypeDataGridView"
@@ -154,6 +156,11 @@ Partial Class options_ProductType
         Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
         Me.DataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         '
+        'TbltermProductTypeBindingSource
+        '
+        Me.TbltermProductTypeBindingSource.DataMember = "tbl_term_ProductType"
+        Me.TbltermProductTypeBindingSource.DataSource = Me.Db_WOlogDataSet
+        '
         'options_ProductType
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -172,6 +179,7 @@ Partial Class options_ProductType
         Me.Tbl_term_ProductTypeBindingNavigator.ResumeLayout(False)
         Me.Tbl_term_ProductTypeBindingNavigator.PerformLayout()
         CType(Me.Tbl_term_ProductTypeDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TbltermProductTypeBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -188,4 +196,5 @@ Partial Class options_ProductType
     Friend WithEvents Tbl_term_ProductTypeDataGridView As DataGridView
     Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
+    Friend WithEvents TbltermProductTypeBindingSource As BindingSource
 End Class

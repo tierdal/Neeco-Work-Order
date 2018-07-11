@@ -35,11 +35,13 @@ Partial Class options_PSL
         Me.Tbl_term_PSLDataGridView = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TbltermPSLBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         CType(Me.Db_WOlogDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Tbl_term_PSLBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Tbl_term_PSLBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Tbl_term_PSLBindingNavigator.SuspendLayout()
         CType(Me.Tbl_term_PSLDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TbltermPSLBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Db_WOlogDataSet
@@ -86,7 +88,7 @@ Partial Class options_PSL
         'Tbl_term_PSLBindingNavigator
         '
         Me.Tbl_term_PSLBindingNavigator.AddNewItem = Me.BindingNavigatorAddNewItem
-        Me.Tbl_term_PSLBindingNavigator.BindingSource = Me.Tbl_term_PSLBindingSource
+        Me.Tbl_term_PSLBindingNavigator.BindingSource = Me.TbltermPSLBindingSource
         Me.Tbl_term_PSLBindingNavigator.CountItem = Nothing
         Me.Tbl_term_PSLBindingNavigator.DeleteItem = Me.BindingNavigatorDeleteItem
         Me.Tbl_term_PSLBindingNavigator.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Tbl_term_PSLBindingNavigatorSaveItem, Me.BindingNavigatorAddNewItem, Me.BindingNavigatorDeleteItem})
@@ -130,7 +132,7 @@ Partial Class options_PSL
         Me.Tbl_term_PSLDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.Tbl_term_PSLDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Tbl_term_PSLDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2})
-        Me.Tbl_term_PSLDataGridView.DataSource = Me.Tbl_term_PSLBindingSource
+        Me.Tbl_term_PSLDataGridView.DataSource = Me.TbltermPSLBindingSource
         Me.Tbl_term_PSLDataGridView.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Tbl_term_PSLDataGridView.Location = New System.Drawing.Point(0, 25)
         Me.Tbl_term_PSLDataGridView.Name = "Tbl_term_PSLDataGridView"
@@ -152,6 +154,11 @@ Partial Class options_PSL
         Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
         Me.DataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         '
+        'TbltermPSLBindingSource
+        '
+        Me.TbltermPSLBindingSource.DataMember = "tbl_term_PSL"
+        Me.TbltermPSLBindingSource.DataSource = Me.Db_WOlogDataSet
+        '
         'options_PSL
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -170,6 +177,7 @@ Partial Class options_PSL
         Me.Tbl_term_PSLBindingNavigator.ResumeLayout(False)
         Me.Tbl_term_PSLBindingNavigator.PerformLayout()
         CType(Me.Tbl_term_PSLDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TbltermPSLBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -186,4 +194,5 @@ Partial Class options_PSL
     Friend WithEvents Tbl_term_PSLDataGridView As DataGridView
     Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
+    Friend WithEvents TbltermPSLBindingSource As BindingSource
 End Class

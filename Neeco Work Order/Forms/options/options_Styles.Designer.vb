@@ -35,11 +35,13 @@ Partial Class options_Styles
         Me.Tbl_term_StyleDataGridView = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TbltermStyleBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         CType(Me.Db_WOlogDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Tbl_term_StyleBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Tbl_term_StyleBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Tbl_term_StyleBindingNavigator.SuspendLayout()
         CType(Me.Tbl_term_StyleDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TbltermStyleBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Db_WOlogDataSet
@@ -86,7 +88,7 @@ Partial Class options_Styles
         'Tbl_term_StyleBindingNavigator
         '
         Me.Tbl_term_StyleBindingNavigator.AddNewItem = Me.BindingNavigatorAddNewItem
-        Me.Tbl_term_StyleBindingNavigator.BindingSource = Me.Tbl_term_StyleBindingSource
+        Me.Tbl_term_StyleBindingNavigator.BindingSource = Me.TbltermStyleBindingSource
         Me.Tbl_term_StyleBindingNavigator.CountItem = Nothing
         Me.Tbl_term_StyleBindingNavigator.DeleteItem = Me.BindingNavigatorDeleteItem
         Me.Tbl_term_StyleBindingNavigator.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Tbl_term_StyleBindingNavigatorSaveItem, Me.BindingNavigatorAddNewItem, Me.BindingNavigatorDeleteItem})
@@ -130,7 +132,7 @@ Partial Class options_Styles
         Me.Tbl_term_StyleDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.Tbl_term_StyleDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Tbl_term_StyleDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2})
-        Me.Tbl_term_StyleDataGridView.DataSource = Me.Tbl_term_StyleBindingSource
+        Me.Tbl_term_StyleDataGridView.DataSource = Me.TbltermStyleBindingSource
         Me.Tbl_term_StyleDataGridView.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Tbl_term_StyleDataGridView.Location = New System.Drawing.Point(0, 25)
         Me.Tbl_term_StyleDataGridView.Name = "Tbl_term_StyleDataGridView"
@@ -152,6 +154,11 @@ Partial Class options_Styles
         Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
         Me.DataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         '
+        'TbltermStyleBindingSource
+        '
+        Me.TbltermStyleBindingSource.DataMember = "tbl_term_Style"
+        Me.TbltermStyleBindingSource.DataSource = Me.Db_WOlogDataSet
+        '
         'options_Styles
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -170,6 +177,7 @@ Partial Class options_Styles
         Me.Tbl_term_StyleBindingNavigator.ResumeLayout(False)
         Me.Tbl_term_StyleBindingNavigator.PerformLayout()
         CType(Me.Tbl_term_StyleDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TbltermStyleBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -186,4 +194,5 @@ Partial Class options_Styles
     Friend WithEvents Tbl_term_StyleDataGridView As DataGridView
     Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
+    Friend WithEvents TbltermStyleBindingSource As BindingSource
 End Class

@@ -35,11 +35,13 @@ Partial Class options_PressureRatings
         Me.Tbl_term_PressureDataGridView = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TbltermPressureBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         CType(Me.Db_WOlogDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Tbl_term_PressureBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Tbl_term_PressureBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Tbl_term_PressureBindingNavigator.SuspendLayout()
         CType(Me.Tbl_term_PressureDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TbltermPressureBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Db_WOlogDataSet
@@ -86,7 +88,7 @@ Partial Class options_PressureRatings
         'Tbl_term_PressureBindingNavigator
         '
         Me.Tbl_term_PressureBindingNavigator.AddNewItem = Me.BindingNavigatorAddNewItem
-        Me.Tbl_term_PressureBindingNavigator.BindingSource = Me.Tbl_term_PressureBindingSource
+        Me.Tbl_term_PressureBindingNavigator.BindingSource = Me.TbltermPressureBindingSource
         Me.Tbl_term_PressureBindingNavigator.CountItem = Nothing
         Me.Tbl_term_PressureBindingNavigator.DeleteItem = Me.BindingNavigatorDeleteItem
         Me.Tbl_term_PressureBindingNavigator.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Tbl_term_PressureBindingNavigatorSaveItem, Me.BindingNavigatorAddNewItem, Me.BindingNavigatorDeleteItem})
@@ -130,7 +132,7 @@ Partial Class options_PressureRatings
         Me.Tbl_term_PressureDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.Tbl_term_PressureDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Tbl_term_PressureDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2})
-        Me.Tbl_term_PressureDataGridView.DataSource = Me.Tbl_term_PressureBindingSource
+        Me.Tbl_term_PressureDataGridView.DataSource = Me.TbltermPressureBindingSource
         Me.Tbl_term_PressureDataGridView.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Tbl_term_PressureDataGridView.Location = New System.Drawing.Point(0, 25)
         Me.Tbl_term_PressureDataGridView.Name = "Tbl_term_PressureDataGridView"
@@ -152,6 +154,11 @@ Partial Class options_PressureRatings
         Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
         Me.DataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         '
+        'TbltermPressureBindingSource
+        '
+        Me.TbltermPressureBindingSource.DataMember = "tbl_term_Pressure"
+        Me.TbltermPressureBindingSource.DataSource = Me.Db_WOlogDataSet
+        '
         'options_PressureRatings
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -170,6 +177,7 @@ Partial Class options_PressureRatings
         Me.Tbl_term_PressureBindingNavigator.ResumeLayout(False)
         Me.Tbl_term_PressureBindingNavigator.PerformLayout()
         CType(Me.Tbl_term_PressureDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TbltermPressureBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -186,4 +194,5 @@ Partial Class options_PressureRatings
     Friend WithEvents Tbl_term_PressureDataGridView As DataGridView
     Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
+    Friend WithEvents TbltermPressureBindingSource As BindingSource
 End Class
