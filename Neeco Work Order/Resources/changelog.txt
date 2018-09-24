@@ -1,6 +1,9 @@
 Planned Features:
 	- Add another status called "Parts Order" 
-	
+
+Version 1.0.2.2 - September 24th, 2018
+	- Fixed one more broken link
+
 Version 1.0.2.1 - September 24th, 2018
 	- Fixed a typo
 	- Updated version
