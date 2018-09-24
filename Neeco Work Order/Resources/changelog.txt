@@ -1,5 +1,9 @@
 Planned Features:
 	- Add another status called "Parts Order" 
+	
+Version 1.0.2.1 - September 24th, 2018
+	- Fixed a typo
+	- Updated version
 
 Version 1.0.2.0 - September 24th, 2018
 	- Disabled the cration of shipping folders

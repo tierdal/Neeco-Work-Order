@@ -595,10 +595,10 @@
     '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer10.Text & "\" & text_POnum10.Text & "\" & "Customer PO")
     '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer10.Text & "\" & text_POnum10.Text & "\" & "Other")
     '    End If
-
+    '
     'MsgBox("The PO Folders have been created.")
-
-    End Sub
+    '
+    'End Sub
 
     'DELETES THE RECORD FROM THE DATABASE
     Private Sub button_Delete_Click(sender As Object, e As EventArgs) Handles button_Delete.Click
