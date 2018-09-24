@@ -152,7 +152,7 @@
         Dim conn_string As String
         Dim wo_num_string As String
         'define SQL connection
-        conn_string = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=\\neecosvr1\Work Orders\WO App\db\db_WOlog.accdb"
+        conn_string = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=\\ad.neecovalves.com\Local File Server\Work Orders\WO App\db\db_WOlog.accdb"
         sql_conn.ConnectionString = conn_string
         sql_queryPullWOnum.Connection = sql_conn
 
@@ -180,7 +180,7 @@
         Dim conn_string As String
         Dim wo_num_string As String
         'define SQL connection
-        conn_string = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=\\neecosvr1\Work Orders\WO App\db\db_WOlog.accdb"
+        conn_string = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=\\ad.neecovalves.com\Local File Server\Work Orders\WO App\db\db_WOlog.accdb"
         sql_conn.ConnectionString = conn_string
         sql_queryPushWOnum.Connection = sql_conn
 
@@ -215,7 +215,7 @@
         PullWOnum()
 
         'define SQL connection
-        conn_string = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=\\neecosvr1\Work Orders\WO App\db\db_WOlog.accdb"
+        conn_string = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=\\ad.neecovalves.com\Local File Server\Work Orders\WO App\db\db_WOlog.accdb"
         sql_conn.ConnectionString = conn_string
         sql_queryInsertData.Connection = sql_conn
 
@@ -329,7 +329,7 @@
             MsgBox("The Work Order has been submitted!" & Environment.NewLine & "Your WO Number is: " & text_WOnum.Text & Environment.NewLine & "Thank You!")
             sql_conn.Close()
             CreateWOfolder()
-            CreateShippingFolder()
+            'CreateShippingFolder()
             PushWOnum()
             Clear_Form()
             PullWOnum()
@@ -341,7 +341,7 @@
     End Sub
 
     'GENERATE A FOLDER STRUCTURE FOR THE WORK ORDER DOCUMENTS 
-    '\\neecosvr1\Work Orders\
+    '\\ad.neecovalves.com\Local File Server\Work Orders\
     Sub CreateWOfolder()
         Dim wo_number As String
         Dim CurrentYear As String
@@ -354,7 +354,7 @@
         wo_number = text_WOnum.Text
 
         On Error Resume Next
-        FolderPathMain = "\\neecosvr1\Work Orders\" & CurrentYear
+        FolderPathMain = "\\ad.neecovalves.com\Local File Server\Work Orders\" & CurrentYear
         MkDir(FolderPathMain)
         MkDir(FolderPathMain & wo_number)
         MkDir(FolderPathMain & wo_number & "\" & "Production")
@@ -367,116 +367,116 @@
     End Sub
 
     'GENERATE A FOLDER STRUCTURE FOR EACH SHIPMENT FOR THE WORK ORDER
-    Sub CreateShippingFolder()
-        Dim wo_number As String
-        Dim CurrentYear As String
-        Dim wo_year As String
-        Dim FolderPathMain As String
-        Dim FolderPathInternal As String
-        Dim FolderPathExternal As String
+    'Sub CreateShippingFolder()
+    '    Dim wo_number As String
+    '    Dim CurrentYear As String
+    '    Dim wo_year As String
+    '    Dim FolderPathMain As String
+    '    Dim FolderPathInternal As String
+    '    Dim FolderPathExternal As String
 
-        wo_year = Year(date_WOdate.Value.Date) & "\"
-        CurrentYear = Year(Now)
+    '    wo_year = Year(date_WOdate.Value.Date) & "\"
+    '    CurrentYear = Year(Now)
 
-        wo_number = text_WOnum.Text
+    '    wo_number = text_WOnum.Text
 
-        On Error Resume Next
-        FolderPathMain = "\\neecosvr1\Work Orders\" & wo_year & wo_number & "\" & "Shipping\"
+    '    On Error Resume Next
+    '    FolderPathMain = "\\ad.neecovalves.com\Local File Server\Work Orders\" & wo_year & wo_number & "\" & "Shipping\"
 
-        If Not text_POnum1.Text = "" Or combo_Customer1.Text = "" Or combo_Customer1.Text = "Stock" Then
-            MkDir(FolderPathMain & CurrentYear)
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer1.Text)
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer1.Text & "\" & text_POnum1.Text)
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer1.Text & "\" & text_POnum1.Text & "\" & "Shipping Docs")
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer1.Text & "\" & text_POnum1.Text & "\" & "Quality")
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer1.Text & "\" & text_POnum1.Text & "\" & "Customer PO")
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer1.Text & "\" & text_POnum1.Text & "\" & "Other")
-        End If
-        If Not text_POnum2.Text = "" Or combo_Customer2.Text = "" Or combo_Customer2.Text = "Stock" Then
-            MkDir(FolderPathMain & CurrentYear)
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer2.Text)
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer2.Text & "\" & text_POnum2.Text)
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer2.Text & "\" & text_POnum2.Text & "\" & "Shipping Docs")
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer2.Text & "\" & text_POnum2.Text & "\" & "Quality")
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer2.Text & "\" & text_POnum2.Text & "\" & "Customer PO")
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer2.Text & "\" & text_POnum2.Text & "\" & "Other")
-        End If
-        If Not text_POnum3.Text = "" Or combo_Customer3.Text = "" Or combo_Customer3.Text = "Stock" Then
-            MkDir(FolderPathMain & CurrentYear)
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer3.Text)
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer3.Text & "\" & text_POnum3.Text)
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer3.Text & "\" & text_POnum3.Text & "\" & "Shipping Docs")
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer3.Text & "\" & text_POnum3.Text & "\" & "Quality")
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer3.Text & "\" & text_POnum3.Text & "\" & "Customer PO")
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer3.Text & "\" & text_POnum3.Text & "\" & "Other")
-        End If
-        If Not text_POnum4.Text = "" Or combo_Customer4.Text = "" Or combo_Customer4.Text = "Stock" Then
-            MkDir(FolderPathMain & CurrentYear)
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer4.Text)
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer4.Text & "\" & text_POnum4.Text)
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer4.Text & "\" & text_POnum4.Text & "\" & "Shipping Docs")
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer4.Text & "\" & text_POnum4.Text & "\" & "Quality")
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer4.Text & "\" & text_POnum4.Text & "\" & "Customer PO")
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer4.Text & "\" & text_POnum4.Text & "\" & "Other")
-        End If
-        If Not text_POnum5.Text = "" Or combo_Customer5.Text = "" Or combo_Customer5.Text = "Stock" Then
-            MkDir(FolderPathMain & CurrentYear)
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer5.Text)
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer5.Text & "\" & text_POnum5.Text)
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer5.Text & "\" & text_POnum5.Text & "\" & "Shipping Docs")
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer5.Text & "\" & text_POnum5.Text & "\" & "Quality")
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer5.Text & "\" & text_POnum5.Text & "\" & "Customer PO")
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer5.Text & "\" & text_POnum5.Text & "\" & "Other")
-        End If
-        If Not text_POnum6.Text = "" Or combo_Customer6.Text = "" Or combo_Customer6.Text = "Stock" Then
-            MkDir(FolderPathMain & CurrentYear)
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer6.Text)
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer6.Text & "\" & text_POnum6.Text)
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer6.Text & "\" & text_POnum6.Text & "\" & "Shipping Docs")
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer6.Text & "\" & text_POnum6.Text & "\" & "Quality")
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer6.Text & "\" & text_POnum6.Text & "\" & "Customer PO")
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer6.Text & "\" & text_POnum6.Text & "\" & "Other")
-        End If
-        If Not text_POnum7.Text = "" Or combo_Customer7.Text = "" Or combo_Customer7.Text = "Stock" Then
-            MkDir(FolderPathMain & CurrentYear)
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer7.Text)
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer7.Text & "\" & text_POnum7.Text)
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer7.Text & "\" & text_POnum7.Text & "\" & "Shipping Docs")
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer7.Text & "\" & text_POnum7.Text & "\" & "Quality")
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer7.Text & "\" & text_POnum7.Text & "\" & "Customer PO")
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer7.Text & "\" & text_POnum7.Text & "\" & "Other")
-        End If
-        If Not text_POnum8.Text = "" Or combo_Customer8.Text = "" Or combo_Customer8.Text = "Stock" Then
-            MkDir(FolderPathMain & CurrentYear)
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer8.Text)
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer8.Text & "\" & text_POnum8.Text)
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer8.Text & "\" & text_POnum8.Text & "\" & "Shipping Docs")
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer8.Text & "\" & text_POnum8.Text & "\" & "Quality")
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer8.Text & "\" & text_POnum8.Text & "\" & "Customer PO")
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer8.Text & "\" & text_POnum8.Text & "\" & "Other")
-        End If
-        If Not text_POnum9.Text = "" Or combo_Customer9.Text = "" Or combo_Customer9.Text = "Stock" Then
-            MkDir(FolderPathMain & CurrentYear)
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer9.Text)
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer9.Text & "\" & text_POnum9.Text)
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer9.Text & "\" & text_POnum9.Text & "\" & "Shipping Docs")
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer9.Text & "\" & text_POnum9.Text & "\" & "Quality")
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer9.Text & "\" & text_POnum9.Text & "\" & "Customer PO")
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer9.Text & "\" & text_POnum9.Text & "\" & "Other")
-        End If
-        If Not text_POnum10.Text = "" Or combo_Customer10.Text = "" Or combo_Customer10.Text = "Stock" Then
-            MkDir(FolderPathMain & CurrentYear)
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer10.Text)
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer10.Text & "\" & text_POnum10.Text)
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer10.Text & "\" & text_POnum10.Text & "\" & "Shipping Docs")
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer10.Text & "\" & text_POnum10.Text & "\" & "Quality")
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer10.Text & "\" & text_POnum10.Text & "\" & "Customer PO")
-            MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer10.Text & "\" & text_POnum10.Text & "\" & "Other")
-        End If
+    '    If Not text_POnum1.Text = "" Or combo_Customer1.Text = "" Or combo_Customer1.Text = "Stock" Then
+    '        MkDir(FolderPathMain & CurrentYear)
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer1.Text)
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer1.Text & "\" & text_POnum1.Text)
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer1.Text & "\" & text_POnum1.Text & "\" & "Shipping Docs")
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer1.Text & "\" & text_POnum1.Text & "\" & "Quality")
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer1.Text & "\" & text_POnum1.Text & "\" & "Customer PO")
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer1.Text & "\" & text_POnum1.Text & "\" & "Other")
+    '    End If
+    '    If Not text_POnum2.Text = "" Or combo_Customer2.Text = "" Or combo_Customer2.Text = "Stock" Then
+    '        MkDir(FolderPathMain & CurrentYear)
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer2.Text)
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer2.Text & "\" & text_POnum2.Text)
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer2.Text & "\" & text_POnum2.Text & "\" & "Shipping Docs")
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer2.Text & "\" & text_POnum2.Text & "\" & "Quality")
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer2.Text & "\" & text_POnum2.Text & "\" & "Customer PO")
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer2.Text & "\" & text_POnum2.Text & "\" & "Other")
+    '    End If
+    '    If Not text_POnum3.Text = "" Or combo_Customer3.Text = "" Or combo_Customer3.Text = "Stock" Then
+    '        MkDir(FolderPathMain & CurrentYear)
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer3.Text)
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer3.Text & "\" & text_POnum3.Text)
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer3.Text & "\" & text_POnum3.Text & "\" & "Shipping Docs")
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer3.Text & "\" & text_POnum3.Text & "\" & "Quality")
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer3.Text & "\" & text_POnum3.Text & "\" & "Customer PO")
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer3.Text & "\" & text_POnum3.Text & "\" & "Other")
+    '    End If
+    '    If Not text_POnum4.Text = "" Or combo_Customer4.Text = "" Or combo_Customer4.Text = "Stock" Then
+    '        MkDir(FolderPathMain & CurrentYear)
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer4.Text)
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer4.Text & "\" & text_POnum4.Text)
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer4.Text & "\" & text_POnum4.Text & "\" & "Shipping Docs")
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer4.Text & "\" & text_POnum4.Text & "\" & "Quality")
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer4.Text & "\" & text_POnum4.Text & "\" & "Customer PO")
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer4.Text & "\" & text_POnum4.Text & "\" & "Other")
+    '    End If
+    '    If Not text_POnum5.Text = "" Or combo_Customer5.Text = "" Or combo_Customer5.Text = "Stock" Then
+    '        MkDir(FolderPathMain & CurrentYear)
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer5.Text)
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer5.Text & "\" & text_POnum5.Text)
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer5.Text & "\" & text_POnum5.Text & "\" & "Shipping Docs")
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer5.Text & "\" & text_POnum5.Text & "\" & "Quality")
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer5.Text & "\" & text_POnum5.Text & "\" & "Customer PO")
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer5.Text & "\" & text_POnum5.Text & "\" & "Other")
+    '    End If
+    '    If Not text_POnum6.Text = "" Or combo_Customer6.Text = "" Or combo_Customer6.Text = "Stock" Then
+    '        MkDir(FolderPathMain & CurrentYear)
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer6.Text)
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer6.Text & "\" & text_POnum6.Text)
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer6.Text & "\" & text_POnum6.Text & "\" & "Shipping Docs")
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer6.Text & "\" & text_POnum6.Text & "\" & "Quality")
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer6.Text & "\" & text_POnum6.Text & "\" & "Customer PO")
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer6.Text & "\" & text_POnum6.Text & "\" & "Other")
+    '    End If
+    '    If Not text_POnum7.Text = "" Or combo_Customer7.Text = "" Or combo_Customer7.Text = "Stock" Then
+    '        MkDir(FolderPathMain & CurrentYear)
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer7.Text)
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer7.Text & "\" & text_POnum7.Text)
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer7.Text & "\" & text_POnum7.Text & "\" & "Shipping Docs")
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer7.Text & "\" & text_POnum7.Text & "\" & "Quality")
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer7.Text & "\" & text_POnum7.Text & "\" & "Customer PO")
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer7.Text & "\" & text_POnum7.Text & "\" & "Other")
+    '    End If
+    '    If Not text_POnum8.Text = "" Or combo_Customer8.Text = "" Or combo_Customer8.Text = "Stock" Then
+    '        MkDir(FolderPathMain & CurrentYear)
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer8.Text)
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer8.Text & "\" & text_POnum8.Text)
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer8.Text & "\" & text_POnum8.Text & "\" & "Shipping Docs")
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer8.Text & "\" & text_POnum8.Text & "\" & "Quality")
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer8.Text & "\" & text_POnum8.Text & "\" & "Customer PO")
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer8.Text & "\" & text_POnum8.Text & "\" & "Other")
+    '    End If
+    '    If Not text_POnum9.Text = "" Or combo_Customer9.Text = "" Or combo_Customer9.Text = "Stock" Then
+    '        MkDir(FolderPathMain & CurrentYear)
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer9.Text)
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer9.Text & "\" & text_POnum9.Text)
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer9.Text & "\" & text_POnum9.Text & "\" & "Shipping Docs")
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer9.Text & "\" & text_POnum9.Text & "\" & "Quality")
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer9.Text & "\" & text_POnum9.Text & "\" & "Customer PO")
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer9.Text & "\" & text_POnum9.Text & "\" & "Other")
+    '    End If
+    '    If Not text_POnum10.Text = "" Or combo_Customer10.Text = "" Or combo_Customer10.Text = "Stock" Then
+    '        MkDir(FolderPathMain & CurrentYear)
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer10.Text)
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer10.Text & "\" & text_POnum10.Text)
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer10.Text & "\" & text_POnum10.Text & "\" & "Shipping Docs")
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer10.Text & "\" & text_POnum10.Text & "\" & "Quality")
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer10.Text & "\" & text_POnum10.Text & "\" & "Customer PO")
+    '        MkDir(FolderPathMain & CurrentYear & "\" & combo_Customer10.Text & "\" & text_POnum10.Text & "\" & "Other")
+    '    End If
 
-        'MsgBox("The PO Folders have been created.")
+    '    'MsgBox("The PO Folders have been created.")
 
-    End Sub
+    'End Sub
 
     'CAUSES VALIDATION TO MAKE SURE ONLY NUMBERS ARE ENTERED
     Private Sub text_Qty_KeyPress(sender As Object, e As KeyPressEventArgs) Handles text_Qty.KeyPress

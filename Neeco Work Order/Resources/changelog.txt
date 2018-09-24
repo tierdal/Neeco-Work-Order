@@ -1,6 +1,10 @@
 Planned Features:
 	- Add another status called "Parts Order" 
 
+Version 1.0.2.0 - September 24th, 2018
+	- Disabled the cration of shipping folders
+	- Updated all of the links and data connection strings to match the new file server
+
 Version 1.0.1.3 - July 11th, 2018
 	- Disabled local caching of database data due to it not refreshing dropdown items.
 
