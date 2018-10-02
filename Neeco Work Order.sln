@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Neeco Work Order", "Neeco Work Order\Neeco Work Order.vbproj", "{74DA607C-6016-4D36-9189-EF9B8A239EC5}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "NeecoDMS", "Neeco Work Order\NeecoDMS.vbproj", "{74DA607C-6016-4D36-9189-EF9B8A239EC5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
