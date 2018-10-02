@@ -1,6 +1,10 @@
 Planned Features:
 	- Add another status called "Parts Order" 
 	
+	
+	Version 1.1.1.6 - October 2, 2018
+	- Fixed some publishing info for easy deployment
+
 	Version 1.1.1.5 - October 2, 2018
 	- Done debugging deployments. stable release
 
