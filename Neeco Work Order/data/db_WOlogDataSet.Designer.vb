@@ -12874,7 +12874,7 @@ Namespace db_WOlogDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.OleDb.OleDbConnection()
-            Me._connection.ConnectionString = Global.Neeco_Work_Order.My.MySettings.Default.db_WOlogConnectionString
+            Me._connection.ConnectionString = Global.NeecoDMS.My.MySettings.Default.db_WOlogConnectionString
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -15138,7 +15138,7 @@ Namespace db_WOlogDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.OleDb.OleDbConnection()
-            Me._connection.ConnectionString = Global.Neeco_Work_Order.My.MySettings.Default.db_WOlogConnectionString
+            Me._connection.ConnectionString = Global.NeecoDMS.My.MySettings.Default.db_WOlogConnectionString
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -15448,7 +15448,7 @@ Namespace db_WOlogDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.OleDb.OleDbConnection()
-            Me._connection.ConnectionString = Global.Neeco_Work_Order.My.MySettings.Default.db_WOlogConnectionString
+            Me._connection.ConnectionString = Global.NeecoDMS.My.MySettings.Default.db_WOlogConnectionString
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -15758,7 +15758,7 @@ Namespace db_WOlogDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.OleDb.OleDbConnection()
-            Me._connection.ConnectionString = Global.Neeco_Work_Order.My.MySettings.Default.db_WOlogConnectionString
+            Me._connection.ConnectionString = Global.NeecoDMS.My.MySettings.Default.db_WOlogConnectionString
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -16069,7 +16069,7 @@ Namespace db_WOlogDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.OleDb.OleDbConnection()
-            Me._connection.ConnectionString = Global.Neeco_Work_Order.My.MySettings.Default.db_WOlogConnectionString
+            Me._connection.ConnectionString = Global.NeecoDMS.My.MySettings.Default.db_WOlogConnectionString
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -16379,7 +16379,7 @@ Namespace db_WOlogDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.OleDb.OleDbConnection()
-            Me._connection.ConnectionString = Global.Neeco_Work_Order.My.MySettings.Default.db_WOlogConnectionString
+            Me._connection.ConnectionString = Global.NeecoDMS.My.MySettings.Default.db_WOlogConnectionString
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -16689,7 +16689,7 @@ Namespace db_WOlogDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.OleDb.OleDbConnection()
-            Me._connection.ConnectionString = Global.Neeco_Work_Order.My.MySettings.Default.db_WOlogConnectionString
+            Me._connection.ConnectionString = Global.NeecoDMS.My.MySettings.Default.db_WOlogConnectionString
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -16999,7 +16999,7 @@ Namespace db_WOlogDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.OleDb.OleDbConnection()
-            Me._connection.ConnectionString = Global.Neeco_Work_Order.My.MySettings.Default.db_WOlogConnectionString
+            Me._connection.ConnectionString = Global.NeecoDMS.My.MySettings.Default.db_WOlogConnectionString
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -17310,7 +17310,7 @@ Namespace db_WOlogDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.OleDb.OleDbConnection()
-            Me._connection.ConnectionString = Global.Neeco_Work_Order.My.MySettings.Default.db_WOlogConnectionString
+            Me._connection.ConnectionString = Global.NeecoDMS.My.MySettings.Default.db_WOlogConnectionString
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -17620,7 +17620,7 @@ Namespace db_WOlogDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.OleDb.OleDbConnection()
-            Me._connection.ConnectionString = Global.Neeco_Work_Order.My.MySettings.Default.db_WOlogConnectionString
+            Me._connection.ConnectionString = Global.NeecoDMS.My.MySettings.Default.db_WOlogConnectionString
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -17930,7 +17930,7 @@ Namespace db_WOlogDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.OleDb.OleDbConnection()
-            Me._connection.ConnectionString = Global.Neeco_Work_Order.My.MySettings.Default.db_WOlogConnectionString
+            Me._connection.ConnectionString = Global.NeecoDMS.My.MySettings.Default.db_WOlogConnectionString
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -18241,7 +18241,7 @@ Namespace db_WOlogDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.OleDb.OleDbConnection()
-            Me._connection.ConnectionString = Global.Neeco_Work_Order.My.MySettings.Default.db_WOlogConnectionString
+            Me._connection.ConnectionString = Global.NeecoDMS.My.MySettings.Default.db_WOlogConnectionString
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -18552,7 +18552,7 @@ Namespace db_WOlogDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.OleDb.OleDbConnection()
-            Me._connection.ConnectionString = Global.Neeco_Work_Order.My.MySettings.Default.db_WOlogConnectionString
+            Me._connection.ConnectionString = Global.NeecoDMS.My.MySettings.Default.db_WOlogConnectionString
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -18863,7 +18863,7 @@ Namespace db_WOlogDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.OleDb.OleDbConnection()
-            Me._connection.ConnectionString = Global.Neeco_Work_Order.My.MySettings.Default.db_WOlogConnectionString
+            Me._connection.ConnectionString = Global.NeecoDMS.My.MySettings.Default.db_WOlogConnectionString
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -19174,7 +19174,7 @@ Namespace db_WOlogDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.OleDb.OleDbConnection()
-            Me._connection.ConnectionString = Global.Neeco_Work_Order.My.MySettings.Default.db_WOlogConnectionString
+            Me._connection.ConnectionString = Global.NeecoDMS.My.MySettings.Default.db_WOlogConnectionString
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -19485,7 +19485,7 @@ Namespace db_WOlogDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.OleDb.OleDbConnection()
-            Me._connection.ConnectionString = Global.Neeco_Work_Order.My.MySettings.Default.db_WOlogConnectionString
+            Me._connection.ConnectionString = Global.NeecoDMS.My.MySettings.Default.db_WOlogConnectionString
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -19796,7 +19796,7 @@ Namespace db_WOlogDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.OleDb.OleDbConnection()
-            Me._connection.ConnectionString = Global.Neeco_Work_Order.My.MySettings.Default.db_WOlogConnectionString
+            Me._connection.ConnectionString = Global.NeecoDMS.My.MySettings.Default.db_WOlogConnectionString
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -20107,7 +20107,7 @@ Namespace db_WOlogDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.OleDb.OleDbConnection()
-            Me._connection.ConnectionString = Global.Neeco_Work_Order.My.MySettings.Default.db_WOlogConnectionString
+            Me._connection.ConnectionString = Global.NeecoDMS.My.MySettings.Default.db_WOlogConnectionString
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -20418,7 +20418,7 @@ Namespace db_WOlogDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.OleDb.OleDbConnection()
-            Me._connection.ConnectionString = Global.Neeco_Work_Order.My.MySettings.Default.db_WOlogConnectionString
+            Me._connection.ConnectionString = Global.NeecoDMS.My.MySettings.Default.db_WOlogConnectionString
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -20729,7 +20729,7 @@ Namespace db_WOlogDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.OleDb.OleDbConnection()
-            Me._connection.ConnectionString = Global.Neeco_Work_Order.My.MySettings.Default.db_WOlogConnectionString
+            Me._connection.ConnectionString = Global.NeecoDMS.My.MySettings.Default.db_WOlogConnectionString
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -21040,7 +21040,7 @@ Namespace db_WOlogDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.OleDb.OleDbConnection()
-            Me._connection.ConnectionString = Global.Neeco_Work_Order.My.MySettings.Default.db_WOlogConnectionString
+            Me._connection.ConnectionString = Global.NeecoDMS.My.MySettings.Default.db_WOlogConnectionString
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -21351,7 +21351,7 @@ Namespace db_WOlogDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.OleDb.OleDbConnection()
-            Me._connection.ConnectionString = Global.Neeco_Work_Order.My.MySettings.Default.db_WOlogConnectionString
+            Me._connection.ConnectionString = Global.NeecoDMS.My.MySettings.Default.db_WOlogConnectionString
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _

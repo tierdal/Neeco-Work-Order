@@ -75,9 +75,9 @@ Namespace My
     Friend Module MySettingsProperty
         
         <Global.System.ComponentModel.Design.HelpKeywordAttribute("My.Settings")>  _
-        Friend ReadOnly Property Settings() As Global.Neeco_Work_Order.My.MySettings
+        Friend ReadOnly Property Settings() As Global.NeecoDMS.My.MySettings
             Get
-                Return Global.Neeco_Work_Order.My.MySettings.Default
+                Return Global.NeecoDMS.My.MySettings.Default
             End Get
         End Property
     End Module

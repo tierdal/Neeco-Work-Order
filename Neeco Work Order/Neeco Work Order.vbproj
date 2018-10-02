@@ -6,17 +6,17 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{74DA607C-6016-4D36-9189-EF9B8A239EC5}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Neeco_Work_Order.My.MyApplication</StartupObject>
-    <RootNamespace>Neeco_Work_Order</RootNamespace>
-    <AssemblyName>Neeco Work Order</AssemblyName>
+    <StartupObject>NeecoDMS.My.MyApplication</StartupObject>
+    <RootNamespace>NeecoDMS</RootNamespace>
+    <AssemblyName>NeecoDMS</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>publish\</PublishUrl>
-    <Install>true</Install>
-    <InstallFrom>Disk</InstallFrom>
+    <PublishUrl>\\ad.neecovalves.com\Systems\IT Center\apps\NeecoDMS\</PublishUrl>
+    <Install>false</Install>
+    <InstallFrom>Unc</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
     <UpdateMode>Foreground</UpdateMode>
     <UpdateInterval>7</UpdateInterval>
@@ -24,12 +24,15 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>NeecoDMS</ProductName>
     <PublisherName>Egor Shumeyko</PublisherName>
-    <ApplicationRevision>2</ApplicationRevision>
-    <ApplicationVersion>1.0.2.2</ApplicationVersion>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.1.0.1</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
-    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperEnabled>false</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -38,7 +41,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>Neeco Work Order.xml</DocumentationFile>
+    <DocumentationFile>NeecoDMS.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -48,7 +51,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>Neeco Work Order.xml</DocumentationFile>
+    <DocumentationFile>NeecoDMS.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -118,16 +121,71 @@
     <Compile Include="data\db_WOlogDataSet.vb">
       <DependentUpon>db_WOlogDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Forms\form_EditIEntryNew.Designer.vb">
-      <DependentUpon>form_EditIEntryNew.vb</DependentUpon>
+    <Compile Include="data\GlobalFunctions.vb" />
+    <Compile Include="Forms\CustomerManager\form_AddNewCustomer.Designer.vb">
+      <DependentUpon>form_AddNewCustomer.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\form_EditIEntryNew.vb">
+    <Compile Include="Forms\CustomerManager\form_AddNewCustomer.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\form_Options.Designer.vb">
+    <Compile Include="Forms\CustomerManager\form_AddNewCPOfolder.Designer.vb">
+      <DependentUpon>form_AddNewCPOfolder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CustomerManager\form_AddNewCPOfolder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CustomerManager\form_AddNewQuote.Designer.vb">
+      <DependentUpon>form_AddNewQuote.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CustomerManager\form_AddNewQuote.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CustomerManager\form_CustomerCenter.Designer.vb">
+      <DependentUpon>form_CustomerCenter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CustomerManager\form_CustomerCenter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\form_MainMenu.Designer.vb">
+      <DependentUpon>form_MainMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\form_MainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Help Center\form_HelpCenter.Designer.vb">
+      <DependentUpon>form_HelpCenter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Help Center\form_HelpCenter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\VendorManager\form_AddNewVendor.Designer.vb">
+      <DependentUpon>form_AddNewVendor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\VendorManager\form_AddNewVendor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\VendorManager\form_AddNewVPOfolder.Designer.vb">
+      <DependentUpon>form_AddNewVPOfolder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\VendorManager\form_AddNewVPOfolder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\VendorManager\form_VendorCenter.Designer.vb">
+      <DependentUpon>form_VendorCenter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\VendorManager\form_VendorCenter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WOManager\form_EditIEntryNew.Designer.vb">
+      <DependentUpon>form_EditIEntryNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WOManager\form_EditIEntryNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WOManager\form_Options.Designer.vb">
       <DependentUpon>form_Options.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\form_Options.vb">
+    <Compile Include="Forms\WOManager\form_Options.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\info_AboutBox.Designer.vb">
@@ -136,83 +194,77 @@
     <Compile Include="Forms\info_AboutBox.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\form_AddNewEntry.Designer.vb">
+    <Compile Include="Forms\WOManager\form_AddNewEntry.Designer.vb">
       <DependentUpon>form_AddNewEntry.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\form_AddNewEntry.vb">
+    <Compile Include="Forms\WOManager\form_AddNewEntry.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\form_Main.vb">
+    <Compile Include="Forms\WOManager\form_WorkOrders.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\form_Main.Designer.vb">
-      <DependentUpon>form_Main.vb</DependentUpon>
+    <Compile Include="Forms\WOManager\form_WorkOrders.Designer.vb">
+      <DependentUpon>form_WorkOrders.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\options\form_changelog.Designer.vb">
+    <Compile Include="Forms\WOManager\options\form_changelog.Designer.vb">
       <DependentUpon>form_changelog.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\options\form_changelog.vb">
+    <Compile Include="Forms\WOManager\options\form_changelog.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\options\options_Customer.Designer.vb">
-      <DependentUpon>options_Customer.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\options\options_Customer.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\options\options_OperatorStyles.Designer.vb">
+    <Compile Include="Forms\WOManager\options\options_OperatorStyles.Designer.vb">
       <DependentUpon>options_OperatorStyles.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\options\options_OperatorStyles.vb">
+    <Compile Include="Forms\WOManager\options\options_OperatorStyles.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\options\options_PR.Designer.vb">
+    <Compile Include="Forms\WOManager\options\options_PR.Designer.vb">
       <DependentUpon>options_PR.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\options\options_PR.vb">
+    <Compile Include="Forms\WOManager\options\options_PR.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\options\options_PressureRatings.Designer.vb">
+    <Compile Include="Forms\WOManager\options\options_PressureRatings.Designer.vb">
       <DependentUpon>options_PressureRatings.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\options\options_PressureRatings.vb">
+    <Compile Include="Forms\WOManager\options\options_PressureRatings.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\options\options_ProductType.Designer.vb">
+    <Compile Include="Forms\WOManager\options\options_ProductType.Designer.vb">
       <DependentUpon>options_ProductType.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\options\options_ProductType.vb">
+    <Compile Include="Forms\WOManager\options\options_ProductType.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\options\options_PSL.Designer.vb">
+    <Compile Include="Forms\WOManager\options\options_PSL.Designer.vb">
       <DependentUpon>options_PSL.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\options\options_PSL.vb">
+    <Compile Include="Forms\WOManager\options\options_PSL.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\options\options_Sizes.Designer.vb">
+    <Compile Include="Forms\WOManager\options\options_Sizes.Designer.vb">
       <DependentUpon>options_Sizes.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\options\options_Sizes.vb">
+    <Compile Include="Forms\WOManager\options\options_Sizes.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\options\options_Styles.Designer.vb">
+    <Compile Include="Forms\WOManager\options\options_Styles.Designer.vb">
       <DependentUpon>options_Styles.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\options\options_Styles.vb">
+    <Compile Include="Forms\WOManager\options\options_Styles.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\options\options_TempClasses.Designer.vb">
+    <Compile Include="Forms\WOManager\options\options_TempClasses.Designer.vb">
       <DependentUpon>options_TempClasses.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\options\options_TempClasses.vb">
+    <Compile Include="Forms\WOManager\options\options_TempClasses.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\options\options_Trims.Designer.vb">
+    <Compile Include="Forms\WOManager\options\options_Trims.Designer.vb">
       <DependentUpon>options_Trims.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\options\options_Trims.vb">
+    <Compile Include="Forms\WOManager\options\options_Trims.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -230,54 +282,81 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Resources\LoadingScreen.Designer.vb">
+      <DependentUpon>LoadingScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\LoadingScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Forms\form_AddNewEntry.resx">
+    <EmbeddedResource Include="Forms\CustomerManager\form_AddNewCPOfolder.resx">
+      <DependentUpon>form_AddNewCPOfolder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomerManager\form_AddNewCustomer.resx">
+      <DependentUpon>form_AddNewCustomer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomerManager\form_AddNewQuote.resx">
+      <DependentUpon>form_AddNewQuote.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomerManager\form_CustomerCenter.resx">
+      <DependentUpon>form_CustomerCenter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\form_MainMenu.resx">
+      <DependentUpon>form_MainMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\VendorManager\form_AddNewVendor.resx">
+      <DependentUpon>form_AddNewVendor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\VendorManager\form_AddNewVPOfolder.resx">
+      <DependentUpon>form_AddNewVPOfolder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\VendorManager\form_VendorCenter.resx">
+      <DependentUpon>form_VendorCenter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WOManager\form_AddNewEntry.resx">
       <DependentUpon>form_AddNewEntry.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\form_EditIEntryNew.resx">
+    <EmbeddedResource Include="Forms\WOManager\form_EditIEntryNew.resx">
       <DependentUpon>form_EditIEntryNew.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\form_Main.resx">
-      <DependentUpon>form_Main.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\WOManager\form_WorkOrders.resx">
+      <DependentUpon>form_WorkOrders.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\form_Options.resx">
+    <EmbeddedResource Include="Forms\WOManager\form_Options.resx">
       <DependentUpon>form_Options.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\info_AboutBox.resx">
       <DependentUpon>info_AboutBox.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\options\form_changelog.resx">
+    <EmbeddedResource Include="Forms\WOManager\options\form_changelog.resx">
       <DependentUpon>form_changelog.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\options\options_Customer.resx">
-      <DependentUpon>options_Customer.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\options\options_OperatorStyles.resx">
+    <EmbeddedResource Include="Forms\WOManager\options\options_OperatorStyles.resx">
       <DependentUpon>options_OperatorStyles.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\options\options_PR.resx">
+    <EmbeddedResource Include="Forms\WOManager\options\options_PR.resx">
       <DependentUpon>options_PR.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\options\options_PressureRatings.resx">
+    <EmbeddedResource Include="Forms\WOManager\options\options_PressureRatings.resx">
       <DependentUpon>options_PressureRatings.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\options\options_ProductType.resx">
+    <EmbeddedResource Include="Forms\WOManager\options\options_ProductType.resx">
       <DependentUpon>options_ProductType.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\options\options_PSL.resx">
+    <EmbeddedResource Include="Forms\WOManager\options\options_PSL.resx">
       <DependentUpon>options_PSL.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\options\options_Sizes.resx">
+    <EmbeddedResource Include="Forms\WOManager\options\options_Sizes.resx">
       <DependentUpon>options_Sizes.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\options\options_Styles.resx">
+    <EmbeddedResource Include="Forms\WOManager\options\options_Styles.resx">
       <DependentUpon>options_Styles.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\options\options_TempClasses.resx">
+    <EmbeddedResource Include="Forms\WOManager\options\options_TempClasses.resx">
       <DependentUpon>options_TempClasses.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\options\options_Trims.resx">
+    <EmbeddedResource Include="Forms\WOManager\options\options_Trims.resx">
       <DependentUpon>options_Trims.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -285,6 +364,9 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LoadingScreen.resx">
+      <DependentUpon>LoadingScreen.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -326,6 +408,7 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\changelog.txt" />
+    <None Include="Resources\ajax-loader.gif" />
     <Content Include="Resources\Neeco Logo Square.ico" />
   </ItemGroup>
   <ItemGroup>
@@ -343,5 +426,6 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

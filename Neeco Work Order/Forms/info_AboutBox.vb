@@ -23,4 +23,12 @@
         Me.Close()
     End Sub
 
+    Private Sub button_Changelog_Click(sender As Object, e As EventArgs) Handles button_Changelog.Click
+        form_changelog.Show()
+    End Sub
+
+    Private Sub button_HelpDoc_Click(sender As Object, e As EventArgs) Handles button_HelpDoc.Click
+        MsgBox("The help doc is currently being written.")
+        'Process.Start("F:\Templates\qc_lwi.pdf")
+    End Sub
 End Class

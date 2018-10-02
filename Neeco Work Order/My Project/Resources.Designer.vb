@@ -39,7 +39,7 @@ Namespace My.Resources
         Friend ReadOnly Property ResourceManager() As Global.System.Resources.ResourceManager
             Get
                 If Object.ReferenceEquals(resourceMan, Nothing) Then
-                    Dim temp As Global.System.Resources.ResourceManager = New Global.System.Resources.ResourceManager("Neeco_Work_Order.Resources", GetType(Resources).Assembly)
+                    Dim temp As Global.System.Resources.ResourceManager = New Global.System.Resources.ResourceManager("NeecoDMS.Resources", GetType(Resources).Assembly)
                     resourceMan = temp
                 End If
                 Return resourceMan
@@ -61,11 +61,33 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Version 0.9.3 - June 19th, 2018
-        '''	- Changed the way the &quot;Edit Data&quot; screen pulls values from DB. It will not check for null values and do nothing if found.
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property ajax_loader() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("ajax_loader", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Planned Features:
+        '''	- Add another status called &quot;Parts Order&quot; 
         '''
-        '''Version 0.9.2 - June 18th, 2018
-        '''	- Added changelog.txt.
+        '''Version 1.0.2.2 - September 24th, 2018
+        '''	- Fixed one more broken link
+        '''
+        '''Version 1.0.2.1 - September 24th, 2018
+        '''	- Fixed a typo
+        '''	- Updated version
+        '''
+        '''Version 1.0.2.0 - September 24th, 2018
+        '''	- Disabled the cration of shipping folders
+        '''	- Updated all of the links and data connection strings to match the new file server
+        '''
+        '''Version 1.0.1.3 - July 11th, 2018
+        '''	- Disabled local caching of database data due to it not refreshing dropdown items.
+        '''        ''' [rest of string was truncated]&quot;;.
         '''</summary>
         Friend ReadOnly Property changelog() As String
             Get
