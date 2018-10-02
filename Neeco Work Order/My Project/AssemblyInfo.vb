@@ -11,7 +11,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyTitle("NeecoDMS")>
 <Assembly: AssemblyDescription("This program provides centralized document management to Neeco Employees. Customer Center allows for easy creation of a folder structure for storing customer related documents. Vendor Center allows for easy creation of a folder structure for storing vendor related documents. Work Orders provides an easy way to manage work orders by using a database to store related data as well as creates all the required folder structures.")>
 <Assembly: AssemblyCompany("Neeco Valves")>
-<Assembly: AssemblyProduct("Neeco Work Order")>
+<Assembly: AssemblyProduct("NeecoDMS")>
 <Assembly: AssemblyCopyright("Copyright ©  2018")>
 <Assembly: AssemblyTrademark("")>
 
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")>
 
-<Assembly: AssemblyVersion("1.1.0.2")>
-<Assembly: AssemblyFileVersion("1.1.0.2")>
+<Assembly: AssemblyVersion("1.1.0.3")>
+<Assembly: AssemblyFileVersion("1.1.0.3")>
