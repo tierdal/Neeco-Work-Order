@@ -59,10 +59,10 @@ Partial Class form_AddNewEntry
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.TableLayoutPanel9 = New System.Windows.Forms.TableLayoutPanel()
+        Me.date_DueDate = New System.Windows.Forms.DateTimePicker()
         Me.date_WOdate = New System.Windows.Forms.DateTimePicker()
         Me.text_Qty = New System.Windows.Forms.TextBox()
         Me.combo_Status = New System.Windows.Forms.ComboBox()
-        Me.text_QBBAnum = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -494,10 +494,10 @@ Partial Class form_AddNewEntry
         Me.TableLayoutPanel9.ColumnCount = 2
         Me.TableLayoutPanel9.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel9.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel9.Controls.Add(Me.date_DueDate, 1, 4)
         Me.TableLayoutPanel9.Controls.Add(Me.date_WOdate, 1, 2)
         Me.TableLayoutPanel9.Controls.Add(Me.text_Qty, 1, 5)
         Me.TableLayoutPanel9.Controls.Add(Me.combo_Status, 1, 3)
-        Me.TableLayoutPanel9.Controls.Add(Me.text_QBBAnum, 1, 4)
         Me.TableLayoutPanel9.Controls.Add(Me.Label8, 0, 5)
         Me.TableLayoutPanel9.Controls.Add(Me.Label7, 0, 4)
         Me.TableLayoutPanel9.Controls.Add(Label12, 0, 3)
@@ -514,8 +514,19 @@ Partial Class form_AddNewEntry
         Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.89474!))
         Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.89474!))
         Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.89474!))
+        Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel9.Size = New System.Drawing.Size(203, 147)
         Me.TableLayoutPanel9.TabIndex = 99
+        '
+        'date_DueDate
+        '
+        Me.date_DueDate.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.date_DueDate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.date_DueDate.Location = New System.Drawing.Point(104, 96)
+        Me.date_DueDate.Name = "date_DueDate"
+        Me.date_DueDate.Size = New System.Drawing.Size(96, 20)
+        Me.date_DueDate.TabIndex = 70
+        Me.date_DueDate.Value = New Date(2018, 6, 14, 14, 14, 51, 0)
         '
         'date_WOdate
         '
@@ -548,15 +559,6 @@ Partial Class form_AddNewEntry
         Me.combo_Status.Size = New System.Drawing.Size(96, 21)
         Me.combo_Status.TabIndex = 2
         '
-        'text_QBBAnum
-        '
-        Me.text_QBBAnum.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.text_QBBAnum.Location = New System.Drawing.Point(104, 96)
-        Me.text_QBBAnum.Name = "text_QBBAnum"
-        Me.text_QBBAnum.Size = New System.Drawing.Size(96, 20)
-        Me.text_QBBAnum.TabIndex = 3
-        Me.text_QBBAnum.Visible = False
-        '
         'Label8
         '
         Me.Label8.AutoSize = True
@@ -576,9 +578,8 @@ Partial Class form_AddNewEntry
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(95, 26)
         Me.Label7.TabIndex = 99
-        Me.Label7.Text = "QB BA #:"
+        Me.Label7.Text = "Due Date:"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Label7.Visible = False
         '
         'Label1
         '
@@ -1106,7 +1107,6 @@ Partial Class form_AddNewEntry
     Friend WithEvents Label8 As Label
     Friend WithEvents text_WOnum As TextBox
     Friend WithEvents date_WOdate As DateTimePicker
-    Friend WithEvents text_QBBAnum As TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents GroupBox2 As GroupBox
@@ -1158,4 +1158,5 @@ Partial Class form_AddNewEntry
     Friend WithEvents TbltermPSLBindingSource As BindingSource
     Friend WithEvents TbltermTrimBindingSource As BindingSource
     Friend WithEvents TbltermTempClassBindingSource As BindingSource
+    Friend WithEvents date_DueDate As DateTimePicker
 End Class

@@ -48,7 +48,7 @@
         Dim wo_num_search As String
         Dim wo_id_pull As String
         Dim sql_conn As New OleDb.OleDbConnection
-        Dim sql_queryPulldata_ID, sql_queryPulldata_WODATE, sql_queryPulldata_STATUS, sql_queryPulldata_QBBANUM, sql_queryPulldata_QTY, sql_queryPulldata_PARTNUM, sql_queryPulldata_PRODUCT, sql_queryPulldata_STYLE, sql_queryPulldata_SIZE, sql_queryPulldata_PRESSURE, sql_queryPulldata_TEMPCLASS, sql_queryPulldata_TRIM, sql_queryPulldata_PSL, sql_queryPulldata_PR, sql_queryPulldata_HHPP, sql_queryPulldata_BUYOUT, sql_queryPulldata_NOTES, sql_queryPulldata_CREATEDBY, sql_queryPulldata_CREATEDBYDATE, sql_queryPulldata_MODIFIEDBY, sql_queryPulldata_MODIFIEDBYDATE As New OleDb.OleDbCommand
+        Dim sql_queryPulldata_ID, sql_queryPulldata_WODATE, sql_queryPulldata_STATUS, sql_queryPulldata_DUEDATE, sql_queryPulldata_QTY, sql_queryPulldata_PARTNUM, sql_queryPulldata_PRODUCT, sql_queryPulldata_STYLE, sql_queryPulldata_SIZE, sql_queryPulldata_PRESSURE, sql_queryPulldata_TEMPCLASS, sql_queryPulldata_TRIM, sql_queryPulldata_PSL, sql_queryPulldata_PR, sql_queryPulldata_HHPP, sql_queryPulldata_BUYOUT, sql_queryPulldata_NOTES, sql_queryPulldata_CREATEDBY, sql_queryPulldata_CREATEDBYDATE, sql_queryPulldata_MODIFIEDBY, sql_queryPulldata_MODIFIEDBYDATE As New OleDb.OleDbCommand
         Dim conn_string As String
 
         'define SQL connection
@@ -57,7 +57,7 @@
         sql_queryPulldata_ID.Connection = sql_conn
         sql_queryPulldata_WODATE.Connection = sql_conn
         sql_queryPulldata_STATUS.Connection = sql_conn
-        sql_queryPulldata_QBBANUM.Connection = sql_conn
+        sql_queryPulldata_DUEDATE.Connection = sql_conn
         sql_queryPulldata_QTY.Connection = sql_conn
 
         sql_queryPulldata_PARTNUM.Connection = sql_conn
@@ -109,7 +109,7 @@
 
         sql_queryPulldata_WODATE.CommandText = "SELECT fld_wo_date FROM tbl_data_WOlog WHERE fld_wo_num = '" & wo_num_search & "'"
         sql_queryPulldata_STATUS.CommandText = "SELECT fld_status FROM tbl_data_WOlog WHERE fld_wo_num = '" & wo_num_search & "'"
-        sql_queryPulldata_QBBANUM.CommandText = "SELECT fld_qb_ba_num FROM tbl_data_WOlog WHERE fld_wo_num = '" & wo_num_search & "'"
+        sql_queryPulldata_DUEDATE.CommandText = "SELECT fld_due_date FROM tbl_data_WOlog WHERE fld_wo_num = '" & wo_num_search & "'"
         sql_queryPulldata_QTY.CommandText = "SELECT fld_qty FROM tbl_data_WOlog WHERE fld_wo_num = '" & wo_num_search & "'"
 
         sql_queryPulldata_PARTNUM.CommandText = "SELECT fld_part_num FROM tbl_data_WOlog WHERE fld_wo_num = '" & wo_num_search & "'"
@@ -137,7 +137,7 @@
 
             If Not IsDBNull(sql_queryPulldata_WODATE.ExecuteScalar()) Then date_WOdate.Value = sql_queryPulldata_WODATE.ExecuteScalar()
             If Not IsDBNull(sql_queryPulldata_STATUS.ExecuteScalar()) Then combo_Status.Text = sql_queryPulldata_STATUS.ExecuteScalar()
-            If Not IsDBNull(sql_queryPulldata_QBBANUM.ExecuteScalar()) Then text_QBBAnum.Text = sql_queryPulldata_QBBANUM.ExecuteScalar()
+            If Not IsDBNull(sql_queryPulldata_DUEDATE.ExecuteScalar()) Then date_DueDate.Value = sql_queryPulldata_DUEDATE.ExecuteScalar()
             If Not IsDBNull(sql_queryPulldata_QTY.ExecuteScalar()) Then text_Qty.Text = sql_queryPulldata_QTY.ExecuteScalar()
 
             If Not IsDBNull(sql_queryPulldata_PARTNUM.ExecuteScalar()) Then text_PartNum.Text = sql_queryPulldata_PARTNUM.ExecuteScalar()
@@ -210,7 +210,7 @@
         sql_queryUpdateData.CommandText = "UPDATE tbl_data_WOlog " &
                                     "SET fld_wo_date='" & date_WOdate.Value.Date &
                                     "', fld_status='" & combo_Status.Text &
-                                    "', fld_qb_ba_num='" & text_QBBAnum.Text &
+                                    "', fld_due_date='" & date_DueDate.Value.Date &
                                     "', fld_qty='" & text_Qty.Text &
                                     "', fld_part_num='" & text_PartNum.Text &
                                     "', fld_product='" & combo_ProductType.Text &
@@ -328,7 +328,7 @@
         'WO FIELDS
         date_WOdate.Value = Date.Today
         combo_Status.SelectedItem = ""
-        text_QBBAnum.Text = ""
+        date_DueDate.Value = Date.Today
         text_Qty.Text = ""
 
         'PRODUCT FIELDS

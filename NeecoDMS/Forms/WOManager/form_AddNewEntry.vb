@@ -60,7 +60,7 @@
         'WO FIELDS
         date_WOdate.Value = Date.Today
         combo_Status.SelectedItem = ""
-        text_QBBAnum.Text = ""
+        date_DueDate.Value = Date.Today
         text_Qty.Text = ""
 
         'PRODUCT FIELDS
@@ -178,11 +178,11 @@
 
         'generate Query
 
-        sql_queryInsertData.CommandText = "INSERT INTO tbl_data_WOlog([fld_wo_num],[fld_wo_date],[fld_status],[fld_qb_ba_num],[fld_qty],[fld_part_num],[fld_product],[fld_style],[fld_size],[fld_pressure],[fld_tempclass],[fld_trim],[fld_psl],[fld_pr],[fld_hhpp],[fld_buyout],[fld_isrepair],[fld_notes],[fld_CreatedBy],[fld_CreatedByDate],[fld_LastModifiedBy],[fld_LastModifiedDate])VALUES(@WONUM,@WODATE,@STATUS,@QBBANUM,@QTY,@PARTNUM,@PRODUCT,@STYLE,@SIZE,@PRESSURE,@TEMPCLASS,@TRIM,@PSL,@PR,@HHPP,@BUYOUT,@REPAIR,@NOTES,@CREATEDBY,@CREATEDBYDATE,@MODIFIEDBY,@MODIFIEDBYDATE)"
+        sql_queryInsertData.CommandText = "INSERT INTO tbl_data_WOlog([fld_wo_num],[fld_wo_date],[fld_status],[fld_due_date],[fld_qty],[fld_part_num],[fld_product],[fld_style],[fld_size],[fld_pressure],[fld_tempclass],[fld_trim],[fld_psl],[fld_pr],[fld_hhpp],[fld_buyout],[fld_isrepair],[fld_notes],[fld_CreatedBy],[fld_CreatedByDate],[fld_LastModifiedBy],[fld_LastModifiedDate])VALUES(@WONUM,@WODATE,@STATUS,@DUEDATE,@QTY,@PARTNUM,@PRODUCT,@STYLE,@SIZE,@PRESSURE,@TEMPCLASS,@TRIM,@PSL,@PR,@HHPP,@BUYOUT,@REPAIR,@NOTES,@CREATEDBY,@CREATEDBYDATE,@MODIFIEDBY,@MODIFIEDBYDATE)"
         sql_queryInsertData.Parameters.AddWithValue("@WONUM", text_WOnum.Text)
         sql_queryInsertData.Parameters.AddWithValue("@WODATE", date_WOdate.Value.Date)
         sql_queryInsertData.Parameters.AddWithValue("@STATUS", combo_Status.Text)
-        sql_queryInsertData.Parameters.AddWithValue("@QBBANUM", text_QBBAnum.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@DUEDATE", date_DueDate.Value.Date)
         sql_queryInsertData.Parameters.AddWithValue("@QTY", text_Qty.Text)
 
         sql_queryInsertData.Parameters.AddWithValue("@PARTNUM", text_PartNum.Text)

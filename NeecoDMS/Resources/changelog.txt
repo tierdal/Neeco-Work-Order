@@ -1,14 +1,19 @@
 Planned Features:
 	- Add another status called "Parts Order" 
 	
+Version 1.1.2.1 - October 5, 2018
+	- Fixed the visibility of label for due date field.
+
+Version 1.1.2.0 - October 5, 2018
+	- Removed field QB BA and instead replaced it with field "Due Date" per customer request.
 	
-	Version 1.1.1.6 - October 2, 2018
+Version 1.1.1.6 - October 2, 2018
 	- Fixed some publishing info for easy deployment
 
-	Version 1.1.1.5 - October 2, 2018
+Version 1.1.1.5 - October 2, 2018
 	- Done debugging deployments. stable release
 
-	Version 1.1.1.1 - October 2, 2018
+Version 1.1.1.1 - October 2, 2018
 	- Fixed security prompt
 
 Version 1.1.1.0 - October 2, 2018
