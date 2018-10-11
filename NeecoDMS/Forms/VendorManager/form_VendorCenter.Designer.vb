@@ -33,7 +33,7 @@ Partial Class form_VendorCenter
         Me.button_Exit.Location = New System.Drawing.Point(12, 259)
         Me.button_Exit.Name = "button_Exit"
         Me.button_Exit.Size = New System.Drawing.Size(360, 40)
-        Me.button_Exit.TabIndex = 11
+        Me.button_Exit.TabIndex = 2
         Me.button_Exit.Text = "EXIT"
         Me.button_Exit.UseVisualStyleBackColor = True
         '
@@ -43,7 +43,7 @@ Partial Class form_VendorCenter
         Me.button_NewVPO.Location = New System.Drawing.Point(12, 82)
         Me.button_NewVPO.Name = "button_NewVPO"
         Me.button_NewVPO.Size = New System.Drawing.Size(360, 64)
-        Me.button_NewVPO.TabIndex = 10
+        Me.button_NewVPO.TabIndex = 1
         Me.button_NewVPO.Text = "NEW PO FOLDER"
         Me.button_NewVPO.UseVisualStyleBackColor = True
         '
@@ -53,7 +53,7 @@ Partial Class form_VendorCenter
         Me.button_NewVendor.Location = New System.Drawing.Point(12, 12)
         Me.button_NewVendor.Name = "button_NewVendor"
         Me.button_NewVendor.Size = New System.Drawing.Size(360, 64)
-        Me.button_NewVendor.TabIndex = 8
+        Me.button_NewVendor.TabIndex = 0
         Me.button_NewVendor.Text = "NEW VENDOR FOLDER"
         Me.button_NewVendor.UseVisualStyleBackColor = True
         '

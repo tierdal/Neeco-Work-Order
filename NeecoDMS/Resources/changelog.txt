@@ -1,5 +1,8 @@
 Planned Features:
 	- Add another status called "Parts Order" 
+
+Version 1.1.2.2 - October 5, 2018
+	- Fixed some tab stops.
 	
 Version 1.1.2.1 - October 5, 2018
 	- Fixed the visibility of label for due date field.

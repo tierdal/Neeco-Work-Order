@@ -35,7 +35,7 @@ Partial Class form_AddNewVendor
         Me.text_VendorName.Location = New System.Drawing.Point(192, 6)
         Me.text_VendorName.Name = "text_VendorName"
         Me.text_VendorName.Size = New System.Drawing.Size(411, 31)
-        Me.text_VendorName.TabIndex = 7
+        Me.text_VendorName.TabIndex = 0
         '
         'Label1
         '
@@ -52,7 +52,7 @@ Partial Class form_AddNewVendor
         Me.button_Cancel.Location = New System.Drawing.Point(528, 43)
         Me.button_Cancel.Name = "button_Cancel"
         Me.button_Cancel.Size = New System.Drawing.Size(75, 23)
-        Me.button_Cancel.TabIndex = 5
+        Me.button_Cancel.TabIndex = 2
         Me.button_Cancel.Text = "CANCEL"
         Me.button_Cancel.UseVisualStyleBackColor = True
         '
@@ -61,7 +61,7 @@ Partial Class form_AddNewVendor
         Me.button_Submit.Location = New System.Drawing.Point(447, 43)
         Me.button_Submit.Name = "button_Submit"
         Me.button_Submit.Size = New System.Drawing.Size(75, 23)
-        Me.button_Submit.TabIndex = 4
+        Me.button_Submit.TabIndex = 1
         Me.button_Submit.Text = "SUBMIT"
         Me.button_Submit.UseVisualStyleBackColor = True
         '

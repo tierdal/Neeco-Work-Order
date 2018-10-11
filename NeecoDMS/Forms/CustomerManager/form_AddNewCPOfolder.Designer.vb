@@ -58,7 +58,7 @@ Partial Class form_AddNewCPOfolder
         Me.text_POnumber.Location = New System.Drawing.Point(223, 52)
         Me.text_POnumber.Name = "text_POnumber"
         Me.text_POnumber.Size = New System.Drawing.Size(380, 31)
-        Me.text_POnumber.TabIndex = 5
+        Me.text_POnumber.TabIndex = 1
         '
         'Label2
         '
@@ -75,7 +75,7 @@ Partial Class form_AddNewCPOfolder
         Me.button_Cancel.Location = New System.Drawing.Point(528, 89)
         Me.button_Cancel.Name = "button_Cancel"
         Me.button_Cancel.Size = New System.Drawing.Size(75, 23)
-        Me.button_Cancel.TabIndex = 7
+        Me.button_Cancel.TabIndex = 3
         Me.button_Cancel.Text = "CANCEL"
         Me.button_Cancel.UseVisualStyleBackColor = True
         '
@@ -84,7 +84,7 @@ Partial Class form_AddNewCPOfolder
         Me.button_Submit.Location = New System.Drawing.Point(447, 89)
         Me.button_Submit.Name = "button_Submit"
         Me.button_Submit.Size = New System.Drawing.Size(75, 23)
-        Me.button_Submit.TabIndex = 6
+        Me.button_Submit.TabIndex = 2
         Me.button_Submit.Text = "SUBMIT"
         Me.button_Submit.UseVisualStyleBackColor = True
         '

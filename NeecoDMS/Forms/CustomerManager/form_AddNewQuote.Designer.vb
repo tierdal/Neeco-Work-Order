@@ -36,7 +36,7 @@ Partial Class form_AddNewQuote
         Me.button_Cancel.Location = New System.Drawing.Point(528, 88)
         Me.button_Cancel.Name = "button_Cancel"
         Me.button_Cancel.Size = New System.Drawing.Size(75, 23)
-        Me.button_Cancel.TabIndex = 13
+        Me.button_Cancel.TabIndex = 3
         Me.button_Cancel.Text = "CANCEL"
         Me.button_Cancel.UseVisualStyleBackColor = True
         '
@@ -45,7 +45,7 @@ Partial Class form_AddNewQuote
         Me.button_Submit.Location = New System.Drawing.Point(447, 88)
         Me.button_Submit.Name = "button_Submit"
         Me.button_Submit.Size = New System.Drawing.Size(75, 23)
-        Me.button_Submit.TabIndex = 12
+        Me.button_Submit.TabIndex = 2
         Me.button_Submit.Text = "SUBMIT"
         Me.button_Submit.UseVisualStyleBackColor = True
         '
@@ -55,7 +55,7 @@ Partial Class form_AddNewQuote
         Me.text_QuoteNumber.Location = New System.Drawing.Point(223, 51)
         Me.text_QuoteNumber.Name = "text_QuoteNumber"
         Me.text_QuoteNumber.Size = New System.Drawing.Size(380, 31)
-        Me.text_QuoteNumber.TabIndex = 11
+        Me.text_QuoteNumber.TabIndex = 1
         '
         'Label2
         '
@@ -86,7 +86,7 @@ Partial Class form_AddNewQuote
         Me.combo_CustomerName.Location = New System.Drawing.Point(223, 5)
         Me.combo_CustomerName.Name = "combo_CustomerName"
         Me.combo_CustomerName.Size = New System.Drawing.Size(380, 33)
-        Me.combo_CustomerName.TabIndex = 8
+        Me.combo_CustomerName.TabIndex = 0
         '
         'form_AddNewQuote
         '

@@ -35,7 +35,7 @@ Partial Class form_CustomerCenter
         Me.button_NewCPO.Location = New System.Drawing.Point(12, 152)
         Me.button_NewCPO.Name = "button_NewCPO"
         Me.button_NewCPO.Size = New System.Drawing.Size(360, 64)
-        Me.button_NewCPO.TabIndex = 6
+        Me.button_NewCPO.TabIndex = 2
         Me.button_NewCPO.Text = "NEW PO FOLDER"
         Me.button_NewCPO.UseVisualStyleBackColor = True
         '
@@ -45,7 +45,7 @@ Partial Class form_CustomerCenter
         Me.button_NewQuote.Location = New System.Drawing.Point(12, 82)
         Me.button_NewQuote.Name = "button_NewQuote"
         Me.button_NewQuote.Size = New System.Drawing.Size(360, 64)
-        Me.button_NewQuote.TabIndex = 5
+        Me.button_NewQuote.TabIndex = 1
         Me.button_NewQuote.Text = "NEW QUOTE FOLDER"
         Me.button_NewQuote.UseVisualStyleBackColor = True
         '
@@ -55,7 +55,7 @@ Partial Class form_CustomerCenter
         Me.button_NewCustomer.Location = New System.Drawing.Point(12, 12)
         Me.button_NewCustomer.Name = "button_NewCustomer"
         Me.button_NewCustomer.Size = New System.Drawing.Size(360, 64)
-        Me.button_NewCustomer.TabIndex = 4
+        Me.button_NewCustomer.TabIndex = 0
         Me.button_NewCustomer.Text = "NEW CUSTOMER FOLDER"
         Me.button_NewCustomer.UseVisualStyleBackColor = True
         '
@@ -64,7 +64,7 @@ Partial Class form_CustomerCenter
         Me.button_Exit.Location = New System.Drawing.Point(12, 259)
         Me.button_Exit.Name = "button_Exit"
         Me.button_Exit.Size = New System.Drawing.Size(360, 40)
-        Me.button_Exit.TabIndex = 7
+        Me.button_Exit.TabIndex = 3
         Me.button_Exit.Text = "EXIT"
         Me.button_Exit.UseVisualStyleBackColor = True
         '

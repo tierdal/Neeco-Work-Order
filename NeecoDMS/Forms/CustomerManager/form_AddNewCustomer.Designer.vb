@@ -34,7 +34,7 @@ Partial Class form_AddNewCustomer
         Me.button_Submit.Location = New System.Drawing.Point(447, 43)
         Me.button_Submit.Name = "button_Submit"
         Me.button_Submit.Size = New System.Drawing.Size(75, 23)
-        Me.button_Submit.TabIndex = 0
+        Me.button_Submit.TabIndex = 1
         Me.button_Submit.Text = "SUBMIT"
         Me.button_Submit.UseVisualStyleBackColor = True
         '
@@ -43,7 +43,7 @@ Partial Class form_AddNewCustomer
         Me.button_Cancel.Location = New System.Drawing.Point(528, 43)
         Me.button_Cancel.Name = "button_Cancel"
         Me.button_Cancel.Size = New System.Drawing.Size(75, 23)
-        Me.button_Cancel.TabIndex = 1
+        Me.button_Cancel.TabIndex = 2
         Me.button_Cancel.Text = "CANCEL"
         Me.button_Cancel.UseVisualStyleBackColor = True
         '
@@ -63,7 +63,7 @@ Partial Class form_AddNewCustomer
         Me.text_CustomerName.Location = New System.Drawing.Point(223, 6)
         Me.text_CustomerName.Name = "text_CustomerName"
         Me.text_CustomerName.Size = New System.Drawing.Size(380, 31)
-        Me.text_CustomerName.TabIndex = 3
+        Me.text_CustomerName.TabIndex = 0
         '
         'form_AddNewCustomer
         '
