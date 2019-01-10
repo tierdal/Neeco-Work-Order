@@ -34,6 +34,7 @@ Partial Class form_EditIEntryNew
         Dim Fld_TrimLabel As System.Windows.Forms.Label
         Dim Label12 As System.Windows.Forms.Label
         Dim Fld_WOnumLabel As System.Windows.Forms.Label
+        Dim Label3 As System.Windows.Forms.Label
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(form_EditIEntryNew))
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.TableLayoutPanel8 = New System.Windows.Forms.TableLayoutPanel()
@@ -94,6 +95,7 @@ Partial Class form_EditIEntryNew
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.TableLayoutPanel9 = New System.Windows.Forms.TableLayoutPanel()
+        Me.date_DueDate = New System.Windows.Forms.DateTimePicker()
         Me.date_WOdate = New System.Windows.Forms.DateTimePicker()
         Me.text_Qty = New System.Windows.Forms.TextBox()
         Me.combo_Status = New System.Windows.Forms.ComboBox()
@@ -114,7 +116,8 @@ Partial Class form_EditIEntryNew
         Me.button_Submit = New System.Windows.Forms.Button()
         Me.Tbl_term_TrimTableAdapter = New NeecoDMS.db_WOlogDataSetTableAdapters.tbl_term_TrimTableAdapter()
         Me.TableLayoutPanel4 = New System.Windows.Forms.TableLayoutPanel()
-        Me.date_DueDate = New System.Windows.Forms.DateTimePicker()
+        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.combo_Process = New System.Windows.Forms.ComboBox()
         Fld_ProductTypeLabel = New System.Windows.Forms.Label()
         Fld_SizeLabel = New System.Windows.Forms.Label()
         Fld_PressureLabel = New System.Windows.Forms.Label()
@@ -126,6 +129,7 @@ Partial Class form_EditIEntryNew
         Fld_TrimLabel = New System.Windows.Forms.Label()
         Label12 = New System.Windows.Forms.Label()
         Fld_WOnumLabel = New System.Windows.Forms.Label()
+        Label3 = New System.Windows.Forms.Label()
         Me.GroupBox2.SuspendLayout()
         Me.TableLayoutPanel8.SuspendLayout()
         Me.TableLayoutPanel7.SuspendLayout()
@@ -161,13 +165,15 @@ Partial Class form_EditIEntryNew
         Me.TableLayoutPanel9.SuspendLayout()
         Me.TableLayoutPanel5.SuspendLayout()
         Me.TableLayoutPanel4.SuspendLayout()
+        Me.TableLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Fld_ProductTypeLabel
         '
-        Fld_ProductTypeLabel.Location = New System.Drawing.Point(307, 0)
+        Fld_ProductTypeLabel.Dock = System.Windows.Forms.DockStyle.Fill
+        Fld_ProductTypeLabel.Location = New System.Drawing.Point(3, 0)
         Fld_ProductTypeLabel.Name = "Fld_ProductTypeLabel"
-        Fld_ProductTypeLabel.Size = New System.Drawing.Size(99, 23)
+        Fld_ProductTypeLabel.Size = New System.Drawing.Size(156, 26)
         Fld_ProductTypeLabel.TabIndex = 99
         Fld_ProductTypeLabel.Text = "Product Type:"
         Fld_ProductTypeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -176,9 +182,9 @@ Partial Class form_EditIEntryNew
         '
         Fld_SizeLabel.AutoSize = True
         Fld_SizeLabel.Dock = System.Windows.Forms.DockStyle.Fill
-        Fld_SizeLabel.Location = New System.Drawing.Point(3, 27)
+        Fld_SizeLabel.Location = New System.Drawing.Point(3, 25)
         Fld_SizeLabel.Name = "Fld_SizeLabel"
-        Fld_SizeLabel.Size = New System.Drawing.Size(73, 27)
+        Fld_SizeLabel.Size = New System.Drawing.Size(113, 25)
         Fld_SizeLabel.TabIndex = 99
         Fld_SizeLabel.Text = "Size:"
         Fld_SizeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -187,9 +193,9 @@ Partial Class form_EditIEntryNew
         '
         Fld_PressureLabel.AutoSize = True
         Fld_PressureLabel.Dock = System.Windows.Forms.DockStyle.Fill
-        Fld_PressureLabel.Location = New System.Drawing.Point(3, 54)
+        Fld_PressureLabel.Location = New System.Drawing.Point(3, 50)
         Fld_PressureLabel.Name = "Fld_PressureLabel"
-        Fld_PressureLabel.Size = New System.Drawing.Size(73, 28)
+        Fld_PressureLabel.Size = New System.Drawing.Size(113, 25)
         Fld_PressureLabel.TabIndex = 99
         Fld_PressureLabel.Text = "Pressure:"
         Fld_PressureLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -200,7 +206,7 @@ Partial Class form_EditIEntryNew
         Fld_StyleLabel.Dock = System.Windows.Forms.DockStyle.Fill
         Fld_StyleLabel.Location = New System.Drawing.Point(3, 0)
         Fld_StyleLabel.Name = "Fld_StyleLabel"
-        Fld_StyleLabel.Size = New System.Drawing.Size(73, 27)
+        Fld_StyleLabel.Size = New System.Drawing.Size(113, 25)
         Fld_StyleLabel.TabIndex = 99
         Fld_StyleLabel.Text = "Style:"
         Fld_StyleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -209,9 +215,9 @@ Partial Class form_EditIEntryNew
         '
         Fld_TempClassLabel.AutoSize = True
         Fld_TempClassLabel.Dock = System.Windows.Forms.DockStyle.Fill
-        Fld_TempClassLabel.Location = New System.Drawing.Point(177, 0)
+        Fld_TempClassLabel.Location = New System.Drawing.Point(3, 75)
         Fld_TempClassLabel.Name = "Fld_TempClassLabel"
-        Fld_TempClassLabel.Size = New System.Drawing.Size(73, 27)
+        Fld_TempClassLabel.Size = New System.Drawing.Size(113, 26)
         Fld_TempClassLabel.TabIndex = 99
         Fld_TempClassLabel.Text = "Temp Class:"
         Fld_TempClassLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -220,9 +226,9 @@ Partial Class form_EditIEntryNew
         '
         Fld_HHPPLabel.AutoSize = True
         Fld_HHPPLabel.Dock = System.Windows.Forms.DockStyle.Fill
-        Fld_HHPPLabel.Location = New System.Drawing.Point(351, 27)
+        Fld_HHPPLabel.Location = New System.Drawing.Point(265, 75)
         Fld_HHPPLabel.Name = "Fld_HHPPLabel"
-        Fld_HHPPLabel.Size = New System.Drawing.Size(73, 27)
+        Fld_HHPPLabel.Size = New System.Drawing.Size(113, 26)
         Fld_HHPPLabel.TabIndex = 99
         Fld_HHPPLabel.Text = "Operator Type:"
         Fld_HHPPLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -231,9 +237,9 @@ Partial Class form_EditIEntryNew
         '
         Fld_PRLabel.AutoSize = True
         Fld_PRLabel.Dock = System.Windows.Forms.DockStyle.Fill
-        Fld_PRLabel.Location = New System.Drawing.Point(351, 0)
+        Fld_PRLabel.Location = New System.Drawing.Point(265, 50)
         Fld_PRLabel.Name = "Fld_PRLabel"
-        Fld_PRLabel.Size = New System.Drawing.Size(73, 27)
+        Fld_PRLabel.Size = New System.Drawing.Size(113, 25)
         Fld_PRLabel.TabIndex = 99
         Fld_PRLabel.Text = "PR:"
         Fld_PRLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -242,9 +248,9 @@ Partial Class form_EditIEntryNew
         '
         Fld_PSLLabel.AutoSize = True
         Fld_PSLLabel.Dock = System.Windows.Forms.DockStyle.Fill
-        Fld_PSLLabel.Location = New System.Drawing.Point(177, 54)
+        Fld_PSLLabel.Location = New System.Drawing.Point(265, 25)
         Fld_PSLLabel.Name = "Fld_PSLLabel"
-        Fld_PSLLabel.Size = New System.Drawing.Size(73, 28)
+        Fld_PSLLabel.Size = New System.Drawing.Size(113, 25)
         Fld_PSLLabel.TabIndex = 99
         Fld_PSLLabel.Text = "PSL:"
         Fld_PSLLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -253,9 +259,9 @@ Partial Class form_EditIEntryNew
         '
         Fld_TrimLabel.AutoSize = True
         Fld_TrimLabel.Dock = System.Windows.Forms.DockStyle.Fill
-        Fld_TrimLabel.Location = New System.Drawing.Point(177, 27)
+        Fld_TrimLabel.Location = New System.Drawing.Point(265, 0)
         Fld_TrimLabel.Name = "Fld_TrimLabel"
-        Fld_TrimLabel.Size = New System.Drawing.Size(73, 27)
+        Fld_TrimLabel.Size = New System.Drawing.Size(113, 25)
         Fld_TrimLabel.TabIndex = 99
         Fld_TrimLabel.Text = "Trim:"
         Fld_TrimLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -264,9 +270,9 @@ Partial Class form_EditIEntryNew
         '
         Label12.AutoSize = True
         Label12.Dock = System.Windows.Forms.DockStyle.Fill
-        Label12.Location = New System.Drawing.Point(3, 67)
+        Label12.Location = New System.Drawing.Point(3, 65)
         Label12.Name = "Label12"
-        Label12.Size = New System.Drawing.Size(95, 26)
+        Label12.Size = New System.Drawing.Size(95, 25)
         Label12.TabIndex = 99
         Label12.Text = "Status:"
         Label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -277,7 +283,7 @@ Partial Class form_EditIEntryNew
         Fld_WOnumLabel.Dock = System.Windows.Forms.DockStyle.Fill
         Fld_WOnumLabel.Location = New System.Drawing.Point(3, 0)
         Fld_WOnumLabel.Name = "Fld_WOnumLabel"
-        Fld_WOnumLabel.Size = New System.Drawing.Size(95, 26)
+        Fld_WOnumLabel.Size = New System.Drawing.Size(95, 25)
         Fld_WOnumLabel.TabIndex = 99
         Fld_WOnumLabel.Text = "Work Order #:"
         Fld_WOnumLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -288,7 +294,7 @@ Partial Class form_EditIEntryNew
         Me.GroupBox2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GroupBox2.Location = New System.Drawing.Point(218, 3)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(537, 166)
+        Me.GroupBox2.Size = New System.Drawing.Size(537, 190)
         Me.GroupBox2.TabIndex = 99
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Product Info"
@@ -297,25 +303,26 @@ Partial Class form_EditIEntryNew
         '
         Me.TableLayoutPanel8.ColumnCount = 1
         Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel8.Controls.Add(Me.check_BO, 0, 2)
+        Me.TableLayoutPanel8.Controls.Add(Me.TableLayoutPanel1, 0, 1)
         Me.TableLayoutPanel8.Controls.Add(Me.TableLayoutPanel7, 0, 0)
-        Me.TableLayoutPanel8.Controls.Add(Me.TableLayoutPanel6, 0, 1)
+        Me.TableLayoutPanel8.Controls.Add(Me.TableLayoutPanel6, 0, 2)
         Me.TableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel8.Location = New System.Drawing.Point(3, 16)
         Me.TableLayoutPanel8.Name = "TableLayoutPanel8"
         Me.TableLayoutPanel8.RowCount = 3
-        Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.0!))
-        Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60.0!))
-        Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.0!))
-        Me.TableLayoutPanel8.Size = New System.Drawing.Size(531, 147)
+        Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.87!))
+        Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.87!))
+        Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 62.26!))
+        Me.TableLayoutPanel8.Size = New System.Drawing.Size(531, 171)
         Me.TableLayoutPanel8.TabIndex = 99
         '
         'check_BO
         '
         Me.check_BO.AutoSize = True
-        Me.check_BO.Location = New System.Drawing.Point(3, 124)
+        Me.check_BO.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.check_BO.Location = New System.Drawing.Point(3, 205)
         Me.check_BO.Name = "check_BO"
-        Me.check_BO.Size = New System.Drawing.Size(421, 17)
+        Me.check_BO.Size = New System.Drawing.Size(758, 25)
         Me.check_BO.TabIndex = 15
         Me.check_BO.Text = "Check this box if you are buying out the material as a finished product from a Ve" &
     "ndor"
@@ -323,21 +330,17 @@ Partial Class form_EditIEntryNew
         '
         'TableLayoutPanel7
         '
-        Me.TableLayoutPanel7.ColumnCount = 4
-        Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.0!))
-        Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.0!))
-        Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
-        Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.0!))
+        Me.TableLayoutPanel7.ColumnCount = 2
+        Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.03448!))
+        Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 68.96552!))
         Me.TableLayoutPanel7.Controls.Add(Me.Label2, 0, 0)
         Me.TableLayoutPanel7.Controls.Add(Me.text_PartNum, 1, 0)
-        Me.TableLayoutPanel7.Controls.Add(Me.combo_ProductType, 3, 0)
-        Me.TableLayoutPanel7.Controls.Add(Fld_ProductTypeLabel, 2, 0)
         Me.TableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel7.Location = New System.Drawing.Point(3, 3)
         Me.TableLayoutPanel7.Name = "TableLayoutPanel7"
         Me.TableLayoutPanel7.RowCount = 1
-        Me.TableLayoutPanel7.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel7.Size = New System.Drawing.Size(525, 27)
+        Me.TableLayoutPanel7.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel7.Size = New System.Drawing.Size(525, 26)
         Me.TableLayoutPanel7.TabIndex = 99
         '
         'Label2
@@ -346,7 +349,7 @@ Partial Class form_EditIEntryNew
         Me.Label2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label2.Location = New System.Drawing.Point(3, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(88, 27)
+        Me.Label2.Size = New System.Drawing.Size(156, 26)
         Me.Label2.TabIndex = 99
         Me.Label2.Text = "Part Number:"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -354,9 +357,9 @@ Partial Class form_EditIEntryNew
         'text_PartNum
         '
         Me.text_PartNum.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.text_PartNum.Location = New System.Drawing.Point(97, 3)
+        Me.text_PartNum.Location = New System.Drawing.Point(165, 3)
         Me.text_PartNum.Name = "text_PartNum"
-        Me.text_PartNum.Size = New System.Drawing.Size(204, 20)
+        Me.text_PartNum.Size = New System.Drawing.Size(357, 20)
         Me.text_PartNum.TabIndex = 5
         '
         'combo_ProductType
@@ -369,9 +372,9 @@ Partial Class form_EditIEntryNew
         Me.combo_ProductType.Dock = System.Windows.Forms.DockStyle.Fill
         Me.combo_ProductType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.combo_ProductType.FormattingEnabled = True
-        Me.combo_ProductType.Location = New System.Drawing.Point(412, 3)
+        Me.combo_ProductType.Location = New System.Drawing.Point(165, 3)
         Me.combo_ProductType.Name = "combo_ProductType"
-        Me.combo_ProductType.Size = New System.Drawing.Size(110, 21)
+        Me.combo_ProductType.Size = New System.Drawing.Size(357, 21)
         Me.combo_ProductType.TabIndex = 6
         Me.combo_ProductType.ValueMember = "fld_ProductType"
         '
@@ -387,37 +390,36 @@ Partial Class form_EditIEntryNew
         '
         'TableLayoutPanel6
         '
-        Me.TableLayoutPanel6.ColumnCount = 6
-        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.15152!))
-        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.18182!))
-        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.15152!))
-        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.18182!))
-        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.15152!))
-        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.18182!))
+        Me.TableLayoutPanel6.ColumnCount = 4
+        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.72728!))
+        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.27272!))
+        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.72728!))
+        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.27272!))
         Me.TableLayoutPanel6.Controls.Add(Fld_SizeLabel, 0, 1)
         Me.TableLayoutPanel6.Controls.Add(Fld_PressureLabel, 0, 2)
         Me.TableLayoutPanel6.Controls.Add(Me.combo_Size, 1, 1)
         Me.TableLayoutPanel6.Controls.Add(Me.combo_Pressure, 1, 2)
         Me.TableLayoutPanel6.Controls.Add(Fld_StyleLabel, 0, 0)
-        Me.TableLayoutPanel6.Controls.Add(Fld_TempClassLabel, 2, 0)
         Me.TableLayoutPanel6.Controls.Add(Me.combo_Style, 1, 0)
-        Me.TableLayoutPanel6.Controls.Add(Me.combo_Operator, 5, 1)
-        Me.TableLayoutPanel6.Controls.Add(Fld_HHPPLabel, 4, 1)
-        Me.TableLayoutPanel6.Controls.Add(Me.combo_PR, 5, 0)
-        Me.TableLayoutPanel6.Controls.Add(Fld_PRLabel, 4, 0)
-        Me.TableLayoutPanel6.Controls.Add(Fld_PSLLabel, 2, 2)
-        Me.TableLayoutPanel6.Controls.Add(Me.combo_PSL, 3, 2)
-        Me.TableLayoutPanel6.Controls.Add(Me.combo_Trim, 3, 1)
-        Me.TableLayoutPanel6.Controls.Add(Fld_TrimLabel, 2, 1)
-        Me.TableLayoutPanel6.Controls.Add(Me.combo_TempClass, 3, 0)
+        Me.TableLayoutPanel6.Controls.Add(Fld_TempClassLabel, 0, 3)
+        Me.TableLayoutPanel6.Controls.Add(Me.combo_TempClass, 1, 3)
+        Me.TableLayoutPanel6.Controls.Add(Fld_TrimLabel, 2, 0)
+        Me.TableLayoutPanel6.Controls.Add(Me.combo_Trim, 3, 0)
+        Me.TableLayoutPanel6.Controls.Add(Fld_PSLLabel, 2, 1)
+        Me.TableLayoutPanel6.Controls.Add(Me.combo_PSL, 3, 1)
+        Me.TableLayoutPanel6.Controls.Add(Fld_PRLabel, 2, 2)
+        Me.TableLayoutPanel6.Controls.Add(Me.combo_PR, 3, 2)
+        Me.TableLayoutPanel6.Controls.Add(Fld_HHPPLabel, 2, 3)
+        Me.TableLayoutPanel6.Controls.Add(Me.combo_Operator, 3, 3)
         Me.TableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel6.Location = New System.Drawing.Point(3, 36)
+        Me.TableLayoutPanel6.Location = New System.Drawing.Point(3, 67)
         Me.TableLayoutPanel6.Name = "TableLayoutPanel6"
-        Me.TableLayoutPanel6.RowCount = 3
-        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
-        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
-        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
-        Me.TableLayoutPanel6.Size = New System.Drawing.Size(525, 82)
+        Me.TableLayoutPanel6.RowCount = 4
+        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
+        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
+        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
+        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
+        Me.TableLayoutPanel6.Size = New System.Drawing.Size(525, 101)
         Me.TableLayoutPanel6.TabIndex = 99
         '
         'combo_Size
@@ -430,9 +432,9 @@ Partial Class form_EditIEntryNew
         Me.combo_Size.Dock = System.Windows.Forms.DockStyle.Fill
         Me.combo_Size.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.combo_Size.FormattingEnabled = True
-        Me.combo_Size.Location = New System.Drawing.Point(82, 30)
+        Me.combo_Size.Location = New System.Drawing.Point(122, 28)
         Me.combo_Size.Name = "combo_Size"
-        Me.combo_Size.Size = New System.Drawing.Size(89, 21)
+        Me.combo_Size.Size = New System.Drawing.Size(137, 21)
         Me.combo_Size.TabIndex = 8
         Me.combo_Size.ValueMember = "fld_Size"
         '
@@ -451,9 +453,9 @@ Partial Class form_EditIEntryNew
         Me.combo_Pressure.Dock = System.Windows.Forms.DockStyle.Fill
         Me.combo_Pressure.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.combo_Pressure.FormattingEnabled = True
-        Me.combo_Pressure.Location = New System.Drawing.Point(82, 57)
+        Me.combo_Pressure.Location = New System.Drawing.Point(122, 53)
         Me.combo_Pressure.Name = "combo_Pressure"
-        Me.combo_Pressure.Size = New System.Drawing.Size(89, 21)
+        Me.combo_Pressure.Size = New System.Drawing.Size(137, 21)
         Me.combo_Pressure.TabIndex = 9
         Me.combo_Pressure.ValueMember = "fld_Pressure"
         '
@@ -471,9 +473,9 @@ Partial Class form_EditIEntryNew
         Me.combo_Style.Dock = System.Windows.Forms.DockStyle.Fill
         Me.combo_Style.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.combo_Style.FormattingEnabled = True
-        Me.combo_Style.Location = New System.Drawing.Point(82, 3)
+        Me.combo_Style.Location = New System.Drawing.Point(122, 3)
         Me.combo_Style.Name = "combo_Style"
-        Me.combo_Style.Size = New System.Drawing.Size(89, 21)
+        Me.combo_Style.Size = New System.Drawing.Size(137, 21)
         Me.combo_Style.TabIndex = 7
         Me.combo_Style.ValueMember = "fld_Style"
         '
@@ -492,9 +494,9 @@ Partial Class form_EditIEntryNew
         Me.combo_Operator.Dock = System.Windows.Forms.DockStyle.Fill
         Me.combo_Operator.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.combo_Operator.FormattingEnabled = True
-        Me.combo_Operator.Location = New System.Drawing.Point(430, 30)
+        Me.combo_Operator.Location = New System.Drawing.Point(384, 78)
         Me.combo_Operator.Name = "combo_Operator"
-        Me.combo_Operator.Size = New System.Drawing.Size(92, 21)
+        Me.combo_Operator.Size = New System.Drawing.Size(138, 21)
         Me.combo_Operator.TabIndex = 14
         Me.combo_Operator.ValueMember = "fld_HHPP"
         '
@@ -513,9 +515,9 @@ Partial Class form_EditIEntryNew
         Me.combo_PR.Dock = System.Windows.Forms.DockStyle.Fill
         Me.combo_PR.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.combo_PR.FormattingEnabled = True
-        Me.combo_PR.Location = New System.Drawing.Point(430, 3)
+        Me.combo_PR.Location = New System.Drawing.Point(384, 53)
         Me.combo_PR.Name = "combo_PR"
-        Me.combo_PR.Size = New System.Drawing.Size(92, 21)
+        Me.combo_PR.Size = New System.Drawing.Size(138, 21)
         Me.combo_PR.TabIndex = 13
         Me.combo_PR.ValueMember = "fld_PR"
         '
@@ -534,9 +536,9 @@ Partial Class form_EditIEntryNew
         Me.combo_PSL.Dock = System.Windows.Forms.DockStyle.Fill
         Me.combo_PSL.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.combo_PSL.FormattingEnabled = True
-        Me.combo_PSL.Location = New System.Drawing.Point(256, 57)
+        Me.combo_PSL.Location = New System.Drawing.Point(384, 28)
         Me.combo_PSL.Name = "combo_PSL"
-        Me.combo_PSL.Size = New System.Drawing.Size(89, 21)
+        Me.combo_PSL.Size = New System.Drawing.Size(138, 21)
         Me.combo_PSL.TabIndex = 12
         Me.combo_PSL.ValueMember = "fld_PSL"
         '
@@ -555,9 +557,9 @@ Partial Class form_EditIEntryNew
         Me.combo_Trim.Dock = System.Windows.Forms.DockStyle.Fill
         Me.combo_Trim.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.combo_Trim.FormattingEnabled = True
-        Me.combo_Trim.Location = New System.Drawing.Point(256, 30)
+        Me.combo_Trim.Location = New System.Drawing.Point(384, 3)
         Me.combo_Trim.Name = "combo_Trim"
-        Me.combo_Trim.Size = New System.Drawing.Size(89, 21)
+        Me.combo_Trim.Size = New System.Drawing.Size(138, 21)
         Me.combo_Trim.TabIndex = 11
         Me.combo_Trim.ValueMember = "fld_Trim"
         '
@@ -576,9 +578,9 @@ Partial Class form_EditIEntryNew
         Me.combo_TempClass.Dock = System.Windows.Forms.DockStyle.Fill
         Me.combo_TempClass.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.combo_TempClass.FormattingEnabled = True
-        Me.combo_TempClass.Location = New System.Drawing.Point(256, 3)
+        Me.combo_TempClass.Location = New System.Drawing.Point(122, 78)
         Me.combo_TempClass.Name = "combo_TempClass"
-        Me.combo_TempClass.Size = New System.Drawing.Size(89, 21)
+        Me.combo_TempClass.Size = New System.Drawing.Size(137, 21)
         Me.combo_TempClass.TabIndex = 10
         Me.combo_TempClass.ValueMember = "fld_TempClass"
         '
@@ -702,7 +704,7 @@ Partial Class form_EditIEntryNew
         Me.text_Notes.Location = New System.Drawing.Point(3, 3)
         Me.text_Notes.Multiline = True
         Me.text_Notes.Name = "text_Notes"
-        Me.text_Notes.Size = New System.Drawing.Size(764, 178)
+        Me.text_Notes.Size = New System.Drawing.Size(764, 227)
         Me.text_Notes.TabIndex = 66
         '
         'TabPage2
@@ -711,7 +713,7 @@ Partial Class form_EditIEntryNew
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(770, 184)
+        Me.TabPage2.Size = New System.Drawing.Size(770, 233)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Notes"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -724,9 +726,9 @@ Partial Class form_EditIEntryNew
         '
         Me.Label1.AutoSize = True
         Me.Label1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label1.Location = New System.Drawing.Point(3, 41)
+        Me.Label1.Location = New System.Drawing.Point(3, 40)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(95, 26)
+        Me.Label1.Size = New System.Drawing.Size(95, 25)
         Me.Label1.TabIndex = 99
         Me.Label1.Text = "Date:"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -737,7 +739,7 @@ Partial Class form_EditIEntryNew
         Me.button_Exit.Dock = System.Windows.Forms.DockStyle.Fill
         Me.button_Exit.Location = New System.Drawing.Point(670, 3)
         Me.button_Exit.Name = "button_Exit"
-        Me.button_Exit.Size = New System.Drawing.Size(105, 33)
+        Me.button_Exit.Size = New System.Drawing.Size(105, 38)
         Me.button_Exit.TabIndex = 68
         Me.button_Exit.Text = "CANCEL"
         Me.button_Exit.UseVisualStyleBackColor = True
@@ -750,7 +752,7 @@ Partial Class form_EditIEntryNew
         Me.TabControl1.Location = New System.Drawing.Point(3, 3)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(778, 210)
+        Me.TabControl1.Size = New System.Drawing.Size(778, 265)
         Me.TabControl1.TabIndex = 99
         Me.TabControl1.TabStop = False
         Me.TabControl1.Tag = ""
@@ -761,7 +763,7 @@ Partial Class form_EditIEntryNew
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(770, 184)
+        Me.TabPage1.Size = New System.Drawing.Size(770, 239)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Work Order Details"
         Me.TabPage1.UseVisualStyleBackColor = True
@@ -769,29 +771,31 @@ Partial Class form_EditIEntryNew
         'TableLayoutPanel3
         '
         Me.TableLayoutPanel3.ColumnCount = 1
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel3.Controls.Add(Me.check_BO, 0, 1)
         Me.TableLayoutPanel3.Controls.Add(Me.TableLayoutPanel2, 0, 0)
         Me.TableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel3.Location = New System.Drawing.Point(3, 3)
         Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
-        Me.TableLayoutPanel3.RowCount = 1
-        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 36.43892!))
-        Me.TableLayoutPanel3.Size = New System.Drawing.Size(764, 178)
+        Me.TableLayoutPanel3.RowCount = 2
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 86.96!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.04!))
+        Me.TableLayoutPanel3.Size = New System.Drawing.Size(764, 233)
         Me.TableLayoutPanel3.TabIndex = 99
         '
         'TableLayoutPanel2
         '
         Me.TableLayoutPanel2.ColumnCount = 2
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.36412!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 71.63589!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 71.63588!))
         Me.TableLayoutPanel2.Controls.Add(Me.GroupBox1, 0, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.GroupBox2, 1, 0)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(3, 3)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 1
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(758, 172)
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 83.33334!))
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(758, 196)
         Me.TableLayoutPanel2.TabIndex = 99
         '
         'GroupBox1
@@ -800,7 +804,7 @@ Partial Class form_EditIEntryNew
         Me.GroupBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GroupBox1.Location = New System.Drawing.Point(3, 3)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(209, 166)
+        Me.GroupBox1.Size = New System.Drawing.Size(209, 190)
         Me.GroupBox1.TabIndex = 99
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Work Order Info"
@@ -810,12 +814,14 @@ Partial Class form_EditIEntryNew
         Me.TableLayoutPanel9.ColumnCount = 2
         Me.TableLayoutPanel9.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel9.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel9.Controls.Add(Me.date_DueDate, 1, 4)
+        Me.TableLayoutPanel9.Controls.Add(Me.combo_Process, 1, 4)
+        Me.TableLayoutPanel9.Controls.Add(Label3, 0, 4)
+        Me.TableLayoutPanel9.Controls.Add(Me.date_DueDate, 1, 5)
         Me.TableLayoutPanel9.Controls.Add(Me.date_WOdate, 1, 2)
-        Me.TableLayoutPanel9.Controls.Add(Me.text_Qty, 1, 5)
+        Me.TableLayoutPanel9.Controls.Add(Me.text_Qty, 1, 6)
         Me.TableLayoutPanel9.Controls.Add(Me.combo_Status, 1, 3)
-        Me.TableLayoutPanel9.Controls.Add(Me.Label8, 0, 5)
-        Me.TableLayoutPanel9.Controls.Add(Me.Label7, 0, 4)
+        Me.TableLayoutPanel9.Controls.Add(Me.Label8, 0, 6)
+        Me.TableLayoutPanel9.Controls.Add(Me.Label7, 0, 5)
         Me.TableLayoutPanel9.Controls.Add(Label12, 0, 3)
         Me.TableLayoutPanel9.Controls.Add(Me.Label1, 0, 2)
         Me.TableLayoutPanel9.Controls.Add(Fld_WOnumLabel, 0, 0)
@@ -823,21 +829,32 @@ Partial Class form_EditIEntryNew
         Me.TableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel9.Location = New System.Drawing.Point(3, 16)
         Me.TableLayoutPanel9.Name = "TableLayoutPanel9"
-        Me.TableLayoutPanel9.RowCount = 6
-        Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.89474!))
-        Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.52632!))
-        Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.89474!))
-        Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.89474!))
-        Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.89474!))
-        Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.89474!))
-        Me.TableLayoutPanel9.Size = New System.Drawing.Size(203, 147)
+        Me.TableLayoutPanel9.RowCount = 7
+        Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.17848!))
+        Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.929108!))
+        Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.17848!))
+        Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.17848!))
+        Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.17848!))
+        Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.17848!))
+        Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.17848!))
+        Me.TableLayoutPanel9.Size = New System.Drawing.Size(203, 171)
         Me.TableLayoutPanel9.TabIndex = 99
+        '
+        'date_DueDate
+        '
+        Me.date_DueDate.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.date_DueDate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.date_DueDate.Location = New System.Drawing.Point(104, 118)
+        Me.date_DueDate.Name = "date_DueDate"
+        Me.date_DueDate.Size = New System.Drawing.Size(96, 20)
+        Me.date_DueDate.TabIndex = 70
+        Me.date_DueDate.Value = New Date(2018, 6, 14, 14, 14, 51, 0)
         '
         'date_WOdate
         '
         Me.date_WOdate.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.date_WOdate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.date_WOdate.Location = New System.Drawing.Point(104, 44)
+        Me.date_WOdate.Location = New System.Drawing.Point(104, 43)
         Me.date_WOdate.Name = "date_WOdate"
         Me.date_WOdate.Size = New System.Drawing.Size(96, 20)
         Me.date_WOdate.TabIndex = 1
@@ -846,7 +863,7 @@ Partial Class form_EditIEntryNew
         'text_Qty
         '
         Me.text_Qty.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.text_Qty.Location = New System.Drawing.Point(104, 123)
+        Me.text_Qty.Location = New System.Drawing.Point(104, 145)
         Me.text_Qty.Name = "text_Qty"
         Me.text_Qty.Size = New System.Drawing.Size(96, 20)
         Me.text_Qty.TabIndex = 4
@@ -858,8 +875,8 @@ Partial Class form_EditIEntryNew
         Me.combo_Status.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.combo_Status.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.combo_Status.FormattingEnabled = True
-        Me.combo_Status.Items.AddRange(New Object() {"", "OPEN", "PARTIAL", "STOCK", "REPAIR", "CLOSED"})
-        Me.combo_Status.Location = New System.Drawing.Point(104, 70)
+        Me.combo_Status.Items.AddRange(New Object() {"", "OPEN", "CLOSED"})
+        Me.combo_Status.Location = New System.Drawing.Point(104, 68)
         Me.combo_Status.Name = "combo_Status"
         Me.combo_Status.Size = New System.Drawing.Size(96, 21)
         Me.combo_Status.TabIndex = 2
@@ -868,9 +885,9 @@ Partial Class form_EditIEntryNew
         '
         Me.Label8.AutoSize = True
         Me.Label8.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label8.Location = New System.Drawing.Point(3, 119)
+        Me.Label8.Location = New System.Drawing.Point(3, 140)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(95, 28)
+        Me.Label8.Size = New System.Drawing.Size(95, 31)
         Me.Label8.TabIndex = 99
         Me.Label8.Text = "Order Quantity:"
         Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -879,9 +896,9 @@ Partial Class form_EditIEntryNew
         '
         Me.Label7.AutoSize = True
         Me.Label7.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label7.Location = New System.Drawing.Point(3, 93)
+        Me.Label7.Location = New System.Drawing.Point(3, 115)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(95, 26)
+        Me.Label7.Size = New System.Drawing.Size(95, 25)
         Me.Label7.TabIndex = 99
         Me.Label7.Text = "Due Date:"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -960,11 +977,11 @@ Partial Class form_EditIEntryNew
         Me.TableLayoutPanel5.Controls.Add(Me.button_Exit, 3, 0)
         Me.TableLayoutPanel5.Controls.Add(Me.button_Submit, 2, 0)
         Me.TableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel5.Location = New System.Drawing.Point(3, 219)
+        Me.TableLayoutPanel5.Location = New System.Drawing.Point(3, 274)
         Me.TableLayoutPanel5.Name = "TableLayoutPanel5"
         Me.TableLayoutPanel5.RowCount = 1
         Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel5.Size = New System.Drawing.Size(778, 39)
+        Me.TableLayoutPanel5.Size = New System.Drawing.Size(778, 44)
         Me.TableLayoutPanel5.TabIndex = 99
         '
         'button_Delete
@@ -973,7 +990,7 @@ Partial Class form_EditIEntryNew
         Me.button_Delete.Dock = System.Windows.Forms.DockStyle.Fill
         Me.button_Delete.Location = New System.Drawing.Point(3, 3)
         Me.button_Delete.Name = "button_Delete"
-        Me.button_Delete.Size = New System.Drawing.Size(114, 33)
+        Me.button_Delete.Size = New System.Drawing.Size(114, 38)
         Me.button_Delete.TabIndex = 69
         Me.button_Delete.Text = "DELETE RECORD"
         Me.button_Delete.UseVisualStyleBackColor = True
@@ -984,7 +1001,7 @@ Partial Class form_EditIEntryNew
         Me.button_Submit.Dock = System.Windows.Forms.DockStyle.Fill
         Me.button_Submit.Location = New System.Drawing.Point(556, 3)
         Me.button_Submit.Name = "button_Submit"
-        Me.button_Submit.Size = New System.Drawing.Size(108, 33)
+        Me.button_Submit.Size = New System.Drawing.Size(108, 38)
         Me.button_Submit.TabIndex = 67
         Me.button_Submit.Text = "SUBMIT"
         Me.button_Submit.UseVisualStyleBackColor = True
@@ -1003,26 +1020,55 @@ Partial Class form_EditIEntryNew
         Me.TableLayoutPanel4.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel4.Name = "TableLayoutPanel4"
         Me.TableLayoutPanel4.RowCount = 2
-        Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 82.75862!))
-        Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.24138!))
-        Me.TableLayoutPanel4.Size = New System.Drawing.Size(784, 261)
+        Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 84.66!))
+        Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.34!))
+        Me.TableLayoutPanel4.Size = New System.Drawing.Size(784, 321)
         Me.TableLayoutPanel4.TabIndex = 100
         '
-        'date_DueDate
+        'TableLayoutPanel1
         '
-        Me.date_DueDate.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.date_DueDate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.date_DueDate.Location = New System.Drawing.Point(104, 96)
-        Me.date_DueDate.Name = "date_DueDate"
-        Me.date_DueDate.Size = New System.Drawing.Size(96, 20)
-        Me.date_DueDate.TabIndex = 70
-        Me.date_DueDate.Value = New Date(2018, 6, 14, 14, 14, 51, 0)
+        Me.TableLayoutPanel1.ColumnCount = 2
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.03448!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 68.96552!))
+        Me.TableLayoutPanel1.Controls.Add(Me.combo_ProductType, 1, 0)
+        Me.TableLayoutPanel1.Controls.Add(Fld_ProductTypeLabel, 0, 0)
+        Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(3, 35)
+        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
+        Me.TableLayoutPanel1.RowCount = 1
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(525, 26)
+        Me.TableLayoutPanel1.TabIndex = 100
+        '
+        'Label3
+        '
+        Label3.AutoSize = True
+        Label3.Dock = System.Windows.Forms.DockStyle.Fill
+        Label3.Location = New System.Drawing.Point(3, 90)
+        Label3.Name = "Label3"
+        Label3.Size = New System.Drawing.Size(95, 25)
+        Label3.TabIndex = 101
+        Label3.Text = "Process:"
+        Label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'combo_Process
+        '
+        Me.combo_Process.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.combo_Process.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.combo_Process.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.combo_Process.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.combo_Process.FormattingEnabled = True
+        Me.combo_Process.Items.AddRange(New Object() {"", "BUILD ORDER", "OSV", "PARTIAL", "REPAIR", "STOCK"})
+        Me.combo_Process.Location = New System.Drawing.Point(104, 93)
+        Me.combo_Process.Name = "combo_Process"
+        Me.combo_Process.Size = New System.Drawing.Size(96, 21)
+        Me.combo_Process.TabIndex = 71
         '
         'form_EditIEntryNew
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(784, 261)
+        Me.ClientSize = New System.Drawing.Size(784, 321)
         Me.Controls.Add(Me.TableLayoutPanel4)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
@@ -1030,7 +1076,6 @@ Partial Class form_EditIEntryNew
         Me.Text = "NeecoDMS - Edit Work Order"
         Me.GroupBox2.ResumeLayout(False)
         Me.TableLayoutPanel8.ResumeLayout(False)
-        Me.TableLayoutPanel8.PerformLayout()
         Me.TableLayoutPanel7.ResumeLayout(False)
         Me.TableLayoutPanel7.PerformLayout()
         CType(Me.TbltermProductTypeBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1062,12 +1107,14 @@ Partial Class form_EditIEntryNew
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.TableLayoutPanel3.ResumeLayout(False)
+        Me.TableLayoutPanel3.PerformLayout()
         Me.TableLayoutPanel2.ResumeLayout(False)
         Me.GroupBox1.ResumeLayout(False)
         Me.TableLayoutPanel9.ResumeLayout(False)
         Me.TableLayoutPanel9.PerformLayout()
         Me.TableLayoutPanel5.ResumeLayout(False)
         Me.TableLayoutPanel4.ResumeLayout(False)
+        Me.TableLayoutPanel1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -1152,4 +1199,6 @@ Partial Class form_EditIEntryNew
     Friend WithEvents TbltermTrimBindingSource As BindingSource
     Friend WithEvents TbltermTempClassBindingSource As BindingSource
     Friend WithEvents date_DueDate As DateTimePicker
+    Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
+    Friend WithEvents combo_Process As ComboBox
 End Class

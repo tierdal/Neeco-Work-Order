@@ -60,6 +60,7 @@
         'WO FIELDS
         date_WOdate.Value = Date.Today
         combo_Status.SelectedItem = ""
+        combo_Process.SelectedItem = ""
         date_DueDate.Value = Date.Today
         text_Qty.Text = ""
 
@@ -156,7 +157,7 @@
         'gets username for auditing purposes
         current_user = Environ("Username")
 
-        If combo_Status.Text = "REPAIR" Then is_repair = 1
+        If combo_Process.Text = "REPAIR" Then is_repair = 1
 
         'validate data
         'If combo_Customer1.Text = "" Then
@@ -171,6 +172,10 @@
             MsgBox("Please select a Status")
             Exit Sub
         End If
+        If combo_Process.Text = "" Then
+            MsgBox("Please select a Process")
+            Exit Sub
+        End If
         If text_Qty.Text = "" Then
             MsgBox("Please type a Quantity")
             Exit Sub
@@ -178,10 +183,11 @@
 
         'generate Query
 
-        sql_queryInsertData.CommandText = "INSERT INTO tbl_data_WOlog([fld_wo_num],[fld_wo_date],[fld_status],[fld_due_date],[fld_qty],[fld_part_num],[fld_product],[fld_style],[fld_size],[fld_pressure],[fld_tempclass],[fld_trim],[fld_psl],[fld_pr],[fld_hhpp],[fld_buyout],[fld_isrepair],[fld_notes],[fld_CreatedBy],[fld_CreatedByDate],[fld_LastModifiedBy],[fld_LastModifiedDate])VALUES(@WONUM,@WODATE,@STATUS,@DUEDATE,@QTY,@PARTNUM,@PRODUCT,@STYLE,@SIZE,@PRESSURE,@TEMPCLASS,@TRIM,@PSL,@PR,@HHPP,@BUYOUT,@REPAIR,@NOTES,@CREATEDBY,@CREATEDBYDATE,@MODIFIEDBY,@MODIFIEDBYDATE)"
+        sql_queryInsertData.CommandText = "INSERT INTO tbl_data_WOlog([fld_wo_num],[fld_wo_date],[fld_status],[fld_process],[fld_due_date],[fld_qty],[fld_part_num],[fld_product],[fld_style],[fld_size],[fld_pressure],[fld_tempclass],[fld_trim],[fld_psl],[fld_pr],[fld_hhpp],[fld_buyout],[fld_isrepair],[fld_notes],[fld_CreatedBy],[fld_CreatedByDate],[fld_LastModifiedBy],[fld_LastModifiedDate])VALUES(@WONUM,@WODATE,@STATUS,@PROCESS,@DUEDATE,@QTY,@PARTNUM,@PRODUCT,@STYLE,@SIZE,@PRESSURE,@TEMPCLASS,@TRIM,@PSL,@PR,@HHPP,@BUYOUT,@REPAIR,@NOTES,@CREATEDBY,@CREATEDBYDATE,@MODIFIEDBY,@MODIFIEDBYDATE)"
         sql_queryInsertData.Parameters.AddWithValue("@WONUM", text_WOnum.Text)
         sql_queryInsertData.Parameters.AddWithValue("@WODATE", date_WOdate.Value.Date)
         sql_queryInsertData.Parameters.AddWithValue("@STATUS", combo_Status.Text)
+        sql_queryInsertData.Parameters.AddWithValue("@PROCESS", combo_Process.Text)
         sql_queryInsertData.Parameters.AddWithValue("@DUEDATE", date_DueDate.Value.Date)
         sql_queryInsertData.Parameters.AddWithValue("@QTY", text_Qty.Text)
 
